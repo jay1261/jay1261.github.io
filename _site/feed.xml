@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-09T15:38:00+09:00</updated>
+  <updated>2024-01-09T17:03:31+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -64,12 +64,12 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
     <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
     <published>2019-08-09T21:55:00+09:00</published>
   
-    <updated>2019-08-09T21:55:00+09:00</updated>
+    <updated>2024-01-09T15:38:47+09:00</updated>
   
     <id>http://localhost:4000/posts/getting-started/</id>
     <content src="http://localhost:4000/posts/getting-started/" />
     <author>
-      <name>cotes</name>
+      <name>jay</name>
     </author>
 
   
