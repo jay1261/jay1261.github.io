@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-09T17:30:56+09:00</updated>
+  <updated>2024-01-09T20:11:49+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>TestPost</title>
-    <link href="http://localhost:4000/posts/testPost/" rel="alternate" type="text/html" title="TestPost" />
+    <title>Basic Day1</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-Day1/" rel="alternate" type="text/html" title="Basic Day1" />
     <published>2024-01-09T00:00:00+09:00</published>
   
     <updated>2024-01-09T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/testPost/</id>
-    <content src="http://localhost:4000/posts/testPost/" />
+    <id>http://localhost:4000/posts/ProgrammersBasic-Day1/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-Day1/" />
     <author>
       <name>jay</name>
     </author>
@@ -36,7 +36,7 @@
     
     <category term="Algorithm" />
     
-    <category term="Basic" />
+    <category term="Programmers" />
     
   
 
@@ -48,11 +48,62 @@
 
 
 
-      The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
+      1. 문자열 출력하기
+문제설명
 
-Generate the favicon
+문자열 `str`이 주어질 때, `str`을 출력하는 코드를 작성해 보세요. ##### 제한사항
 
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
+
+
+  1 ≤ str의 길이 ≤ 1,000,000
+  str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.
+
+
+입출력 예시
+
+입력
+
+HelloWorld!
+
+
+출력
+
+HelloWorld!
+
+
+Solution
+
+import Foundation
+
+let s1 = readLine()!
+
+print(s1)
+
+
+
+
+2. a와 b 출력하기
+문제 설명
+
+정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.
+
+제한사항
+
+
+  -100,000 ≤ a, b ≤ 100,000
+
+
+입출력 예
+
+입력
+
+4 5
+
+
+출력
+
+a = 4
+b = 5...
     </summary>
   
 
@@ -64,7 +115,7 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
     <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
     <published>2019-08-11T01:34:00+09:00</published>
   
-    <updated>2019-08-11T01:34:00+09:00</updated>
+    <updated>2024-01-09T17:31:25+09:00</updated>
   
     <id>http://localhost:4000/posts/customize-the-favicon/</id>
     <content src="http://localhost:4000/posts/customize-the-favicon/" />
@@ -194,7 +245,7 @@ Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of t
     <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
     <published>2019-08-08T12:33:00+09:00</published>
   
-    <updated>2019-08-08T12:33:00+09:00</updated>
+    <updated>2024-01-09T17:31:25+09:00</updated>
   
     <id>http://localhost:4000/posts/text-and-typography/</id>
     <content src="http://localhost:4000/posts/text-and-typography/" />

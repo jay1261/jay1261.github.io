@@ -1,10 +1,10 @@
 [
   
   {
-    "title": "TestPost",
-    "url": "/posts/testPost/",
-    "categories": "Algorithm, Basic",
-    "tags": "Algorithm",
+    "title": "Basic Day1",
+    "url": "/posts/ProgrammersBasic-Day1/",
+    "categories": "Algorithm, Programmers",
+    "tags": "Algorithm, SwiftAlgorithm",
     "date": "2024-01-09 00:00:00 +0900",
     
 
@@ -13,8 +13,8 @@
 
 
     
-    "snippet": "The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons...",
-    "content": "The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.Generate the faviconPrepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image to upload your image file.In the next step, the webpage will show all usage scenarios. You can keep the default options, scroll to the bottom of the page, and click the button Generate your Favicons and HTML code to generate the favicon.Download &amp; ReplaceDownload the generated package, unzip and delete the following two from the extracted files:  browserconfig.xml  site.webmanifestAnd then copy the remaining image files (.PNG and .ICO) to cover the original files in the directory assets/img/favicons/ of your Jekyll site. If your Jekyll site doesn’t have this directory yet, just create one.The following table will help you understand the changes to the favicon files:            File(s)      From Online Tool      From Chirpy                  *.PNG      ✓      ✗              *.ICO      ✓      ✗        ✓ means keep, ✗ means delete.The next time you build the site, the favicon will be replaced with a customized edition."
+    "snippet": "1. 문자열 출력하기문제설명문자열 `str`이 주어질 때, `str`을 출력하는 코드를 작성해 보세요. ##### 제한사항  1 ≤ str의 길이 ≤ 1,000,000  str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.입출력 예시입력HelloWorld!출력HelloWorld!Solutionimport Foundationlet s1 = rea...",
+    "content": "1. 문자열 출력하기문제설명문자열 `str`이 주어질 때, `str`을 출력하는 코드를 작성해 보세요. ##### 제한사항  1 ≤ str의 길이 ≤ 1,000,000  str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.입출력 예시입력HelloWorld!출력HelloWorld!Solutionimport Foundationlet s1 = readLine()!print(s1)2. a와 b 출력하기문제 설명정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.제한사항  -100,000 ≤ a, b ≤ 100,000입출력 예입력4 5출력a = 4b = 5Solutionimport Foundationlet n = readLine()!.components(separatedBy: [\" \"]).map { Int($0)! }let (a, b) = (n[0], n[1])print(\"a = \\(a) \\nb = \\(b)\")3. 문자열 반복해서 출력하기문제 설명문자열 str과 정수 n이 주어집니다.str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.제한사항  1 ≤ str의 길이 ≤ 10  1 ≤ n ≤ 5입출력 예입력string 5출력stringstringstringstringstringSolution일반적으로 반복문을 사용해서 해결하는 방법과, swift의 String에서 지원하는 repeating을 사용하는 방법 두가지가 있습니다.  반복문import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, a) = (inp[0], Int(inp[1])!)var result = \"\"for _ in 0..&lt;a {    result += s1}print(result)  repeatingimport Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, a) = (inp[0], Int(inp[1])!)print(String(repeating: s1, count: a))"
   },
   
   {
