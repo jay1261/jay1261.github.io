@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-09T17:06:53+09:00</updated>
+  <updated>2024-01-09T17:30:56+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>TestPost</title>
+    <link href="http://localhost:4000/posts/testPost/" rel="alternate" type="text/html" title="TestPost" />
+    <published>2024-01-09T00:00:00+09:00</published>
+  
+    <updated>2024-01-09T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/testPost/</id>
+    <content src="http://localhost:4000/posts/testPost/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Basic" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
+
+Generate the favicon
+
+Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -178,7 +218,8 @@ Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of t
 
 
 
-      This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
+      
+This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
 
 Headings
 
@@ -192,7 +233,7 @@ H4 - heading
 
 Paragraph
 
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilis...
+Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facili...
     </summary>
   
 

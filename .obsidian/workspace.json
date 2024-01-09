@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2019-08-09-getting-started.md",
+                "file": "_posts/2019-08-11-customize-the-favicon.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2019-08-09-getting-started.md",
+                "file": "_posts/2019-08-11-customize-the-favicon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2019-08-09-getting-started.md",
+                "file": "_posts/2019-08-11-customize-the-favicon.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2019-08-09-getting-started.md"
+                "file": "_posts/2019-08-11-customize-the-favicon.md"
               }
             }
           }
@@ -148,14 +148,30 @@
   },
   "active": "da0c6d57889f1afd",
   "lastOpenFiles": [
-    "_site/tags/started/index.html",
-    "_site/tags/started",
-    "_site/tags/getting/index.html",
-    "_site/tags/getting",
+    "_posts/2019-08-08-text-and-typography.md",
+    "_posts/2019-08-08-write-a-new-post.md",
+    "_posts/2024-01-09-testPost.md",
+    "_site/tags/algorithm/index.html",
+    "_site/tags/algorithm",
+    "_site/categories/basic/index.html",
+    "_site/categories/basic",
+    "_site/categories/algorithm/index.html",
+    "_site/categories/algorithm",
+    "_site/posts/testPost/index.html",
+    "_site/posts/testPost",
+    "_site/posts/customize-the-favicon-1/index.html",
+    "_site/posts/customize-the-favicon-1",
+    "_posts/2019-08-11-customize-the-favicon.md",
+    "favicon-16x16.png",
+    "_site/favicon-96x96.png",
+    "_site/favicon-32x32.png",
+    "_site/favicon-16x16.png",
+    "favicon-96x96.png",
+    "favicon-32x32.png",
+    "_posts/2019-08-09-getting-started.md",
     "_site/assets/img/favicons/favicon-96x96.png",
     "assets/img/favicons/favicon-96x96.png",
     "_site/assets/img/favicons/img-profile.png",
-    "assets/img/favicons/img-profile.png",
-    "_posts/2019-08-08-text-and-typography.md"
+    "assets/img/favicons/img-profile.png"
   ]
 }
