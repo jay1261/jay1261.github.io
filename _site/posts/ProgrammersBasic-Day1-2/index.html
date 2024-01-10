@@ -35,24 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Programmers" />
+<meta property="og:title" content="Basic Day1-2" />
+<meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="개발 일지" />
-<meta property="og:description" content="개발 일지" />
-<link rel="canonical" href="http://localhost:4000/categories/programmers/" />
-<meta property="og:url" content="http://localhost:4000/categories/programmers/" />
+<meta name="description" content="4. 대소문자 바꿔서 출력하기" />
+<meta property="og:description" content="4. 대소문자 바꿔서 출력하기" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-Day1-2/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-Day1-2/" />
 <meta property="og:site_name" content="jay1261" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-01-10T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Programmers" />
+<meta property="twitter:title" content="Basic Day1-2" />
 <meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"개발 일지","headline":"Programmers","url":"http://localhost:4000/categories/programmers/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-10T00:00:00+09:00","datePublished":"2024-01-10T00:00:00+09:00","description":"4. 대소문자 바꿔서 출력하기","headline":"Basic Day1-2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-Day1-2/"},"url":"http://localhost:4000/posts/ProgrammersBasic-Day1-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Programmers | jay1261
+  <title>Basic Day1-2 | jay1261
   </title>
 
   <!--
@@ -104,9 +107,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -460,16 +470,10 @@
           
         
           
-            <span>
-              <a href="/categories">
-                Categories
-              </a>
-            </span>
-          
         
           
             
-              <span>Programmers</span>
+              <span>Basic Day1-2</span>
             
 
           
@@ -483,7 +487,7 @@
     </button>
 
     <div id="topbar-title">
-      Category
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -509,28 +513,200 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
-  
-    
+  <header>
+    <h1 data-toc-skip>Basic Day1-2</h1>
 
-
-
-<div id="page-category">
-  <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    Programmers
-    <span class="lead text-muted ps-2">3</span>
-  </h1>
-
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/ProgrammersBasic-Day2/">Basic6 덧셈식 출력하기</a>
-        <span class="dash flex-grow-1"></span>
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -541,70 +717,227 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
   data-ts="1704812400"
   data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
   Jan 10, 2024
 </time>
 
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/ProgrammersBasic-Day1-2/">Basic Day1-2</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                <a href="https://github.com/jay1261/">jay1261</a>
+                
+              
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
 
 
 
 
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1704812400"
-  data-df="ll"
-  
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="204 words"
 >
-  Jan 10, 2024
-</time>
+  <em>1 min</em> read</span>
 
-      </li>
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h2 id="4-대소문자-바꿔서-출력하기"><span class="me-2">4. 대소문자 바꿔서 출력하기</span><a href="#4-대소문자-바꿔서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h3 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>영어 알파벳으로 이루어진 문자열 <code class="language-plaintext highlighter-rouge">str</code>이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.</p>
+
+<h3 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<ul>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 20
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">str</code>은 알파벳으로 이루어진 문자열입니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>입력</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>aBcDeFg
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>출력</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>AbCdEfG
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+
+<span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">isLowercase</span> <span class="p">?</span> <span class="nv">$0</span><span class="o">.</span><span class="nf">uppercased</span><span class="p">()</span> <span class="p">:</span> <span class="nv">$0</span><span class="o">.</span><span class="nf">lowercased</span><span class="p">()}</span><span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<h2 id="5-특수문자-출력하기"><span class="me-2">5. 특수문자 출력하기</span><a href="#5-특수문자-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="문제-설명-1"><span class="me-2">문제 설명</span><a href="#문제-설명-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>다음과 같이 출력하도록 코드를 작성해 주세요.</p>
+
+<p>출력 예시</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>!@#$%^&amp;*(\'"&lt;&gt;?:;
+</pre></td></tr></tbody></table></code></div></div>
+<h3 id="설명"><span class="me-2">설명</span><a href="#설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+  <li>양 끝에 #을 붙여주어야 합니다.</li>
+</ul>
+
+<h3 id="solution-1"><span class="me-2">Solution</span><a href="#solution-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="err">#</span><span class="s">"!@#$%^&amp;*(</span><span class="se">\'</span><span class="s">"</span><span class="o">&lt;&gt;</span><span class="p">?:;</span><span class="s">"#)
+</span></pre></td></tr></tbody></table></code></div></div>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/ProgrammersBasic-Day1-1/">Basic Day1-1</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1704726000"
-  data-df="ll"
-  
->
-  Jan  9, 2024
-</time>
-
-      </li>
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/algorithm/">Algorithm</a>,
+          <a href="/categories/programmers/">Programmers</a>
+      </div>
     
-  </ul>
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/algorithm/"
+            class="post-tag no-text-decoration"
+          >Algorithm</a>
+        
+          <a
+            href="/tags/swiftalgorithm/"
+            class="post-tag no-text-decoration"
+          >SwiftAlgorithm</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
-  
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -911,12 +1244,272 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/ProgrammersBasic-Day1-1/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1704726000"
+  data-df="ll"
+  
+>
+  Jan  9, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Basic Day1-1</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  1. 문자열 출력하기
+문제설명
+
+문자열 `str`이 주어질 때, `str`을 출력하는 코드를 작성해 보세요. ### 제한사항
+
+
+
+  1 ≤ str의 길이 ≤ 1,000,000
+  str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.
+
+
+입출력 예시
+
+입력
+
+HelloWorld!
+
+
+출력
+
+HelloWorld!
+
+
+Solution
+
+import...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/ProgrammersBasic-Day2/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1704812400"
+  data-df="ll"
+  
+>
+  Jan 10, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Basic6 덧셈식 출력하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  문제 설명
+
+두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
+
+1
+a + b = c
+
+
+
+
+제한사항
+
+
+  1 ≤ a, b ≤ 100
+
+
+
+
+입출력 예
+
+입력
+
+1
+4 5
+
+
+출력
+
+1
+4 + 5 = 9
+
+
+
+
+Solution
+
+1
+2
+3
+4
+5
+6
+7
+import Foundation
+
+let n = read...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/ProgrammersBasic-Day1-1/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Basic Day1-1</p>
+    </a>
+  
+
+  
+    <a
+      href="/posts/ProgrammersBasic-Day2/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Basic6 덧셈식 출력하기</p>
+    </a>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1239,6 +1832,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1302,16 +1902,44 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-09T20:11:49+09:00</updated>
+  <updated>2024-01-10T19:28:32+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,170 @@
 
   
   <entry>
-    <title>Basic Day1</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-Day1/" rel="alternate" type="text/html" title="Basic Day1" />
+    <title>Basic6 덧셈식 출력하기</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-Day2/" rel="alternate" type="text/html" title="Basic6 덧셈식 출력하기" />
+    <published>2024-01-10T00:00:00+09:00</published>
+  
+    <updated>2024-01-10T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-Day2/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-Day2/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      문제 설명
+
+두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
+
+a + b = c
+
+
+
+
+제한사항
+
+
+  1 ≤ a, b ≤ 100
+
+
+
+
+입출력 예
+
+입력
+
+4 5
+
+
+출력
+
+4 + 5 = 9
+
+
+
+
+Solution
+
+import Foundation
+
+let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
+let (a, b) = (n[0], n[1])
+
+print("\(a) + \(b) = \(a+b)")
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Basic Day1-2</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-Day1-2/" rel="alternate" type="text/html" title="Basic Day1-2" />
+    <published>2024-01-10T00:00:00+09:00</published>
+  
+    <updated>2024-01-10T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-Day1-2/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-Day1-2/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      4. 대소문자 바꿔서 출력하기
+
+문제 설명
+
+영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.
+
+제한사항
+
+
+  1 ≤ str의 길이 ≤ 20
+    
+      str은 알파벳으로 이루어진 문자열입니다.
+    
+  
+
+
+입출력 예
+
+입력
+
+aBcDeFg
+
+
+출력
+
+AbCdEfG
+
+
+Solution
+import Foundation
+
+let s1 = readLine()!
+
+let result = s1.map {$0.isLowercase ? $0.uppercased() : $0.lowercased()}.joined()
+
+print(result)
+
+
+
+
+5. 특수문자 출력하기
+문제 설명
+
+다음과 같이 출력하도록 코...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Basic Day1-1</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-Day1-1/" rel="alternate" type="text/html" title="Basic Day1-1" />
     <published>2024-01-09T00:00:00+09:00</published>
   
     <updated>2024-01-09T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/ProgrammersBasic-Day1/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-Day1/" />
+    <id>http://localhost:4000/posts/ProgrammersBasic-Day1-1/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-Day1-1/" />
     <author>
       <name>jay</name>
     </author>
@@ -51,7 +207,7 @@
       1. 문자열 출력하기
 문제설명
 
-문자열 `str`이 주어질 때, `str`을 출력하는 코드를 작성해 보세요. ##### 제한사항
+문자열 `str`이 주어질 때, `str`을 출력하는 코드를 작성해 보세요. ### 제한사항
 
 
 
@@ -103,7 +259,9 @@ print(s1)
 출력
 
 a = 4
-b = 5...
+b = 5
+
+...
     </summary>
   
 
@@ -194,97 +352,6 @@ There are two ways to create a new repository for this theme:
 
   Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
   GitHub Fork - Convenient for custom d...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T15:10:00+09:00</published>
-  
-    <updated>2019-08-08T15:10:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/write-a-new-post/</id>
-    <content src="http://localhost:4000/posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
-
-Naming and Path
-
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Text and Typography</title>
-    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T12:33:00+09:00</published>
-  
-    <updated>2024-01-09T17:31:25+09:00</updated>
-  
-    <id>http://localhost:4000/posts/text-and-typography/</id>
-    <content src="http://localhost:4000/posts/text-and-typography/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Demo" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
-
-Headings
-
-H1 - heading
-
-H2 - heading
-
-H3 - heading
-
-H4 - heading
-
-Paragraph
-
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facili...
     </summary>
   
 
