@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Basic8 문자열 돌리기",
+    "url": "/posts/ProgrammersBasic-8/",
+    "categories": "Algorithm, Programmers",
+    "tags": "Algorithm, SwiftAlgorithm",
+    "date": "2024-01-11 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "8. 문자열 돌리기문제 설명문자열 str이 주어집니다.문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.제한사항1 ≤ str의 길이 ≤ 10입출력 예입력 #1abcde출력 #1abcdeSolutionimport Foundationlet s1 = readLine()!s1.map {print($0)}",
+    "content": "8. 문자열 돌리기문제 설명문자열 str이 주어집니다.문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.제한사항1 ≤ str의 길이 ≤ 10입출력 예입력 #1abcde출력 #1abcdeSolutionimport Foundationlet s1 = readLine()!s1.map {print($0)}"
+  },
+  
+  {
     "title": "Basic7 문자열 붙여서 출력하기",
     "url": "/posts/ProgrammersBasic-7/",
     "categories": "Algorithm, Programmers",
@@ -14,7 +31,7 @@
 
     
     "snippet": "7. 문자열 붙여서 출력하기문제 설명두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2Hello World!출력 #2HelloWorl...",
-    "content": "7. 문자열 붙여서 출력하기문제 설명두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2Hello World!출력 #2HelloWorld!Solutionimport Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])print(s1+s2)"
+    "content": "7. 문자열 붙여서 출력하기문제 설명두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2Hello World!출력 #2HelloWorld!Solutionimport Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])print(s1+s2)  String은 '+' 연산자를 이용해서 붙일 수 있습니다."
   },
   
   {

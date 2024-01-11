@@ -8,7 +8,7 @@ categories:
 tags:
   - getting
   - started
-pin: true
+pin: false
 img_path: /posts/20180809
 ---
 
