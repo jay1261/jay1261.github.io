@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## 10. 문자열 섞기
+## 11. 문자열 섞기
 
 ###### 문제 설명
 
