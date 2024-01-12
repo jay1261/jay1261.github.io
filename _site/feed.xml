@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-12T12:54:16+09:00</updated>
+  <updated>2024-01-12T19:17:27+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,93 @@
 
   
   <entry>
+    <title>Basic11 문자열 섞기</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-11/" rel="alternate" type="text/html" title="Basic11 문자열 섞기" />
+    <published>2024-01-12T00:00:00+09:00</published>
+  
+    <updated>2024-01-12T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-11/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-11/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      10. 문자열 섞기
+
+문제 설명
+
+길이가 같은 두 문자열 str1과 str2가 주어집니다.
+
+두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.
+
+
+
+제한사항
+
+
+  1 ≤ str1의 길이 = str2의 길이 ≤ 10
+    
+      str1과 str2는 알파벳 소문자로 이루어진 문자열입니다.
+    
+  
+
+
+
+
+입출력 예
+
+
+  
+    
+      str1
+      str2
+      result
+    
+  
+  
+    
+      “aaaaa”
+      “bbbbb”
+      “ababababab”
+    
+  
+
+
+
+
+Solution
+
+
+  이전 문제와 마찬가지로 Array로 변환한 후에 처...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Basic10 문자열 겹쳐쓰기</title>
     <link href="http://localhost:4000/posts/ProgrammersBasic-10/" rel="alternate" type="text/html" title="Basic10 문자열 겹쳐쓰기" />
-    <published>2024-01-11T00:00:00+09:00</published>
+    <published>2024-01-12T00:00:00+09:00</published>
   
-    <updated>2024-01-11T00:00:00+09:00</updated>
+    <updated>2024-01-12T00:00:00+09:00</updated>
   
     <id>http://localhost:4000/posts/ProgrammersBasic-10/</id>
     <content src="http://localhost:4000/posts/ProgrammersBasic-10/" />
@@ -326,83 +408,6 @@ print(s1+s2)
 
 
   String은 '+' 연산...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic6 덧셈식 출력하기</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-6/" rel="alternate" type="text/html" title="Basic6 덧셈식 출력하기" />
-    <published>2024-01-10T00:00:00+09:00</published>
-  
-    <updated>2024-01-10T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-6/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-6/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제 설명
-
-두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
-
-a + b = c
-
-
-
-
-제한사항
-
-
-  1 ≤ a, b ≤ 100
-
-
-
-
-입출력 예
-
-입력
-
-4 5
-
-
-출력
-
-4 + 5 = 9
-
-
-
-
-Solution
-
-import Foundation
-
-let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
-let (a, b) = (n[0], n[1])
-
-print("\(a) + \(b) = \(a+b)")
-
-
-
     </summary>
   
 
