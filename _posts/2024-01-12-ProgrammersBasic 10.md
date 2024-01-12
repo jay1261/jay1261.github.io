@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## 10. - 문자열 겹쳐쓰기
+## 10. 문자열 겹쳐쓰기
 
 ### 문제 설명
 
@@ -48,6 +48,25 @@ tags:
 
 ### Solution
 
-```swift
+> swift에서는 인덱스를 사용해서 String의 각 요소에 접근하는 방법이 안됩니다. (my_string[i] - error) 그래서 String을 Array로 변환하고, 필요한 작업을 처리한 후에 다시 String으로 변환해서 반환해주는 코드를 작성했습니다.
 
+```swift
+import Foundation
+
+func solution(_ my_string:String, _ overwrite_string:String, _ s:Int) -> String {
+    var my_array = Array(my_string)
+    var overwrite_array = Array(overwrite_string)
+
+    for i in s..<overwrite_array.count + s {
+        my_array[i] = overwrite_array[i-s]
+    }
+
+    return String(my_array)
+}
+```
+
+> 또한 Array에는 replaceSubrange라는 내부함수가 있어서 이를 사용하는 방법도 있습니다.
+
+```
+my_array.replaceSubrange(s...(overwrite_array.count+s-1), with: overwrite_string)
 ```

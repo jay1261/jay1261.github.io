@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-11-ProgrammersBasic 10.md",
+                "file": "_posts/2024-01-12-ProgrammersBasic 10.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-11-ProgrammersBasic 10.md",
+                "file": "_posts/2024-01-12-ProgrammersBasic 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-11-ProgrammersBasic 10.md",
+                "file": "_posts/2024-01-12-ProgrammersBasic 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-11-ProgrammersBasic 10.md"
+                "file": "_posts/2024-01-12-ProgrammersBasic 10.md"
               }
             }
           }
@@ -146,36 +146,36 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "87cac26898cdb079",
+  "active": "b14c64bb0cef1655",
   "lastOpenFiles": [
+    "_posts/2024-01-10-ProgrammersBasic 7.md",
+    "_posts/2024-01-11-ProgrammersBasic 8.md",
+    "_posts/2024-01-11-ProgrammersBasic 9.md",
+    "_posts/2024-01-12-ProgrammersBasic 10.md",
+    "README.md",
+    "무제 파일 1.canvas",
+    "무제 파일.canvas",
+    "2024-01-09.md",
+    "_posts/2020-01-01-test.md",
+    "_posts/2019-08-11-customize-the-favicon.md",
+    "_posts/2019-08-09-getting-started.md",
+    "_posts/2019-08-08-write-a-new-post.md",
+    "_posts/2024-01-10-ProgrammersBasic 6.md",
+    "_posts/2024-01-10-ProgrammersBasic 4~5.md",
+    "_posts/2024-01-09-ProgrammersBasic 1~3.md",
     "_site/posts/ProgrammersBasic-10/index.html",
     "_site/posts/ProgrammersBasic-10",
     "_site/posts/ProgrammersBasic-9-1/index.html",
     "_site/posts/ProgrammersBasic-9-1",
     "_site/page2/index.html",
     "_site/page2",
-    "_posts/2024-01-11-ProgrammersBasic 9.md",
-    "_posts/2024-01-11-ProgrammersBasic 10.md",
     "_site/posts/ProgrammersBasic-9/index.html",
     "_site/posts/ProgrammersBasic-9",
     "_site/posts/ProgrammersBasic-8-1/index.html",
     "_site/posts/ProgrammersBasic-8-1",
-    "_posts/2024-01-11-ProgrammersBasic 8.md",
-    "_site/posts/ProgrammersBasic-8/index.html",
-    "_posts/2024-01-10-ProgrammersBasic 6.md",
-    "_posts/2024-01-10-ProgrammersBasic 7.md",
-    "_posts/2024-01-09-ProgrammersBasic 1~3.md",
-    "_posts/2024-01-10-ProgrammersBasic 4~5.md",
-    "_posts/2020-01-01-test.md",
-    "_posts/2019-08-08-write-a-new-post.md",
-    "_posts/2019-08-09-getting-started.md",
-    "_posts/2019-08-11-customize-the-favicon.md",
     "_posts/2024-01-09-ProgrammersBasic Day1 1.md",
     "_site/무제 파일 1.canvas",
-    "무제 파일 1.canvas",
-    "2024-01-09.md",
     "_site/2024-01-09.md",
-    "무제 파일.canvas",
     "_site/무제 파일.canvas",
     "_posts/무제 파일.md",
     "favicon-16x16.png",

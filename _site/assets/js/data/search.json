@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Basic10 문자열 겹쳐쓰기",
+    "url": "/posts/ProgrammersBasic-10/",
+    "categories": "Algorithm, Programmers",
+    "tags": "Algorithm, SwiftAlgorithm",
+    "date": "2024-01-11 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "10. 문자열 겹쳐쓰기문제 설명문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  my_string와 overwrit...",
+    "content": "10. 문자열 겹쳐쓰기문제 설명문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  my_string와 overwrite_string은 숫자와 알파벳으로 이루어져 있습니다.  1 ≤ overwrite_string의 길이 ≤ my_string의 길이 ≤ 1,000  0 ≤ s ≤ my_string의 길이 - overwrite_string의 길이입출력 예            my_string      overwrite_string      s      result                  “He11oWor1d”      “lloWorl”      2      “HelloWorld”              “Program29b8UYP”      “merS123”      7      “ProgrammerS123”      입출력 예 설명입출력 예 #1  예제 1번의 my_string에서 인덱스 2부터 overwrite_string의 길이만큼에 해당하는 부분은 “11oWor1”이고 이를 “lloWorl”로 바꾼 “HelloWorld”를 return 합니다.입출력 예 #2  예제 2번의 my_string에서 인덱스 7부터 overwrite_string의 길이만큼에 해당하는 부분은 “29b8UYP”이고 이를 “merS123”로 바꾼 “ProgrammerS123”를 return 합니다.Solution  swift에서는 인덱스를 사용해서 String의 각 요소에 접근하는 방법이 안됩니다. (my_string[i] - error) 그래서 String을 Array로 변환하고, 필요한 작업을 처리한 후에 다시 String으로 변환해서 반환해주는 코드를 작성했습니다.import Foundationfunc solution(_ my_string:String, _ overwrite_string:String, _ s:Int) -&gt; String {    var my_array = Array(my_string)    var overwrite_array = Array(overwrite_string)    for i in s..&lt;overwrite_array.count + s {        my_array[i] = overwrite_array[i-s]    }    return String(my_array)}  또한 Array에는 replaceSubrange라는 내부함수가 있어서 이를 사용하는 방법도 있습니다.my_array.replaceSubrange(s...(overwrite_array.count+s-1), with: overwrite_string)"
+  },
+  
+  {
     "title": "Basic9 홀짝 구분하기",
     "url": "/posts/ProgrammersBasic-9/",
     "categories": "Algorithm, Programmers",
@@ -32,23 +49,6 @@
     
     "snippet": "8. 문자열 돌리기문제 설명문자열 str이 주어집니다.문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.제한사항1 ≤ str의 길이 ≤ 10입출력 예입력 #1abcde출력 #1abcdeSolutionimport Foundationlet s1 = readLine()!s1.map {print($0)}",
     "content": "8. 문자열 돌리기문제 설명문자열 str이 주어집니다.문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.제한사항1 ≤ str의 길이 ≤ 10입출력 예입력 #1abcde출력 #1abcdeSolutionimport Foundationlet s1 = readLine()!s1.map {print($0)}"
-  },
-  
-  {
-    "title": "Basic10 문자열 겹쳐쓰기",
-    "url": "/posts/ProgrammersBasic-10/",
-    "categories": "Algorithm, Programmers",
-    "tags": "Algorithm, SwiftAlgorithm",
-    "date": "2024-01-11 00:00:00 +0900",
-    
-
-
-
-
-
-    
-    "snippet": "10. - 문자열 겹쳐쓰기문제 설명문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  my_string와 overwr...",
-    "content": "10. - 문자열 겹쳐쓰기문제 설명문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  my_string와 overwrite_string은 숫자와 알파벳으로 이루어져 있습니다.  1 ≤ overwrite_string의 길이 ≤ my_string의 길이 ≤ 1,000  0 ≤ s ≤ my_string의 길이 - overwrite_string의 길이입출력 예            my_string      overwrite_string      s      result                  “He11oWor1d”      “lloWorl”      2      “HelloWorld”              “Program29b8UYP”      “merS123”      7      “ProgrammerS123”      입출력 예 설명입출력 예 #1  예제 1번의 my_string에서 인덱스 2부터 overwrite_string의 길이만큼에 해당하는 부분은 “11oWor1”이고 이를 “lloWorl”로 바꾼 “HelloWorld”를 return 합니다.입출력 예 #2  예제 2번의 my_string에서 인덱스 7부터 overwrite_string의 길이만큼에 해당하는 부분은 “29b8UYP”이고 이를 “merS123”로 바꾼 “ProgrammerS123”를 return 합니다.Solution"
   },
   
   {
@@ -86,7 +86,7 @@
   },
   
   {
-    "title": "Basic4-5",
+    "title": "Basic4~5",
     "url": "/posts/ProgrammersBasic-4~5/",
     "categories": "Algorithm, Programmers",
     "tags": "Algorithm, SwiftAlgorithm",
@@ -103,7 +103,7 @@
   },
   
   {
-    "title": "Basic1-3",
+    "title": "Basic1~3",
     "url": "/posts/ProgrammersBasic-1~3/",
     "categories": "Algorithm, Programmers",
     "tags": "Algorithm, SwiftAlgorithm",

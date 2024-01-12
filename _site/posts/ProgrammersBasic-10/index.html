@@ -38,8 +38,8 @@
 <meta property="og:title" content="Basic10 문자열 겹쳐쓰기" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="10. - 문자열 겹쳐쓰기" />
-<meta property="og:description" content="10. - 문자열 겹쳐쓰기" />
+<meta name="description" content="10. 문자열 겹쳐쓰기" />
+<meta property="og:description" content="10. 문자열 겹쳐쓰기" />
 <link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-10/" />
 <meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-10/" />
 <meta property="og:site_name" content="jay1261" />
@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-11T00:00:00+09:00","datePublished":"2024-01-11T00:00:00+09:00","description":"10. - 문자열 겹쳐쓰기","headline":"Basic10 문자열 겹쳐쓰기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-10/"},"url":"http://localhost:4000/posts/ProgrammersBasic-10/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-11T00:00:00+09:00","datePublished":"2024-01-11T00:00:00+09:00","description":"10. 문자열 겹쳐쓰기","headline":"Basic10 문자열 겹쳐쓰기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-10/"},"url":"http://localhost:4000/posts/ProgrammersBasic-10/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -738,9 +738,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="239 words"
+  title="397 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -749,7 +749,7 @@
   </header>
 
   <div class="content">
-    <h2 id="10---문자열-겹쳐쓰기"><span class="me-2">10. - 문자열 겹쳐쓰기</span><a href="#10---문자열-겹쳐쓰기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="10-문자열-겹쳐쓰기"><span class="me-2">10. 문자열 겹쳐쓰기</span><a href="#10-문자열-겹쳐쓰기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <h3 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
@@ -814,10 +814,46 @@
 
 <h3 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
+<blockquote>
+  <p>swift에서는 인덱스를 사용해서 String의 각 요소에 접근하는 방법이 안됩니다. (my_string[i] - error) 그래서 String을 Array로 변환하고, 필요한 작업을 처리한 후에 다시 String으로 변환해서 반환해주는 코드를 작성했습니다.</p>
+</blockquote>
+
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">overwrite_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">s</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">my_array</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+    <span class="k">var</span> <span class="nv">overwrite_array</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">overwrite_string</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">s</span><span class="o">..&lt;</span><span class="n">overwrite_array</span><span class="o">.</span><span class="n">count</span> <span class="o">+</span> <span class="n">s</span> <span class="p">{</span>
+        <span class="n">my_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">overwrite_array</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">s</span><span class="p">]</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">my_array</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote>
+  <p>또한 Array에는 replaceSubrange라는 내부함수가 있어서 이를 사용하는 방법도 있습니다.</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>my_array.replaceSubrange(s...(overwrite_array.count+s-1), with: overwrite_string)
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
@@ -943,14 +979,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ProgrammersBasic-10/">Basic10 문자열 겹쳐쓰기</a>
+          <a href="/posts/ProgrammersBasic-8/">Basic8 문자열 돌리기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ProgrammersBasic-8/">Basic8 문자열 돌리기</a>
+          <a href="/posts/ProgrammersBasic-9/">Basic9 홀짝 구분하기</a>
         </li>
       
     </ul>
@@ -1244,31 +1280,31 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1351,7 +1387,7 @@
   Jan  9, 2024
 </time>
 
-              <h4 class="pt-0 my-2">Basic1-3</h4>
+              <h4 class="pt-0 my-2">Basic1~3</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1413,7 +1449,7 @@ impor...
   Jan 10, 2024
 </time>
 
-              <h4 class="pt-0 my-2">Basic4-5</h4>
+              <h4 class="pt-0 my-2">Basic4~5</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1537,22 +1573,18 @@ let n = readLine()!.components(s...
 
   
     <a
-      href="/posts/ProgrammersBasic-7/"
+      href="/posts/ProgrammersBasic-9/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic7 문자열 붙여서 출력하기</p>
+      <p>Basic9 홀짝 구분하기</p>
     </a>
   
 
   
-    <a
-      href="/posts/ProgrammersBasic-8/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Basic8 문자열 돌리기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
