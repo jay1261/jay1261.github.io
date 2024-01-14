@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Basic8 문자열 돌리기" />
+<meta property="og:title" content="Basic18 홀짝에 따라 다른 값 반환하기" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="8. 문자열 돌리기" />
-<meta property="og:description" content="8. 문자열 돌리기" />
-<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-8/" />
-<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-8/" />
+<meta name="description" content="문제: 홀짝에 따라 다른 값 반환하기 문제 설명" />
+<meta property="og:description" content="문제: 홀짝에 따라 다른 값 반환하기 문제 설명" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-18/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-18/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-11T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-14T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Basic8 문자열 돌리기" />
+<meta property="twitter:title" content="Basic18 홀짝에 따라 다른 값 반환하기" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-11T00:00:00+09:00","datePublished":"2024-01-11T00:00:00+09:00","description":"8. 문자열 돌리기","headline":"Basic8 문자열 돌리기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-8/"},"url":"http://localhost:4000/posts/ProgrammersBasic-8/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-14T00:00:00+09:00","datePublished":"2024-01-14T00:00:00+09:00","description":"문제: 홀짝에 따라 다른 값 반환하기 문제 설명","headline":"Basic18 홀짝에 따라 다른 값 반환하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-18/"},"url":"http://localhost:4000/posts/ProgrammersBasic-18/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Basic8 문자열 돌리기 | jay1261
+  <title>Basic18 홀짝에 따라 다른 값 반환하기 | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Basic8 문자열 돌리기</span>
+              <span>Basic18 홀짝에 따라 다른 값 반환하기</span>
             
 
           
@@ -574,8 +574,29 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
+  
+
+  
+  
+
+  
+
+  
+  
+
   
 
   
@@ -622,29 +643,8 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
-  
-
-  
-  
-
-  
-
-  
-  
-
   
 
 
@@ -657,7 +657,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Basic8 문자열 돌리기</h1>
+    <h1 data-toc-skip>Basic18 홀짝에 따라 다른 값 반환하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -673,13 +673,13 @@
 
 <time
   
-  data-ts="1704898800"
+  data-ts="1705158000"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 11, 2024
+  Jan 14, 2024
 </time>
 
       </span>
@@ -727,9 +727,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="107 words"
+  title="484 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -738,49 +738,65 @@
   </header>
 
   <div class="content">
-    <h2 id="8-문자열-돌리기"><span class="me-2">8. 문자열 돌리기</span><a href="#8-문자열-돌리기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="문제-홀짝에-따라-다른-값-반환하기"><span class="me-2">문제: 홀짝에 따라 다른 값 반환하기</span><a href="#문제-홀짝에-따라-다른-값-반환하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h6 id="문제-설명">문제 설명</h6>
 
-<h3 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>문자열 <code class="language-plaintext highlighter-rouge">str</code>이 주어집니다.<br />
-문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.</p>
+<p>양의 정수 <code class="language-plaintext highlighter-rouge">n</code>이 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">n</code>이 홀수라면 <code class="language-plaintext highlighter-rouge">n</code> 이하의 홀수인 모든 양의 정수의 합을 return 하고 <code class="language-plaintext highlighter-rouge">n</code>이 짝수라면 <code class="language-plaintext highlighter-rouge">n</code> 이하의 짝수인 모든 양의 정수의 제곱의 합을 return 하는 solution 함수를 작성해 주세요.</p>
 
 <hr />
 
-<h3 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h5 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
-<p>1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 10</p>
+<ul>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 100</li>
+</ul>
+
+<hr />
+
+<h5 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>n</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>220</td>
+    </tr>
+  </tbody>
+</table></div>
 
 <hr />
 
-<h3 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h5 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
-<p>입력 #1</p>
+<p>입출력 예 #1</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>abcde
-</pre></td></tr></tbody></table></code></div></div>
+<ul>
+  <li>예제 1번의 <code class="language-plaintext highlighter-rouge">n</code>은 7로 홀수입니다. 7 이하의 모든 양의 홀수는 1, 3, 5, 7이고 이들의 합인 1 + 3 + 5 + 7 = 16을 return 합니다.</li>
+</ul>
 
-<p>출력 #1</p>
+<p>입출력 예 #2</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre>a
-b
-c
-d
-e
-</pre></td></tr></tbody></table></code></div></div>
+<ul>
+  <li>예제 2번의 <code class="language-plaintext highlighter-rouge">n</code>은 10으로 짝수입니다. 10 이하의 모든 양의 짝수는 2, 4, 6, 8, 10이고 이들의 제곱의 합인 22 + 42 + 62 + 82 + 102 = 4 + 16 + 36 + 64 + 100 = 220을 return 합니다.</li>
+</ul>
 
 <hr />
-<h3 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<blockquote>
+  <p>처음에 적당한 문법이 떠오르지 않아서 <code class="language-plaintext highlighter-rouge">for</code>문, <code class="language-plaintext highlighter-rouge">%</code>연산자를 통해 문제를 해결했습니다.</p>
+</blockquote>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
@@ -789,11 +805,63 @@ e
 3
 4
 5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">...</span><span class="n">n</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">...</span><span class="n">n</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">{</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="n">i</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<span class="n">s1</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span><span class="nf">print</span><span class="p">(</span><span class="nv">$0</span><span class="p">)}</span>
+<blockquote>
+  <p>이후 stride라는 함수를 알게되어서 적용시켜 보았습니다. stride(from: x, through: y, by: z)는 x부터 y까지(through는 y포함 to는 y포함하지 않음) z의 보폭으로 나아간다고 생각하면 이해하기 좋습니다.</p>
+</blockquote>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">stride</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">through</span><span class="p">:</span> <span class="n">n</span><span class="p">,</span> <span class="nv">by</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">){</span><span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">stride</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">through</span><span class="p">:</span> <span class="n">n</span><span class="p">,</span> <span class="nv">by</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">){</span><span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span> <span class="o">*</span> <span class="nv">$1</span><span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
@@ -1232,127 +1300,127 @@ e
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1578,21 +1646,21 @@ e
 
   
     <a
-      href="/posts/ProgrammersBasic-7/"
+      href="/posts/ProgrammersBasic-17/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic7 문자열 붙여서 출력하기</p>
+      <p>Basic17 공배수</p>
     </a>
   
 
   
     <a
-      href="/posts/ProgrammersBasic-9/"
+      href="/posts/ProgrammersBasic-19/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>Basic9 홀짝 구분하기</p>
+      <p>Basic19 조건 문자열</p>
     </a>
   
 </nav>
