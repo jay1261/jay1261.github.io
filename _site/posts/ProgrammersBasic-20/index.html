@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Basic11 문자열 섞기" />
+<meta property="og:title" content="Basic20 flag에 따라 다른 값 반환하기" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="11. 문자열 섞기" />
-<meta property="og:description" content="11. 문자열 섞기" />
-<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-11/" />
-<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-11/" />
+<meta name="description" content="문제: flag에 따라 다른 값 반환하기 문제 설명" />
+<meta property="og:description" content="문제: flag에 따라 다른 값 반환하기 문제 설명" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-20/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-20/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-12T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-14T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Basic11 문자열 섞기" />
+<meta property="twitter:title" content="Basic20 flag에 따라 다른 값 반환하기" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-12T19:46:57+09:00","datePublished":"2024-01-12T00:00:00+09:00","description":"11. 문자열 섞기","headline":"Basic11 문자열 섞기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-11/"},"url":"http://localhost:4000/posts/ProgrammersBasic-11/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-14T00:00:00+09:00","datePublished":"2024-01-14T00:00:00+09:00","description":"문제: flag에 따라 다른 값 반환하기 문제 설명","headline":"Basic20 flag에 따라 다른 값 반환하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-20/"},"url":"http://localhost:4000/posts/ProgrammersBasic-20/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Basic11 문자열 섞기 | jay1261
+  <title>Basic20 flag에 따라 다른 값 반환하기 | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Basic11 문자열 섞기</span>
+              <span>Basic20 flag에 따라 다른 값 반환하기</span>
             
 
           
@@ -574,6 +574,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -581,27 +592,6 @@
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
   
@@ -620,6 +610,17 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -656,7 +657,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Basic11 문자열 섞기</h1>
+    <h1 data-toc-skip>Basic20 flag에 따라 다른 값 반환하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -672,41 +673,18 @@
 
 <time
   
-  data-ts="1704985200"
+  data-ts="1705158000"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 12, 2024
+  Jan 14, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1705056417"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Jan 12, 2024
-</time>
-
-        </span>
       
 
       
@@ -749,7 +727,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="281 words"
+  title="188 words"
 >
   <em>1 min</em> read</span>
 
@@ -760,24 +738,17 @@
   </header>
 
   <div class="content">
-    <h2 id="11-문자열-섞기"><span class="me-2">11. 문자열 섞기</span><a href="#11-문자열-섞기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
+    <h2 id="문제-flag에-따라-다른-값-반환하기"><span class="me-2">문제: flag에 따라 다른 값 반환하기</span><a href="#문제-flag에-따라-다른-값-반환하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <h6 id="문제-설명">문제 설명</h6>
 
-<p>길이가 같은 두 문자열 <code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>가 주어집니다.</p>
-
-<p>두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.</p>
+<p>두 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>와 boolean 변수 <code class="language-plaintext highlighter-rouge">flag</code>가 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">flag</code>가 true면 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code>를 false면 <code class="language-plaintext highlighter-rouge">a</code> - <code class="language-plaintext highlighter-rouge">b</code>를 return 하는 solution 함수를 작성해 주세요.</p>
 
 <hr />
 
 <h5 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
 <ul>
-  <li>1 ≤ <code class="language-plaintext highlighter-rouge">str1</code>의 길이 = <code class="language-plaintext highlighter-rouge">str2</code>의 길이 ≤ 10
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>는 알파벳 소문자로 이루어진 문자열입니다.</li>
-    </ul>
-  </li>
+  <li>-1,000 ≤ <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code> ≤ 1,000</li>
 </ul>
 
 <hr />
@@ -787,26 +758,50 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>str1</th>
-      <th>str2</th>
+      <th>a</th>
+      <th>b</th>
+      <th>flag</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>“aaaaa”</td>
-      <td>“bbbbb”</td>
-      <td>“ababababab”</td>
+      <td>-4</td>
+      <td>7</td>
+      <td>true</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>-4</td>
+      <td>7</td>
+      <td>false</td>
+      <td>-11</td>
     </tr>
   </tbody>
 </table></div>
 
 <hr />
 
-<h3 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h5 id="입출력-예-1"><span class="me-2">입출력 예</span><a href="#입출력-예-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<p>입출력 예 #1</p>
+
+<ul>
+  <li>예제 1번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 true이므로 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> = (-4) + 7 = 3을 return 합니다.</li>
+</ul>
+
+<p>입출력 예 #2</p>
+
+<ul>
+  <li>예제 2번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 false이므로 <code class="language-plaintext highlighter-rouge">a</code> - <code class="language-plaintext highlighter-rouge">b</code> = (-4) - 7 = -11을 return 합니다.</li>
+</ul>
+
+<hr />
+
+<h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <blockquote>
-  <p>이전 문제와 마찬가지로 Array로 변환한 후에 처리한 코드는 아래와 같습니다.</p>
+  <p>3항 연산자를 이용했습니다.</p>
 </blockquote>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -816,52 +811,10 @@
 3
 4
 5
-6
-7
-8
-9
-10
-11
-12
-13
-14
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">str1</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">str2</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]()</span>
-    <span class="k">var</span> <span class="nv">str1Array</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span>
-    <span class="k">var</span> <span class="nv">str2Array</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">str2</span><span class="p">)</span>
-    
-    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">str1</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
-        <span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">str1Array</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-        <span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">str2Array</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="p">}</span>
-    
-    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote>
-  <p>다른 방법으로는, 두 개의 시퀀스를 이용해서 시퀀스 쌍을 만들 수 있는 zip을 이용해서 문제를 풀 수 있습니다.</p>
-</blockquote>
-
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="rouge-code"><pre><span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">str1</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">str2</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="k">in</span> <span class="nf">zip</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">){</span>
-        <span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-        <span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">result</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flag</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">flag</span> <span class="p">?</span> <span class="n">a</span> <span class="o">+</span> <span class="nv">b</span> <span class="p">:</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1313,115 +1266,115 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1690,21 +1643,21 @@
 
   
     <a
-      href="/posts/ProgrammersBasic-10/"
+      href="/posts/ProgrammersBasic-19/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic10 문자열 겹쳐쓰기</p>
+      <p>Basic19 조건 문자열</p>
     </a>
   
 
   
     <a
-      href="/posts/ProgrammersBasic-12/"
+      href="/posts/ProgrammersBasic-21/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>Basic12 문자 리스트를 문자열로 변환하기</p>
+      <p>Basic21 코드 처리하기</p>
     </a>
   
 </nav>
