@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-16T17:29:57+09:00</updated>
+  <updated>2024-01-17T23:33:55+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,77 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Basic29 수열과 구간 쿼리 3</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-29/" rel="alternate" type="text/html" title="Basic29 수열과 구간 쿼리 3" />
+    <published>2024-01-17T00:00:00+09:00</published>
+  
+    <updated>2024-01-17T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-29/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-29/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      문제: 수열과 구간 쿼리 3
+
+문제 설명
+
+정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [i, j] 꼴입니다.
+
+각 query마다 순서대로 arr[i]의 값과 arr[j]의 값을 서로 바꿉니다.
+
+위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
+
+
+
+제한사항
+
+
+  1 ≤ arr의 길이 ≤ 1,000
+    
+      0 ≤ arr의 원소 ≤ 1,000,000
+    
+  
+  1 ≤ queries의 길이 ≤ 1,000
+    
+      0 ≤ i &amp;lt; j &amp;lt; arr의 길이
+    
+  
+
+
+
+
+입출력 예
+
+
+  
+    
+      arr
+   ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -218,7 +289,7 @@
     <link href="http://localhost:4000/posts/ProgrammersBasic-25/" rel="alternate" type="text/html" title="Basic25 이어 붙인 수" />
     <published>2024-01-15T00:00:00+09:00</published>
   
-    <updated>2024-01-15T00:00:00+09:00</updated>
+    <updated>2024-01-17T14:51:59+09:00</updated>
   
     <id>http://localhost:4000/posts/ProgrammersBasic-25/</id>
     <content src="http://localhost:4000/posts/ProgrammersBasic-25/" />
@@ -289,90 +360,6 @@
 
 
   홀수만 이...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic24 원소들의 곱과 합</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-24/" rel="alternate" type="text/html" title="Basic24 원소들의 곱과 합" />
-    <published>2024-01-15T00:00:00+09:00</published>
-  
-    <updated>2024-01-15T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-24/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-24/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 원소들의 곱과 합
-문제 설명
-
-정수가 담긴 리스트 num_list가 주어질 때, 모든 원소들의 곱이 모든 원소들의 합의 제곱보다 작으면 1을 크면 0을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  2 ≤ num_list의 길이 ≤ 10
-  1 ≤ num_list의 원소 ≤ 9
-
-
-
-
-입출력 예
-
-
-  
-    
-      num_list
-      result
-    
-  
-  
-    
-      [3, 4, 5, 2, 1]
-      1
-    
-    
-      [5, 7, 8, 3]
-      0
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #1
-
-
-  모든 원소의 곱은 120, 합의 제곱은 225이므로 1을 return합니다.
-
-
-입출력 예 #2
-...
     </summary>
   
 
