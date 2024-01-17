@@ -1,5 +1,5 @@
 ---
-title: "Basic25 이어 붙인 수\x1c"
+title: Basic25 이어 붙인 수
 author: jay
 date: 2024-01-15
 categories:
@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## 문제: 이어 붙인 수
+## 문제: 이어 붙인 수
 
 ###### 문제 설명
 
