@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-17T23:33:55+09:00</updated>
+  <updated>2024-01-18T23:52:49+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,66 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Basic30 수열과 구간 쿼리 2</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-30/" rel="alternate" type="text/html" title="Basic30 수열과 구간 쿼리 2" />
+    <published>2024-01-18T00:00:00+09:00</published>
+  
+    <updated>2024-01-18T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-30/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-30/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      문제: 수열과 구간 쿼리 2
+
+문제 설명
+
+정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [s, e, k] 꼴입니다.
+
+각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 k보다 크면서 가장 작은 arr[i]를 찾습니다.
+
+각 쿼리의 순서에 맞게 답을 저장한 배열을 반환하는 solution 함수를 완성해 주세요.
+단, 특정 쿼리의 답이 존재하지 않으면 -1을 저장합니다.
+
+
+
+제한사항
+
+
+  1 ≤ arr의 길이 ≤ 1,000
+    
+      0 ≤ arr의 원소 ≤ 1,000,000
+    
+  
+  1 ≤ queries의 길이 ≤ 1,000
+    
+      0 ≤ s ≤ e &amp;lt; arr의 길이
+   ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -278,88 +338,6 @@
 입출력 예 설명
 
 입...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic25 이어 붙인 수</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-25/" rel="alternate" type="text/html" title="Basic25 이어 붙인 수" />
-    <published>2024-01-15T00:00:00+09:00</published>
-  
-    <updated>2024-01-17T14:51:59+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-25/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-25/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 이어 붙인 수
-
-문제 설명
-
-정수가 담긴 리스트 num_list가 주어집니다. num_list의 홀수만 순서대로 이어 붙인 수와 짝수만 순서대로 이어 붙인 수의 합을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  2 ≤ num_list의 길이 ≤ 10
-  1 ≤ num_list의 원소 ≤ 9
-  num_list에는 적어도 한 개씩의 짝수와 홀수가 있습니다.
-
-
-
-
-입출력 예
-
-
-  
-    
-      num_list
-      result
-    
-  
-  
-    
-      [3, 4, 5, 2, 1]
-      393
-    
-    
-      [5, 7, 8, 3]
-      581
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #1
-
-
-  홀수만 이...
     </summary>
   
 
