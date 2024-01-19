@@ -73,3 +73,15 @@ func solution(_ arr:[Int], _ queries:[[Int]]) -> [Int] {
     return result
 }
 ```
+
+> `map`과 `filter`를 사용해서 코드를 줄인 방법도 있습니다. 
+
+```swift
+func solution(_ arr:[Int], _ queries:[[Int]]) -> [Int] {
+    let result = queries.map {
+        let (s, e, k) = ($0[0], $0[1], $0[2])
+        return arr[s...e].filter{$0 > k}.min() ?? -1
+    }
+    return result
+}
+```

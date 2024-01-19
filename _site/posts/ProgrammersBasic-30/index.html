@@ -727,7 +727,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="402 words"
+  title="461 words"
 >
   <em>2 min</em> read</span>
 
@@ -845,6 +845,28 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">map</code>과 <code class="language-plaintext highlighter-rouge">filter</code>를 사용해서 코드를 줄인 방법도 있습니다.</p>
+</blockquote>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">queries</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="p">(</span><span class="nv">s</span><span class="p">,</span> <span class="nv">e</span><span class="p">,</span> <span class="nv">k</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nv">$0</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="nv">$0</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">arr</span><span class="p">[</span><span class="n">s</span><span class="o">...</span><span class="n">e</span><span class="p">]</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span><span class="nv">$0</span> <span class="o">&gt;</span> <span class="n">k</span><span class="p">}</span><span class="o">.</span><span class="nf">min</span><span class="p">()</span> <span class="p">??</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
   </div>
 
   <div class="post-tail-wrapper text-muted">
@@ -947,6 +969,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/ProgrammersBasic-31/">Basic31 수열과 구간 쿼리 4</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/ProgrammersBasic-30/">Basic30 수열과 구간 쿼리 2</a>
         </li>
       
@@ -969,13 +998,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/ProgrammersBasic-27/">Basic27 수 조작하기 1</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/ProgrammersBasic-28/">Basic28 수 조작하기 2</a>
         </li>
       
     </ul>
@@ -1265,6 +1287,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1597,48 +1631,6 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/ProgrammersBasic-21/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1705158000"
-  data-df="ll"
-  
->
-  Jan 14, 2024
-</time>
-
-              <h4 class="pt-0 my-2">Basic21 코드 처리하기</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  문제: 코드 처리하기
-문제 설명
-
-문자열 code가 주어집니다.
-code를 앞에서부터 읽으면서 만약 문자가 “1”이면 mode를 바꿉니다. mode에 따라 code를 읽어가면서 문자열 ret을 만들어냅니다.
-
-mode는 0과 1이 있으며, idx를 0 부터 code의 길이 - 1 까지 1씩 키워나가면서 code[idx]의 값에 따라 다음과 같이 행동합...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
           <a href="/posts/ProgrammersBasic-22/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -1721,6 +1713,63 @@ mode는 0과 1이 있으며, idx를 0 부터 code의 길이 - 1 까지 1씩 �
           </a>
         </article>
       
+        <article class="col">
+          <a href="/posts/ProgrammersBasic-24/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705244400"
+  data-df="ll"
+  
+>
+  Jan 15, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Basic24 원소들의 곱과 합</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  문제: 원소들의 곱과 합
+문제 설명
+
+정수가 담긴 리스트 num_list가 주어질 때, 모든 원소들의 곱이 모든 원소들의 합의 제곱보다 작으면 1을 크면 0을 return하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  2 ≤ num_list의 길이 ≤ 10
+  1 ≤ num_list의 원소 ≤ 9
+
+
+
+
+입출력 예
+
+
+  
+    
+...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1745,9 +1794,13 @@ mode는 0과 1이 있으며, idx를 0 부터 code의 길이 - 1 까지 1씩 �
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/ProgrammersBasic-31/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Basic31 수열과 구간 쿼리 4</p>
+    </a>
   
 </nav>
 
