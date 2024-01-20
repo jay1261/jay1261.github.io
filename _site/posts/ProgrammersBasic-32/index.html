@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Basic20 flag에 따라 다른 값 반환하기" />
+<meta property="og:title" content="Basic32 배열 만들기 2" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="문제: flag에 따라 다른 값 반환하기 문제 설명" />
-<meta property="og:description" content="문제: flag에 따라 다른 값 반환하기 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-20/" />
-<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-20/" />
+<meta name="description" content="문제: 배열 만들기 2" />
+<meta property="og:description" content="문제: 배열 만들기 2" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-32/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-32/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-14T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-20T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Basic20 flag에 따라 다른 값 반환하기" />
+<meta property="twitter:title" content="Basic32 배열 만들기 2" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-14T00:00:00+09:00","datePublished":"2024-01-14T00:00:00+09:00","description":"문제: flag에 따라 다른 값 반환하기 문제 설명","headline":"Basic20 flag에 따라 다른 값 반환하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-20/"},"url":"http://localhost:4000/posts/ProgrammersBasic-20/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-20T00:00:00+09:00","datePublished":"2024-01-20T00:00:00+09:00","description":"문제: 배열 만들기 2","headline":"Basic32 배열 만들기 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-32/"},"url":"http://localhost:4000/posts/ProgrammersBasic-32/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Basic20 flag에 따라 다른 값 반환하기 | jay1261
+  <title>Basic32 배열 만들기 2 | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Basic20 flag에 따라 다른 값 반환하기</span>
+              <span>Basic32 배열 만들기 2</span>
             
 
           
@@ -657,7 +657,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Basic20 flag에 따라 다른 값 반환하기</h1>
+    <h1 data-toc-skip>Basic32 배열 만들기 2</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -673,13 +673,13 @@
 
 <time
   
-  data-ts="1705158000"
+  data-ts="1705676400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 14, 2024
+  Jan 20, 2024
 </time>
 
       </span>
@@ -727,7 +727,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="188 words"
+  title="235 words"
 >
   <em>1 min</em> read</span>
 
@@ -738,17 +738,20 @@
   </header>
 
   <div class="content">
-    <h2 id="문제-flag에-따라-다른-값-반환하기"><span class="me-2">문제: flag에 따라 다른 값 반환하기</span><a href="#문제-flag에-따라-다른-값-반환하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="문제-배열-만들기-2"><span class="me-2">문제: 배열 만들기 2</span><a href="#문제-배열-만들기-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <h6 id="문제-설명">문제 설명</h6>
 
-<p>두 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>와 boolean 변수 <code class="language-plaintext highlighter-rouge">flag</code>가 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">flag</code>가 true면 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code>를 false면 <code class="language-plaintext highlighter-rouge">a</code> - <code class="language-plaintext highlighter-rouge">b</code>를 return 하는 solution 함수를 작성해 주세요.</p>
+<p>정수 <code class="language-plaintext highlighter-rouge">l</code>과 <code class="language-plaintext highlighter-rouge">r</code>이 주어졌을 때, <code class="language-plaintext highlighter-rouge">l</code> 이상 <code class="language-plaintext highlighter-rouge">r</code>이하의 정수 중에서 숫자 “0”과 “5”로만 이루어진 모든 정수를 오름차순으로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.</p>
+
+<p>만약 그러한 정수가 없다면, -1이 담긴 배열을 return 합니다.</p>
 
 <hr />
 
 <h5 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
 <ul>
-  <li>-1,000 ≤ <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code> ≤ 1,000</li>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">l</code> ≤ <code class="language-plaintext highlighter-rouge">r</code> ≤ 1,000,000</li>
 </ul>
 
 <hr />
@@ -758,64 +761,49 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>a</th>
-      <th>b</th>
-      <th>flag</th>
+      <th>l</th>
+      <th>r</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>-4</td>
-      <td>7</td>
-      <td>true</td>
-      <td>3</td>
+      <td>5</td>
+      <td>555</td>
+      <td>[5, 50, 55, 500, 505, 550, 555]</td>
     </tr>
     <tr>
-      <td>-4</td>
-      <td>7</td>
-      <td>false</td>
-      <td>-11</td>
+      <td>10</td>
+      <td>20</td>
+      <td>[-1]</td>
     </tr>
   </tbody>
 </table></div>
 
 <hr />
 
-<h5 id="입출력-예-1"><span class="me-2">입출력 예</span><a href="#입출력-예-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h5 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
 <p>입출력 예 #1</p>
 
 <ul>
-  <li>예제 1번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 true이므로 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> = (-4) + 7 = 3을 return 합니다.</li>
+  <li>5 이상 555 이하의 0과 5로만 이루어진 정수는 작은 수부터 5, 50, 55, 500, 505, 550, 555가 있습니다. 따라서 [5, 50, 55, 500, 505, 550, 555]를 return 합니다.</li>
 </ul>
 
 <p>입출력 예 #2</p>
 
 <ul>
-  <li>예제 2번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 false이므로 <code class="language-plaintext highlighter-rouge">a</code> - <code class="language-plaintext highlighter-rouge">b</code> = (-4) - 7 = -11을 return 합니다.</li>
+  <li>10 이상 20 이하이면서 0과 5로만 이루어진 정수는 없습니다. 따라서 [-1]을 return 합니다.</li>
 </ul>
 
 <hr />
 
 <h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<blockquote>
-  <p>3항 연산자를 이용했습니다.</p>
-</blockquote>
-
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
-
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flag</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">flag</span> <span class="p">?</span> <span class="n">a</span> <span class="o">+</span> <span class="nv">b</span> <span class="p">:</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
-<span class="p">}</span>
+</pre></td><td class="rouge-code"><pre>
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
@@ -1242,151 +1230,151 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1757,22 +1745,18 @@
 
   
     <a
-      href="/posts/ProgrammersBasic-19/"
+      href="/posts/ProgrammersBasic-31/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic19 조건 문자열</p>
+      <p>Basic31 수열과 구간 쿼리 4</p>
     </a>
   
 
   
-    <a
-      href="/posts/ProgrammersBasic-21/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Basic21 코드 처리하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

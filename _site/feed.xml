@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-19T16:11:14+09:00</updated>
+  <updated>2024-01-20T23:06:53+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,91 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Basic32 배열 만들기 2</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-32/" rel="alternate" type="text/html" title="Basic32 배열 만들기 2" />
+    <published>2024-01-20T00:00:00+09:00</published>
+  
+    <updated>2024-01-20T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-32/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-32/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      문제: 배열 만들기 2
+
+문제 설명
+
+정수 l과 r이 주어졌을 때, l 이상 r이하의 정수 중에서 숫자 “0”과 “5”로만 이루어진 모든 정수를 오름차순으로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.
+
+만약 그러한 정수가 없다면, -1이 담긴 배열을 return 합니다.
+
+
+
+제한사항
+
+
+  1 ≤ l ≤ r ≤ 1,000,000
+
+
+
+
+입출력 예
+
+
+  
+    
+      l
+      r
+      result
+    
+  
+  
+    
+      5
+      555
+      [5, 50, 55, 500, 505, 550, 555]
+    
+    
+      10
+      20
+      [-1]
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+
+  ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -86,7 +171,7 @@
     <link href="http://localhost:4000/posts/ProgrammersBasic-30/" rel="alternate" type="text/html" title="Basic30 수열과 구간 쿼리 2" />
     <published>2024-01-18T00:00:00+09:00</published>
   
-    <updated>2024-01-18T00:00:00+09:00</updated>
+    <updated>2024-01-19T16:16:46+09:00</updated>
   
     <id>http://localhost:4000/posts/ProgrammersBasic-30/</id>
     <content src="http://localhost:4000/posts/ProgrammersBasic-30/" />
@@ -263,65 +348,6 @@
 
 
   2 ≤ numL...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic27 수 조작하기 1</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-27/" rel="alternate" type="text/html" title="Basic27 수 조작하기 1" />
-    <published>2024-01-16T00:00:00+09:00</published>
-  
-    <updated>2024-01-16T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-27/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-27/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 수 조작하기 1
-
-문제 설명
-
-정수 n과 문자열 control이 주어집니다. control은 “w”, “a”, “s”, “d”의 4개의 문자로 이루어져 있으며, control의 앞에서부터 순서대로 문자에 따라 n의 값을 바꿉니다.
-
-
-  “w” : n이 1 커집니다.
-  ”s” : n이 1 작아집니다.
-  “d” : n이 10 커집니다.
-  “a” : n이 10 작아집니다.
-
-
-위 규칙에 따라 n을 바꿨을 때 가장 마지막에 나오는 n의 값을 return 하는 solution 함수를 완성해 주세요.
-
-
-
-제한사항
-
-
-  -100,000 ≤ n ≤ 100,000
-  1 ≤ control의 길이 ≤ 100,000
-    
-      control은 알파벳 소문자 “w”, “a”, “s”, “d”로 이...
     </summary>
   
 
