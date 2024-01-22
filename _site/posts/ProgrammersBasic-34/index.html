@@ -35,24 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="typography" />
+<meta property="og:title" content="Basic34 콜라츠 수열 만들기" />
+<meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="개발 일지" />
-<meta property="og:description" content="개발 일지" />
-<link rel="canonical" href="http://localhost:4000/tags/typography/" />
-<meta property="og:url" content="http://localhost:4000/tags/typography/" />
+<meta name="description" content="문제: 콜라츠 수열 만들기" />
+<meta property="og:description" content="문제: 콜라츠 수열 만들기" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-34/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-34/" />
 <meta property="og:site_name" content="jay1261" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-01-22T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="typography" />
+<meta property="twitter:title" content="Basic34 콜라츠 수열 만들기" />
 <meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"개발 일지","headline":"typography","url":"http://localhost:4000/tags/typography/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-22T00:00:00+09:00","datePublished":"2024-01-22T00:00:00+09:00","description":"문제: 콜라츠 수열 만들기","headline":"Basic34 콜라츠 수열 만들기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-34/"},"url":"http://localhost:4000/posts/ProgrammersBasic-34/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>typography | jay1261
+  <title>Basic34 콜라츠 수열 만들기 | jay1261
   </title>
 
   <!--
@@ -104,9 +107,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -460,16 +470,10 @@
           
         
           
-            <span>
-              <a href="/tags">
-                Tags
-              </a>
-            </span>
-          
         
           
             
-              <span>typography</span>
+              <span>Basic34 콜라츠 수열 만들기</span>
             
 
           
@@ -483,7 +487,7 @@
     </button>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -509,27 +513,156 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
-  
-    
+  <header>
+    <h1 data-toc-skip>Basic34 콜라츠 수열 만들기</h1>
 
-
-
-<div id="page-tag">
-  <h1 class="ps-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    typography
-    <span class="lead text-muted ps-2">1</span>
-  </h1>
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/test/">Test</a>
-        <span class="dash flex-grow-1"></span>
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -540,22 +673,285 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1565235180"
+  data-ts="1705849200"
   data-df="ll"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
-  Aug  8, 2019
+  Jan 22, 2024
 </time>
 
-      </li>
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                <a href="https://github.com/jay1261/">jay1261</a>
+                
+              
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="394 words"
+>
+  <em>2 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h2 id="문제-콜라츠-수열-만들기"><span class="me-2">문제: 콜라츠 수열 만들기</span><a href="#문제-콜라츠-수열-만들기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h6 id="문제-설명">문제 설명</h6>
+
+<p>모든 자연수 <code class="language-plaintext highlighter-rouge">x</code>에 대해서 현재 값이 <code class="language-plaintext highlighter-rouge">x</code>이면 <code class="language-plaintext highlighter-rouge">x</code>가 짝수일 때는 2로 나누고, <code class="language-plaintext highlighter-rouge">x</code>가 홀수일 때는 <code class="language-plaintext highlighter-rouge">3 * x + 1</code>로 바꾸는 계산을 계속해서 반복하면 언젠가는 반드시  <code class="language-plaintext highlighter-rouge">x</code>가 1이 되는지 묻는 문제를 콜라츠 문제라고 부릅니다.</p>
+
+<p>그리고 위 과정에서 거쳐간 모든 수를 기록한 수열을 콜라츠 수열이라고 부릅니다.</p>
+
+<p>계산 결과 1,000 보다 작거나 같은 수에 대해서는 전부 언젠가 1에 도달한다는 것이 알려져 있습니다. </p>
+
+<p>임의의 1,000 보다 작거나 같은 양의 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어질 때 초기값이 <code class="language-plaintext highlighter-rouge">n</code>인 콜라츠 수열을 return 하는 solution 함수를 완성해 주세요.</p>
+
+<hr />
+
+<h5 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<ul>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 1,000</li>
+</ul>
+
+<hr />
+
+<h5 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>n</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>[10, 5, 16, 8, 4, 2, 1]</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<hr />
+
+<h5 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<p>입출력 예 #1</p>
+
+<ul>
+  <li>순서대로 연산한 결과를 표로 만들면 다음과 같습니다.</li>
+</ul>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>연산 횟수</th>
+      <th>x</th>
+      <th>홀짝 여부</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>10</td>
+      <td>짝수</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5</td>
+      <td>홀수</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>16</td>
+      <td>짝수</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>8</td>
+      <td>짝수</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td>짝수</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>짝수</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+      <td>홀수</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<ul>
+  <li>따라서 [10, 5, 16, 8, 4, 2, 1]을 return 합니다.</li>
+</ul>
+
+<hr />
+
+<h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span><span class="p">]</span>
+    <span class="k">var</span> <span class="nv">current</span> <span class="o">=</span> <span class="n">n</span>
     
-  </ul>
+    <span class="k">while</span> <span class="n">current</span> <span class="o">!=</span> <span class="mi">1</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="n">current</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+            <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="p">{</span>
+            <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span>
+        <span class="p">}</span>
+        <span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">current</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/algorithm/">Algorithm</a>,
+          <a href="/categories/programmers/">Programmers</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/algorithm/"
+            class="post-tag no-text-decoration"
+          >Algorithm</a>
+        
+          <a
+            href="/tags/swiftalgorithm/"
+            class="post-tag no-text-decoration"
+          >SwiftAlgorithm</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
-  
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -862,12 +1258,617 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/ProgrammersBasic-26/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705244400"
+  data-df="ll"
+  
+>
+  Jan 15, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Basic26 마지막 두 원소</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  문제: 마지막 두 원소
+
+문제 설명
+
+정수 리스트 num_list가 주어질 때, 마지막 원소가 그전 원소보다 크면 마지막 원소에서 그전 원소를 뺀 값을 마지막 원소가 그전 원소보다 크지 않다면 마지막 원소를 두 배한 값을 추가하여 return하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  2 ≤ num_list의 길이 ≤ 10
+  1...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/ProgrammersBasic-27/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705330800"
+  data-df="ll"
+  
+>
+  Jan 16, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Basic27 수 조작하기 1</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  문제: 수 조작하기 1
+
+문제 설명
+
+정수 n과 문자열 control이 주어집니다. control은 “w”, “a”, “s”, “d”의 4개의 문자로 이루어져 있으며, control의 앞에서부터 순서대로 문자에 따라 n의 값을 바꿉니다.
+
+
+  “w” : n이 1 커집니다.
+  ”s” : n이 1 작아집니다.
+  “d” : n이 10 커집니다.
+  “...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/ProgrammersBasic-28/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705330800"
+  data-df="ll"
+  
+>
+  Jan 16, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Basic28 수 조작하기 2</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  문제: 수 조작하기 2
+문제 설명
+
+정수 배열 numLog가 주어집니다. 처음에 numLog[0]에서 부터 시작해 “w”, “a”, “s”, “d”로 이루어진 문자열을 입력으로 받아 순서대로 다음과 같은 조작을 했다고 합시다.
+
+
+  “w” : 수에 1을 더한다.
+  ”s” : 수에 1을 뺀다.
+  “d” : 수에 10을 더한다.
+  “a” : 수에 ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/ProgrammersBasic-33/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Basic33 카운트 업</p>
+    </a>
+  
+
+  
+    <a
+      href="/posts/ProgrammersBasic-35/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Basic35 배열 만들기 4</p>
+    </a>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1190,6 +2191,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1253,16 +2261,44 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
