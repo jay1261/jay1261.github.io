@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Basic33 카운트 업",
+    "url": "/posts/ProgrammersBasic-33/",
+    "categories": "Algorithm, Programmers",
+    "tags": "Algorithm, SwiftAlgorithm",
+    "date": "2024-01-22 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "문제: 카운트 업문제 설명정수 start_num와 end_num가 주어질 때, start_num부터 end_num까지의 숫자를 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.제한사항  0 ≤ start_num ≤ end_num ≤ 50입출력 예            start_num      end_num      resul...",
+    "content": "문제: 카운트 업문제 설명정수 start_num와 end_num가 주어질 때, start_num부터 end_num까지의 숫자를 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.제한사항  0 ≤ start_num ≤ end_num ≤ 50입출력 예            start_num      end_num      result                  3      10      [3, 4, 5, 6, 7, 8, 9, 10]      입출력 예 설명입출력 예 #1  3부터 10까지의 숫자들을 담은 리스트 [3, 4, 5, 6, 7, 8, 9, 10]를 return합니다.Solutionimport Foundationfunc solution(_ start_num:Int, _ end_num:Int) -&gt; [Int] {    return (start_num...end_num).map{$0}}"
+  },
+  
+  {
     "title": "Basic32 배열 만들기 2",
     "url": "/posts/ProgrammersBasic-32/",
     "categories": "Algorithm, Programmers",

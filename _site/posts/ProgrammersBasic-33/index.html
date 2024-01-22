@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Basic6 덧셈식 출력하기" />
+<meta property="og:title" content="Basic33 카운트 업" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="문제 설명" />
-<meta property="og:description" content="문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-6/" />
-<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-6/" />
+<meta name="description" content="문제: 카운트 업" />
+<meta property="og:description" content="문제: 카운트 업" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-33/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-33/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-10T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-22T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Basic6 덧셈식 출력하기" />
+<meta property="twitter:title" content="Basic33 카운트 업" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-10T00:00:00+09:00","datePublished":"2024-01-10T00:00:00+09:00","description":"문제 설명","headline":"Basic6 덧셈식 출력하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-6/"},"url":"http://localhost:4000/posts/ProgrammersBasic-6/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-22T00:00:00+09:00","datePublished":"2024-01-22T00:00:00+09:00","description":"문제: 카운트 업","headline":"Basic33 카운트 업","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-33/"},"url":"http://localhost:4000/posts/ProgrammersBasic-33/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Basic6 덧셈식 출력하기 | jay1261
+  <title>Basic33 카운트 업 | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Basic6 덧셈식 출력하기</span>
+              <span>Basic33 카운트 업</span>
             
 
           
@@ -574,8 +574,29 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
+  
+
+  
+  
+
+  
+
+  
+  
+
   
 
   
@@ -624,16 +645,6 @@
     
 
     
-  
-
-  
-  
-
-  
-
-  
-  
-
   
 
 
@@ -646,7 +657,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Basic6 덧셈식 출력하기</h1>
+    <h1 data-toc-skip>Basic33 카운트 업</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -662,13 +673,13 @@
 
 <time
   
-  data-ts="1704812400"
+  data-ts="1705849200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 10, 2024
+  Jan 22, 2024
 </time>
 
       </span>
@@ -716,7 +727,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="99 words"
+  title="139 words"
 >
   <em>1 min</em> read</span>
 
@@ -727,47 +738,54 @@
   </header>
 
   <div class="content">
-    <h2 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="문제-카운트-업"><span class="me-2">문제: 카운트 업</span><a href="#문제-카운트-업" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>두 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.</p>
+<h6 id="문제-설명">문제 설명</h6>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>a + b = c
-</pre></td></tr></tbody></table></code></div></div>
+<p>정수 <code class="language-plaintext highlighter-rouge">start_num</code>와 <code class="language-plaintext highlighter-rouge">end_num</code>가 주어질 때, <code class="language-plaintext highlighter-rouge">start_num</code>부터 <code class="language-plaintext highlighter-rouge">end_num</code>까지의 숫자를 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.</p>
 
 <hr />
 
-<h3 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h5 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
 <ul>
-  <li>1 ≤ <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code> ≤ 100</li>
+  <li>0 ≤ <code class="language-plaintext highlighter-rouge">start_num</code> ≤ <code class="language-plaintext highlighter-rouge">end_num</code> ≤ 50</li>
 </ul>
 
 <hr />
 
-<h3 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h5 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
-<p>입력</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>4 5
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>출력</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>4 + 5 = 9
-</pre></td></tr></tbody></table></code></div></div>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>start_num</th>
+      <th>end_num</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>10</td>
+      <td>[3, 4, 5, 6, 7, 8, 9, 10]</td>
+    </tr>
+  </tbody>
+</table></div>
 
 <hr />
 
-<h3 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h5 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<p>입출력 예 #1</p>
+
+<ul>
+  <li>3부터 10까지의 숫자들을 담은 리스트 [3, 4, 5, 6, 7, 8, 9, 10]를 return합니다.</li>
+</ul>
+
+<hr />
+
+<h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
@@ -776,15 +794,11 @@
 3
 4
 5
-6
-7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">n</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="p">)</span><span class="o">!</span> <span class="p">}</span>
-<span class="k">let</span> <span class="p">(</span><span class="nv">a</span><span class="p">,</span> <span class="nv">b</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">n</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">a</span><span class="se">)</span><span class="s"> + </span><span class="se">\(</span><span class="n">b</span><span class="se">)</span><span class="s"> = </span><span class="se">\(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
-
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">start_num</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">end_num</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    <span class="nf">return</span> <span class="p">(</span><span class="n">start_num</span><span class="o">...</span><span class="n">end_num</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
@@ -1211,331 +1225,331 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1743,22 +1757,18 @@
 
   
     <a
-      href="/posts/ProgrammersBasic-4~5/"
+      href="/posts/ProgrammersBasic-32/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic4~5</p>
+      <p>Basic32 배열 만들기 2</p>
     </a>
   
 
   
-    <a
-      href="/posts/ProgrammersBasic-7/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Basic7 문자열 붙여서 출력하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

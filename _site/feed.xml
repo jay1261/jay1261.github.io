@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-21T00:41:07+09:00</updated>
+  <updated>2024-01-22T21:59:24+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,96 @@
 
   
   <entry>
+    <title>Basic33 카운트 업</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-33/" rel="alternate" type="text/html" title="Basic33 카운트 업" />
+    <published>2024-01-22T00:00:00+09:00</published>
+  
+    <updated>2024-01-22T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-33/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-33/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      문제: 카운트 업
+
+문제 설명
+
+정수 start_num와 end_num가 주어질 때, start_num부터 end_num까지의 숫자를 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  0 ≤ start_num ≤ end_num ≤ 50
+
+
+
+
+입출력 예
+
+
+  
+    
+      start_num
+      end_num
+      result
+    
+  
+  
+    
+      3
+      10
+      [3, 4, 5, 6, 7, 8, 9, 10]
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+
+  3부터 10까지의 숫자들을 담은 리스트 [3, 4, 5, 6, 7, 8, 9, 10]를 return합니다.
+
+
+
+
+Solution
+
+i...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Basic32 배열 만들기 2</title>
     <link href="http://localhost:4000/posts/ProgrammersBasic-32/" rel="alternate" type="text/html" title="Basic32 배열 만들기 2" />
     <published>2024-01-20T00:00:00+09:00</published>
   
-    <updated>2024-01-20T00:00:00+09:00</updated>
+    <updated>2024-01-21T00:41:46+09:00</updated>
   
     <id>http://localhost:4000/posts/ProgrammersBasic-32/</id>
     <content src="http://localhost:4000/posts/ProgrammersBasic-32/" />
@@ -291,63 +376,6 @@
     
       arr
    ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic28 수 조작하기 2</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-28/" rel="alternate" type="text/html" title="Basic28 수 조작하기 2" />
-    <published>2024-01-16T00:00:00+09:00</published>
-  
-    <updated>2024-01-16T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-28/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-28/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 수 조작하기 2
-문제 설명
-
-정수 배열 numLog가 주어집니다. 처음에 numLog[0]에서 부터 시작해 “w”, “a”, “s”, “d”로 이루어진 문자열을 입력으로 받아 순서대로 다음과 같은 조작을 했다고 합시다.
-
-
-  “w” : 수에 1을 더한다.
-  ”s” : 수에 1을 뺀다.
-  “d” : 수에 10을 더한다.
-  “a” : 수에 10을 뺀다.
-
-
-그리고 매번 조작을 할 때마다 결괏값을 기록한 정수 배열이 numLog입니다. 즉, numLog[i]는 numLog[0]로부터 총 i번의 조작을 가한 결과가 저장되어 있습니다.
-
-주어진 정수 배열 numLog에 대해 조작을 위해 입력받은 문자열을 return 하는 solution 함수를 완성해 주세요.
-
-
-
-제한사항
-
-
-  2 ≤ numL...
     </summary>
   
 
