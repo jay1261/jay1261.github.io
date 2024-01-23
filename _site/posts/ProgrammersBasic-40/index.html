@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Basic19 조건 문자열" />
+<meta property="og:title" content="Basic40 문자열 여러 번 뒤집기" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="문제: 조건 문자열" />
-<meta property="og:description" content="문제: 조건 문자열" />
-<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-19/" />
-<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-19/" />
+<meta name="description" content="문제: 문자열 여러 번 뒤집기 문제 설명" />
+<meta property="og:description" content="문제: 문자열 여러 번 뒤집기 문제 설명" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-40/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-40/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-14T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-23T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Basic19 조건 문자열" />
+<meta property="twitter:title" content="Basic40 문자열 여러 번 뒤집기" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-14T00:00:00+09:00","datePublished":"2024-01-14T00:00:00+09:00","description":"문제: 조건 문자열","headline":"Basic19 조건 문자열","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-19/"},"url":"http://localhost:4000/posts/ProgrammersBasic-19/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-23T00:00:00+09:00","datePublished":"2024-01-23T00:00:00+09:00","description":"문제: 문자열 여러 번 뒤집기 문제 설명","headline":"Basic40 문자열 여러 번 뒤집기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-40/"},"url":"http://localhost:4000/posts/ProgrammersBasic-40/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Basic19 조건 문자열 | jay1261
+  <title>Basic40 문자열 여러 번 뒤집기 | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Basic19 조건 문자열</span>
+              <span>Basic40 문자열 여러 번 뒤집기</span>
             
 
           
@@ -657,7 +657,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Basic19 조건 문자열</h1>
+    <h1 data-toc-skip>Basic40 문자열 여러 번 뒤집기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -673,13 +673,13 @@
 
 <time
   
-  data-ts="1705158000"
+  data-ts="1705935600"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 14, 2024
+  Jan 23, 2024
 </time>
 
       </span>
@@ -727,9 +727,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="332 words"
+  title="437 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -738,31 +738,20 @@
   </header>
 
   <div class="content">
-    <h2 id="문제-조건-문자열"><span class="me-2">문제: 조건 문자열</span><a href="#문제-조건-문자열" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
+    <h2 id="문제-문자열-여러-번-뒤집기"><span class="me-2">문제: 문자열 여러 번 뒤집기</span><a href="#문제-문자열-여러-번-뒤집기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <h6 id="문제-설명">문제 설명</h6>
 
-<p>문자열에 따라 다음과 같이 두 수의 크기를 비교하려고 합니다. </p>
-
-<ul>
-  <li>두 수가 <code class="language-plaintext highlighter-rouge">n</code>과 <code class="language-plaintext highlighter-rouge">m</code>이라면
-    <ul>
-      <li>”&gt;”, “=” : <code class="language-plaintext highlighter-rouge">n</code> &gt;= <code class="language-plaintext highlighter-rouge">m</code></li>
-      <li>”&lt;”, “=” : <code class="language-plaintext highlighter-rouge">n</code> &lt;= <code class="language-plaintext highlighter-rouge">m</code></li>
-      <li>”&gt;”, “!” : <code class="language-plaintext highlighter-rouge">n</code> &gt; <code class="language-plaintext highlighter-rouge">m</code></li>
-      <li>”&lt;”, “!” : <code class="language-plaintext highlighter-rouge">n</code> &lt; <code class="language-plaintext highlighter-rouge">m</code></li>
-    </ul>
-  </li>
-</ul>
-
-<p>두 문자열 <code class="language-plaintext highlighter-rouge">ineq</code>와 <code class="language-plaintext highlighter-rouge">eq</code>가 주어집니다. <code class="language-plaintext highlighter-rouge">ineq</code>는 “&lt;”와 “&gt;”중 하나고, <code class="language-plaintext highlighter-rouge">eq</code>는 “=”와 “!”중 하나입니다. 그리고 두 정수 <code class="language-plaintext highlighter-rouge">n</code>과 <code class="language-plaintext highlighter-rouge">m</code>이 주어질 때, <code class="language-plaintext highlighter-rouge">n</code>과 <code class="language-plaintext highlighter-rouge">m</code>이 <code class="language-plaintext highlighter-rouge">ineq</code>와 <code class="language-plaintext highlighter-rouge">eq</code>의 조건에 맞으면 1을 아니면 0을 return하도록 solution 함수를 완성해주세요.</p>
+<p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 이차원 정수 배열 <code class="language-plaintext highlighter-rouge">queries</code>가 매개변수로 주어집니다. <code class="language-plaintext highlighter-rouge">queries</code>의 원소는 [s, e] 형태로, <code class="language-plaintext highlighter-rouge">my_string</code>의 인덱스 s부터 인덱스 e까지를 뒤집으라는 의미입니다. <code class="language-plaintext highlighter-rouge">my_string</code>에 <code class="language-plaintext highlighter-rouge">queries</code>의 명령을 순서대로 처리한 후의 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
 
 <hr />
 
-<h5 id="제한-사항"><span class="me-2">제한 사항</span><a href="#제한-사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h5 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
 <ul>
-  <li>1 ≤ <code class="language-plaintext highlighter-rouge">n</code>, <code class="language-plaintext highlighter-rouge">m</code> ≤ 100</li>
+  <li><code class="language-plaintext highlighter-rouge">my_string</code>은 영소문자로만 이루어져 있습니다.</li>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000</li>
+  <li><code class="language-plaintext highlighter-rouge">queries</code>의 원소는 [s, e]의 형태로 0 ≤ s ≤ e &lt; <code class="language-plaintext highlighter-rouge">my_string</code>의 길이를 만족합니다.</li>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">queries</code>의 길이 ≤ 1,000</li>
 </ul>
 
 <hr />
@@ -772,27 +761,16 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>ineq</th>
-      <th>eq</th>
-      <th>n</th>
-      <th>m</th>
+      <th>my_string</th>
+      <th>queries</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>”&lt;”</td>
-      <td>”=”</td>
-      <td>20</td>
-      <td>50</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>”&gt;”</td>
-      <td>”!”</td>
-      <td>41</td>
-      <td>78</td>
-      <td>0</td>
+      <td>“rermgorpsam”</td>
+      <td>[[2, 3], [0, 7], [5, 9], [6, 10]]</td>
+      <td>“programmers”</td>
     </tr>
   </tbody>
 </table></div>
@@ -801,16 +779,43 @@
 
 <h5 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
-<p>입출력 예 #1</p>
-
 <ul>
-  <li>20 &lt;= 50은 참이기 때문에 1을 return합니다.</li>
-</ul>
+  <li>
+    <p>예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>은 “rermgorpsam”이고 주어진 <code class="language-plaintext highlighter-rouge">queries</code>를 순서대로 처리하면 다음과 같습니다.</p>
 
-<p>입출력 예 #2</p>
+    <div class="table-wrapper"><table>
+      <thead>
+        <tr>
+          <th>queries</th>
+          <th>my_string</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td>“rermgorpsam”</td>
+        </tr>
+        <tr>
+          <td>[2, 3]</td>
+          <td>“remrgorpsam”</td>
+        </tr>
+        <tr>
+          <td>[0, 7]</td>
+          <td>“progrmersam”</td>
+        </tr>
+        <tr>
+          <td>[5, 9]</td>
+          <td>“prograsremm”</td>
+        </tr>
+        <tr>
+          <td>[6, 10]</td>
+          <td>“programmers”</td>
+        </tr>
+      </tbody>
+    </table></div>
 
-<ul>
-  <li>41 &gt; 78은 거짓이기 때문에 0을 return합니다.</li>
+    <p>따라서 “programmers”를 return 합니다.</p>
+  </li>
 </ul>
 
 <hr />
@@ -818,7 +823,7 @@
 <h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <blockquote>
-  <p><code class="language-plaintext highlighter-rouge">switch case</code>문을 사용하여 문제를 해결했습니다.</p>
+  <p>처음 풀이는 조금 복잡했습니다. 먼저 <code class="language-plaintext highlighter-rouge">my_string</code>을 배열로 만들고, <code class="language-plaintext highlighter-rouge">queries</code>에 <code class="language-plaintext highlighter-rouge">reduce(into: array)</code>를 사용해서 <code class="language-plaintext highlighter-rouge">arr.reversed()</code>를 써서 <code class="language-plaintext highlighter-rouge">arr</code>안의 요소들을 뒤집어 주는 방식을 사용했습니다.</p>
 </blockquote>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -837,23 +842,41 @@
 12
 13
 14
-15
-16
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">ineq</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">eq</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">m</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
-    <span class="k">switch</span> <span class="p">(</span><span class="n">ineq</span><span class="p">,</span> <span class="n">eq</span><span class="p">){</span>
-        <span class="k">case</span> <span class="p">(</span><span class="s">"&gt;"</span><span class="p">,</span> <span class="s">"="</span><span class="p">)</span> <span class="p">:</span>
-            <span class="k">return</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
-        <span class="k">case</span> <span class="p">(</span><span class="s">"&lt;"</span><span class="p">,</span> <span class="s">"="</span><span class="p">)</span> <span class="p">:</span>
-            <span class="k">return</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
-        <span class="k">case</span> <span class="p">(</span><span class="s">"&gt;"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">)</span> <span class="p">:</span>
-            <span class="k">return</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
-        <span class="k">case</span> <span class="p">(</span><span class="s">"&lt;"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">)</span> <span class="p">:</span>
-            <span class="k">return</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
-        <span class="k">default</span> <span class="p">:</span>
-            <span class="k">return</span> <span class="n">n</span> <span class="o">==</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+    <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">queries</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="nv">into</span><span class="p">:</span> <span class="n">array</span><span class="p">)</span> <span class="p">{</span> <span class="n">arr</span><span class="p">,</span> <span class="n">q</span> <span class="k">in</span>
+        <span class="k">let</span> <span class="p">(</span><span class="nv">s</span><span class="p">,</span> <span class="nv">e</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">q</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">q</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">let</span> <span class="nv">reversedArray</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">s</span><span class="o">...</span><span class="n">e</span><span class="p">]</span><span class="o">.</span><span class="nf">reversed</span><span class="p">())</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">s</span><span class="o">...</span><span class="n">e</span><span class="p">{</span>
+            <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">reversedArray</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">s</span><span class="p">]</span>
+        <span class="p">}</span>
+        
     <span class="p">}</span>
+    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote>
+  <p>원리는 동일하지만 .reverse() 함수를 알게되어 아래와 같이 코드를 조금 다듬었습니다.</p>
+</blockquote>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+	<span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+    <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">queries</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="nv">into</span><span class="p">:</span> <span class="n">array</span><span class="p">)</span> <span class="p">{</span> <span class="n">arr</span><span class="p">,</span> <span class="n">q</span> <span class="k">in</span>
+        <span class="n">arr</span><span class="p">[</span><span class="n">q</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">q</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">.</span><span class="nf">reverse</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1281,259 +1304,259 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1894,22 +1917,18 @@
 
   
     <a
-      href="/posts/ProgrammersBasic-18/"
+      href="/posts/ProgrammersBasic-39/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic18 홀짝에 따라 다른 값 반환하기</p>
+      <p>Basic39 9로 나눈 나머지</p>
     </a>
   
 
   
-    <a
-      href="/posts/ProgrammersBasic-20/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Basic20 flag에 따라 다른 값 반환하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
