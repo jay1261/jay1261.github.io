@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-22-ProgrammersBasic 35.md",
+                "file": "_posts/2024-01-23-ProgrammersBasic 39.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-22-ProgrammersBasic 35.md",
+                "file": "_posts/2024-01-23-ProgrammersBasic 39.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-22-ProgrammersBasic 35.md",
+                "file": "_posts/2024-01-23-ProgrammersBasic 39.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-22-ProgrammersBasic 35.md"
+                "file": "_posts/2024-01-23-ProgrammersBasic 39.md"
               }
             }
           }
@@ -148,22 +148,26 @@
   },
   "active": "87cac26898cdb079",
   "lastOpenFiles": [
-    "_site/posts/ProgrammersBasic-35/index.html",
-    "_site/posts/ProgrammersBasic-35",
-    "_site/posts/ProgrammersBasic-34-1/index.html",
-    "_site/posts/ProgrammersBasic-34-1",
-    "_posts/2024-01-22-ProgrammersBasic 34.md",
-    "_posts/2024-01-22-ProgrammersBasic 35.md",
-    "_site/posts/ProgrammersBasic-34/index.html",
-    "_site/posts/ProgrammersBasic-34",
-    "_posts/2024-01-22-ProgrammersBasic 33.md",
-    "_site/posts/ProgrammersBasic-33-1/index.html",
-    "_site/posts/ProgrammersBasic-33-1",
+    "_site/posts/ProgrammersBasic-39/index.html",
+    "_site/posts/ProgrammersBasic-39",
+    "_posts/2024-01-23-ProgrammersBasic 38.md",
+    "_posts/2024-01-23-ProgrammersBasic 39.md",
+    "_site/posts/ProgrammersBasic-38/index.html",
+    "_site/posts/ProgrammersBasic-38",
+    "_posts/2024-01-23-ProgrammersBasic 37.md",
+    "_site/posts/ProgrammersBasic-37/index.html",
+    "_site/posts/ProgrammersBasic-37",
+    "_site/posts/ProgrammersBasic-36-1/index.html",
+    "_site/posts/ProgrammersBasic-36-1",
+    "_posts/2024-01-23-ProgrammersBasic 36.md",
     "_posts/2024-01-20-ProgrammersBasic 32.md",
-    "_site/posts/ProgrammersBasic-33/index.html",
-    "_site/posts/ProgrammersBasic-33",
+    "_posts/2024-01-22-ProgrammersBasic 33.md",
+    "_posts/2024-01-22-ProgrammersBasic 34.md",
+    "_site/posts/ProgrammersBasic-36/index.html",
+    "_site/posts/ProgrammersBasic-36",
+    "_site/posts/ProgrammersBasic-35-1/index.html",
+    "_posts/2024-01-22-ProgrammersBasic 35.md",
     "_posts/2024-01-19-ProgrammersBasic 31.md",
-    "_site/posts/ProgrammersBasic-32-1/index.html",
     "_posts/2024-01-18-ProgrammersBasic 30.md",
     "_posts/2024-01-17-ProgrammersBasic 29.md",
     "_posts/2024-01-16-ProgrammersBasic 28.md",
@@ -180,10 +184,6 @@
     "_posts/2024-01-14-ProgrammersBasic 18.md",
     "_posts/2024-01-13-ProgrammersBasic 17.md",
     "_posts/2024-01-13-ProgrammersBasic 16.md",
-    "_posts/2024-01-13-ProgrammersBasic 15.md",
-    "_posts/2024-01-13-ProgrammersBasic 14.md",
-    "_posts/2024-01-10-ProgrammersBasic 7.md",
-    "_posts/2024-01-10-ProgrammersBasic 6.md",
     "무제 파일 1.canvas",
     "무제 파일.canvas",
     "_site/무제 파일 1.canvas",
