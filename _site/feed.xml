@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-24T13:14:50+09:00</updated>
+  <updated>2024-01-24T15:18:12+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,57 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Basic42 부분 문자열 이어 붙여 문자열 만들기</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-42/" rel="alternate" type="text/html" title="Basic42 부분 문자열 이어 붙여 문자열 만들기" />
+    <published>2024-01-24T00:00:00+09:00</published>
+  
+    <updated>2024-01-24T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-42/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-42/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      문제: 부분 문자열 이어 붙여 문자열 만들기
+
+문제 설명
+
+길이가 같은 문자열 배열 my_strings와 이차원 정수 배열 parts가 매개변수로 주어집니다. parts[i]는 [s, e] 형태로, my_string[i]의 인덱스 s부터 인덱스 e까지의 부분 문자열을 의미합니다. 각 my_strings의 원소의 parts에 해당하는 부분 문자열을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.
+
+
+
+제한사항
+
+
+  1 ≤ my_strings의 길이 = parts의 길이 ≤ 100
+  1 ≤ my_strings의 원소의 길이 ≤ 100
+  parts[i]를 [s, e]라 할 때, 다음을 만족합니다.
+    
+      0 ≤ s ≤ e &amp;lt; my_strings[i...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -276,62 +327,6 @@
   
     
       “cv...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic37 주사위 게임 3</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-37/" rel="alternate" type="text/html" title="Basic37 주사위 게임 3" />
-    <published>2024-01-23T00:00:00+09:00</published>
-  
-    <updated>2024-01-23T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-37/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-37/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 주사위 게임 3
-
-문제 설명
-
-1부터 6까지 숫자가 적힌 주사위가 네 개 있습니다. 네 주사위를 굴렸을 때 나온 숫자에 따라 다음과 같은 점수를 얻습니다.
-
-
-  네 주사위에서 나온 숫자가 모두 p로 같다면 1111 × p점을 얻습니다.
-  세 주사위에서 나온 숫자가 p로 같고 나머지 다른 주사위에서 나온 숫자가 q(p ≠ q)라면 (10 × p + q)2 점을 얻습니다.
-  
-    
-      
-        
-          주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) ×
-          p - q
-          점을 얻습니다.
-        
-      
-    
-  
-  어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두...
     </summary>
   
 
