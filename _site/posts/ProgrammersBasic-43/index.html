@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Basic20 flag에 따라 다른 값 반환하기" />
+<meta property="og:title" content="Basic43 문자열의 뒤의 n글자" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="문제: flag에 따라 다른 값 반환하기 문제 설명" />
-<meta property="og:description" content="문제: flag에 따라 다른 값 반환하기 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-20/" />
-<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-20/" />
+<meta name="description" content="문제: 문자열의 뒤의 n글자" />
+<meta property="og:description" content="문제: 문자열의 뒤의 n글자" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-43/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-43/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-14T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-25T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Basic20 flag에 따라 다른 값 반환하기" />
+<meta property="twitter:title" content="Basic43 문자열의 뒤의 n글자" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-14T00:00:00+09:00","datePublished":"2024-01-14T00:00:00+09:00","description":"문제: flag에 따라 다른 값 반환하기 문제 설명","headline":"Basic20 flag에 따라 다른 값 반환하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-20/"},"url":"http://localhost:4000/posts/ProgrammersBasic-20/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-25T00:00:00+09:00","datePublished":"2024-01-25T00:00:00+09:00","description":"문제: 문자열의 뒤의 n글자","headline":"Basic43 문자열의 뒤의 n글자","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-43/"},"url":"http://localhost:4000/posts/ProgrammersBasic-43/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Basic20 flag에 따라 다른 값 반환하기 | jay1261
+  <title>Basic43 문자열의 뒤의 n글자 | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Basic20 flag에 따라 다른 값 반환하기</span>
+              <span>Basic43 문자열의 뒤의 n글자</span>
             
 
           
@@ -657,7 +657,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Basic20 flag에 따라 다른 값 반환하기</h1>
+    <h1 data-toc-skip>Basic43 문자열의 뒤의 n글자</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -673,13 +673,13 @@
 
 <time
   
-  data-ts="1705158000"
+  data-ts="1706108400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 14, 2024
+  Jan 25, 2024
 </time>
 
       </span>
@@ -727,7 +727,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="188 words"
+  title="201 words"
 >
   <em>1 min</em> read</span>
 
@@ -738,17 +738,20 @@
   </header>
 
   <div class="content">
-    <h2 id="문제-flag에-따라-다른-값-반환하기"><span class="me-2">문제: flag에 따라 다른 값 반환하기</span><a href="#문제-flag에-따라-다른-값-반환하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="문제-문자열의-뒤의-n글자"><span class="me-2">문제: 문자열의 뒤의 n글자</span><a href="#문제-문자열의-뒤의-n글자" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <h6 id="문제-설명">문제 설명</h6>
 
-<p>두 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>와 boolean 변수 <code class="language-plaintext highlighter-rouge">flag</code>가 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">flag</code>가 true면 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code>를 false면 <code class="language-plaintext highlighter-rouge">a</code> - <code class="language-plaintext highlighter-rouge">b</code>를 return 하는 solution 함수를 작성해 주세요.</p>
+<p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 정수 <code class="language-plaintext highlighter-rouge">n</code>이 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">my_string</code>의 뒤의 <code class="language-plaintext highlighter-rouge">n</code>글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
 
 <hr />
 
 <h5 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
 <ul>
-  <li>-1,000 ≤ <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code> ≤ 1,000</li>
+  <li><code class="language-plaintext highlighter-rouge">my_string</code>은 숫자와 알파벳으로 이루어져 있습니다.</li>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000</li>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이</li>
 </ul>
 
 <hr />
@@ -758,24 +761,21 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>a</th>
-      <th>b</th>
-      <th>flag</th>
+      <th>my_string</th>
+      <th>n</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>-4</td>
-      <td>7</td>
-      <td>true</td>
-      <td>3</td>
+      <td>“ProgrammerS123”</td>
+      <td>11</td>
+      <td>“grammerS123”</td>
     </tr>
     <tr>
-      <td>-4</td>
-      <td>7</td>
-      <td>false</td>
-      <td>-11</td>
+      <td>“He110W0r1d”</td>
+      <td>5</td>
+      <td>“W0r1d”</td>
     </tr>
   </tbody>
 </table></div>
@@ -787,22 +787,18 @@
 <p>입출력 예 #1</p>
 
 <ul>
-  <li>예제 1번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 true이므로 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> = (-4) + 7 = 3을 return 합니다.</li>
+  <li>예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 뒤의 11글자는 “grammerS123”이므로 이 문자열을 return 합니다.</li>
 </ul>
 
 <p>입출력 예 #2</p>
 
 <ul>
-  <li>예제 2번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 false이므로 <code class="language-plaintext highlighter-rouge">a</code> - <code class="language-plaintext highlighter-rouge">b</code> = (-4) - 7 = -11을 return 합니다.</li>
+  <li>예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 뒤의 5글자는 “W0r1d”이므로 이 문자열을 return 합니다.</li>
 </ul>
 
 <hr />
 
 <h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<blockquote>
-  <p>3항 연산자를 이용했습니다.</p>
-</blockquote>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
@@ -813,8 +809,8 @@
 5
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flag</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">flag</span> <span class="p">?</span> <span class="n">a</span> <span class="o">+</span> <span class="nv">b</span> <span class="p">:</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">suffix</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1242,283 +1238,283 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1887,22 +1883,18 @@ boolean 변수 x1, x2, x3, x4가 매개변수로 주어질 때, 다음의 �
 
   
     <a
-      href="/posts/ProgrammersBasic-19/"
+      href="/posts/ProgrammersBasic-42/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic19 조건 문자열</p>
+      <p>Basic42 부분 문자열 이어 붙여 문자열 만들기</p>
     </a>
   
 
   
-    <a
-      href="/posts/ProgrammersBasic-21/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Basic21 코드 처리하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
