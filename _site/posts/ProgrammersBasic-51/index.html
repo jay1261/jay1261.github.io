@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Basic35 배열 만들기 4" />
+<meta property="og:title" content="Basic51 문자 개수 세기" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="문제: 배열 만들기 4" />
-<meta property="og:description" content="문제: 배열 만들기 4" />
-<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-35/" />
-<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-35/" />
+<meta name="description" content="문제: 문자 개수 세기" />
+<meta property="og:description" content="문제: 문자 개수 세기" />
+<link rel="canonical" href="http://localhost:4000/posts/ProgrammersBasic-51/" />
+<meta property="og:url" content="http://localhost:4000/posts/ProgrammersBasic-51/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-22T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-26T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Basic35 배열 만들기 4" />
+<meta property="twitter:title" content="Basic51 문자 개수 세기" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-22T00:00:00+09:00","datePublished":"2024-01-22T00:00:00+09:00","description":"문제: 배열 만들기 4","headline":"Basic35 배열 만들기 4","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-35/"},"url":"http://localhost:4000/posts/ProgrammersBasic-35/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-01-26T00:00:00+09:00","datePublished":"2024-01-26T00:00:00+09:00","description":"문제: 문자 개수 세기","headline":"Basic51 문자 개수 세기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ProgrammersBasic-51/"},"url":"http://localhost:4000/posts/ProgrammersBasic-51/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Basic35 배열 만들기 4 | jay1261
+  <title>Basic51 문자 개수 세기 | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Basic35 배열 만들기 4</span>
+              <span>Basic51 문자 개수 세기</span>
             
 
           
@@ -657,7 +657,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Basic35 배열 만들기 4</h1>
+    <h1 data-toc-skip>Basic51 문자 개수 세기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -673,13 +673,13 @@
 
 <time
   
-  data-ts="1705849200"
+  data-ts="1706194800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 22, 2024
+  Jan 26, 2024
 </time>
 
       </span>
@@ -727,7 +727,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="406 words"
+  title="538 words"
 >
   <em>2 min</em> read</span>
 
@@ -738,32 +738,18 @@
   </header>
 
   <div class="content">
-    <h2 id="문제-배열-만들기-4"><span class="me-2">문제: 배열 만들기 4</span><a href="#문제-배열-만들기-4" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="문제-문자-개수-세기"><span class="me-2">문제: 문자 개수 세기</span><a href="#문제-문자-개수-세기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <h6 id="문제-설명">문제 설명</h6>
 
-<p>정수 배열 <code class="language-plaintext highlighter-rouge">arr</code>가 주어집니다. <code class="language-plaintext highlighter-rouge">arr</code>를 이용해 새로운 배열 <code class="language-plaintext highlighter-rouge">stk</code>를 만드려고 합니다.</p>
-
-<p>변수 <code class="language-plaintext highlighter-rouge">i</code>를 만들어 초기값을 0으로 설정한 후 <code class="language-plaintext highlighter-rouge">i</code>가 <code class="language-plaintext highlighter-rouge">arr</code>의 길이보다 작으면 다음 작업을 반복합니다.</p>
-
-<ul>
-  <li>만약 <code class="language-plaintext highlighter-rouge">stk</code>가 빈 배열이라면 <code class="language-plaintext highlighter-rouge">arr[i]</code>를 <code class="language-plaintext highlighter-rouge">stk</code>에 추가하고 <code class="language-plaintext highlighter-rouge">i</code>에 1을 더합니다.</li>
-  <li><code class="language-plaintext highlighter-rouge">stk</code>에 원소가 있고, <code class="language-plaintext highlighter-rouge">stk</code>의 마지막 원소가 <code class="language-plaintext highlighter-rouge">arr[i]</code>보다 작으면 <code class="language-plaintext highlighter-rouge">arr[i]</code>를 <code class="language-plaintext highlighter-rouge">stk</code>의 뒤에 추가하고 <code class="language-plaintext highlighter-rouge">i</code>에 1을 더합니다.</li>
-  <li><code class="language-plaintext highlighter-rouge">stk</code>에 원소가 있는데 <code class="language-plaintext highlighter-rouge">stk</code>의 마지막 원소가 <code class="language-plaintext highlighter-rouge">arr[i]</code>보다 크거나 같으면 <code class="language-plaintext highlighter-rouge">stk</code>의 마지막 원소를 <code class="language-plaintext highlighter-rouge">stk</code>에서 제거합니다.</li>
-</ul>
-
-<p>위 작업을 마친 후 만들어진 <code class="language-plaintext highlighter-rouge">stk</code>를 return 하는 solution 함수를 완성해 주세요.</p>
+<p>알파벳 대소문자로만 이루어진 문자열 <code class="language-plaintext highlighter-rouge">my_string</code>이 주어질 때, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘A’의 개수, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘B’의 개수,…, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘Z’의 개수, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘a’의 개수, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘b’의 개수,…, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘z’의 개수를 순서대로 담은 길이 52의 정수 배열을 return 하는 solution 함수를 작성해 주세요.</p>
 
 <hr />
 
 <h5 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
 <ul>
-  <li>1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 길이 ≤ 100,000
-    <ul>
-      <li>1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 원소 ≤ 100,000</li>
-    </ul>
-  </li>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000</li>
 </ul>
 
 <hr />
@@ -773,14 +759,14 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>arr</th>
+      <th>my_string</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>[1, 4, 2, 5, 3]</td>
-      <td>[1, 2, 3]</td>
+      <td>“Programmers”</td>
+      <td>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0]</td>
     </tr>
   </tbody>
 </table></div>
@@ -792,68 +778,22 @@
 <p>입출력 예 #1</p>
 
 <ul>
-  <li>각 작업을 마친 후에 배열의 변화를 나타내면 다음 표와 같습니다.</li>
-</ul>
-
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>i</th>
-      <th>arr[i]</th>
-      <th>stk</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>1</td>
-      <td>[]</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>4</td>
-      <td>[1]</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>2</td>
-      <td>[1, 4]</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>2</td>
-      <td>[1]</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>5</td>
-      <td>[1, 2]</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>3</td>
-      <td>[1, 2, 5]</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>3</td>
-      <td>[1, 2]</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>-</td>
-      <td>[1, 2, 3]</td>
-    </tr>
-  </tbody>
-</table></div>
-
-<ul>
-  <li>따라서 [1, 2, 3]을 return 합니다.</li>
+  <li>예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘P’가 1개, ‘a’가 1개, ‘e’가 1개, ‘g’가 1개, ‘m’이 2개, ‘o’가 1개, ‘r’가 3개, ‘s’가 1개 있으므로 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0]를 return 합니다.</li>
 </ul>
 
 <hr />
 
 <h2 id="solution"><span class="me-2">Solution</span><a href="#solution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">ascii코드</code>의 값을 이용해서 문제를 풀었습니다. 대문자 알파벳은 <code class="language-plaintext highlighter-rouge">65~90</code>까지이고, 소문자 알파벳은 <code class="language-plaintext highlighter-rouge">97~122</code>입니다.</p>
+  <ul>
+    <li>길이 52의 0이담긴 <code class="language-plaintext highlighter-rouge">result 배열</code>을 만듭니다. <code class="language-plaintext highlighter-rouge">0부터 25</code> 인덱스 까지는 대문자, <code class="language-plaintext highlighter-rouge">26부터 51</code>까지는 소문자의 인덱스입니다.</li>
+    <li><code class="language-plaintext highlighter-rouge">my_string</code>의 각 문자들을 돌면서 ascii코드 값이 91 미만이라면 대문자, 이상이면 소문자라고 판멸합니다.</li>
+    <li>대문자라면 65로 나눈 나머지를 구하고, 소문자라면 97로 나눈 나머지에 26을 더해서 각 알파벳의 인덱스를 찾습니다.</li>
+    <li><code class="language-plaintext highlighter-rouge">result 배열</code>에 인덱스 자리에 1을 더해줍니다.</li>
+  </ul>
+</blockquote>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
@@ -864,40 +804,12 @@
 5
 6
 7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">stk</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
-    <span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
-            <span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="k">else</span> <span class="k">if</span> <span class="n">stk</span><span class="o">.</span><span class="n">last</span><span class="o">!</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">{</span>
-            <span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="k">else</span> <span class="p">{</span>
-            <span class="n">stk</span><span class="o">.</span><span class="nf">removeLast</span><span class="p">()</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    
-    <span class="k">return</span> <span class="n">stk</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="nv">repeating</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="nv">count</span><span class="p">:</span> <span class="mi">52</span><span class="p">)</span>
+    <span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">asciiValue</span><span class="o">!</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">91</span> <span class="p">?</span> <span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">asciiValue</span><span class="o">!</span><span class="p">)</span> <span class="o">%</span> <span class="mi">65</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">asciiValue</span><span class="o">!</span><span class="p">)</span> <span class="o">%</span> <span class="mi">97</span> <span class="o">+</span> <span class="mi">26</span><span class="p">}</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="n">result</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1325,199 +1237,199 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2048,22 +1960,18 @@
 
   
     <a
-      href="/posts/ProgrammersBasic-34/"
+      href="/posts/ProgrammersBasic-50/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic34 콜라츠 수열 만들기</p>
+      <p>Basic50 qr code</p>
     </a>
   
 
   
-    <a
-      href="/posts/ProgrammersBasic-36/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Basic36 간단한 논리 연산</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

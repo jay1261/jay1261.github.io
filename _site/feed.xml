@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-25T22:20:32+09:00</updated>
+  <updated>2024-01-26T12:04:51+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,70 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Basic51 문자 개수 세기</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-51/" rel="alternate" type="text/html" title="Basic51 문자 개수 세기" />
+    <published>2024-01-26T00:00:00+09:00</published>
+  
+    <updated>2024-01-26T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-51/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-51/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      문제: 문자 개수 세기
+
+문제 설명
+
+알파벳 대소문자로만 이루어진 문자열 my_string이 주어질 때, my_string에서 ‘A’의 개수, my_string에서 ‘B’의 개수,…, my_string에서 ‘Z’의 개수, my_string에서 ‘a’의 개수, my_string에서 ‘b’의 개수,…, my_string에서 ‘z’의 개수를 순서대로 담은 길이 52의 정수 배열을 return 하는 solution 함수를 작성해 주세요.
+
+
+
+제한사항
+
+
+  1 ≤ my_string의 길이 ≤ 1,000
+
+
+
+
+입출력 예
+
+
+  
+    
+      my_string
+      result
+    
+  
+  
+    
+      “Programmers”
+      [0, 0, 0, 0, 0, 0, 0, 0, ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -294,81 +358,6 @@
       my_string
       is_prefix
   ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic46 문자열의 앞의 n글자</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-46/" rel="alternate" type="text/html" title="Basic46 문자열의 앞의 n글자" />
-    <published>2024-01-25T00:00:00+09:00</published>
-  
-    <updated>2024-01-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-46/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-46/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 문자열의 앞의 n글자
-
-문제 설명
-
-문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string의 앞의 n글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  my_string은 숫자와 알파벳으로 이루어져 있습니다.
-  1 ≤ my_string의 길이 ≤ 1,000
-  1 ≤ n ≤ my_string의 길이
-
-
-
-
-입출력 예
-
-
-  
-    
-      my_string
-      n
-      result
-    
-  
-  
-    
-      “ProgrammerS123”
-      11
-      “ProgrammerS”
-    
-    
-      “He110W0r1d”
-      5
-      “He110”
-    
- ...
     </summary>
   
 
