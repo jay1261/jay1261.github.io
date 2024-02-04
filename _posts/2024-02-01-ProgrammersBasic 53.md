@@ -1,7 +1,7 @@
 ---
 title: Basic53 글자 지우기
 author: jay
-date: 2024-01-27
+date: 2024-02-01
 categories:
   - Algorithm
   - Programmers

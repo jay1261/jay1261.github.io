@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-04-ProgrammersBasic 53.md",
+                "file": "_posts/2024-02-02-ProgrammersBasic 55.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-04-ProgrammersBasic 53.md",
+                "file": "_posts/2024-02-02-ProgrammersBasic 55.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-04-ProgrammersBasic 53.md",
+                "file": "_posts/2024-02-02-ProgrammersBasic 55.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-04-ProgrammersBasic 53.md"
+                "file": "_posts/2024-02-02-ProgrammersBasic 55.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "d4b5d5b060f91231",
   "lastOpenFiles": [
+    "_posts/2024-02-02-ProgrammersBasic 54.md",
+    "_posts/2024-02-02-ProgrammersBasic 55.md",
+    "_posts/2024-02-01-ProgrammersBasic 53.md",
     "_posts/2024-01-27-ProgrammersBasic 52.md",
-    "_posts/2024-02-04-ProgrammersBasic 53.md",
     "_posts/2024-01-26-ProgrammersBasic 51.md",
     "_site/posts/ProgrammersBasic-52/index.html",
     "_site/posts/ProgrammersBasic-52",
@@ -182,8 +184,6 @@
     "_posts/2024-01-22-ProgrammersBasic 35.md",
     "_posts/2024-01-19-ProgrammersBasic 31.md",
     "_posts/2024-01-18-ProgrammersBasic 30.md",
-    "_posts/2024-01-17-ProgrammersBasic 29.md",
-    "_posts/2024-01-16-ProgrammersBasic 28.md",
     "무제 파일 1.canvas",
     "무제 파일.canvas",
     "_site/무제 파일 1.canvas",
