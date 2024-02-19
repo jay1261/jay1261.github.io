@@ -70,6 +70,5 @@ func solution(_ arr:[Int], _ query:[Int]) -> [Int] {
         index % 2 == 0 ? result = result[0...q].map{$0} : result = result[q...].map{$0}
         index += 1
     }
-    
 }
 ```
