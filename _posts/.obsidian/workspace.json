@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b092ec9cecc801fa",
+        "id": "579e155f892ff230",
         "type": "tabs",
         "children": [
           {
-            "id": "2f12cb1d989b22ab",
+            "id": "26c030cca1942b57",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2024-02-06-ProgrammersBasic 65.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-02-06-ProgrammersBasic 65.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-02-06-ProgrammersBasic 65.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "2024-02-06-ProgrammersBasic 65.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,11 +138,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2f12cb1d989b22ab",
+  "active": "26c030cca1942b57",
   "lastOpenFiles": [
+    "2024-02-06-ProgrammersBasic 65.md",
     "2024-02-06-ProgrammersBasic 64.md",
     "2024-02-06-ProgrammersBasic 63.md",
-    "2024-02-06-ProgrammersBasic 65.md",
     "2024-02-06-ProgrammersBasic 62.md",
     "2024-02-06-ProgrammersBasic 61.md",
     "2024-02-05-ProgrammersBasic 60.md",
