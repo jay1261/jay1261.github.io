@@ -5,6 +5,7 @@ date: 2024-02-07
 categories:
   - Algorithm
   - Programmers
+  - Basic
 tags:
   - Algorithm
   - SwiftAlgorithm
