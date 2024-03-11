@@ -37,8 +37,7 @@ const resource = [
     '/assets/js/dist/home.min.js',
     '/assets/js/dist/misc.min.js',
     '/assets/js/dist/page.min.js',
-    '/assets/js/dist/post.min.js',
-    '/assets/js/dist/.DS_Store'
+    '/assets/js/dist/post.min.js'
 ];
 
 /* The request url with below domain will be cached */

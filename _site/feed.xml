@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-01-27T21:37:18+09:00</updated>
+  <updated>2024-03-11T19:23:02+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,263 @@
 
   
   <entry>
-    <title>Basic52 배열 만들기 1</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-52/" rel="alternate" type="text/html" title="Basic52 배열 만들기 1" />
-    <published>2024-01-27T00:00:00+09:00</published>
+    <title>SQL Grammer (Where, Between, In, Like)</title>
+    <link href="http://localhost:4000/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" rel="alternate" type="text/html" title="SQL Grammer (Where, Between, In, Like)" />
+    <published>2024-03-11T00:00:00+09:00</published>
   
-    <updated>2024-01-27T00:00:00+09:00</updated>
+    <updated>2024-03-11T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/ProgrammersBasic-52/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-52/" />
+    <id>http://localhost:4000/posts/SQL-Grammer-(Where,-Between,-In,-Like)/</id>
+    <content src="http://localhost:4000/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="MySQL" />
+    
+    <category term="SQL Grammer" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      SQL Grammer (Where, Between, In, Like)
+
+Where
+
+데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
+ex)
+SELECT * FROM customer WHERE age&amp;gt;=20
+
+
+Where를 사용할 때 기본적인 비교 연산자로는 =, &amp;lt;&amp;gt;, &amp;lt;, &amp;lt;=, &amp;gt;, &amp;gt;=이 있습니다
+
+
+  
+    
+      연산자
+      의미
+    
+  
+  
+    
+      =
+      같다
+    
+    
+      &amp;lt;&amp;gt;
+      같지않다
+    
+    
+      &amp;gt;
+      크다
+    
+    
+      &amp;gt;=
+ ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>SQL Grammer (Select, From)</title>
+    <link href="http://localhost:4000/posts/SQL-Grammer-(Select,-From)/" rel="alternate" type="text/html" title="SQL Grammer (Select, From)" />
+    <published>2024-03-11T00:00:00+09:00</published>
+  
+    <updated>2024-03-11T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/SQL-Grammer-(Select,-From)/</id>
+    <content src="http://localhost:4000/posts/SQL-Grammer-(Select,-From)/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="MySQL" />
+    
+    <category term="SQL Grammer" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      SQL Grammer (Select, From)
+
+SQL 이란?
+
+SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
+
+SQL 문장에는 다음 3가지 종류가 있습니다.
+
+  데이터 정의어(Data Definition Language)
+  데이터 조작어(Data Manipulation Language)
+  데이터 제어어(Data Control Language)
+
+
+
+Select
+
+Select는 SQL에서 가장 많이 사용되는 구문입니다. 데이터를 가져오는 기본 명령어로, 데이터를 조회하는 모든 Query에 사용됩니다. 단순하게 데이터베이스가 엑셀처럼 행과 열(...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</title>
+    <link href="http://localhost:4000/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/" rel="alternate" type="text/html" title="SQL Grammer (SUM, AVG, COUNT, MIN, MAX)" />
+    <published>2024-03-11T00:00:00+09:00</published>
+  
+    <updated>2024-03-11T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/</id>
+    <content src="http://localhost:4000/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="MySQL" />
+    
+    <category term="SQL Grammer" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      SQL Grammer (SUM, AVG, COUNT, MIN, MAX)
+
+SUM
+
+선택된 열과 범위의 합계를 반환해줍니다. 예시처럼 customer의 테이블안에 있는 모든 값들의 나이를 더한 값을 얻고 싶을 때 쓸 수 있습니다.
+ex)
+SELECT SUM(age) FROM customers
+
+
+
+
+AVG
+
+sum과 같은 방법으로 사용 가능하며, 평균 값을 구할 때 사용합니다. customer 테이블 안의 age의 평균값을 구하고 싶다면 다음과 같이 사용할 수 있습니다.
+SELECT AVG(age) FROM customers
+
+
+
+
+COUNT
+
+데이터의 개수를 구하는데 사용할 수 있습니다. ()안에 1이나 *을 입력하면 해당 테이블의 전체 카운트를 가져옵니다. distinct를 사용하면 중복되지 않는 값...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Basic70 수열과 구간 쿼리 1</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-70/" rel="alternate" type="text/html" title="Basic70 수열과 구간 쿼리 1" />
+    <published>2024-02-07T00:00:00+09:00</published>
+  
+    <updated>2024-02-21T14:53:49+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-70/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-70/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Algorithm" />
+    
+    <category term="Programmers" />
+    
+    <category term="Basic" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      문제: 수열과 구간 쿼리 1
+문제: 수열과 구간 쿼리 1
+
+문제 설명
+
+정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [s, e] 꼴입니다.
+
+각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 arr[i]에 1을 더합니다.
+
+위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
+
+
+
+제한사항
+
+
+  1 ≤ arr의 길이 ≤ 1,000
+    
+      0 ≤ arr의 원소 ≤ 1,000,000
+    
+  
+  1 ≤ queries의 길이 ≤ 1,000
+    
+      0 ≤ s ≤ e &amp;lt; arr의 길이
+    
+  
+
+
+
+
+입출력 예
+
+
+  ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Basic69 n 보다 커질 때까지 더하기</title>
+    <link href="http://localhost:4000/posts/ProgrammersBasic-69/" rel="alternate" type="text/html" title="Basic69 n 보다 커질 때까지 더하기" />
+    <published>2024-02-07T00:00:00+09:00</published>
+  
+    <updated>2024-02-07T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ProgrammersBasic-69/</id>
+    <content src="http://localhost:4000/posts/ProgrammersBasic-69/" />
     <author>
       <name>jay</name>
     </author>
@@ -48,18 +297,20 @@
 
 
 
-      문제: 배열 만들기 1
+      문제: n 보다 커질 때까지 더하기
+
 문제 설명
 
-정수 n과 k가 주어졌을 때, 1 이상 n이하의 정수 중에서 k의 배수를 오름차순으로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.
+정수 배열 numbers와 정수 n이 매개변수로 주어집니다. numbers의 원소를 앞에서부터 하나씩 더하다가 그 합이 n보다 커지는 순간 이때까지 더했던 원소들의 합을 return 하는 solution 함수를 작성해 주세요.
 
 
 
 제한사항
 
 
-  1 ≤ n ≤ 1,000,000
-  1 ≤ k ≤ min(1,000, n)
+  1 ≤ numbers의 길이 ≤ 100
+  1 ≤ numbers의 원소 ≤ 100
+  0 ≤ n &amp;lt; numbers의 모든 원소의 합
 
 
 
@@ -69,319 +320,19 @@
 
   
     
+      numbers
       n
-      k
       result
     
   
   
     
-      10
-      3
-      [3, 6, 9]
+      [34, 5, 71, 29, 100, 34]
+      123
+      139
     
     
-      15
-      5
-      [5, 10, 15]
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #1
-
-
-  1 이상 10 이하의 3의 배수는 3, 6, 9 이므로 [3, 6, 9]를 return 합니다.
-
-
-입...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic51 문자 개수 세기</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-51/" rel="alternate" type="text/html" title="Basic51 문자 개수 세기" />
-    <published>2024-01-26T00:00:00+09:00</published>
-  
-    <updated>2024-01-26T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-51/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-51/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 문자 개수 세기
-
-문제 설명
-
-알파벳 대소문자로만 이루어진 문자열 my_string이 주어질 때, my_string에서 ‘A’의 개수, my_string에서 ‘B’의 개수,…, my_string에서 ‘Z’의 개수, my_string에서 ‘a’의 개수, my_string에서 ‘b’의 개수,…, my_string에서 ‘z’의 개수를 순서대로 담은 길이 52의 정수 배열을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  1 ≤ my_string의 길이 ≤ 1,000
-
-
-
-
-입출력 예
-
-
-  
-    
-      my_string
-      result
-    
-  
-  
-    
-      “Programmers”
-      [0, 0, 0, 0, 0, 0, 0, 0, ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic50 qr code</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-50/" rel="alternate" type="text/html" title="Basic50 qr code" />
-    <published>2024-01-25T00:00:00+09:00</published>
-  
-    <updated>2024-01-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-50/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-50/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: qr code
-
-문제 설명
-
-두 정수 q, r과 문자열 code가 주어질 때, code의 각 인덱스를 q로 나누었을 때 나머지가 r인 위치의 문자를 앞에서부터 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  0 ≤ r &amp;lt; q ≤ 20
-  r &amp;lt; code의 길이 ≤ 1,000
-  code는 영소문자로만 이루어져 있습니다.
-
-
-
-
-입출력 예
-
-
-  
-    
-      q
-      r
-      code
-      result
-    
-  
-  
-    
-      3
-      1
-      “qjnwezgrpirldywt”
-      “jerry”
-    
-    
-      1
-      0
-      “programmer...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic49 세로 읽기</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-49/" rel="alternate" type="text/html" title="Basic49 세로 읽기" />
-    <published>2024-01-25T00:00:00+09:00</published>
-  
-    <updated>2024-01-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-49/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-49/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 세로 읽기
-
-문제 설명
-
-문자열 my_string과 두 정수 m, c가 주어집니다. my_string을 한 줄에 m 글자씩 가로로 적었을 때 왼쪽부터 세로로 c번째 열에 적힌 글자들을 문자열로 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  my_string은 영소문자로 이루어져 있습니다.
-  1 ≤ m ≤ my_string의 길이 ≤ 1,000
-  m은 my_string 길이의 약수로만 주어집니다.
-  1 ≤ c ≤ m
-
-
-
-
-입출력 예
-
-
-  
-    
-      my_string
-      m
-      c
-      result
-    
-  
-  
-    
-      “ihrhbakrfpndopljhygc”
-      4
-      2
-      “happy...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Basic48 문자열 뒤집기</title>
-    <link href="http://localhost:4000/posts/ProgrammersBasic-48/" rel="alternate" type="text/html" title="Basic48 문자열 뒤집기" />
-    <published>2024-01-25T00:00:00+09:00</published>
-  
-    <updated>2024-01-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ProgrammersBasic-48/</id>
-    <content src="http://localhost:4000/posts/ProgrammersBasic-48/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Algorithm" />
-    
-    <category term="Programmers" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      문제: 문자열 뒤집기
-
-문제 설명
-
-문자열 my_string과 정수 s, e가 매개변수로 주어질 때, my_string에서 인덱스 s부터 인덱스 e까지를 뒤집은 문자열을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  my_string은 숫자와 알파벳으로만 이루어져 있습니다.
-  1 ≤ my_string의 길이 ≤ 1,000
-  0 ≤ s ≤ e &amp;lt; my_string의 길이
-
-
-
-
-입출력 예
-
-
-  
-    
-      my_string
-      s
-      e
-      result
-    
-  
-  
-    
-      “Progra21Sremm3”
-      6
-      12
-      “ProgrammerS123”
-    
-    
-      “Stanl...
+      [58, 44, 27, 10...
     </summary>
   
 
