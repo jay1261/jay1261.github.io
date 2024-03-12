@@ -1,5 +1,5 @@
 ---
-title: SQL Grammer (Replace, Substring, Concat)
+title: SQL Grammer (5) - Replace, Substring, Concat
 author: jay
 date: 2024-03-12
 categories:
@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## SQL Grammer (Replace, Substring, Concat)
+## **SQL Grammer (5) - Replace, Substring, Concat**
 <br />
 ### Replace
 <br />

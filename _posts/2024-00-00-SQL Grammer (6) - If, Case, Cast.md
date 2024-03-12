@@ -1,5 +1,5 @@
 ---
-title: SQL Grammer (If, Case, Cast)
+title: SQL Grammer (6) - If, Case, Cast
 author: jay
 date: 2024-03-12
 categories:
@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## **SQL Grammer (If, Case, Cast)**
+## **SQL Grammer (6) - If, Case, Cast**
 <br />
 
 ### **If**

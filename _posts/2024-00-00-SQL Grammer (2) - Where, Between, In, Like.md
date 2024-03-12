@@ -1,5 +1,5 @@
 ---
-title: SQL Grammer (Where, Between, In, Like)
+title: SQL Grammer (2) - Where, Between, In,
 author: jay
 date: 2024-03-11
 categories:
@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## SQL Grammer (Where, Between, In, Like)
+## SQL Grammer (2) - Where, Between, In,
 <br>
 ### **Where**
 <br>

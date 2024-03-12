@@ -1,5 +1,5 @@
 ---
-title: SQL Grammer (Group By, Order By)
+title: SQL Grammer (4) - Group By, Order By
 author: jay
 date: 2024-03-12
 categories:
@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## **SQL Grammer (Group By, Order By)**
+## **SQL Grammer (4) - Group By, Order By**
 <br />
 ### **Group By**
 <br />

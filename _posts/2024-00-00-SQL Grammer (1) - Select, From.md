@@ -1,5 +1,5 @@
 ---
-title: SQL Grammer (Select, From)
+title: SQL Grammer (1) - Select, From
 author: jay
 date: 2024-03-11
 categories:
@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## SQL Grammer (Select, From)
+## SQL Grammer (1) - Select, From
 <Br>
 ### SQL 이란?
 <Br>

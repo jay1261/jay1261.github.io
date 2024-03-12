@@ -1,5 +1,5 @@
 ---
-title: SQL Grammer (SUM, AVG, COUNT, MIN, MAX)
+title: SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
 author: jay
 date: 2024-03-11
 categories:
@@ -9,7 +9,7 @@ tags:
   - Algorithm
   - SwiftAlgorithm
 ---
-## **SQL Grammer (SUM, AVG, COUNT, MIN, MAX)**
+## **SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX**
 <br>
 ### **SUM**
 
