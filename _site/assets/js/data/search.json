@@ -1,6 +1,57 @@
 [
   
   {
+    "title": "SQL Grammer (Replace, Substring, Concat)",
+    "url": "/posts/SQL-Grammer-(Replace,-Substring,-Concat)/",
+    "categories": "MySQL, SQL Grammer",
+    "tags": "Algorithm, SwiftAlgorithm",
+    "date": "2024-03-12 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "SQL Grammer (Replace, Substring, Concat)Replace특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.ex)SELECT restaurant_name AS \"원래 이름\",         REPLACE (restaurant_name, 'Blue', 'Pi...",
+    "content": "SQL Grammer (Replace, Substring, Concat)Replace특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.ex)SELECT restaurant_name AS \"원래 이름\",         REPLACE (restaurant_name, 'Blue', 'Pink')  FROM food_orders  WHERE restaurant_name LIKE '%Blue Ribbon%'이렇게 하면 기존에 ‘Blue’ 였던 문자가 Pink로 바뀌게 됩니다.            원래이름      바뀐이름              Blue Ribbon Sushi Izakaya      Pink Ribbon Sushi Izakaya              Blue Ribbon Fried Chicken      Pink Ribbon Fried Chicken              Blue Ribbon Fried Chicken      Pink Ribbon Fried Chicken              Blue Ribbon Sushi Izakaya      Pink Ribbon Sushi Izakaya              Blue Ribbon Sushi      Pink Ribbon Sushi              Blue Ribbon Sushi      Pink Ribbon Sushi      Substring특정 문자만 골라서 조회할 수 있는 문법입니다. substr(조회할 컬럼, 시작 위치, 글자 수)의 형태로 사용 가능합니다. 전체 주소에서 앞의 두글자만 추출하고 싶을 때 쓸 수 있습니다 (“서울특별시”에서 “서울”만 추출). 글자 수를 입력하지 않으면 시작위치에서 끝까지 출력됩니다.SELECT addr as \"원래주소\",SUBSTR(addr, 1,2) FROM food_orders            서울특별시 종로구 팔판      서울              경기도 광주시 퇴촌면      경기              경기도 용인시 처인구 양지면 식금리      경기              경기도 인천시 간석동      경기              경기도 평택군 고덕면 문곡리      경기      Concat여러 컬럼에 나눠져있는 문자를 합쳐야할 때 사용할 수 있는 문법입니다. concat(붙이고 싶은 값1, 붙이고 싶은 값2, ...) 의 형태로 사용 가능합니다. “서울특별시”, “음식점” 형태의 값을 [서울] 음식점명으로 변경하고 싶을 때 사용할 수 있습니다.SELECT restaurant_name as \"원래이름\",         CONCAT('[', SUBSTR(addr,1,2), '] ', restaurant_name)  FROM  food_orders  WHERE addr like '%서울%';            Hangawi      [서울] Hangawi              Barbounia      [서울] Barbounia              Empanada Mama (closed)      [서울] Empanada Mama (closed)              The Meatball Shop      [서울] The Meatball Shop              Blue Ribbon Sushi      [서울] Blue Ribbon Sushi              The Meatball Shop      [서울] The Meatball Shop      연습문제  [지역(시도)] 음식점이름(음식종류) 컬럼을 만들고, 총 주문건수 구하기SELECT concat('[' , substr(addr,1,2) ,'] ', restaurant_name, '(', cuisine_type, ')') as \"음식점 상세\",         count(1) as \"총 주문건수\"  from food_orders  group by restaurant_name;  출력 결과            [서울] Hangawi(Korean)      2              [경기] Blue Ribbon Sushi Izakaya(Japanese)      29              [경기] Cafe Habana(Mexican)      16              [경기] Blue Ribbon Fried Chicken(American)      96              [경기] Dirty Bird to Go(American)      4              [경기] Tamarind TriBeCa(Indian)      27              …      …      "
+  },
+  
+  {
+    "title": "SQL Grammer (If, Case, Cast)",
+    "url": "/posts/SQL-Grammer-(If,-Case,-Cast)/",
+    "categories": "MySQL, SQL Grammer",
+    "tags": "Algorithm, SwiftAlgorithm",
+    "date": "2024-03-12 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "SQL Grammer (If, Case, Cast)If조건에 따라 다른 방법을 적용해 값을 얻고 싶을 때 If문을 사용합니다. if(조건, 참일 때 실행, 거짓일 때 실\u001c행)의 형태로 사용합니다. 음식의 타입이 “Korean”이면 한식, 아니면 기타를 출력하는 예시입니다.select restaurant_name,         cuisine_type ...",
+    "content": "SQL Grammer (If, Case, Cast)If조건에 따라 다른 방법을 적용해 값을 얻고 싶을 때 If문을 사용합니다. if(조건, 참일 때 실행, 거짓일 때 실\u001c행)의 형태로 사용합니다. 음식의 타입이 “Korean”이면 한식, 아니면 기타를 출력하는 예시입니다.select restaurant_name,         cuisine_type \"원래 음식 타입\",         if(cuisine_type='Korean', '한식', '기타') \"음식 타입\"  from food_orders;            Hangawi      Korean      한식              Blue Ribbon Sushi Izakaya      Japanese      기타              Cafe Habana      Mexican      기타              Blue Ribbon Fried Chicken      American      기타              Dirty Bird to Go      American      기타      Case조건을 지정하다보면 두개 이상의 조건을 지정해야 할 경우가 있는데, 이러한 때에는 case문이 더 효율적입니다.case when '조건1' then '값1'     when '조건2' then '값2'      ...     else '값3'end의 형태로 사용할 수 있습니다.ex) 10세 이상 30세 미만의 고의 나이와 성로 그룹 나누기(이름도 같이 출력)select case when age between 10 and 19 and gender='male' then '10대 남성'              when age between 10 and 19 and gender='female' then '10대 여성'              when age between 20 and 29 and gender='male' then '20대 남성'              when age between 20 and 29 and gender='female' then '20대 여성'              end as \"고객 분류\",              name, age, gender  from customers  where age between 10 and 29;            고객 분류      name      age      gender              10대 남성      김도진      15      male              10대 여성      정지은      15      female              20대 남성      김하호      21      male              10대 여성      이채원      16      female              10대 여성      박민연      12      female      CastType에 관련한 문제가 발생했을 때 데이터베이스의 값의 타입을 변경해 줄 수 있는 문법입니다.문자 -&gt; 숫자 or 숫자 -&gt; 문자 등cast(컬럼 as 타입)의 형태로 사용가능합니다."
+  },
+  
+  {
+    "title": "SQL Grammer (Group By, Order By)",
+    "url": "/posts/SQL-Grammer-(Group-By,-Order-By)/",
+    "categories": "MySQL, SQL Grammer",
+    "tags": "Algorithm, SwiftAlgorithm",
+    "date": "2024-03-12 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "SQL Grammer (Group By, Order By)Group By데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.ex)select cuisine_type,       sum(price) sum...",
+    "content": "SQL Grammer (Group By, Order By)Group By데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.ex)select cuisine_type,       sum(price) sum_of_pricefrom food_ordersgroup by cuisine_type  출력            cuisine_type      sum_of_price                  Korean      182020              Japanese      7663130              Mexican      1303850              American      9530780      Order By지정한 칼럼을 기준으로 정렬된 값을 얻고 싶을 때 사용하는 문법입니다. 기본 오름차순으로 정렬되며 desc를 사용하면 내림차순으로 정렬할 수 있습니다. Group by의 예시의 바로 아래에 order by sum(price)를 입력해줌으로써 합산된 가격의 오름차순으로 정렬된 값을 얻을 수 있습니다. 내림차순은 order by sum(price) desc를 입력해주면 됩니다.ex)select cuisine_type,       sum(price) sum_of_pricefrom food_ordersgroup by cuisine_typeorder by sum(price)   출력            cuisine_type      sum_of_price                  Vietnamese      90180              Korean      182020              Spanish      227930              Southern      328110              French      356290      "
+  },
+  
+  {
     "title": "SQL Grammer (Where, Between, In, Like)",
     "url": "/posts/SQL-Grammer-(Where,-Between,-In,-Like)/",
     "categories": "MySQL, SQL Grammer",
