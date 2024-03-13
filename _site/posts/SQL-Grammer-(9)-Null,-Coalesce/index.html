@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="SQL Grammer (SUM, AVG, COUNT, MIN, MAX)" />
+<meta property="og:title" content="SQL Grammer (9) - Null, Coalesce" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="SQL Grammer (SUM, AVG, COUNT, MIN, MAX) SUM" />
-<meta property="og:description" content="SQL Grammer (SUM, AVG, COUNT, MIN, MAX) SUM" />
-<link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/" />
-<meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/" />
+<meta name="description" content="SQL Grammer (9) - Null, Coalesce" />
+<meta property="og:description" content="SQL Grammer (9) - Null, Coalesce" />
+<link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/" />
+<meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-11T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-03-12T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="SQL Grammer (SUM, AVG, COUNT, MIN, MAX)" />
+<meta property="twitter:title" content="SQL Grammer (9) - Null, Coalesce" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (SUM, AVG, COUNT, MIN, MAX) SUM","headline":"SQL Grammer (SUM, AVG, COUNT, MIN, MAX)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/"},"url":"http://localhost:4000/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-12T00:00:00+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"SQL Grammer (9) - Null, Coalesce","headline":"SQL Grammer (9) - Null, Coalesce","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/"},"url":"http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>SQL Grammer (SUM, AVG, COUNT, MIN, MAX) | jay1261
+  <title>SQL Grammer (9) - Null, Coalesce | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</span>
+              <span>SQL Grammer (9) - Null, Coalesce</span>
             
 
           
@@ -611,39 +611,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -668,7 +635,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</h1>
+    <h1 data-toc-skip>SQL Grammer (9) - Null, Coalesce</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -684,13 +651,13 @@
 
 <time
   
-  data-ts="1710082800"
+  data-ts="1710169200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar 11, 2024
+  Mar 12, 2024
 </time>
 
       </span>
@@ -738,9 +705,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="350 words"
+  title="525 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -749,68 +716,147 @@
   </header>
 
   <div class="content">
-    <h2 id="sql-grammer-sum-avg-count-min-max"><span class="me-2"><strong>SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</strong></span><a href="#sql-grammer-sum-avg-count-min-max" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="sql-grammer-9---null-coalesce"><span class="me-2"><strong>SQL Grammer (9) - Null, Coalesce</strong></span><a href="#sql-grammer-9---null-coalesce" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p><br /></p>
-<h3 id="sum"><span class="me-2"><strong>SUM</strong></span><a href="#sum" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>선택된 열과 범위의 합계를 반환해줍니다. 예시처럼 customer의 테이블안에 있는 모든 값들의 나이를 더한 값을 얻고 싶을 때 쓸 수 있습니다.</p>
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre><span class="n">ex</span><span class="p">)</span>
-<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
-</pre></td></tr></tbody></table></code></div></div>
+<h3 id="null"><span class="me-2"><strong>Null</strong></span><a href="#null" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
 
-<hr />
+<p>값이 없을 때 <code class="language-plaintext highlighter-rouge">Null</code> 을 이용한다. 숫자 계산같은 함수를 사용할 때 알아두면 좋은 점이 있는데, Null로 처리한 것과 다른 문자로 처리된 경우 계산값이 다르게 나올 수 있다는 것이다.
+MySQL에서는 사용할 수 없는 값이 연산으로 들어오면 자동으로 0으로 간주한다. Avg로 평균을 구하는데 하나의 값이 0으로 들어가면서 자릿수는 차지해버려 평균값을 깎아먹는 역할을 하게된다. 하지만 Null로 되어있다면 완전히 제외되어서 계산에 포함되지 않는다.</p>
 
-<h3 id="avg"><span class="me-2"><strong>AVG</strong></span><a href="#avg" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>sum과 같은 방법으로 사용 가능하며, 평균 값을 구할 때 사용합니다. customer 테이블 안의 age의 평균값을 구하고 싶다면 다음과 같이 사용할 수 있습니다.</p>
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="k">AVG</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<hr />
-
-<h3 id="count"><span class="me-2"><strong>COUNT</strong></span><a href="#count" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>데이터의 개수를 구하는데 사용할 수 있습니다. ()안에 <code class="language-plaintext highlighter-rouge">1</code>이나 <code class="language-plaintext highlighter-rouge">*</code>을 입력하면 해당 테이블의 전체 카운트를 가져옵니다. distinct를 사용하면 중복되지 않는 값을 반환합니다. 예시를 보면 customer_id가 중복되지 않는 값을 반환합니다.</p>
+<p>ex)</p>
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
-<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
-<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span> <span class="n">customer_id</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">food_orders</span>
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">select</span> <span class="n">restaurant_name</span><span class="p">,</span>  
+       <span class="k">avg</span><span class="p">(</span><span class="n">rating</span><span class="p">)</span> <span class="n">average_of_rating</span><span class="p">,</span>  
+       <span class="k">avg</span><span class="p">(</span><span class="n">if</span><span class="p">(</span><span class="n">rating</span><span class="o">&lt;&gt;</span><span class="s1">'Not given'</span><span class="p">,</span> <span class="n">rating</span><span class="p">,</span> <span class="k">null</span><span class="p">))</span> <span class="n">average_of_rating2</span>  
+<span class="k">from</span> <span class="n">food_orders</span>  
+<span class="k">group</span> <span class="k">by</span> <span class="mi">1</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></div></div>
+
+<p>rating이라는 테이블에는 없는 값이 null이 아니라 ‘Not given’이라는 문자로 처리되어 있다. 이 때 2번째줄 처럼 avg를 사용하면 자동으로 ‘Not given’을 0으로 처리하여 연산한다. 하지만 3번째 줄 처럼 ‘Not given’을 null로 변환해서 처리한다면 0으로 간주하지 않고 아예 계산 목록에서 제외시켜 버려서 3번째 값의 숫자가 더 크게 나온다.</p>
+
+<ul>
+  <li>원래 데이터</li>
+</ul>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>restaurant_name</th>
+      <th>rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hangawi</td>
+      <td>Not given</td>
+    </tr>
+    <tr>
+      <td>Blue Ribbon Sushi Izakaya</td>
+      <td>Not given</td>
+    </tr>
+    <tr>
+      <td>Cafe Habana</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Blue Ribbon Fried Chicken</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<ul>
+  <li>출력 결과</li>
+</ul>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>restaurant_name</th>
+      <th>average_of_rating</th>
+      <th>average_of_rating2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blue Ribbon Sushi Izakaya</td>
+      <td>2.689655172413793</td>
+      <td>4.333333333333333</td>
+    </tr>
+    <tr>
+      <td>Cafe Habana</td>
+      <td>2.9375</td>
+      <td>4.2727272727272725</td>
+    </tr>
+    <tr>
+      <td>Blue Ribbon Fried Chicken</td>
+      <td>2.8854166666666665</td>
+      <td>4.328125</td>
+    </tr>
+  </tbody>
+</table></div>
 
 <hr />
 
-<h3 id="min"><span class="me-2"><strong>MIN</strong></span><a href="#min" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="coalesce"><span class="me-2">Coalesce</span><a href="#coalesce" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>선택된 범위 내에서 최소값을 가져오는 문법입니다. “나이가 가장 어린사람”을 찾고 싶을 때 사용 가능합니다.</p>
+<p>조회한 값이 null 이고, 이를 대신해 다른 값으로 사용하고 싶을 때 쓸 수 있습니다. <code class="language-plaintext highlighter-rouge">coalesce(컬럼, 대체값)</code>의 형태로 사용할 수 있습니다. 아래 예시는 null인 값들만 가져와서, “null 제거” 컬럼에 대체된 20이라는 값을 넣어주는 예시입니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="k">MIN</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="k">select</span> <span class="n">b</span><span class="p">.</span><span class="n">name</span><span class="p">,</span>  
+       <span class="n">b</span><span class="p">.</span><span class="n">age</span><span class="p">,</span>  
+       <span class="n">coalesce</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">age</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span> <span class="nv">"null 제거"</span>  
+<span class="k">from</span> <span class="n">food_orders</span> <span class="n">a</span>  
+         <span class="k">left</span> <span class="k">join</span> <span class="n">customers</span> <span class="n">b</span> <span class="k">on</span> <span class="n">a</span><span class="p">.</span><span class="n">customer_id</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">customer_id</span>  
+<span class="k">where</span> <span class="n">b</span><span class="p">.</span><span class="n">age</span> <span class="k">is</span> <span class="k">null</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<hr />
-
-<h3 id="max"><span class="me-2"><strong>MAX</strong></span><a href="#max" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>선택된 범위 내에서 최대값을 가져오는 문법입니다. “나이가 가장 많은사람”을 찾고 싶을 때 사용 가능합니다.</p>
-
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="k">MAX</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
-</pre></td></tr></tbody></table></code></div></div>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>age</th>
+      <th>null 제거</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Null</td>
+      <td>Null</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Null</td>
+      <td>Null</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Null</td>
+      <td>Null</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Null</td>
+      <td>Null</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table></div>
 
   </div>
 
@@ -914,35 +960,35 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Group-By,-Order-By)/">SQL Grammer (Group By, Order By)</a>
+          <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/">SQL Grammer (10) - Pivot tabel, Window function</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(If,-Case,-Cast)/">SQL Grammer (If, Case, Cast)</a>
+          <a href="/posts/SQL-Grammer-(11)-Date/">SQL Grammer (11) - Date</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Replace,-Substring,-Concat)/">SQL Grammer (Replace, Substring, Concat)</a>
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/">SQL Grammer (4) - Group By, Order By</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ProgrammersBasic-70/">Basic70 수열과 구간 쿼리 1</a>
+          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/">SQL Grammer (5) - Replace, Substring, Concat</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</a>
+          <a href="/posts/SQL-Grammer-(6)-If,-Case,-Cast/">SQL Grammer (6) - If, Case, Cast</a>
         </li>
       
     </ul>
@@ -1260,43 +1306,103 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2116,7 +2222,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/SQL-Grammer-(Select,-From)/" class="post-preview card h-100">
+          <a href="/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2135,7 +2241,7 @@
   Mar 11, 2024
 </time>
 
-              <h4 class="pt-0 my-2">SQL Grammer (Select, From)</h4>
+              <h4 class="pt-0 my-2">SQL Grammer (2) - Where, Between, In,</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2144,62 +2250,16 @@
 
 
 
-                  SQL Grammer (Select, From)
-
-SQL 이란?
-
-SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
-
-SQL 문장에는 다음 3가지 종류가 있습니다.
-
-  데이터 정의어(Data Defi...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1710082800"
-  data-df="ll"
-  
->
-  Mar 11, 2024
-</time>
-
-              <h4 class="pt-0 my-2">SQL Grammer (Where, Between, In, Like)</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  SQL Grammer (Where, Between, In, Like)
+                  SQL Grammer (2) - Where, Between, In,
 
 Where
 
 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
-1
-2
 ex)
 SELECT * FROM customer WHERE age&amp;gt;=20
 
 
-Where를 사용할 때 기본적인 비교...
+Where를 사용할 때 기본적인 비교 연산자로...
                 </p>
               </div>
             </div>
@@ -2207,7 +2267,56 @@ Where를 사용할 때 기본적인 비교...
         </article>
       
         <article class="col">
-          <a href="/posts/SQL-Grammer-(Group-By,-Order-By)/" class="post-preview card h-100">
+          <a href="/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710082800"
+  data-df="ll"
+  
+>
+  Mar 11, 2024
+</time>
+
+              <h4 class="pt-0 my-2">SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
+
+SUM
+
+선택된 열과 범위의 합계를 반환해줍니다. 예시처럼 customer의 테이블안에 있는 모든 값들의 나이를 더한 값을 얻고 싶을 때 쓸 수 있습니다.
+ex)
+SELECT SUM(age) FROM customers
+
+
+
+
+AVG
+
+sum과 같은 방법으로 사용 가능하며,...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2226,7 +2335,7 @@ Where를 사용할 때 기본적인 비교...
   Mar 12, 2024
 </time>
 
-              <h4 class="pt-0 my-2">SQL Grammer (Group By, Order By)</h4>
+              <h4 class="pt-0 my-2">SQL Grammer (4) - Group By, Order By</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2235,20 +2344,15 @@ Where를 사용할 때 기본적인 비교...
 
 
 
-                  SQL Grammer (Group By, Order By)
+                  SQL Grammer (4) - Group By, Order By
 
 Group By
 
 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
 
-1
-2
-3
-4
-5
 ex)
 select cuisine_type,
-   ...
+       su...
                 </p>
               </div>
             </div>
@@ -2270,21 +2374,21 @@ select cuisine_type,
 
   
     <a
-      href="/posts/ProgrammersBasic-70/"
+      href="/posts/SQL-Grammer-(8)-Join/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Basic70 수열과 구간 쿼리 1</p>
+      <p>SQL Grammer (8) - Join</p>
     </a>
   
 
   
     <a
-      href="/posts/SQL-Grammer-(Select,-From)/"
+      href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>SQL Grammer (Select, From)</p>
+      <p>SQL Grammer (10) - Pivot tabel, Window function</p>
     </a>
   
 </nav>

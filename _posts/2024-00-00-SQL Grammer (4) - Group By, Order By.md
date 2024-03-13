@@ -34,6 +34,7 @@ group by cuisine_type
 | American     | 9530780      |
 
 
+
 ---
 
 ### **Order By**

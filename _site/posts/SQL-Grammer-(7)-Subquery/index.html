@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="SQL Grammer (Group By, Order By)" />
+<meta property="og:title" content="SQL Grammer (7) - Subquery" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="SQL Grammer (Group By, Order By) Group By 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다. 1 2 3 4 5 ex) select cuisine_type, sum(price) sum_of_price from food_orders group by cuisine_type" />
-<meta property="og:description" content="SQL Grammer (Group By, Order By) Group By 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다. 1 2 3 4 5 ex) select cuisine_type, sum(price) sum_of_price from food_orders group by cuisine_type" />
-<link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(Group-By,-Order-By)/" />
-<meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(Group-By,-Order-By)/" />
+<meta name="description" content="SQL Grammer (7) - Subquery" />
+<meta property="og:description" content="SQL Grammer (7) - Subquery" />
+<link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/" />
+<meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-12T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="SQL Grammer (Group By, Order By)" />
+<meta property="twitter:title" content="SQL Grammer (7) - Subquery" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-12T00:00:00+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"SQL Grammer (Group By, Order By) Group By 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다. 1 2 3 4 5 ex) select cuisine_type, sum(price) sum_of_price from food_orders group by cuisine_type","headline":"SQL Grammer (Group By, Order By)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(Group-By,-Order-By)/"},"url":"http://localhost:4000/posts/SQL-Grammer-(Group-By,-Order-By)/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-12T00:00:00+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"SQL Grammer (7) - Subquery","headline":"SQL Grammer (7) - Subquery","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/"},"url":"http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>SQL Grammer (Group By, Order By) | jay1261
+  <title>SQL Grammer (7) - Subquery | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>SQL Grammer (Group By, Order By)</span>
+              <span>SQL Grammer (7) - Subquery</span>
             
 
           
@@ -600,6 +600,21 @@
 
       
     
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
       
 
       
@@ -613,11 +628,6 @@
     
 
     
-  
-
-  
-  
-
   
 
   
@@ -635,7 +645,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>SQL Grammer (Group By, Order By)</h1>
+    <h1 data-toc-skip>SQL Grammer (7) - Subquery</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -705,9 +715,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="276 words"
+  title="448 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -716,62 +726,13 @@
   </header>
 
   <div class="content">
-    <h2 id="sql-grammer-group-by-order-by"><span class="me-2"><strong>SQL Grammer (Group By, Order By)</strong></span><a href="#sql-grammer-group-by-order-by" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="sql-grammer-7---subquery"><span class="me-2"><strong>SQL Grammer (7) - Subquery</strong></span><a href="#sql-grammer-7---subquery" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p><br /></p>
-<h3 id="group-by"><span class="me-2"><strong>Group By</strong></span><a href="#group-by" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
-<br /></p>
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="n">ex</span><span class="p">)</span>
-<span class="k">select</span> <span class="n">cuisine_type</span><span class="p">,</span>
-       <span class="k">sum</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="n">sum_of_price</span>
-<span class="k">from</span> <span class="n">food_orders</span>
-<span class="k">group</span> <span class="k">by</span> <span class="n">cuisine_type</span>
-</pre></td></tr></tbody></table></code></div></div>
 
-<ul>
-  <li>출력</li>
-</ul>
+<h3 id="subquery"><span class="me-2"><strong>Subquery</strong></span><a href="#subquery" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
 
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>cuisine_type</th>
-      <th>sum_of_price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Korean</td>
-      <td>182020</td>
-    </tr>
-    <tr>
-      <td>Japanese</td>
-      <td>7663130</td>
-    </tr>
-    <tr>
-      <td>Mexican</td>
-      <td>1303850</td>
-    </tr>
-    <tr>
-      <td>American</td>
-      <td>9530780</td>
-    </tr>
-  </tbody>
-</table></div>
-
-<hr />
-
-<h3 id="order-by"><span class="me-2"><strong>Order By</strong></span><a href="#order-by" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-지정한 칼럼을 기준으로 정렬된 값을 얻고 싶을 때 사용하는 문법입니다. 기본 오름차순으로 정렬되며 desc를 사용하면 내림차순으로 정렬할 수 있습니다. Group by의 예시의 바로 아래에 <code class="language-plaintext highlighter-rouge">order by sum(price)</code>를 입력해줌으로써 합산된 가격의 오름차순으로 정렬된 값을 얻을 수 있습니다. 내림차순은 <code class="language-plaintext highlighter-rouge">order by sum(price) desc</code>를 입력해주면 됩니다.</p>
+<p>여러번의 연산을 수행해야할 때, 조건문에 연산 결과를 사용하거나 조건에 Query결과를 사용하고 싶을 때 쓸 수 있는 문법입니다. 복잡한 쿼리문을 효율적으로 작성할 수 있습니다. 기본 구조는 아래와 같습니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
@@ -781,45 +742,164 @@
 4
 5
 6
-</pre></td><td class="rouge-code"><pre><span class="n">ex</span><span class="p">)</span>
-<span class="k">select</span> <span class="n">cuisine_type</span><span class="p">,</span>
-       <span class="k">sum</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="n">sum_of_price</span>
-<span class="k">from</span> <span class="n">food_orders</span>
-<span class="k">group</span> <span class="k">by</span> <span class="n">cuisine_type</span>
-<span class="k">order</span> <span class="k">by</span> <span class="k">sum</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> 
+</pre></td><td class="rouge-code"><pre><span class="k">select</span> <span class="n">column1</span><span class="p">,</span> <span class="n">test</span>
+<span class="k">from</span> <span class="p">(</span>
+	<span class="o">#</span><span class="n">subquery</span>
+	<span class="k">select</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span> <span class="k">as</span> <span class="n">test</span>
+	<span class="k">from</span> <span class="n">table1</span>
+<span class="p">)</span> <span class="n">subq</span>
 </pre></td></tr></tbody></table></code></div></div>
 
+<hr />
+<h4 id="예시"><span class="me-2"><strong>예시</strong></span><a href="#예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p><br /></p>
+
+<p>ex 1) 음식점의 총 주문수량과 주문금액을 연산하고, 주문수량을 기반으로 수수료 할인율 구하기</p>
 <ul>
-  <li>출력</li>
+  <li>할인조건: 수량 5개 이하-&gt; 10%, 수량 15개 초과 &amp; 총 주문금액 300000이상 - 0.5%, 이외 1%</li>
 </ul>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="k">select</span> <span class="n">restaurant_name</span><span class="p">,</span>  
+       <span class="k">case</span> <span class="k">when</span> <span class="n">sum_quantity</span><span class="o">&lt;=</span><span class="mi">5</span> <span class="k">then</span> <span class="mi">10</span>  
+            <span class="k">when</span> <span class="n">sum_quantity</span><span class="o">&gt;</span><span class="mi">15</span> <span class="k">and</span> <span class="n">total_price</span><span class="o">&gt;=</span><span class="mi">300000</span> <span class="k">then</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span>  
+            <span class="k">else</span> <span class="mi">1</span> <span class="k">end</span> <span class="k">as</span> <span class="nv">"수수료 할인률"</span>  
+<span class="k">from</span><span class="p">(</span>  
+<span class="k">select</span> <span class="n">restaurant_name</span><span class="p">,</span>  
+       <span class="k">sum</span><span class="p">(</span><span class="n">quantity</span><span class="p">)</span> <span class="k">as</span> <span class="n">sum_quantity</span><span class="p">,</span>  
+       <span class="k">sum</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">as</span> <span class="n">total_price</span>  
+<span class="k">from</span> <span class="n">food_orders</span>  
+<span class="k">group</span> <span class="k">by</span> <span class="mi">1</span>  
+<span class="p">)</span> <span class="n">a</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>restaurant_name</th>
+      <th>수수료 할인률</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hangawi</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Blue Ribbon Sushi Izakaya</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Cafe Habana</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Blue Ribbon Fried Chicken</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Dirty Bird to Go</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><br />
+<br /></p>
+
+<p>ex 2) 음식 타입별 총 주문수량과 음식점 수를 연산하고, 주문 수량과 음식점 수 별 수수료율 산정하기</p>
+<ul>
+  <li>음식점수 5개이상, 주문수 30개이상 - 0.05%</li>
+  <li>5개이상 30개미만 - 0.08%</li>
+  <li>5개미만, 30개이상 - 1%</li>
+  <li>5개미만, 30개미만 - 2%</li>
+</ul>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="k">select</span> <span class="n">cuisine_type</span><span class="p">,</span>  
+        <span class="n">total_quantity</span><span class="p">,</span>  
+        <span class="n">count_restaurant</span><span class="p">,</span>  
+        <span class="k">case</span> <span class="k">when</span> <span class="n">count_restaurant</span><span class="o">&gt;=</span><span class="mi">5</span> <span class="k">and</span> <span class="n">total_quantity</span><span class="o">&gt;=</span> <span class="mi">30</span> <span class="k">then</span> <span class="mi">0</span><span class="p">.</span><span class="mi">005</span>  
+            <span class="k">when</span> <span class="n">count_restaurant</span><span class="o">&gt;=</span><span class="mi">5</span> <span class="k">and</span> <span class="n">total_quantity</span><span class="o">&lt;</span> <span class="mi">30</span> <span class="k">then</span> <span class="mi">0</span><span class="p">.</span><span class="mi">008</span>  
+            <span class="k">when</span> <span class="n">count_restaurant</span><span class="o">&lt;</span><span class="mi">5</span> <span class="k">and</span> <span class="n">total_quantity</span><span class="o">&gt;=</span> <span class="mi">30</span> <span class="k">then</span> <span class="mi">0</span><span class="p">.</span><span class="mi">01</span>  
+            <span class="k">when</span> <span class="n">count_restaurant</span><span class="o">&lt;</span><span class="mi">5</span> <span class="k">and</span> <span class="n">total_quantity</span><span class="o">&lt;=</span> <span class="mi">30</span> <span class="k">then</span> <span class="mi">0</span><span class="p">.</span><span class="mi">02</span>  
+            <span class="k">end</span> <span class="n">rate</span>  
+<span class="k">from</span>  
+<span class="p">(</span><span class="k">select</span> <span class="n">cuisine_type</span><span class="p">,</span>  
+        <span class="k">sum</span><span class="p">(</span><span class="n">quantity</span><span class="p">)</span> <span class="k">as</span> <span class="s1">'total_quantity'</span><span class="p">,</span>  
+        <span class="k">count</span><span class="p">(</span><span class="k">distinct</span> <span class="n">restaurant_name</span><span class="p">)</span> <span class="s1">'count_restaurant'</span>  
+ <span class="k">from</span> <span class="n">food_orders</span>  
+ <span class="k">group</span> <span class="k">by</span> <span class="mi">1</span>  
+ <span class="p">)</span> <span class="n">a</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 <div class="table-wrapper"><table>
   <thead>
     <tr>
       <th>cuisine_type</th>
-      <th>sum_of_price</th>
+      <th>total_quantity</th>
+      <th>count_restaurant</th>
+      <th>rate</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Vietnamese</td>
-      <td>90180</td>
+      <td>American</td>
+      <td>1763</td>
+      <td>41</td>
+      <td>0.005<br /></td>
     </tr>
     <tr>
-      <td>Korean</td>
-      <td>182020</td>
-    </tr>
-    <tr>
-      <td>Spanish</td>
-      <td>227930</td>
-    </tr>
-    <tr>
-      <td>Southern</td>
-      <td>328110</td>
+      <td>Chinese</td>
+      <td>635</td>
+      <td>16</td>
+      <td>0.005</td>
     </tr>
     <tr>
       <td>French</td>
-      <td>356290</td>
+      <td>57</td>
+      <td>3</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Indian</td>
+      <td>186</td>
+      <td>14</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Italian</td>
+      <td>900</td>
+      <td>31</td>
+      <td>0.005</td>
     </tr>
   </tbody>
 </table></div>
@@ -927,35 +1007,35 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Group-By,-Order-By)/">SQL Grammer (Group By, Order By)</a>
+          <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/">SQL Grammer (10) - Pivot tabel, Window function</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(If,-Case,-Cast)/">SQL Grammer (If, Case, Cast)</a>
+          <a href="/posts/SQL-Grammer-(11)-Date/">SQL Grammer (11) - Date</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Replace,-Substring,-Concat)/">SQL Grammer (Replace, Substring, Concat)</a>
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/">SQL Grammer (4) - Group By, Order By</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ProgrammersBasic-70/">Basic70 수열과 구간 쿼리 1</a>
+          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/">SQL Grammer (5) - Replace, Substring, Concat</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</a>
+          <a href="/posts/SQL-Grammer-(6)-If,-Case,-Cast/">SQL Grammer (6) - If, Case, Cast</a>
         </li>
       
     </ul>
@@ -1273,7 +1353,67 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2129,7 +2269,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/" class="post-preview card h-100">
+          <a href="/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2148,7 +2288,7 @@
   Mar 11, 2024
 </time>
 
-              <h4 class="pt-0 my-2">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</h4>
+              <h4 class="pt-0 my-2">SQL Grammer (2) - Where, Between, In,</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2157,7 +2297,52 @@
 
 
 
-                  SQL Grammer (SUM, AVG, COUNT, MIN, MAX)
+                  SQL Grammer (2) - Where, Between, In,
+
+Where
+
+데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
+ex)
+SELECT * FROM customer WHERE age&amp;gt;=20
+
+
+Where를 사용할 때 기본적인 비교 연산자로...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710082800"
+  data-df="ll"
+  
+>
+  Mar 11, 2024
+</time>
+
+              <h4 class="pt-0 my-2">SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
 
 SUM
 
@@ -2170,7 +2355,7 @@ SELECT SUM(age) FROM customers
 
 AVG
 
-sum과 같은 방법으로 사용 가능하며, 평균 ...
+sum과 같은 방법으로 사용 가능하며,...
                 </p>
               </div>
             </div>
@@ -2178,7 +2363,7 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
         </article>
       
         <article class="col">
-          <a href="/posts/SQL-Grammer-(Select,-From)/" class="post-preview card h-100">
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2190,14 +2375,14 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
 
 <time
   
-  data-ts="1710082800"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Mar 11, 2024
+  Mar 12, 2024
 </time>
 
-              <h4 class="pt-0 my-2">SQL Grammer (Select, From)</h4>
+              <h4 class="pt-0 my-2">SQL Grammer (4) - Group By, Order By</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2206,60 +2391,15 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
 
 
 
-                  SQL Grammer (Select, From)
+                  SQL Grammer (4) - Group By, Order By
 
-SQL 이란?
+Group By
 
-SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
+데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
 
-SQL 문장에는 다음 3가지 종류가 있습니다.
-
-  데이터 정의어(Data Defi...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1710082800"
-  data-df="ll"
-  
->
-  Mar 11, 2024
-</time>
-
-              <h4 class="pt-0 my-2">SQL Grammer (Where, Between, In, Like)</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  SQL Grammer (Where, Between, In, Like)
-
-Where
-
-데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
 ex)
-SELECT * FROM customer WHERE age&amp;gt;=20
-
-
-Where를 사용할 때 기본적인 비교 연산자...
+select cuisine_type,
+       su...
                 </p>
               </div>
             </div>
@@ -2281,21 +2421,21 @@ Where를 사용할 때 기본적인 비교 연산자...
 
   
     <a
-      href="/posts/SQL-Grammer-(Where,-Between,-In,-Like)/"
+      href="/posts/SQL-Grammer-(6)-If,-Case,-Cast/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>SQL Grammer (Where, Between, In, Like)</p>
+      <p>SQL Grammer (6) - If, Case, Cast</p>
     </a>
   
 
   
     <a
-      href="/posts/SQL-Grammer-(If,-Case,-Cast)/"
+      href="/posts/SQL-Grammer-(8)-Join/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>SQL Grammer (If, Case, Cast)</p>
+      <p>SQL Grammer (8) - Join</p>
     </a>
   
 </nav>

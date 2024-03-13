@@ -583,14 +583,14 @@
 <div id="post-list" class="flex-grow-1 px-xl-1">
   
     <article class="card-wrapper card">
-      <a href="/posts/SQL-Grammer-(Replace,-Substring,-Concat)/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(11)-Date/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">SQL Grammer (Replace, Substring, Concat)</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (11) - Date</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -600,15 +600,162 @@
 
 
 
-                SQL Grammer (Replace, Substring, Concat)
+                SQL Grammer (11) - Date
 
-Replace
 
-특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.
+Date
 
-ex)
-SELECT restaurant_name AS &quot;원래 이름&quot;,  
-       REPLACE (restaurant_name, &#39;Bl...
+년, 월, 일, 시, 분, 초 등의 값을 모두 갖고 있으며, 목적에 따라 월, 주, 일 등으로 포맷을 변경할 수 있습니다.
+데이터에 날짜를 지정하거나, 조건에 날짜를 사용해야할 때 유용합니다.
+
+  date_format
+    
+      년: Y(4자리) , y(2자리)
+      월: M,m...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710255600"
+  data-df="ll"
+  
+>
+  Mar 13, 2024
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      MySQL,
+                      SQL Grammer
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (10) - Pivot tabel, Window function</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                SQL Grammer (10) - Pivot tabel, Window function
+
+
+Pivot tabel
+
+
+2개 이상의 기준으로 데이터를 집계할 때, 보기 쉽게 배열하여 보여주는 것을 의미합니다. 집계 기준을 행의 기준으로 잡고, 구분 컬럼으로 데이터를 보여줄 수 있습니다.
+
+select restaurant_name,  
+       max(i...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710255600"
+  data-df="ll"
+  
+>
+  Mar 13, 2024
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      MySQL,
+                      SQL Grammer
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SQL-Grammer-(9)-Null,-Coalesce/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (9) - Null, Coalesce</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                SQL Grammer (9) - Null, Coalesce
+
+
+Null
+
+
+값이 없을 때 Null 을 이용한다. 숫자 계산같은 함수를 사용할 때 알아두면 좋은 점이 있는데, Null로 처리한 것과 다른 문자로 처리된 경우 계산값이 다르게 나올 수 있다는 것이다.
+MySQL에서는 사용할 수 없는 값이 연산으로 들어오면 자동으로 0으로 간주한다. Avg로...
               </p>
             </div>
 
@@ -655,14 +802,14 @@ SELECT restaurant_name AS &quot;원래 이름&quot;,
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/SQL-Grammer-(If,-Case,-Cast)/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(8)-Join/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">SQL Grammer (If, Case, Cast)</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (8) - Join</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -672,7 +819,158 @@ SELECT restaurant_name AS &quot;원래 이름&quot;,
 
 
 
-                SQL Grammer (If, Case, Cast)
+                SQL Grammer (8) - Join
+
+
+Join
+
+
+필요한 데이터가 서로 다른 테이블에 있을 때 사용할 수 있는 문법입니다. 공통 컬럼을 기준으로 두 테이블을 합쳐서 각각 테이블에서 필요한 데이터를 조회할 수 있습니다.
+
+Join의 종류
+
+  Inner Join
+    
+      가장 많이 사용하는 조인으로, 두 테이블 모두에 있는 값만 조회하...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710169200"
+  data-df="ll"
+  
+>
+  Mar 12, 2024
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      MySQL,
+                      SQL Grammer
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SQL-Grammer-(7)-Subquery/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (7) - Subquery</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                SQL Grammer (7) - Subquery
+
+
+Subquery
+
+
+여러번의 연산을 수행해야할 때, 조건문에 연산 결과를 사용하거나 조건에 Query결과를 사용하고 싶을 때 쓸 수 있는 문법입니다. 복잡한 쿼리문을 효율적으로 작성할 수 있습니다. 기본 구조는 아래와 같습니다.
+
+select column1, test
+from (
+	#subquery
+...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710169200"
+  data-df="ll"
+  
+>
+  Mar 12, 2024
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      MySQL,
+                      SQL Grammer
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SQL-Grammer-(6)-If,-Case,-Cast/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (6) - If, Case, Cast</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                SQL Grammer (6) - If, Case, Cast
 
 
 If
@@ -681,7 +979,7 @@ If
 조건에 따라 다른 방법을 적용해 값을 얻고 싶을 때 If문을 사용합니다. if(조건, 참일 때 실행, 거짓일 때 실행)의 형태로 사용합니다. 음식의 타입이 “Korean”이면 한식, 아니면 기타를 출력하는 예시입니다.
 
 select restaurant_name,  
-       cuis...
+       ...
               </p>
             </div>
 
@@ -728,14 +1026,14 @@ select restaurant_name,
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/SQL-Grammer-(Group-By,-Order-By)/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">SQL Grammer (Group By, Order By)</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (5) - Replace, Substring, Concat</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -745,7 +1043,79 @@ select restaurant_name,
 
 
 
-                SQL Grammer (Group By, Order By)
+                SQL Grammer (5) - Replace, Substring, Concat
+
+Replace
+
+특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.
+
+ex)
+SELECT restaurant_name AS &quot;원래 이름&quot;,  
+       REPLACE (restaurant_name,...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710169200"
+  data-df="ll"
+  
+>
+  Mar 12, 2024
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      MySQL,
+                      SQL Grammer
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (4) - Group By, Order By</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                SQL Grammer (4) - Group By, Order By
 
 Group By
 
@@ -753,7 +1123,7 @@ Group By
 
 ex)
 select cuisine_type,
-       sum(pr...
+       su...
               </p>
             </div>
 
@@ -800,14 +1170,14 @@ select cuisine_type,
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">SQL Grammer (Where, Between, In, Like)</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -817,152 +1187,7 @@ select cuisine_type,
 
 
 
-                SQL Grammer (Where, Between, In, Like)
-
-Where
-
-데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
-ex)
-SELECT * FROM customer WHERE age&amp;gt;=20
-
-
-Where를 사용할 때 기본적인 비교 연산자...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1710082800"
-  data-df="ll"
-  
->
-  Mar 11, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      MySQL,
-                      SQL Grammer
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/SQL-Grammer-(Select,-From)/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">SQL Grammer (Select, From)</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                SQL Grammer (Select, From)
-
-SQL 이란?
-
-SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
-
-SQL 문장에는 다음 3가지 종류가 있습니다.
-
-  데이터 정의어(Data Defi...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1710082800"
-  data-df="ll"
-  
->
-  Mar 11, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      MySQL,
-                      SQL Grammer
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                SQL Grammer (SUM, AVG, COUNT, MIN, MAX)
+                SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
 
 SUM
 
@@ -975,7 +1200,7 @@ SELECT SUM(age) FROM customers
 
 AVG
 
-sum과 같은 방법으로 사용 가능하며, 평균 ...
+sum과 같은 방법으로 사용 가능하며,...
               </p>
             </div>
 
@@ -1022,14 +1247,14 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-70/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic70 수열과 구간 쿼리 1</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (2) - Where, Between, In,</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -1039,16 +1264,16 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
 
 
 
-                문제: 수열과 구간 쿼리 1
-문제: 수열과 구간 쿼리 1
+                SQL Grammer (2) - Where, Between, In,
 
-문제 설명
+Where
 
-정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [s, e] 꼴입니다.
+데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
+ex)
+SELECT * FROM customer WHERE age&amp;gt;=20
 
-각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 arr[i]에 1을 더합니다.
 
-위 규칙에 따라 queries를 처리...
+Where를 사용할 때 기본적인 비교 연산자로...
               </p>
             </div>
 
@@ -1066,11 +1291,11 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
 
 <time
   
-  data-ts="1707231600"
+  data-ts="1710082800"
   data-df="ll"
   
 >
-  Feb  7, 2024
+  Mar 11, 2024
 </time>
 
 
@@ -1079,228 +1304,8 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     
-                      Algorithm,
-                      Programmers,
-                      Basic
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-69/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic69 n 보다 커질 때까지 더하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                문제: n 보다 커질 때까지 더하기
-
-문제 설명
-
-정수 배열 numbers와 정수 n이 매개변수로 주어집니다. numbers의 원소를 앞에서부터 하나씩 더하다가 그 합이 n보다 커지는 순간 이때까지 더했던 원소들의 합을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  1 ≤ numbers의 길이 ≤ 100
-  1 ≤ nu...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1707231600"
-  data-df="ll"
-  
->
-  Feb  7, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Algorithm,
-                      Programmers
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-68/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic68 할 일 목록</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                문제: 할 일 목록
-
-문제 설명
-
-오늘 해야 할 일이 담긴 문자열 배열 todo_list와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 finished가 매개변수로 주어질 때, todo_list에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  1 ≤ t...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1707231600"
-  data-df="ll"
-  
->
-  Feb  7, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Algorithm,
-                      Programmers
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-67/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic67 5명씩</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                문제: 5명씩
-
-문제 설명
-
-최대 5명씩 탑승가능한 놀이기구를 타기 위해 줄을 서있는 사람들의 이름이 담긴 문자열 리스트 names가 주어질 때, 앞에서 부터 5명씩 묶은 그룹의 가장 앞에 서있는 사람들의 이름을 담은 리스트를 return하도록 solution 함수를 완성해주세요. 마지막 그룹이 5명이 되지 않더라도 가장 앞에 있는 사람의 이름을 포함...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1707231600"
-  data-df="ll"
-  
->
-  Feb  7, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Algorithm,
-                      Programmers
+                      MySQL,
+                      SQL Grammer
                   </span>
                 
               </div>
@@ -1456,12 +1461,25 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
       
 
       
+        <!-- hide number -->
+        
+      
+    
+      
+      
+      
+      
+      
+
+      
+
+      
         <!-- show number -->
         <li class="page-item ">
           <a
             class="page-link"
-            href="/page8"
-          >8</a>
+            href="/page9"
+          >9</a>
         </li>
       
     
@@ -1469,7 +1487,7 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
     <!-- mobile pagination -->
     <li class="page-index align-middle">
       <span>1</span>
-      <span class="text-muted">/ 8</span>
+      <span class="text-muted">/ 9</span>
     </li>
 
     <!-- right arrow -->
@@ -1516,35 +1534,35 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Group-By,-Order-By)/">SQL Grammer (Group By, Order By)</a>
+          <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/">SQL Grammer (10) - Pivot tabel, Window function</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(If,-Case,-Cast)/">SQL Grammer (If, Case, Cast)</a>
+          <a href="/posts/SQL-Grammer-(11)-Date/">SQL Grammer (11) - Date</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Replace,-Substring,-Concat)/">SQL Grammer (Replace, Substring, Concat)</a>
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/">SQL Grammer (4) - Group By, Order By</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ProgrammersBasic-70/">Basic70 수열과 구간 쿼리 1</a>
+          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/">SQL Grammer (5) - Replace, Substring, Concat</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</a>
+          <a href="/posts/SQL-Grammer-(6)-If,-Case,-Cast/">SQL Grammer (6) - If, Case, Cast</a>
         </li>
       
     </ul>

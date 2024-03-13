@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="SQL Grammer (Replace, Substring, Concat)" />
+<meta property="og:title" content="SQL Grammer (2) - Where, Between, In," />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="SQL Grammer (Replace, Substring, Concat) Replace 특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다." />
-<meta property="og:description" content="SQL Grammer (Replace, Substring, Concat) Replace 특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다." />
-<link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(Replace,-Substring,-Concat)/" />
-<meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(Replace,-Substring,-Concat)/" />
+<meta name="description" content="SQL Grammer (2) - Where, Between, In, Where 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다. 1 2 ex) SELECT * FROM customer WHERE age&gt;=20" />
+<meta property="og:description" content="SQL Grammer (2) - Where, Between, In, Where 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다. 1 2 ex) SELECT * FROM customer WHERE age&gt;=20" />
+<link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" />
+<meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-12T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-03-11T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="SQL Grammer (Replace, Substring, Concat)" />
+<meta property="twitter:title" content="SQL Grammer (2) - Where, Between, In," />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-12T00:00:00+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"SQL Grammer (Replace, Substring, Concat) Replace 특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.","headline":"SQL Grammer (Replace, Substring, Concat)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(Replace,-Substring,-Concat)/"},"url":"http://localhost:4000/posts/SQL-Grammer-(Replace,-Substring,-Concat)/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (2) - Where, Between, In, Where 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다. 1 2 ex) SELECT * FROM customer WHERE age&gt;=20","headline":"SQL Grammer (2) - Where, Between, In,","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/"},"url":"http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>SQL Grammer (Replace, Substring, Concat) | jay1261
+  <title>SQL Grammer (2) - Where, Between, In, | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>SQL Grammer (Replace, Substring, Concat)</span>
+              <span>SQL Grammer (2) - Where, Between, In,</span>
             
 
           
@@ -657,7 +657,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>SQL Grammer (Replace, Substring, Concat)</h1>
+    <h1 data-toc-skip>SQL Grammer (2) - Where, Between, In,</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -673,13 +673,13 @@
 
 <time
   
-  data-ts="1710169200"
+  data-ts="1710082800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar 12, 2024
+  Mar 11, 2024
 </time>
 
       </span>
@@ -727,9 +727,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="654 words"
+  title="407 words"
 >
-  <em>3 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -738,203 +738,101 @@
   </header>
 
   <div class="content">
-    <h2 id="sql-grammer-replace-substring-concat"><span class="me-2">SQL Grammer (Replace, Substring, Concat)</span><a href="#sql-grammer-replace-substring-concat" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="sql-grammer-2---where-between-in"><span class="me-2">SQL Grammer (2) - Where, Between, In,</span><a href="#sql-grammer-2---where-between-in" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p><br /></p>
-<h3 id="replace"><span class="me-2">Replace</span><a href="#replace" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="where"><span class="me-2"><strong>Where</strong></span><a href="#where" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p><br />
-특정 문자를 변경하고자 할 때 사용합니다. <code class="language-plaintext highlighter-rouge">Replace(바꿀컬럼, 현재 값, 바꿀 값)</code> 의 형태로 사용할 수 있습니다.</p>
-
+데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.</p>
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3
-4
-5
 </pre></td><td class="rouge-code"><pre><span class="n">ex</span><span class="p">)</span>
-<span class="k">SELECT</span> <span class="n">restaurant_name</span> <span class="k">AS</span> <span class="nv">"원래 이름"</span><span class="p">,</span>  
-       <span class="k">REPLACE</span> <span class="p">(</span><span class="n">restaurant_name</span><span class="p">,</span> <span class="s1">'Blue'</span><span class="p">,</span> <span class="s1">'Pink'</span><span class="p">)</span>  
-<span class="k">FROM</span> <span class="n">food_orders</span>  
-<span class="k">WHERE</span> <span class="n">restaurant_name</span> <span class="k">LIKE</span> <span class="s1">'%Blue Ribbon%'</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customer</span> <span class="k">WHERE</span> <span class="n">age</span><span class="o">&gt;=</span><span class="mi">20</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>이렇게 하면 기존에 ‘Blue’ 였던 문자가 Pink로 바뀌게 됩니다.</p>
+<p><code class="language-plaintext highlighter-rouge">Where</code>를 사용할 때 기본적인 비교 연산자로는 <code class="language-plaintext highlighter-rouge">=, &lt;&gt;, &lt;, &lt;=, &gt;, &gt;=</code>이 있습니다</p>
 
 <div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>연산자</th>
+      <th>의미</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>원래이름</td>
-      <td>바뀐이름</td>
+      <td>=</td>
+      <td>같다</td>
     </tr>
     <tr>
-      <td>Blue Ribbon Sushi Izakaya</td>
-      <td>Pink Ribbon Sushi Izakaya</td>
+      <td>&lt;&gt;</td>
+      <td>같지않다</td>
     </tr>
     <tr>
-      <td>Blue Ribbon Fried Chicken</td>
-      <td>Pink Ribbon Fried Chicken</td>
+      <td>&gt;</td>
+      <td>크다</td>
     </tr>
     <tr>
-      <td>Blue Ribbon Fried Chicken</td>
-      <td>Pink Ribbon Fried Chicken</td>
+      <td>&gt;=</td>
+      <td>크거나 같다</td>
     </tr>
     <tr>
-      <td>Blue Ribbon Sushi Izakaya</td>
-      <td>Pink Ribbon Sushi Izakaya</td>
+      <td>&lt;</td>
+      <td>작다</td>
     </tr>
     <tr>
-      <td>Blue Ribbon Sushi</td>
-      <td>Pink Ribbon Sushi</td>
-    </tr>
-    <tr>
-      <td>Blue Ribbon Sushi</td>
-      <td>Pink Ribbon Sushi</td>
+      <td>&lt;=</td>
+      <td>작거나 같다</td>
     </tr>
   </tbody>
 </table></div>
 
 <hr />
-
-<h3 id="substring"><span class="me-2">Substring</span><a href="#substring" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br /></p>
-
-<p>특정 문자만 골라서 조회할 수 있는 문법입니다. <code class="language-plaintext highlighter-rouge">substr(조회할 컬럼, 시작 위치, 글자 수)</code>의 형태로 사용 가능합니다. 전체 주소에서 앞의 두글자만 추출하고 싶을 때 쓸 수 있습니다 (“서울특별시”에서 “서울”만 추출). 글자 수를 입력하지 않으면 시작위치에서 끝까지 출력됩니다.</p>
-
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="n">addr</span> <span class="k">as</span> <span class="nv">"원래주소"</span><span class="p">,</span><span class="n">SUBSTR</span><span class="p">(</span><span class="n">addr</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">food_orders</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<div class="table-wrapper"><table>
-  <tbody>
-    <tr>
-      <td>서울특별시 종로구 팔판</td>
-      <td>서울</td>
-    </tr>
-    <tr>
-      <td>경기도 광주시 퇴촌면</td>
-      <td>경기</td>
-    </tr>
-    <tr>
-      <td>경기도 용인시 처인구 양지면 식금리</td>
-      <td>경기</td>
-    </tr>
-    <tr>
-      <td>경기도 인천시 간석동</td>
-      <td>경기</td>
-    </tr>
-    <tr>
-      <td>경기도 평택군 고덕면 문곡리</td>
-      <td>경기</td>
-    </tr>
-  </tbody>
-</table></div>
-
-<hr />
-
-<h3 id="concat"><span class="me-2">Concat</span><a href="#concat" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br /></p>
-
-<p>여러 컬럼에 나눠져있는 문자를 합쳐야할 때 사용할 수 있는 문법입니다. <code class="language-plaintext highlighter-rouge">concat(붙이고 싶은 값1, 붙이고 싶은 값2, ...)</code> 의 형태로 사용 가능합니다. “서울특별시”, “음식점” 형태의 값을 <code class="language-plaintext highlighter-rouge">[서울] 음식점명</code>으로 변경하고 싶을 때 사용할 수 있습니다.</p>
+<h3 id="between"><span class="me-2"><strong>Between</strong></span><a href="#between" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br />
+a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사이에 AND를 사용해 줍니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3
-4
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="n">restaurant_name</span> <span class="k">as</span> <span class="nv">"원래이름"</span><span class="p">,</span>  
-       <span class="n">CONCAT</span><span class="p">(</span><span class="s1">'['</span><span class="p">,</span> <span class="n">SUBSTR</span><span class="p">(</span><span class="n">addr</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="s1">'] '</span><span class="p">,</span> <span class="n">restaurant_name</span><span class="p">)</span>  
-<span class="k">FROM</span>  <span class="n">food_orders</span>  
-<span class="k">WHERE</span> <span class="n">addr</span> <span class="k">like</span> <span class="s1">'%서울%'</span><span class="p">;</span>
+</pre></td><td class="rouge-code"><pre><span class="n">ex</span><span class="p">)</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customer</span> <span class="k">WHERE</span> <span class="n">age</span> <span class="k">BETWEEN</span> <span class="mi">20</span> <span class="k">and</span> <span class="mi">30</span>
 </pre></td></tr></tbody></table></code></div></div>
-
-<div class="table-wrapper"><table>
-  <tbody>
-    <tr>
-      <td>Hangawi</td>
-      <td>[서울] Hangawi</td>
-    </tr>
-    <tr>
-      <td>Barbounia</td>
-      <td>[서울] Barbounia</td>
-    </tr>
-    <tr>
-      <td>Empanada Mama (closed)</td>
-      <td>[서울] Empanada Mama (closed)</td>
-    </tr>
-    <tr>
-      <td>The Meatball Shop</td>
-      <td>[서울] The Meatball Shop</td>
-    </tr>
-    <tr>
-      <td>Blue Ribbon Sushi</td>
-      <td>[서울] Blue Ribbon Sushi</td>
-    </tr>
-    <tr>
-      <td>The Meatball Shop</td>
-      <td>[서울] The Meatball Shop</td>
-    </tr>
-  </tbody>
-</table></div>
+<p><br /></p>
 
 <hr />
+<h3 id="in"><span class="me-2"><strong>In</strong></span><a href="#in" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
 
-<h3 id="연습문제"><span class="me-2">연습문제</span><a href="#연습문제" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<ul>
-  <li>[지역(시도)] 음식점이름(음식종류) 컬럼을 만들고, 총 주문건수 구하기</li>
-</ul>
+<p>포함하는 조건을 줄 때 사용합니다. “나이가(20, 21, 27)살인 사람”을 필터링할 때 사용합니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="n">concat</span><span class="p">(</span><span class="s1">'['</span> <span class="p">,</span> <span class="n">substr</span><span class="p">(</span><span class="n">addr</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="p">,</span><span class="s1">'] '</span><span class="p">,</span> <span class="n">restaurant_name</span><span class="p">,</span> <span class="s1">'('</span><span class="p">,</span> <span class="n">cuisine_type</span><span class="p">,</span> <span class="s1">')'</span><span class="p">)</span> <span class="k">as</span> <span class="nv">"음식점 상세"</span><span class="p">,</span>  
-       <span class="k">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">as</span> <span class="nv">"총 주문건수"</span>  
-<span class="k">from</span> <span class="n">food_orders</span>  
-<span class="k">group</span> <span class="k">by</span> <span class="n">restaurant_name</span><span class="p">;</span>
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customer</span> <span class="k">WHERE</span> <span class="n">age</span> <span class="k">IN</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">27</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
+<p><br /></p>
 
-<ul>
-  <li>출력 결과</li>
-</ul>
+<hr />
+<h3 id="like"><span class="me-2"><strong>Like</strong></span><a href="#like" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br />
+완전히 똑같지는 않지만 비슷한 값을 찾을 때 사용할 수 있습니다. 예를들어 이름이 ‘OO현’인 사람을 찾을때 사용할 수 있습니다. Like연산자와 <code class="language-plaintext highlighter-rouge">%, _</code>가 같이 사용되는데, 이 문자들을 <code class="language-plaintext highlighter-rouge">WildCard</code>라고 합니다. <code class="language-plaintext highlighter-rouge">%</code>는 <code class="language-plaintext highlighter-rouge">0,1 또는 하나 이상의 character</code>를 나타냅니다. <code class="language-plaintext highlighter-rouge">_</code>는 <code class="language-plaintext highlighter-rouge">하나의 character</code>를 나타냅니다.</p>
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customer</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="nv">"%현"</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customer</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="nv">"_현_"</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p>결과를 출력해보면</p>
+<ol>
+  <li>김예현, 이동현…</li>
+  <li>김현재, 이현호…
+가 될 수 있습니다.</li>
+</ol>
 
-<div class="table-wrapper"><table>
-  <tbody>
-    <tr>
-      <td>[서울] Hangawi(Korean)</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>[경기] Blue Ribbon Sushi Izakaya(Japanese)</td>
-      <td>29</td>
-    </tr>
-    <tr>
-      <td>[경기] Cafe Habana(Mexican)</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <td>[경기] Blue Ribbon Fried Chicken(American)</td>
-      <td>96</td>
-    </tr>
-    <tr>
-      <td>[경기] Dirty Bird to Go(American)</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>[경기] Tamarind TriBeCa(Indian)</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>…</td>
-      <td>…</td>
-    </tr>
-  </tbody>
-</table></div>
 
   </div>
 
@@ -1038,35 +936,35 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Group-By,-Order-By)/">SQL Grammer (Group By, Order By)</a>
+          <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/">SQL Grammer (10) - Pivot tabel, Window function</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(If,-Case,-Cast)/">SQL Grammer (If, Case, Cast)</a>
+          <a href="/posts/SQL-Grammer-(11)-Date/">SQL Grammer (11) - Date</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Replace,-Substring,-Concat)/">SQL Grammer (Replace, Substring, Concat)</a>
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/">SQL Grammer (4) - Group By, Order By</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ProgrammersBasic-70/">Basic70 수열과 구간 쿼리 1</a>
+          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/">SQL Grammer (5) - Replace, Substring, Concat</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</a>
+          <a href="/posts/SQL-Grammer-(6)-If,-Case,-Cast/">SQL Grammer (6) - If, Case, Cast</a>
         </li>
       
     </ul>
@@ -1360,55 +1258,115 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -2240,7 +2198,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/" class="post-preview card h-100">
+          <a href="/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2259,7 +2217,7 @@
   Mar 11, 2024
 </time>
 
-              <h4 class="pt-0 my-2">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</h4>
+              <h4 class="pt-0 my-2">SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2268,11 +2226,13 @@
 
 
 
-                  SQL Grammer (SUM, AVG, COUNT, MIN, MAX)
+                  SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
 
 SUM
 
 선택된 열과 범위의 합계를 반환해줍니다. 예시처럼 customer의 테이블안에 있는 모든 값들의 나이를 더한 값을 얻고 싶을 때 쓸 수 있습니다.
+1
+2
 ex)
 SELECT SUM(age) FROM customers
 
@@ -2281,7 +2241,7 @@ SELECT SUM(age) FROM customers
 
 AVG
 
-sum과 같은 방법으로 사용 가능하며, 평균 ...
+sum과 같은 방법으로 사용 가...
                 </p>
               </div>
             </div>
@@ -2289,7 +2249,7 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
         </article>
       
         <article class="col">
-          <a href="/posts/SQL-Grammer-(Select,-From)/" class="post-preview card h-100">
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2301,14 +2261,14 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
 
 <time
   
-  data-ts="1710082800"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Mar 11, 2024
+  Mar 12, 2024
 </time>
 
-              <h4 class="pt-0 my-2">SQL Grammer (Select, From)</h4>
+              <h4 class="pt-0 my-2">SQL Grammer (4) - Group By, Order By</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2317,60 +2277,68 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
 
 
 
-                  SQL Grammer (Select, From)
+                  SQL Grammer (4) - Group By, Order By
 
-SQL 이란?
+Group By
 
-SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
+데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
 
-SQL 문장에는 다음 3가지 종류가 있습니다.
-
-  데이터 정의어(Data Defi...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1710082800"
-  data-df="ll"
-  
->
-  Mar 11, 2024
-</time>
-
-              <h4 class="pt-0 my-2">SQL Grammer (Where, Between, In, Like)</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  SQL Grammer (Where, Between, In, Like)
-
-Where
-
-데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
+1
+2
+3
+4
+5
 ex)
-SELECT * FROM customer WHERE age&amp;gt;=20
+select cuisine_type,...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
 
 
-Where를 사용할 때 기본적인 비교 연산자...
+
+
+<time
+  
+  data-ts="1710169200"
+  data-df="ll"
+  
+>
+  Mar 12, 2024
+</time>
+
+              <h4 class="pt-0 my-2">SQL Grammer (5) - Replace, Substring, Concat</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  SQL Grammer (5) - Replace, Substring, Concat
+
+Replace
+
+특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.
+
+1
+2
+3
+4
+5
+ex)
+SELECT restaurant_name AS &quot;원래 이름&quot;,  
+       REPLACE (restau...
                 </p>
               </div>
             </div>
@@ -2392,18 +2360,22 @@ Where를 사용할 때 기본적인 비교 연산자...
 
   
     <a
-      href="/posts/SQL-Grammer-(If,-Case,-Cast)/"
+      href="/posts/SQL-Grammer-(1)-Select,-From/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>SQL Grammer (If, Case, Cast)</p>
+      <p>SQL Grammer (1) - Select, From</p>
     </a>
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX</p>
+    </a>
   
 </nav>
 

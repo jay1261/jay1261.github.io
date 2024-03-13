@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-03-12T23:34:35+09:00</updated>
+  <updated>2024-03-13T16:08:28+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>SQL Grammer (Replace, Substring, Concat)</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(Replace,-Substring,-Concat)/" rel="alternate" type="text/html" title="SQL Grammer (Replace, Substring, Concat)" />
-    <published>2024-03-12T00:00:00+09:00</published>
+    <title>SQL Grammer (11) - Date</title>
+    <link href="http://localhost:4000/posts/SQL-Grammer-(11)-Date/" rel="alternate" type="text/html" title="SQL Grammer (11) - Date" />
+    <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-12T00:00:00+09:00</updated>
+    <updated>2024-03-13T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/SQL-Grammer-(Replace,-Substring,-Concat)/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(Replace,-Substring,-Concat)/" />
+    <id>http://localhost:4000/posts/SQL-Grammer-(11)-Date/</id>
+    <content src="http://localhost:4000/posts/SQL-Grammer-(11)-Date/" />
     <author>
       <name>jay</name>
     </author>
@@ -48,30 +48,29 @@
 
 
 
-      SQL Grammer (Replace, Substring, Concat)
-
-Replace
-
-특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.
-
-ex)
-SELECT restaurant_name AS "원래 이름",  
-       REPLACE (restaurant_name, 'Blue', 'Pink')  
-FROM food_orders  
-WHERE restaurant_name LIKE '%Blue Ribbon%'
+      SQL Grammer (11) - Date
 
 
-이렇게 하면 기존에 ‘Blue’ 였던 문자가 Pink로 바뀌게 됩니다.
+Date
 
+년, 월, 일, 시, 분, 초 등의 값을 모두 갖고 있으며, 목적에 따라 월, 주, 일 등으로 포맷을 변경할 수 있습니다.
+데이터에 날짜를 지정하거나, 조건에 날짜를 사용해야할 때 유용합니다.
 
+  date_format
+    
+      년: Y(4자리) , y(2자리)
+      월: M,m
+      일: d, e
+      요일: w
+    
   
-    
-      원래이름
-      바뀐이름
-    
-    
-      Blue Ribbon Sushi Izakaya
-      P...
+
+
+select date(date) date_type,  
+       date_format(date(date), '%Y') "년",  
+       date_format(date(date), '%m') "월",  
+       date_format(date(date), '%d') "일",  
+...
     </summary>
   
 
@@ -79,14 +78,14 @@ WHERE restaurant_name LIKE '%Blue Ribbon%'
 
   
   <entry>
-    <title>SQL Grammer (If, Case, Cast)</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(If,-Case,-Cast)/" rel="alternate" type="text/html" title="SQL Grammer (If, Case, Cast)" />
-    <published>2024-03-12T00:00:00+09:00</published>
+    <title>SQL Grammer (10) - Pivot tabel, Window function</title>
+    <link href="http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" rel="alternate" type="text/html" title="SQL Grammer (10) - Pivot tabel, Window function" />
+    <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-12T00:00:00+09:00</updated>
+    <updated>2024-03-13T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/SQL-Grammer-(If,-Case,-Cast)/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(If,-Case,-Cast)/" />
+    <id>http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/</id>
+    <content src="http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" />
     <author>
       <name>jay</name>
     </author>
@@ -107,31 +106,20 @@ WHERE restaurant_name LIKE '%Blue Ribbon%'
 
 
 
-      SQL Grammer (If, Case, Cast)
+      SQL Grammer (10) - Pivot tabel, Window function
 
 
-If
+Pivot tabel
 
 
-조건에 따라 다른 방법을 적용해 값을 얻고 싶을 때 If문을 사용합니다. if(조건, 참일 때 실행, 거짓일 때 실행)의 형태로 사용합니다. 음식의 타입이 “Korean”이면 한식, 아니면 기타를 출력하는 예시입니다.
+2개 이상의 기준으로 데이터를 집계할 때, 보기 쉽게 배열하여 보여주는 것을 의미합니다. 집계 기준을 행의 기준으로 잡고, 구분 컬럼으로 데이터를 보여줄 수 있습니다.
 
 select restaurant_name,  
-       cuisine_type "원래 음식 타입",  
-       if(cuisine_type='Korean', '한식', '기타') "음식 타입"  
-from food_orders;
-
-
-
-  
-    
-      Hangawi
-      Korean
-      한식
-    
-    
-      Blue Ribbon Sushi Izakaya
-      Japanese
-...
+       max(if(hh='15', cnt_order, 0)) "15",  
+       max(if(hh='16', cnt_order, 0)) "16",  
+       max(if(hh='17', cnt_order, 0)) "17",  
+       max(if(hh='18', cnt_order, 0)) "18",  
+       max(if(hh='19', cnt_o...
     </summary>
   
 
@@ -139,14 +127,14 @@ from food_orders;
 
   
   <entry>
-    <title>SQL Grammer (Group By, Order By)</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(Group-By,-Order-By)/" rel="alternate" type="text/html" title="SQL Grammer (Group By, Order By)" />
+    <title>SQL Grammer (9) - Null, Coalesce</title>
+    <link href="http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/" rel="alternate" type="text/html" title="SQL Grammer (9) - Null, Coalesce" />
     <published>2024-03-12T00:00:00+09:00</published>
   
     <updated>2024-03-12T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/SQL-Grammer-(Group-By,-Order-By)/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(Group-By,-Order-By)/" />
+    <id>http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/</id>
+    <content src="http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/" />
     <author>
       <name>jay</name>
     </author>
@@ -167,40 +155,19 @@ from food_orders;
 
 
 
-      SQL Grammer (Group By, Order By)
+      SQL Grammer (9) - Null, Coalesce
 
-Group By
 
-데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
+Null
+
+
+값이 없을 때 Null 을 이용한다. 숫자 계산같은 함수를 사용할 때 알아두면 좋은 점이 있는데, Null로 처리한 것과 다른 문자로 처리된 경우 계산값이 다르게 나올 수 있다는 것이다.
+MySQL에서는 사용할 수 없는 값이 연산으로 들어오면 자동으로 0으로 간주한다. Avg로 평균을 구하는데 하나의 값이 0으로 들어가면서 자릿수는 차지해버려 평균값을 깎아먹는 역할을 하게된다. 하지만 Null로 되어있다면 완전히 제외되어서 계산에 포함되지 않는다.
 
 ex)
-select cuisine_type,
-       sum(price) sum_of_price
-from food_orders
-group by cuisine_type
-
-
-
-  출력
-
-
-
-  
-    
-      cuisine_type
-      sum_of_price
-    
-  
-  
-    
-      Korean
-      182020
-    
-    
-      Japanese
-      7663130
-    
-...
+select restaurant_name,  
+       avg(rating) average_of_rating,  
+       avg(if(rating&amp;lt;&amp;gt;'No...
     </summary>
   
 
@@ -208,14 +175,14 @@ group by cuisine_type
 
   
   <entry>
-    <title>SQL Grammer (Where, Between, In, Like)</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" rel="alternate" type="text/html" title="SQL Grammer (Where, Between, In, Like)" />
-    <published>2024-03-11T00:00:00+09:00</published>
+    <title>SQL Grammer (8) - Join</title>
+    <link href="http://localhost:4000/posts/SQL-Grammer-(8)-Join/" rel="alternate" type="text/html" title="SQL Grammer (8) - Join" />
+    <published>2024-03-12T00:00:00+09:00</published>
   
-    <updated>2024-03-11T00:00:00+09:00</updated>
+    <updated>2024-03-12T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/SQL-Grammer-(Where,-Between,-In,-Like)/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" />
+    <id>http://localhost:4000/posts/SQL-Grammer-(8)-Join/</id>
+    <content src="http://localhost:4000/posts/SQL-Grammer-(8)-Join/" />
     <author>
       <name>jay</name>
     </author>
@@ -236,40 +203,29 @@ group by cuisine_type
 
 
 
-      SQL Grammer (Where, Between, In, Like)
-
-Where
-
-데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
-ex)
-SELECT * FROM customer WHERE age&amp;gt;=20
+      SQL Grammer (8) - Join
 
 
-Where를 사용할 때 기본적인 비교 연산자로는 =, &amp;lt;&amp;gt;, &amp;lt;, &amp;lt;=, &amp;gt;, &amp;gt;=이 있습니다
+Join
 
 
-  
+필요한 데이터가 서로 다른 테이블에 있을 때 사용할 수 있는 문법입니다. 공통 컬럼을 기준으로 두 테이블을 합쳐서 각각 테이블에서 필요한 데이터를 조회할 수 있습니다.
+
+Join의 종류
+
+  Inner Join
     
-      연산자
-      의미
+      가장 많이 사용하는 조인으로, 두 테이블 모두에 있는 값만 조회하는 것을 말합니다.
     
   
+  OuterJoin
+    
+      left, right, full 이 있으며 각각 왼쪽 테이블의 모든 값 조회, 오른쪽 테이블의 모든 값 조회, 모든 테이블의 모든 값 조회를 할 수 있습니다.
+    
   
+  Cross Join
     
-      =
-      같다
-    
-    
-      &amp;lt;&amp;gt;
-      같지않다
-    
-    
-      &amp;gt;
-      크다
-    
-    
-      &amp;gt;=
- ...
+      한쪽 테이블의 모든 행과 다른쪽 테이블의 모든 행을 조인시키는 기능...
     </summary>
   
 
@@ -277,14 +233,14 @@ Where를 사용할 때 기본적인 비교 연산자로는 =, &amp;lt;&amp;gt;, 
 
   
   <entry>
-    <title>SQL Grammer (Select, From)</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(Select,-From)/" rel="alternate" type="text/html" title="SQL Grammer (Select, From)" />
-    <published>2024-03-11T00:00:00+09:00</published>
+    <title>SQL Grammer (7) - Subquery</title>
+    <link href="http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/" rel="alternate" type="text/html" title="SQL Grammer (7) - Subquery" />
+    <published>2024-03-12T00:00:00+09:00</published>
   
-    <updated>2024-03-11T00:00:00+09:00</updated>
+    <updated>2024-03-12T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/SQL-Grammer-(Select,-From)/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(Select,-From)/" />
+    <id>http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/</id>
+    <content src="http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/" />
     <author>
       <name>jay</name>
     </author>
@@ -305,23 +261,32 @@ Where를 사용할 때 기본적인 비교 연산자로는 =, &amp;lt;&amp;gt;, 
 
 
 
-      SQL Grammer (Select, From)
-
-SQL 이란?
-
-SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
-
-SQL 문장에는 다음 3가지 종류가 있습니다.
-
-  데이터 정의어(Data Definition Language)
-  데이터 조작어(Data Manipulation Language)
-  데이터 제어어(Data Control Language)
+      SQL Grammer (7) - Subquery
 
 
+Subquery
 
-Select
 
-Select는 SQL에서 가장 많이 사용되는 구문입니다. 데이터를 가져오는 기본 명령어로, 데이터를 조회하는 모든 Query에 사용됩니다. 단순하게 데이터베이스가 엑셀처럼 행과 열(...
+여러번의 연산을 수행해야할 때, 조건문에 연산 결과를 사용하거나 조건에 Query결과를 사용하고 싶을 때 쓸 수 있는 문법입니다. 복잡한 쿼리문을 효율적으로 작성할 수 있습니다. 기본 구조는 아래와 같습니다.
+
+select column1, test
+from (
+	#subquery
+	select column1, column2 as test
+	from table1
+) subq
+
+
+
+예시
+
+
+ex 1) 음식점의 총 주문수량과 주문금액을 연산하고, 주문수량을 기반으로 수수료 할인율 구하기
+
+  할인조건: 수량 5개 이하-&amp;gt; 10%, 수량 15개 초과 &amp;amp; 총 주문금액 300000이상 - 0.5%, 이외 1%
+
+
+select re...
     </summary>
   
 

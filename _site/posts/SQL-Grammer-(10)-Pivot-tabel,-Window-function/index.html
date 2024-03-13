@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="SQL Grammer (Select, From)" />
+<meta property="og:title" content="SQL Grammer (10) - Pivot tabel, Window function" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="SQL Grammer (Select, From) SQL 이란? SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다. SQL 문장에는 다음 3가지 종류가 있습니다. 데이터 정의어(Data Definition Language) 데이터 조작어(Data Manipulation Language) 데이터 제어어(Data Control Language)" />
-<meta property="og:description" content="SQL Grammer (Select, From) SQL 이란? SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다. SQL 문장에는 다음 3가지 종류가 있습니다. 데이터 정의어(Data Definition Language) 데이터 조작어(Data Manipulation Language) 데이터 제어어(Data Control Language)" />
-<link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(Select,-From)/" />
-<meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(Select,-From)/" />
+<meta name="description" content="SQL Grammer (10) - Pivot tabel, Window function" />
+<meta property="og:description" content="SQL Grammer (10) - Pivot tabel, Window function" />
+<link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" />
+<meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-11T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-03-13T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="SQL Grammer (Select, From)" />
+<meta property="twitter:title" content="SQL Grammer (10) - Pivot tabel, Window function" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (Select, From) SQL 이란? SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다. SQL 문장에는 다음 3가지 종류가 있습니다. 데이터 정의어(Data Definition Language) 데이터 조작어(Data Manipulation Language) 데이터 제어어(Data Control Language)","headline":"SQL Grammer (Select, From)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(Select,-From)/"},"url":"http://localhost:4000/posts/SQL-Grammer-(Select,-From)/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-13T00:00:00+09:00","datePublished":"2024-03-13T00:00:00+09:00","description":"SQL Grammer (10) - Pivot tabel, Window function","headline":"SQL Grammer (10) - Pivot tabel, Window function","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/"},"url":"http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>SQL Grammer (Select, From) | jay1261
+  <title>SQL Grammer (10) - Pivot tabel, Window function | jay1261
   </title>
 
   <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>SQL Grammer (Select, From)</span>
+              <span>SQL Grammer (10) - Pivot tabel, Window function</span>
             
 
           
@@ -611,17 +611,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -646,7 +635,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>SQL Grammer (Select, From)</h1>
+    <h1 data-toc-skip>SQL Grammer (10) - Pivot tabel, Window function</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -662,13 +651,13 @@
 
 <time
   
-  data-ts="1710082800"
+  data-ts="1710255600"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar 11, 2024
+  Mar 13, 2024
 </time>
 
       </span>
@@ -716,9 +705,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="338 words"
+  title="488 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -727,79 +716,199 @@
   </header>
 
   <div class="content">
-    <h2 id="sql-grammer-select-from"><span class="me-2">SQL Grammer (Select, From)</span><a href="#sql-grammer-select-from" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="sql-grammer-10---pivot-tabel-window-function"><span class="me-2"><strong>SQL Grammer (10) - Pivot tabel, Window function</strong></span><a href="#sql-grammer-10---pivot-tabel-window-function" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p><br /></p>
-<h3 id="sql-이란"><span class="me-2">SQL 이란?</span><a href="#sql-이란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-<code class="language-plaintext highlighter-rouge">SQL</code>은 <code class="language-plaintext highlighter-rouge">Structured Query Language</code>의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
-<br />
-SQL 문장에는 다음 3가지 종류가 있습니다.</p>
-<ul>
-  <li>데이터 정의어(Data Definition Language)</li>
-  <li>데이터 조작어(Data Manipulation Language)</li>
-  <li>데이터 제어어(Data Control Language)</li>
-</ul>
 
-<hr />
-<h3 id="select"><span class="me-2">Select</span><a href="#select" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-Select는 SQL에서 가장 많이 사용되는 구문입니다. 데이터를 가져오는 기본 명령어로, 데이터를 조회하는 모든 Query에 사용됩니다. 단순하게 데이터베이스가 엑셀처럼 행과 열(row) 열(column)이 있다고 했을 때, 열(column)을 선택한다고 생각할 수 있습니다.</p>
+<h3 id="pivot-tabel"><span class="me-2"><strong>Pivot tabel</strong></span><a href="#pivot-tabel" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
+
+<p>2개 이상의 기준으로 데이터를 집계할 때, 보기 쉽게 배열하여 보여주는 것을 의미합니다. 집계 기준을 행의 기준으로 잡고, 구분 컬럼으로 데이터를 보여줄 수 있습니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="rouge-code"><pre><span class="o">#</span><span class="err">모든</span> <span class="err">열을</span> <span class="err">선택</span>
-<span class="k">SELECT</span> <span class="o">*</span> 
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre><span class="k">select</span> <span class="n">restaurant_name</span><span class="p">,</span>  
+       <span class="k">max</span><span class="p">(</span><span class="n">if</span><span class="p">(</span><span class="n">hh</span><span class="o">=</span><span class="s1">'15'</span><span class="p">,</span> <span class="n">cnt_order</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="nv">"15"</span><span class="p">,</span>  
+       <span class="k">max</span><span class="p">(</span><span class="n">if</span><span class="p">(</span><span class="n">hh</span><span class="o">=</span><span class="s1">'16'</span><span class="p">,</span> <span class="n">cnt_order</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="nv">"16"</span><span class="p">,</span>  
+       <span class="k">max</span><span class="p">(</span><span class="n">if</span><span class="p">(</span><span class="n">hh</span><span class="o">=</span><span class="s1">'17'</span><span class="p">,</span> <span class="n">cnt_order</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="nv">"17"</span><span class="p">,</span>  
+       <span class="k">max</span><span class="p">(</span><span class="n">if</span><span class="p">(</span><span class="n">hh</span><span class="o">=</span><span class="s1">'18'</span><span class="p">,</span> <span class="n">cnt_order</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="nv">"18"</span><span class="p">,</span>  
+       <span class="k">max</span><span class="p">(</span><span class="n">if</span><span class="p">(</span><span class="n">hh</span><span class="o">=</span><span class="s1">'19'</span><span class="p">,</span> <span class="n">cnt_order</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="nv">"19"</span><span class="p">,</span>  
+       <span class="k">max</span><span class="p">(</span><span class="n">if</span><span class="p">(</span><span class="n">hh</span><span class="o">=</span><span class="s1">'20'</span><span class="p">,</span> <span class="n">cnt_order</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="nv">"20"</span>  
+<span class="k">from</span>  
+<span class="p">(</span>  
+<span class="k">select</span> <span class="n">a</span><span class="p">.</span><span class="n">restaurant_name</span><span class="p">,</span>  
+       <span class="k">substring</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="nb">time</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="n">hh</span><span class="p">,</span>  
+       <span class="k">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="n">cnt_order</span>  
+<span class="k">from</span> <span class="n">food_orders</span> <span class="n">a</span> <span class="k">inner</span> <span class="k">join</span> <span class="n">payments</span> <span class="n">b</span> <span class="k">on</span> <span class="n">a</span><span class="p">.</span><span class="n">order_id</span><span class="o">=</span><span class="n">b</span><span class="p">.</span><span class="n">order_id</span>  
+<span class="k">where</span> <span class="k">substring</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="nb">time</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">between</span> <span class="mi">15</span> <span class="k">and</span> <span class="mi">20</span>  
+<span class="k">group</span> <span class="k">by</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>  
+<span class="p">)</span> <span class="n">a</span>  
+<span class="k">group</span> <span class="k">by</span> <span class="mi">1</span>  
+<span class="k">order</span> <span class="k">by</span> <span class="mi">7</span> <span class="k">desc</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></div></div>
-<p><br /></p>
 
-<hr />
-<h3 id="from"><span class="me-2">From</span><a href="#from" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정해주는 문법입니다.
-<br /></p>
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customer</span>
-</pre></td></tr></tbody></table></code></div></div>
-<p><br /></p>
-<blockquote>
-  <p>이에 따라 위의 sql문을 해석하면, 현재 데이터베이스의 customer 테이블의 모든 열을 가져오는 코드가 됩니다.</p>
-</blockquote>
-
-<ul>
-  <li>출력 예시</li>
-</ul>
+<p>이렇게 하면 음식점 별, 시간대별 주문 건수를 한눈에 확인할 수 있게 데이터를 조회할 수 있습니다.</p>
 
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>customer_id</th>
-      <th>name</th>
-      <th>email</th>
+      <th>restaurant_name</th>
+      <th>15</th>
+      <th>16</th>
+      <th>17</th>
+      <th>18</th>
+      <th>19</th>
+      <th>20</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>337525</td>
-      <td>조현아</td>
-      <td>xzvnliwj@hanmail.com</td>
+      <td>Shake Shack</td>
+      <td>13</td>
+      <td>7</td>
+      <td>6</td>
+      <td>9</td>
+      <td>3</td>
+      <td>9</td>
     </tr>
     <tr>
-      <td>358141</td>
-      <td>장민호</td>
-      <td>byuvhegb@hanmail.com</td>
+      <td>The Meatball Shop</td>
+      <td>4</td>
+      <td>2</td>
+      <td>7</td>
+      <td>3</td>
+      <td>4</td>
+      <td>9</td>
     </tr>
     <tr>
-      <td>66393</td>
-      <td>김도진</td>
-      <td>dzelcyxr@daum.net</td>
+      <td>Blue Ribbon Fried Chicken</td>
+      <td>5</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+      <td>5</td>
     </tr>
   </tbody>
 </table></div>
 
+<hr />
+
+<h3 id="window-function"><span class="me-2"><strong>Window function</strong></span><a href="#window-function" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br />
+각 행의 관계를 정의하기 위한 함수로, 그룹 내의 연산을 쉽게 만들어주는 함수입니다. 예를 들어 한식 식당 중에서 주문건수가 많은 순으로 순위를 매기고 싶은 경우에 사용할 수 있습니다.</p>
+
+<p>기본 구조는 <code class="language-plaintext highlighter-rouge">window_function(argument) over (partition by 기준 칼럼, order by 정렬 기준)</code>의 형태로 쓰입니다.</p>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="k">select</span> <span class="n">cuisine_type</span><span class="p">,</span>  
+       <span class="n">restaurant_name</span><span class="p">,</span>  
+       <span class="n">order_count</span><span class="p">,</span>  
+       <span class="n">rn</span> <span class="nv">"순위"</span>  
+<span class="k">from</span>  
+<span class="p">(</span>  
+<span class="k">select</span> <span class="n">cuisine_type</span><span class="p">,</span>  
+       <span class="n">restaurant_name</span><span class="p">,</span>  
+       <span class="n">rank</span><span class="p">()</span> <span class="n">over</span> <span class="p">(</span><span class="k">partition</span> <span class="k">by</span> <span class="n">cuisine_type</span> <span class="k">order</span> <span class="k">by</span> <span class="n">order_count</span> <span class="k">desc</span><span class="p">)</span> <span class="n">rn</span><span class="p">,</span>  
+       <span class="n">order_count</span>  
+<span class="k">from</span>  
+<span class="p">(</span>  
+<span class="k">select</span> <span class="n">cuisine_type</span><span class="p">,</span> <span class="n">restaurant_name</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="n">order_count</span>  
+<span class="k">from</span> <span class="n">food_orders</span>  
+<span class="k">group</span> <span class="k">by</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>  
+<span class="p">)</span> <span class="n">a</span>  
+<span class="p">)</span> <span class="n">b</span>  
+<span class="k">where</span> <span class="n">rn</span><span class="o">&lt;=</span><span class="mi">3</span>  
+<span class="k">order</span> <span class="k">by</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Rank()를 사용해 음식의 타입별로 레스토랑들의 주문건수 순위를 볼 수 있습니다.</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>cuisine_type</th>
+      <th>restaurant_name</th>
+      <th>order_count</th>
+      <th>순위</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>American</td>
+      <td>Shake Shack</td>
+      <td>219</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>American</td>
+      <td>Blue Ribbon Fried Chicken</td>
+      <td>96</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>American</td>
+      <td>Five Guys Burgers and Fries</td>
+      <td>29</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Chinese</td>
+      <td>RedFarm Broadway</td>
+      <td>59</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Chinese</td>
+      <td>RedFarm Hudson</td>
+      <td>55</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Chinese</td>
+      <td>Han Dynasty</td>
+      <td>46</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table></div>
 
   </div>
 
@@ -903,35 +1012,35 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Group-By,-Order-By)/">SQL Grammer (Group By, Order By)</a>
+          <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/">SQL Grammer (10) - Pivot tabel, Window function</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(If,-Case,-Cast)/">SQL Grammer (If, Case, Cast)</a>
+          <a href="/posts/SQL-Grammer-(11)-Date/">SQL Grammer (11) - Date</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(Replace,-Substring,-Concat)/">SQL Grammer (Replace, Substring, Concat)</a>
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/">SQL Grammer (4) - Group By, Order By</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ProgrammersBasic-70/">Basic70 수열과 구간 쿼리 1</a>
+          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/">SQL Grammer (5) - Replace, Substring, Concat</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</a>
+          <a href="/posts/SQL-Grammer-(6)-If,-Case,-Cast/">SQL Grammer (6) - If, Case, Cast</a>
         </li>
       
     </ul>
@@ -1237,43 +1346,103 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2105,7 +2274,7 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/" class="post-preview card h-100">
+          <a href="/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2124,7 +2293,7 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
   Mar 11, 2024
 </time>
 
-              <h4 class="pt-0 my-2">SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</h4>
+              <h4 class="pt-0 my-2">SQL Grammer (2) - Where, Between, In,</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2133,7 +2302,52 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
 
 
 
-                  SQL Grammer (SUM, AVG, COUNT, MIN, MAX)
+                  SQL Grammer (2) - Where, Between, In,
+
+Where
+
+데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
+ex)
+SELECT * FROM customer WHERE age&amp;gt;=20
+
+
+Where를 사용할 때 기본적인 비교 연산자로...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710082800"
+  data-df="ll"
+  
+>
+  Mar 11, 2024
+</time>
+
+              <h4 class="pt-0 my-2">SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
 
 SUM
 
@@ -2146,7 +2360,7 @@ SELECT SUM(age) FROM customers
 
 AVG
 
-sum과 같은 방법으로 사용 가능하며, 평균 ...
+sum과 같은 방법으로 사용 가능하며,...
                 </p>
               </div>
             </div>
@@ -2154,54 +2368,7 @@ sum과 같은 방법으로 사용 가능하며, 평균 ...
         </article>
       
         <article class="col">
-          <a href="/posts/SQL-Grammer-(Where,-Between,-In,-Like)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1710082800"
-  data-df="ll"
-  
->
-  Mar 11, 2024
-</time>
-
-              <h4 class="pt-0 my-2">SQL Grammer (Where, Between, In, Like)</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  SQL Grammer (Where, Between, In, Like)
-
-Where
-
-데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
-1
-2
-ex)
-SELECT * FROM customer WHERE age&amp;gt;=20
-
-
-Where를 사용할 때 기본적인 비교...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/SQL-Grammer-(Group-By,-Order-By)/" class="post-preview card h-100">
+          <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2220,7 +2387,7 @@ Where를 사용할 때 기본적인 비교...
   Mar 12, 2024
 </time>
 
-              <h4 class="pt-0 my-2">SQL Grammer (Group By, Order By)</h4>
+              <h4 class="pt-0 my-2">SQL Grammer (4) - Group By, Order By</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2229,20 +2396,15 @@ Where를 사용할 때 기본적인 비교...
 
 
 
-                  SQL Grammer (Group By, Order By)
+                  SQL Grammer (4) - Group By, Order By
 
 Group By
 
 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
 
-1
-2
-3
-4
-5
 ex)
 select cuisine_type,
-   ...
+       su...
                 </p>
               </div>
             </div>
@@ -2264,21 +2426,21 @@ select cuisine_type,
 
   
     <a
-      href="/posts/SQL-Grammer-(SUM,-AVG,-COUNT,-MIN,-MAX)/"
+      href="/posts/SQL-Grammer-(9)-Null,-Coalesce/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>SQL Grammer (SUM, AVG, COUNT, MIN, MAX)</p>
+      <p>SQL Grammer (9) - Null, Coalesce</p>
     </a>
   
 
   
     <a
-      href="/posts/SQL-Grammer-(Where,-Between,-In,-Like)/"
+      href="/posts/SQL-Grammer-(11)-Date/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>SQL Grammer (Where, Between, In, Like)</p>
+      <p>SQL Grammer (11) - Date</p>
     </a>
   
 </nav>
