@@ -6,11 +6,17 @@ categories:
   - MySQL
   - SQL Grammer
 tags:
-  - Algorithm
-  - SwiftAlgorithm
+  - MySQL
 ---
 ## **SQL Grammer (8) - Join**
+
 <br />
+
+---
+
+<br/>
+
+
 
 ### **Join**
 <br />
@@ -27,7 +33,14 @@ tags:
 - `Self Join`
 	- 자체 조인은 자기 자신과 조인하므로 1개의 테이블을 사용합니다. 
 
+
+<br />
+
 ---
+
+<br/>
+
+
 
 ### **사용 예시** 
 #### **예시 1**

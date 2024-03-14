@@ -38,8 +38,8 @@
 <meta property="og:title" content="SQL Grammer (1) - Select, From" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="SQL Grammer (1) - Select, From SQL 이란? SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다. SQL 문장에는 다음 3가지 종류가 있습니다. 데이터 정의어(Data Definition Language) 데이터 조작어(Data Manipulation Language) 데이터 제어어(Data Control Language)" />
-<meta property="og:description" content="SQL Grammer (1) - Select, From SQL 이란? SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다. SQL 문장에는 다음 3가지 종류가 있습니다. 데이터 정의어(Data Definition Language) 데이터 조작어(Data Manipulation Language) 데이터 제어어(Data Control Language)" />
+<meta name="description" content="SQL Grammer (1) - Select, From" />
+<meta property="og:description" content="SQL Grammer (1) - Select, From" />
 <link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(1)-Select,-From/" />
 <meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(1)-Select,-From/" />
 <meta property="og:site_name" content="jay1261" />
@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (1) - Select, From SQL 이란? SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다. SQL 문장에는 다음 3가지 종류가 있습니다. 데이터 정의어(Data Definition Language) 데이터 조작어(Data Manipulation Language) 데이터 제어어(Data Control Language)","headline":"SQL Grammer (1) - Select, From","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(1)-Select,-From/"},"url":"http://localhost:4000/posts/SQL-Grammer-(1)-Select,-From/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (1) - Select, From","headline":"SQL Grammer (1) - Select, From","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(1)-Select,-From/"},"url":"http://localhost:4000/posts/SQL-Grammer-(1)-Select,-From/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -728,10 +728,17 @@
 
   <div class="content">
     <h2 id="sql-grammer-1---select-from"><span class="me-2">SQL Grammer (1) - Select, From</span><a href="#sql-grammer-1---select-from" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <p><br /></p>
-<h3 id="sql-이란"><span class="me-2">SQL 이란?</span><a href="#sql-이란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-<code class="language-plaintext highlighter-rouge">SQL</code>은 <code class="language-plaintext highlighter-rouge">Structured Query Language</code>의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
+
+<hr />
+
+<p><br /></p>
+
+<h3 id="sql-이란"><span class="me-2"><strong>SQL 이란?</strong></span><a href="#sql-이란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">SQL</code>은 <code class="language-plaintext highlighter-rouge">Structured Query Language</code>의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
 <br />
 SQL 문장에는 다음 3가지 종류가 있습니다.</p>
 <ul>
@@ -740,10 +747,16 @@ SQL 문장에는 다음 3가지 종류가 있습니다.</p>
   <li>데이터 제어어(Data Control Language)</li>
 </ul>
 
+<p><br /></p>
+
 <hr />
-<h3 id="select"><span class="me-2">Select</span><a href="#select" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-Select는 SQL에서 가장 많이 사용되는 구문입니다. 데이터를 가져오는 기본 명령어로, 데이터를 조회하는 모든 Query에 사용됩니다. 단순하게 데이터베이스가 엑셀처럼 행과 열(row) 열(column)이 있다고 했을 때, 열(column)을 선택한다고 생각할 수 있습니다.</p>
+
+<p><br /></p>
+
+<h3 id="select"><span class="me-2"><strong>Select</strong></span><a href="#select" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
+
+<p>Select는 SQL에서 가장 많이 사용되는 구문입니다. 데이터를 가져오는 기본 명령어로, 데이터를 조회하는 모든 Query에 사용됩니다. 단순하게 데이터베이스가 엑셀처럼 행과 열(row) 열(column)이 있다고 했을 때, 열(column)을 선택한다고 생각할 수 있습니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
@@ -752,12 +765,17 @@ Select는 SQL에서 가장 많이 사용되는 구문입니다. 데이터를 가
 </pre></td><td class="rouge-code"><pre><span class="o">#</span><span class="err">모든</span> <span class="err">열을</span> <span class="err">선택</span>
 <span class="k">SELECT</span> <span class="o">*</span> 
 </pre></td></tr></tbody></table></code></div></div>
+
 <p><br /></p>
 
 <hr />
-<h3 id="from"><span class="me-2">From</span><a href="#from" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정해주는 문법입니다.
+
+<p><br /></p>
+
+<h3 id="from"><span class="me-2"><strong>From</strong></span><a href="#from" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
+
+<p>From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정해주는 문법입니다.
 <br /></p>
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
@@ -820,14 +838,9 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/algorithm/"
+            href="/tags/mysql/"
             class="post-tag no-text-decoration"
-          >Algorithm</a>
-        
-          <a
-            href="/tags/swiftalgorithm/"
-            class="post-tag no-text-decoration"
-          >SwiftAlgorithm</a>
+          >MySQL</a>
         
       </div>
     
@@ -903,14 +916,14 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/">SQL Grammer (10) - Pivot tabel, Window function</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(1)-Java/">Java 문법 (1) - Java</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(11)-Date/">SQL Grammer (11) - Date</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98/">Java 문법 (2) - 변수</a>
         </li>
       
         
@@ -924,7 +937,7 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/">SQL Grammer (5) - Replace, Substring, Concat</a>
+          <a href="/posts/ProgrammersBasic-9/">Basic9 홀짝 구분하기</a>
         </li>
       
         
@@ -1005,85 +1018,6 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1109,21 +1043,9 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -1158,19 +1080,13 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
         <a class="post-tag btn btn-outline-primary" href="/tags/swiftalgorithm/">SwiftAlgorithm</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting/">getting</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/started/">started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
       
     </div>
   </section>
@@ -1346,810 +1262,6 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
 
   
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2195,7 +1307,14 @@ From은 데이터베이스 안에서 데이터를 가져올 테이블을 특정�
 
                   SQL Grammer (2) - Where, Between, In,
 
+
+
+
+
+
+
 Where
+
 
 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
 1
@@ -2204,7 +1323,7 @@ ex)
 SELECT * FROM customer WHERE age&amp;gt;=20
 
 
-Where를 사용할 때 기본적인 비교 ...
+Where를 사용할 때 기...
                 </p>
               </div>
             </div>
@@ -2242,6 +1361,12 @@ Where를 사용할 때 기본적인 비교 ...
 
                   SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
 
+
+
+
+
+
+
 SUM
 
 선택된 열과 범위의 합계를 반환해줍니다. 예시처럼 customer의 테이블안에 있는 모든 값들의 나이를 더한 값을 얻고 싶을 때 쓸 수 있습니다.
@@ -2253,9 +1378,13 @@ SELECT SUM(age) FROM customers
 
 
 
+
+
+
+
 AVG
 
-sum과 같은 방법으로 사용 가...
+sum과 같은...
                 </p>
               </div>
             </div>
@@ -2293,6 +1422,12 @@ sum과 같은 방법으로 사용 가...
 
                   SQL Grammer (4) - Group By, Order By
 
+
+
+
+
+
+
 Group By
 
 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
@@ -2303,7 +1438,7 @@ Group By
 4
 5
 ex)
-select cuisine_type,...
+select cuisine...
                 </p>
               </div>
             </div>
@@ -2445,85 +1580,6 @@ select cuisine_type,...
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2549,21 +1605,9 @@ select cuisine_type,...
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -2598,19 +1642,13 @@ select cuisine_type,...
         <a class="post-tag btn btn-outline-primary" href="/tags/swiftalgorithm/">SwiftAlgorithm</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting/">getting</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/started/">started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
       
     </div>
   </section>

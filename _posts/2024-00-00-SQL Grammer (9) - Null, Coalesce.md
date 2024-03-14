@@ -6,11 +6,17 @@ categories:
   - MySQL
   - SQL Grammer
 tags:
-  - Algorithm
-  - SwiftAlgorithm
+  - MySQL
 ---
 ## **SQL Grammer (9) - Null, Coalesce**
+
 <br />
+
+---
+
+<br/>
+
+
 
 ### **Null**
 <br />
@@ -48,7 +54,14 @@ rating이라는 테이블에는 없는 값이 null이 아니라 'Not given'이�
 | Blue Ribbon Fried Chicken | 2.8854166666666665 | 4.328125           |
 
 
+
+<br />
+
 ---
+
+<br/>
+
+
 
 ### Coalesce
 

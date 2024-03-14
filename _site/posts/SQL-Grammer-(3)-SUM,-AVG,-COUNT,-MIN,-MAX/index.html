@@ -38,8 +38,8 @@
 <meta property="og:title" content="SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX SUM" />
-<meta property="og:description" content="SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX SUM" />
+<meta name="description" content="SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX" />
+<meta property="og:description" content="SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX" />
 <link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/" />
 <meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/" />
 <meta property="og:site_name" content="jay1261" />
@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX SUM","headline":"SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/"},"url":"http://localhost:4000/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX","headline":"SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/"},"url":"http://localhost:4000/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -750,7 +750,13 @@
 
   <div class="content">
     <h2 id="sql-grammer-3---sum-avg-count-min-max"><span class="me-2"><strong>SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX</strong></span><a href="#sql-grammer-3---sum-avg-count-min-max" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
 <h3 id="sum"><span class="me-2"><strong>SUM</strong></span><a href="#sum" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <p>선택된 열과 범위의 합계를 반환해줍니다. 예시처럼 customer의 테이블안에 있는 모든 값들의 나이를 더한 값을 얻고 싶을 때 쓸 수 있습니다.</p>
@@ -762,22 +768,30 @@
 <span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
 </pre></td></tr></tbody></table></code></div></div>
 
+<p><br /></p>
+
 <hr />
 
-<h3 id="avg"><span class="me-2"><strong>AVG</strong></span><a href="#avg" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
 
-<p>sum과 같은 방법으로 사용 가능하며, 평균 값을 구할 때 사용합니다. customer 테이블 안의 age의 평균값을 구하고 싶다면 다음과 같이 사용할 수 있습니다.</p>
+<h3 id="avg"><span class="me-2"><strong>AVG</strong></span><a href="#avg" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br />
+sum과 같은 방법으로 사용 가능하며, 평균 값을 구할 때 사용합니다. customer 테이블 안의 age의 평균값을 구하고 싶다면 다음과 같이 사용할 수 있습니다.</p>
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="k">AVG</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
 </pre></td></tr></tbody></table></code></div></div>
 
+<p><br /></p>
+
 <hr />
 
-<h3 id="count"><span class="me-2"><strong>COUNT</strong></span><a href="#count" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
 
-<p>데이터의 개수를 구하는데 사용할 수 있습니다. ()안에 <code class="language-plaintext highlighter-rouge">1</code>이나 <code class="language-plaintext highlighter-rouge">*</code>을 입력하면 해당 테이블의 전체 카운트를 가져옵니다. distinct를 사용하면 중복되지 않는 값을 반환합니다. 예시를 보면 customer_id가 중복되지 않는 값을 반환합니다.</p>
+<h3 id="count"><span class="me-2"><strong>COUNT</strong></span><a href="#count" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br />
+데이터의 개수를 구하는데 사용할 수 있습니다. ()안에 <code class="language-plaintext highlighter-rouge">1</code>이나 <code class="language-plaintext highlighter-rouge">*</code>을 입력하면 해당 테이블의 전체 카운트를 가져옵니다. distinct를 사용하면 중복되지 않는 값을 반환합니다. 예시를 보면 customer_id가 중복되지 않는 값을 반환합니다.</p>
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -788,11 +802,15 @@
 <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span> <span class="n">customer_id</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">food_orders</span>
 </pre></td></tr></tbody></table></code></div></div>
 
+<p><br /></p>
+
 <hr />
 
-<h3 id="min"><span class="me-2"><strong>MIN</strong></span><a href="#min" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
 
-<p>선택된 범위 내에서 최소값을 가져오는 문법입니다. “나이가 가장 어린사람”을 찾고 싶을 때 사용 가능합니다.</p>
+<h3 id="min"><span class="me-2"><strong>MIN</strong></span><a href="#min" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br />
+선택된 범위 내에서 최소값을 가져오는 문법입니다. “나이가 가장 어린사람”을 찾고 싶을 때 사용 가능합니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
@@ -800,11 +818,15 @@
 </pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="k">MIN</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">customers</span>
 </pre></td></tr></tbody></table></code></div></div>
 
+<p><br /></p>
+
 <hr />
 
-<h3 id="max"><span class="me-2"><strong>MAX</strong></span><a href="#max" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br /></p>
 
-<p>선택된 범위 내에서 최대값을 가져오는 문법입니다. “나이가 가장 많은사람”을 찾고 싶을 때 사용 가능합니다.</p>
+<h3 id="max"><span class="me-2"><strong>MAX</strong></span><a href="#max" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><br />
+선택된 범위 내에서 최대값을 가져오는 문법입니다. “나이가 가장 많은사람”을 찾고 싶을 때 사용 가능합니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
@@ -831,14 +853,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/algorithm/"
+            href="/tags/mysql/"
             class="post-tag no-text-decoration"
-          >Algorithm</a>
-        
-          <a
-            href="/tags/swiftalgorithm/"
-            class="post-tag no-text-decoration"
-          >SwiftAlgorithm</a>
+          >MySQL</a>
         
       </div>
     
@@ -914,14 +931,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/">SQL Grammer (10) - Pivot tabel, Window function</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(1)-Java/">Java 문법 (1) - Java</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(11)-Date/">SQL Grammer (11) - Date</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98/">Java 문법 (2) - 변수</a>
         </li>
       
         
@@ -935,7 +952,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/">SQL Grammer (5) - Replace, Substring, Concat</a>
+          <a href="/posts/ProgrammersBasic-9/">Basic9 홀짝 구분하기</a>
         </li>
       
         
@@ -1016,85 +1033,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1120,21 +1058,9 @@
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -1169,19 +1095,13 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/swiftalgorithm/">SwiftAlgorithm</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting/">getting</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/started/">started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
       
     </div>
   </section>
@@ -1357,810 +1277,6 @@
 
   
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2206,14 +1322,21 @@
 
                   SQL Grammer (2) - Where, Between, In,
 
+
+
+
+
+
+
 Where
+
 
 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
 ex)
 SELECT * FROM customer WHERE age&amp;gt;=20
 
 
-Where를 사용할 때 기본적인 비교 연산자로...
+Where를 사용할 때 기본적인 ...
                 </p>
               </div>
             </div>
@@ -2251,6 +1374,12 @@ Where를 사용할 때 기본적인 비교 연산자로...
 
                   SQL Grammer (4) - Group By, Order By
 
+
+
+
+
+
+
 Group By
 
 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
@@ -2261,7 +1390,7 @@ Group By
 4
 5
 ex)
-select cuisine_type,...
+select cuisine...
                 </p>
               </div>
             </div>
@@ -2299,6 +1428,12 @@ select cuisine_type,...
 
                   SQL Grammer (5) - Replace, Substring, Concat
 
+
+
+
+
+
+
 Replace
 
 특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.
@@ -2310,7 +1445,7 @@ Replace
 5
 ex)
 SELECT restaurant_name AS &quot;원래 이름&quot;,  
-       REPLACE (restau...
+       REPLACE (...
                 </p>
               </div>
             </div>
@@ -2452,85 +1587,6 @@ SELECT restaurant_name AS &quot;원래 이름&quot;,
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2556,21 +1612,9 @@ SELECT restaurant_name AS &quot;원래 이름&quot;,
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -2605,19 +1649,13 @@ SELECT restaurant_name AS &quot;원래 이름&quot;,
         <a class="post-tag btn btn-outline-primary" href="/tags/swiftalgorithm/">SwiftAlgorithm</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting/">getting</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/started/">started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
       
     </div>
   </section>

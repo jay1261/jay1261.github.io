@@ -6,11 +6,17 @@ categories:
   - MySQL
   - SQL Grammer
 tags:
-  - Algorithm
-  - SwiftAlgorithm
+  - MySQL
 ---
 ## **SQL Grammer (7) - Subquery**
+
 <br />
+
+---
+
+<br/>
+
+
 
 ### **Subquery**
 <br />
@@ -26,7 +32,14 @@ from (
 ) subq
 ```
 
+
+<br />
+
 ---
+
+<br/>
+
+
 #### **예시**
 <br/>
 

@@ -6,11 +6,17 @@ categories:
   - MySQL
   - SQL Grammer
 tags:
-  - Algorithm
-  - SwiftAlgorithm
+  - MySQL
 ---
 ## **SQL Grammer (5) - Replace, Substring, Concat**
+
 <br />
+
+---
+
+<br/>
+
+
 ### Replace
 <br />
 특정 문자를 변경하고자 할 때 사용합니다. `Replace(바꿀컬럼, 현재 값, 바꿀 값)` 의 형태로 사용할 수 있습니다.
@@ -35,7 +41,14 @@ WHERE restaurant_name LIKE '%Blue Ribbon%'
 |Blue Ribbon Sushi|Pink Ribbon Sushi|
 
 
+
+<br />
+
 ---
+
+<br/>
+
+
 
 ### Substring
 <br />
@@ -53,7 +66,14 @@ SELECT addr as "원래주소",SUBSTR(addr, 1,2) FROM food_orders
 |경기도 평택군 고덕면 문곡리|경기|
 
 
+
+<br />
+
 ---
+
+<br/>
+
+
 
 ### Concat
 <br />

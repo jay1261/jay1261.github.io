@@ -6,11 +6,17 @@ categories:
   - MySQL
   - SQL Grammer
 tags:
-  - Algorithm
-  - SwiftAlgorithm
+  - MySQL
 ---
 ## **SQL Grammer (6) - If, Case, Cast**
+
 <br />
+
+---
+
+<br/>
+
+
 
 ### **If**
 <br />
@@ -31,7 +37,14 @@ from food_orders;
 |Dirty Bird to Go|American|기타|
 
 
+
+<br />
+
 ---
+
+<br/>
+
+
 
 ### **Case**
 <br />
@@ -68,7 +81,14 @@ where age between 10 and 29;
 |10대 여성|박민연|12|female|
 
 
+
+<br />
+
 ---
+
+<br/>
+
+
 
 ### Cast
 

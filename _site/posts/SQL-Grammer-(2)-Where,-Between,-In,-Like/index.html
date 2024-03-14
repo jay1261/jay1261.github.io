@@ -38,8 +38,8 @@
 <meta property="og:title" content="SQL Grammer (2) - Where, Between, In," />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="SQL Grammer (2) - Where, Between, In, Where 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다. 1 2 ex) SELECT * FROM customer WHERE age&gt;=20" />
-<meta property="og:description" content="SQL Grammer (2) - Where, Between, In, Where 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다. 1 2 ex) SELECT * FROM customer WHERE age&gt;=20" />
+<meta name="description" content="SQL Grammer (2) - Where, Between, In," />
+<meta property="og:description" content="SQL Grammer (2) - Where, Between, In," />
 <link rel="canonical" href="http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" />
 <meta property="og:url" content="http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" />
 <meta property="og:site_name" content="jay1261" />
@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (2) - Where, Between, In, Where 데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다. 1 2 ex) SELECT * FROM customer WHERE age&gt;=20","headline":"SQL Grammer (2) - Where, Between, In,","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/"},"url":"http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-03-11T00:00:00+09:00","datePublished":"2024-03-11T00:00:00+09:00","description":"SQL Grammer (2) - Where, Between, In,","headline":"SQL Grammer (2) - Where, Between, In,","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/"},"url":"http://localhost:4000/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -739,10 +739,17 @@
 
   <div class="content">
     <h2 id="sql-grammer-2---where-between-in"><span class="me-2">SQL Grammer (2) - Where, Between, In,</span><a href="#sql-grammer-2---where-between-in" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
 <h3 id="where"><span class="me-2"><strong>Where</strong></span><a href="#where" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.</p>
+<p><br /></p>
+
+<p>데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.</p>
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -788,10 +795,16 @@
   </tbody>
 </table></div>
 
+<p><br /></p>
+
 <hr />
+
+<p><br /></p>
+
 <h3 id="between"><span class="me-2"><strong>Between</strong></span><a href="#between" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><br />
-a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사이에 AND를 사용해 줍니다.</p>
+<p><br /></p>
+
+<p>a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사이에 AND를 사용해 줍니다.</p>
 
 <div class="language-sql highlighter-rouge"><div class="code-header">
         <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
@@ -800,10 +813,15 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
 </pre></td><td class="rouge-code"><pre><span class="n">ex</span><span class="p">)</span>
 <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customer</span> <span class="k">WHERE</span> <span class="n">age</span> <span class="k">BETWEEN</span> <span class="mi">20</span> <span class="k">and</span> <span class="mi">30</span>
 </pre></td></tr></tbody></table></code></div></div>
+
 <p><br /></p>
 
 <hr />
+
+<p><br /></p>
+
 <h3 id="in"><span class="me-2"><strong>In</strong></span><a href="#in" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
 <p><br /></p>
 
 <p>포함하는 조건을 줄 때 사용합니다. “나이가(20, 21, 27)살인 사람”을 필터링할 때 사용합니다.</p>
@@ -813,9 +831,13 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customer</span> <span class="k">WHERE</span> <span class="n">age</span> <span class="k">IN</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">27</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
+
 <p><br /></p>
 
 <hr />
+
+<p><br /></p>
+
 <h3 id="like"><span class="me-2"><strong>Like</strong></span><a href="#like" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p><br />
 완전히 똑같지는 않지만 비슷한 값을 찾을 때 사용할 수 있습니다. 예를들어 이름이 ‘OO현’인 사람을 찾을때 사용할 수 있습니다. Like연산자와 <code class="language-plaintext highlighter-rouge">%, _</code>가 같이 사용되는데, 이 문자들을 <code class="language-plaintext highlighter-rouge">WildCard</code>라고 합니다. <code class="language-plaintext highlighter-rouge">%</code>는 <code class="language-plaintext highlighter-rouge">0,1 또는 하나 이상의 character</code>를 나타냅니다. <code class="language-plaintext highlighter-rouge">_</code>는 <code class="language-plaintext highlighter-rouge">하나의 character</code>를 나타냅니다.</p>
@@ -853,14 +875,9 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/algorithm/"
+            href="/tags/mysql/"
             class="post-tag no-text-decoration"
-          >Algorithm</a>
-        
-          <a
-            href="/tags/swiftalgorithm/"
-            class="post-tag no-text-decoration"
-          >SwiftAlgorithm</a>
+          >MySQL</a>
         
       </div>
     
@@ -936,14 +953,14 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/">SQL Grammer (10) - Pivot tabel, Window function</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(1)-Java/">Java 문법 (1) - Java</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(11)-Date/">SQL Grammer (11) - Date</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98/">Java 문법 (2) - 변수</a>
         </li>
       
         
@@ -957,7 +974,7 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/">SQL Grammer (5) - Replace, Substring, Concat</a>
+          <a href="/posts/ProgrammersBasic-9/">Basic9 홀짝 구분하기</a>
         </li>
       
         
@@ -1038,85 +1055,6 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1142,21 +1080,9 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -1191,19 +1117,13 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
         <a class="post-tag btn btn-outline-primary" href="/tags/swiftalgorithm/">SwiftAlgorithm</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting/">getting</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/started/">started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
       
     </div>
   </section>
@@ -1379,810 +1299,6 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
 
   
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2228,6 +1344,12 @@ a와 b값의 사이에 있는 값을 가져올 때 사용합니다. a와 b 사�
 
                   SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
 
+
+
+
+
+
+
 SUM
 
 선택된 열과 범위의 합계를 반환해줍니다. 예시처럼 customer의 테이블안에 있는 모든 값들의 나이를 더한 값을 얻고 싶을 때 쓸 수 있습니다.
@@ -2239,9 +1361,13 @@ SELECT SUM(age) FROM customers
 
 
 
+
+
+
+
 AVG
 
-sum과 같은 방법으로 사용 가...
+sum과 같은...
                 </p>
               </div>
             </div>
@@ -2279,6 +1405,12 @@ sum과 같은 방법으로 사용 가...
 
                   SQL Grammer (4) - Group By, Order By
 
+
+
+
+
+
+
 Group By
 
 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
@@ -2289,7 +1421,7 @@ Group By
 4
 5
 ex)
-select cuisine_type,...
+select cuisine...
                 </p>
               </div>
             </div>
@@ -2327,6 +1459,12 @@ select cuisine_type,...
 
                   SQL Grammer (5) - Replace, Substring, Concat
 
+
+
+
+
+
+
 Replace
 
 특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.
@@ -2338,7 +1476,7 @@ Replace
 5
 ex)
 SELECT restaurant_name AS &quot;원래 이름&quot;,  
-       REPLACE (restau...
+       REPLACE (...
                 </p>
               </div>
             </div>
@@ -2480,85 +1618,6 @@ SELECT restaurant_name AS &quot;원래 이름&quot;,
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2584,21 +1643,9 @@ SELECT restaurant_name AS &quot;원래 이름&quot;,
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
+        
+        
+
   
     
     
@@ -2633,19 +1680,13 @@ SELECT restaurant_name AS &quot;원래 이름&quot;,
         <a class="post-tag btn btn-outline-primary" href="/tags/swiftalgorithm/">SwiftAlgorithm</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting/">getting</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/started/">started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
       
     </div>
   </section>

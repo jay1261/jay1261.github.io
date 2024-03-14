@@ -6,11 +6,17 @@ categories:
   - MySQL
   - SQL Grammer
 tags:
-  - Algorithm
-  - SwiftAlgorithm
+  - MySQL
 ---
 ## **SQL Grammer (10) - Pivot tabel, Window function**
+
 <br />
+
+---
+
+<br/>
+
+
 
 ### **Pivot tabel**
 <br />
@@ -47,7 +53,14 @@ order by 7 desc;
 | The Meatball Shop         | 4   | 2   | 7   | 3   | 4   | 9   |
 | Blue Ribbon Fried Chicken | 5   | 4   | 2   | 4   | 4   | 5   |
 
+
+<br />
+
 ---
+
+<br/>
+
+
 
 ### **Window function**
 <br/>

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-03-13T16:08:28+09:00</updated>
+  <updated>2024-03-14T16:44:14+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,111 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Java 문법 (2) - 변수</title>
+    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98/" rel="alternate" type="text/html" title="Java 문법 (2) - 변수" />
+    <published>2024-03-14T00:00:00+09:00</published>
+  
+    <updated>2024-03-14T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98/</id>
+    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Java 문법" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Java 문법 (2) - 변수
+
+
+
+
+
+
+
+자바의 변수 초기화
+
+
+자바에서 변수를 선언하고 초기화하지 않고 출력하려고 하면 "java: variable a might not have been initialized" 라는 오류메시지가 나타납니다. 이 오류메시지는 변수를 초기화하지 않았다는 것을 알려주는데요. 컴퓨터의 메모리는 여러 시스템이 공유하는 자원으로, 다양한 값들이 저장됩니다. 변수를 선언하면 메모리 상에 일정 공간을 차지하게 되는데, 이 공간은 이전에 다른 값이 저장되었던 곳일 수 있습니다. 그 공간에 어떤 값이 있었는지 알 수 없기 때문에 초기화하지 않은 변수의 공간에는 쓰레기값이 남아있습니다. 이러한 쓰레기값으로 인해 예상치 못한 결과가 출력될 수 있으므로, 이를 방지하기 위해 자바는 변수의...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Java 문법 (1) - Java</title>
+    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(1)-Java/" rel="alternate" type="text/html" title="Java 문법 (1) - Java" />
+    <published>2024-03-14T00:00:00+09:00</published>
+  
+    <updated>2024-03-14T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(1)-Java/</id>
+    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(1)-Java/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Java 문법" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Java 문법 (1) - Java
+
+
+
+
+
+
+
+Java 표준 스펙과 구현
+
+
+자바는 표준 스펙(설계도와 문서)과 여러 회사에서 실제로 구현한 다양한 자바 버전으로 나눌 수 있습니다. 이러한 표준 스펙은 자바 커뮤니티 프로세스(JCP)를 통해 관리되며, 다양한 구현은 각각의 OS에서 작동하도록 설계되어 있습니다. 예를 들어, Amazon Corretto는 AWS에 최적화되어 있습니다. 자바 구현들은 대부분 호환성이 높아, 한 구현에서 다른 구현으로 변경하는 것이 비교적 용이합니다.
+
+
+
+
+
+
+
+자바의 특징
+
+
+자바는 Write once, run everywhere라는 모토를 가지고 있습니다. 그래서 나타난 중요한 특징 중 하나가 바로 운영체제 독립성입니다. 자바 프로그램은 다양한 운영체제에서 실행될 수 ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -51,6 +156,11 @@
       SQL Grammer (11) - Date
 
 
+
+
+
+
+
 Date
 
 년, 월, 일, 시, 분, 초 등의 값을 모두 갖고 있으며, 목적에 따라 월, 주, 일 등으로 포맷을 변경할 수 있습니다.
@@ -69,8 +179,7 @@ Date
 select date(date) date_type,  
        date_format(date(date), '%Y') "년",  
        date_format(date(date), '%m') "월",  
-       date_format(date(date), '%d') "일",  
-...
+       date_format(date(date), '%d') "일...
     </summary>
   
 
@@ -109,6 +218,11 @@ select date(date) date_type,
       SQL Grammer (10) - Pivot tabel, Window function
 
 
+
+
+
+
+
 Pivot tabel
 
 
@@ -119,7 +233,7 @@ select restaurant_name,
        max(if(hh='16', cnt_order, 0)) "16",  
        max(if(hh='17', cnt_order, 0)) "17",  
        max(if(hh='18', cnt_order, 0)) "18",  
-       max(if(hh='19', cnt_o...
+       max(if(hh='19', ...
     </summary>
   
 
@@ -158,6 +272,11 @@ select restaurant_name,
       SQL Grammer (9) - Null, Coalesce
 
 
+
+
+
+
+
 Null
 
 
@@ -167,126 +286,7 @@ MySQL에서는 사용할 수 없는 값이 연산으로 들어오면 자동으�
 ex)
 select restaurant_name,  
        avg(rating) average_of_rating,  
-       avg(if(rating&amp;lt;&amp;gt;'No...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>SQL Grammer (8) - Join</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(8)-Join/" rel="alternate" type="text/html" title="SQL Grammer (8) - Join" />
-    <published>2024-03-12T00:00:00+09:00</published>
-  
-    <updated>2024-03-12T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/SQL-Grammer-(8)-Join/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(8)-Join/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="MySQL" />
-    
-    <category term="SQL Grammer" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      SQL Grammer (8) - Join
-
-
-Join
-
-
-필요한 데이터가 서로 다른 테이블에 있을 때 사용할 수 있는 문법입니다. 공통 컬럼을 기준으로 두 테이블을 합쳐서 각각 테이블에서 필요한 데이터를 조회할 수 있습니다.
-
-Join의 종류
-
-  Inner Join
-    
-      가장 많이 사용하는 조인으로, 두 테이블 모두에 있는 값만 조회하는 것을 말합니다.
-    
-  
-  OuterJoin
-    
-      left, right, full 이 있으며 각각 왼쪽 테이블의 모든 값 조회, 오른쪽 테이블의 모든 값 조회, 모든 테이블의 모든 값 조회를 할 수 있습니다.
-    
-  
-  Cross Join
-    
-      한쪽 테이블의 모든 행과 다른쪽 테이블의 모든 행을 조인시키는 기능...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>SQL Grammer (7) - Subquery</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/" rel="alternate" type="text/html" title="SQL Grammer (7) - Subquery" />
-    <published>2024-03-12T00:00:00+09:00</published>
-  
-    <updated>2024-03-12T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(7)-Subquery/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="MySQL" />
-    
-    <category term="SQL Grammer" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      SQL Grammer (7) - Subquery
-
-
-Subquery
-
-
-여러번의 연산을 수행해야할 때, 조건문에 연산 결과를 사용하거나 조건에 Query결과를 사용하고 싶을 때 쓸 수 있는 문법입니다. 복잡한 쿼리문을 효율적으로 작성할 수 있습니다. 기본 구조는 아래와 같습니다.
-
-select column1, test
-from (
-	#subquery
-	select column1, column2 as test
-	from table1
-) subq
-
-
-
-예시
-
-
-ex 1) 음식점의 총 주문수량과 주문금액을 연산하고, 주문수량을 기반으로 수수료 할인율 구하기
-
-  할인조건: 수량 5개 이하-&amp;gt; 10%, 수량 15개 초과 &amp;amp; 총 주문금액 300000이상 - 0.5%, 이외 1%
-
-
-select re...
+       avg(if(rating&amp;lt;&amp;g...
     </summary>
   
 

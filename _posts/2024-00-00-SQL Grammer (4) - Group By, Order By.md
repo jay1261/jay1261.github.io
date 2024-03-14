@@ -6,11 +6,17 @@ categories:
   - MySQL
   - SQL Grammer
 tags:
-  - Algorithm
-  - SwiftAlgorithm
+  - MySQL
 ---
 ## **SQL Grammer (4) - Group By, Order By**
+
 <br />
+
+---
+
+<br/>
+
+
 ### **Group By**
 <br />
 데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
@@ -33,12 +39,15 @@ group by cuisine_type
 | Mexican      | 1303850      |
 | American     | 9530780      |
 
-
+<br />
 
 ---
 
+<br/>
+
+
 ### **Order By**
-<br>
+<br/>
 지정한 칼럼을 기준으로 정렬된 값을 얻고 싶을 때 사용하는 문법입니다. 기본 오름차순으로 정렬되며 desc를 사용하면 내림차순으로 정렬할 수 있습니다. Group by의 예시의 바로 아래에 `order by sum(price)`를 입력해줌으로써 합산된 가격의 오름차순으로 정렬된 값을 얻을 수 있습니다. 내림차순은 `order by sum(price) desc`를 입력해주면 됩니다.
 
 ```sql
