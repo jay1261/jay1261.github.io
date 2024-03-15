@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-03-14T16:44:14+09:00</updated>
+  <updated>2024-03-15T15:23:42+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,76 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Java 문법 (3) - 새로운 Switch문</title>
+    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(3)-%EC%83%88%EB%A1%9C%EC%9A%B4-Switch%EB%AC%B8/" rel="alternate" type="text/html" title="Java 문법 (3) - 새로운 Switch문" />
+    <published>2024-03-15T00:00:00+09:00</published>
+  
+    <updated>2024-03-15T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(3)-%EC%83%88%EB%A1%9C%EC%9A%B4-Switch%EB%AC%B8/</id>
+    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(3)-%EC%83%88%EB%A1%9C%EC%9A%B4-Switch%EB%AC%B8/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Java 문법" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Java 문법 (2) - 새로운 Switch문
+
+
+
+
+
+
+
+기존 Switch
+
+
+자바의 switch 문은 아래와 같이 작성할 수 있습니다. 하지만 break도 꼭 써줘야하고, if 문보다 조금은 더 보기 편하지만 많이 차이나지는 않습니다. 따라서 Java14부터는 새로운 switch문을 사용할 수 있습니다.
+
+switch (조건){  
+	case 1 :  
+		// 조건의 결과값이 1일 때 실행할 코드  
+		break;  
+	case 2:  
+		// 조건의 결과값이 2일 때 실행할 코드
+		break;  
+	case 3:  
+		// 조건의 결과값이 3일 때 실행할 코드
+		break;  
+	default:  
+		// 조건이 위의 어떤 값에도 해당하지 않을 때 실행할 코드
+}
+
+
+
+
+
+
+
+
+새로운...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -129,7 +199,7 @@ Java 표준 스펙과 구현
     <link href="http://localhost:4000/posts/SQL-Grammer-(11)-Date/" rel="alternate" type="text/html" title="SQL Grammer (11) - Date" />
     <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-13T00:00:00+09:00</updated>
+    <updated>2024-03-14T16:47:22+09:00</updated>
   
     <id>http://localhost:4000/posts/SQL-Grammer-(11)-Date/</id>
     <content src="http://localhost:4000/posts/SQL-Grammer-(11)-Date/" />
@@ -191,7 +261,7 @@ select date(date) date_type,
     <link href="http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" rel="alternate" type="text/html" title="SQL Grammer (10) - Pivot tabel, Window function" />
     <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-13T00:00:00+09:00</updated>
+    <updated>2024-03-14T16:47:22+09:00</updated>
   
     <id>http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/</id>
     <content src="http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" />
@@ -234,59 +304,6 @@ select restaurant_name,
        max(if(hh='17', cnt_order, 0)) "17",  
        max(if(hh='18', cnt_order, 0)) "18",  
        max(if(hh='19', ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>SQL Grammer (9) - Null, Coalesce</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/" rel="alternate" type="text/html" title="SQL Grammer (9) - Null, Coalesce" />
-    <published>2024-03-12T00:00:00+09:00</published>
-  
-    <updated>2024-03-12T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(9)-Null,-Coalesce/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="MySQL" />
-    
-    <category term="SQL Grammer" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      SQL Grammer (9) - Null, Coalesce
-
-
-
-
-
-
-
-Null
-
-
-값이 없을 때 Null 을 이용한다. 숫자 계산같은 함수를 사용할 때 알아두면 좋은 점이 있는데, Null로 처리한 것과 다른 문자로 처리된 경우 계산값이 다르게 나올 수 있다는 것이다.
-MySQL에서는 사용할 수 없는 값이 연산으로 들어오면 자동으로 0으로 간주한다. Avg로 평균을 구하는데 하나의 값이 0으로 들어가면서 자릿수는 차지해버려 평균값을 깎아먹는 역할을 하게된다. 하지만 Null로 되어있다면 완전히 제외되어서 계산에 포함되지 않는다.
-
-ex)
-select restaurant_name,  
-       avg(rating) average_of_rating,  
-       avg(if(rating&amp;lt;&amp;g...
     </summary>
   
 

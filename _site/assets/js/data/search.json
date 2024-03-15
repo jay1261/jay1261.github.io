@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Java 문법 (3) - 새로운 Switch문",
+    "url": "/posts/Java-%EB%AC%B8%EB%B2%95-(3)-%EC%83%88%EB%A1%9C%EC%9A%B4-Switch%EB%AC%B8/",
+    "categories": "Java, Java 문법",
+    "tags": "Java, Java문법",
+    "date": "2024-03-15 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Java 문법 (2) - 새로운 Switch문기존 Switch자바의 switch 문은 아래와 같이 작성할 수 있습니다. 하지만 break도 꼭 써줘야하고, if 문보다 조금은 더 보기 편하지만 많이 차이나지는 않습니다. 따라서 Java14부터는 새로운 switch문을 사용할 수 있습니다.switch (조건){  \tcase 1 :  \t\t// 조건의 결과...",
+    "content": "Java 문법 (2) - 새로운 Switch문기존 Switch자바의 switch 문은 아래와 같이 작성할 수 있습니다. 하지만 break도 꼭 써줘야하고, if 문보다 조금은 더 보기 편하지만 많이 차이나지는 않습니다. 따라서 Java14부터는 새로운 switch문을 사용할 수 있습니다.switch (조건){  \tcase 1 :  \t\t// 조건의 결과값이 1일 때 실행할 코드  \t\tbreak;  \tcase 2:  \t\t// 조건의 결과값이 2일 때 실행할 코드\t\tbreak;  \tcase 3:  \t\t// 조건의 결과값이 3일 때 실행할 코드\t\tbreak;  \tdefault:  \t\t// 조건이 위의 어떤 값에도 해당하지 않을 때 실행할 코드}새로운 Switch기본적으로 아래와 같은 형식으로 switch 문을 작성할 수 있습니다. 훨씬 코드가 간결해진 모습입니다.switch(조건){\tcase 1 -&gt; //조건이 1일 떄 실행할 코드;\tcase 2 -&gt; //조건이 2일 떄 실행할 코드;\tdefault -&gt; // 조건이 위의 어떤 값에도 해당하지 않을 때 실행할 코드 }거기다 추가적으로 switch의 결과값을 return 받아서 변수에 할당해줄 수도 있습니다.int result = switch(조건){\tcase 1 -&gt; 10//조건이 1일 떄 실행할 코드;\tcase 2 -&gt; 20 //조건이 2일 떄 실행할 코드;\tdefault -&gt; -1 // 조건이 위의 어떤 값에도 해당하지 않을 때 실행할 코드 }"
+  },
+  
+  {
     "title": "Java 문법 (2) - 변수",
     "url": "/posts/Java-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98/",
     "categories": "Java, Java 문법",
