@@ -3,8 +3,8 @@ title: Basic24 원소들의 곱과 합
 author: jay
 date: 2024-01-15
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

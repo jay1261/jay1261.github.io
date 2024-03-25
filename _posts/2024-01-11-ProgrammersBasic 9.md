@@ -3,8 +3,8 @@ title: Basic9 홀짝 구분하기
 author: jay
 date: 2024-01-12
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

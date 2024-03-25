@@ -3,8 +3,8 @@ title: Basic69 n 보다 커질 때까지 더하기
 author: jay
 date: 2024-02-07
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

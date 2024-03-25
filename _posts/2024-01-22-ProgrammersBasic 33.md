@@ -3,8 +3,8 @@ title: Basic33 카운트 업
 author: jay
 date: 2024-01-22
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

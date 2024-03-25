@@ -3,8 +3,8 @@ title: Basic27 수 조작하기 1
 author: jay
 date: 2024-01-16
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

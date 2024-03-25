@@ -3,8 +3,8 @@ title: Basic34 콜라츠 수열 만들기
 author: jay
 date: 2024-01-22
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

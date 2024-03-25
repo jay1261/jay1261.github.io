@@ -3,8 +3,8 @@ title: Basic38 글자 이어 붙여 문자열 만들기
 author: jay
 date: 2024-01-23
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

@@ -3,8 +3,8 @@ title: Basic37 주사위 게임 3
 author: jay
 date: 2024-01-23
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

@@ -3,8 +3,8 @@ title: Basic64 n 번째 원소까지
 author: jay
 date: 2024-02-06
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

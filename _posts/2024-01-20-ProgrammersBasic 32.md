@@ -3,8 +3,8 @@ title: Basic32 배열 만들기 2
 author: jay
 date: 2024-01-20
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

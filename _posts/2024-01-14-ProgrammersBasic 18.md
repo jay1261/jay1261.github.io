@@ -3,8 +3,8 @@ title: Basic18 홀짝에 따라 다른 값 반환하기
 author: jay
 date: 2024-01-14
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

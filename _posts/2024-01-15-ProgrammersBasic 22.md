@@ -3,8 +3,8 @@ title: Basic22 등차수열의 특정한 항만 더하기
 author: jay
 date: 2024-01-15
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

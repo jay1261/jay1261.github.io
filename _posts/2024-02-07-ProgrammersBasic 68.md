@@ -3,8 +3,8 @@ title: Basic68 할 일 목록
 author: jay
 date: 2024-02-07
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

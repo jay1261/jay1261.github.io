@@ -3,8 +3,8 @@ title: Basic16 n의 배수
 author: jay
 date: 2024-01-13
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

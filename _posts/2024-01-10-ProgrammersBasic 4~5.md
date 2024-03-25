@@ -3,8 +3,8 @@ title: Basic4~5
 author: jay
 date: 2024-01-10
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

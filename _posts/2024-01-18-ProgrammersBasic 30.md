@@ -3,8 +3,8 @@ title: Basic30 수열과 구간 쿼리 2
 author: jay
 date: 2024-01-18
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

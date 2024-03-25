@@ -3,8 +3,8 @@ title: Basic41 배열만들기 5
 author: jay
 date: 2024-01-24
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

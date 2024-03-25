@@ -3,8 +3,8 @@ title: Basic23 주사위 게임 2
 author: jay
 date: 2024-01-15
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

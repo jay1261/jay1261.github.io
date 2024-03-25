@@ -3,8 +3,8 @@ title: Basic61 n 번째 원소부터
 author: jay
 date: 2024-02-06
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

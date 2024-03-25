@@ -3,8 +3,8 @@ title: Basic56 리스트 자르기
 author: jay
 date: 2024-02-03
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

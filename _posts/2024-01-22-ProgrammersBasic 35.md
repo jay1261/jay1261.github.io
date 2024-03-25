@@ -3,8 +3,8 @@ title: Basic35 배열 만들기 4
 author: jay
 date: 2024-01-22
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

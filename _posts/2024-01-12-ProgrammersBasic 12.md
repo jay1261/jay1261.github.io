@@ -3,8 +3,8 @@ title: Basic12 문자 리스트를 문자열로 변환하기
 author: jay
 date: 2024-01-12
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

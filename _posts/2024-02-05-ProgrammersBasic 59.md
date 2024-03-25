@@ -3,8 +3,8 @@ title: Basic59 2의 영역
 author: jay
 date: 2024-02-05
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

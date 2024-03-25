@@ -3,8 +3,8 @@ title: Basic57 첫 번째로 나오는 음수
 author: jay
 date: 2024-02-04
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

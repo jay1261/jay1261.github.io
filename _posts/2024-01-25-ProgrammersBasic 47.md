@@ -3,8 +3,8 @@ title: Basic47 접두사인지 확인하기
 author: jay
 date: 2024-01-25
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

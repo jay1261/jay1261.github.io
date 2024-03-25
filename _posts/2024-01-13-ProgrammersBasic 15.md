@@ -3,8 +3,8 @@ title: Basic15 두 수의 연산값 비교하기
 author: jay
 date: 2024-01-13
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

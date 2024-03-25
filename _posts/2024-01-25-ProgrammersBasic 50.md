@@ -3,8 +3,8 @@ title: Basic50 qr code
 author: jay
 date: 2024-01-25
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

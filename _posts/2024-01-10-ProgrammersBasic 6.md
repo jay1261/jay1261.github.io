@@ -3,8 +3,8 @@ title: Basic6 덧셈식 출력하기
 author: jay
 date: 2024-01-10
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

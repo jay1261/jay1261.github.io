@@ -3,8 +3,8 @@ title: Basic19 조건 문자열
 author: jay
 date: 2024-01-14
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

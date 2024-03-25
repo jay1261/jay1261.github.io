@@ -3,8 +3,8 @@ title: Basic62 순서 바꾸기
 author: jay
 date: 2024-02-06
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

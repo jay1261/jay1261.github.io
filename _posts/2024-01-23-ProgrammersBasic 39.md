@@ -3,8 +3,8 @@ title: Basic39 9로 나눈 나머지
 author: jay
 date: 2024-01-23
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

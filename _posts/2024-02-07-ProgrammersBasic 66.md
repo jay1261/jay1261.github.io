@@ -3,8 +3,8 @@ title: Basic66 홀수 vs 짝수
 author: jay
 date: 2024-02-07
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

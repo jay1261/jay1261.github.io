@@ -3,8 +3,8 @@ title: Basic13 문자열 곱하기
 author: jay
 date: 2024-01-13
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

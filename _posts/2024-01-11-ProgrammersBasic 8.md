@@ -3,8 +3,8 @@ title: Basic8 문자열 돌리기
 author: jay
 date: 2024-01-11
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

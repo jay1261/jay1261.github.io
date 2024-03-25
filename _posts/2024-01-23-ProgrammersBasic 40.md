@@ -3,8 +3,8 @@ title: Basic40 문자열 여러 번 뒤집기
 author: jay
 date: 2024-01-23
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

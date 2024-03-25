@@ -3,8 +3,8 @@ title: Basic63 왼쪽 오른쪽
 author: jay
 date: 2024-02-06
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

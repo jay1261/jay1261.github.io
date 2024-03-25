@@ -3,8 +3,8 @@ title: Basic65 n개 간격의 원소들
 author: jay
 date: 2024-02-06
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

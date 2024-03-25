@@ -3,8 +3,8 @@ title: Basic51 문자 개수 세기
 author: jay
 date: 2024-01-26
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

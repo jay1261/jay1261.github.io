@@ -3,8 +3,8 @@ title: Basic42 부분 문자열 이어 붙여 문자열 만들기
 author: jay
 date: 2024-01-24
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

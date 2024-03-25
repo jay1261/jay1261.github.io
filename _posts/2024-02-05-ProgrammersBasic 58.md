@@ -3,8 +3,8 @@ title: Basic58 배열 만들기 3
 author: jay
 date: 2024-02-05
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

@@ -3,8 +3,8 @@ title: Basic46 문자열의 앞의 n글자
 author: jay
 date: 2024-01-25
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm

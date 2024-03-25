@@ -3,8 +3,8 @@ title: Basic52 배열 만들기 1
 author: jay
 date: 2024-01-27
 categories:
-  - Algorithm
   - Programmers
+  - Basic_Swift
 tags:
   - Algorithm
   - SwiftAlgorithm
