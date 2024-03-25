@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-03-25T11:37:21+09:00</updated>
+  <updated>2024-03-25T12:44:29+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,83 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (1) - 중앙값 구하기</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(1)-%EC%A4%91%EC%95%99%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (1) - 중앙값 구하기" />
+    <published>2024-03-25T00:00:00+09:00</published>
+  
+    <updated>2024-03-25T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(1)-%EC%A4%91%EC%95%99%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(1)-%EC%A4%91%EC%95%99%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      중앙값 구하기
+
+
+
+
+
+
+
+문제 설명
+
+중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미합니다. 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 정수 배열 array가 매개변수로 주어질 때, 중앙값을 return 하도록 solution 함수를 완성해보세요.
+
+
+
+제한사항
+
+
+  array의 길이는 홀수입니다.
+  0 &amp;lt; array의 길이 &amp;lt; 100
+  -1,000 &amp;lt; array의 원소 &amp;lt; 1,000
+
+
+
+
+입출력 예
+
+
+  
+    
+      array
+      result
+    
+  
+  
+    
+      [1, 2, 7, 10, 11]
+      7
+    
+    
+      [9, -1, 0]
+      0
+   ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -250,60 +327,6 @@ select date(date) date_type,
        date_format(date(date), '%Y') "년",  
        date_format(date(date), '%m') "월",  
        date_format(date(date), '%d') "일...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>SQL Grammer (10) - Pivot tabel, Window function</title>
-    <link href="http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" rel="alternate" type="text/html" title="SQL Grammer (10) - Pivot tabel, Window function" />
-    <published>2024-03-13T00:00:00+09:00</published>
-  
-    <updated>2024-03-14T16:47:22+09:00</updated>
-  
-    <id>http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/</id>
-    <content src="http://localhost:4000/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="MySQL" />
-    
-    <category term="SQL Grammer" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      SQL Grammer (10) - Pivot tabel, Window function
-
-
-
-
-
-
-
-Pivot tabel
-
-
-2개 이상의 기준으로 데이터를 집계할 때, 보기 쉽게 배열하여 보여주는 것을 의미합니다. 집계 기준을 행의 기준으로 잡고, 구분 컬럼으로 데이터를 보여줄 수 있습니다.
-
-select restaurant_name,  
-       max(if(hh='15', cnt_order, 0)) "15",  
-       max(if(hh='16', cnt_order, 0)) "16",  
-       max(if(hh='17', cnt_order, 0)) "17",  
-       max(if(hh='18', cnt_order, 0)) "18",  
-       max(if(hh='19', ...
     </summary>
   
 
