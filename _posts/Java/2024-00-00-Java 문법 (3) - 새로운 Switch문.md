@@ -4,10 +4,9 @@ author: jay
 date: 2024-03-15
 categories:
   - Java
-  - Java 문법
+  - Java_Start
 tags:
   - Java
-  - Java문법
 ---
 ## **Java 문법 (2) - 새로운 Switch문**
 
