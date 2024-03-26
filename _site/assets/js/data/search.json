@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Java 문법 (4) - 기본형과 참조형",
+    "url": "/posts/Java-%EB%AC%B8%EB%B2%95-(4)-%EA%B8%B0%EB%B3%B8%ED%98%95%EA%B3%BC-%EC%B0%B8%EC%A1%B0%ED%98%95/",
+    "categories": "Java, Java 문법",
+    "tags": "Java, Java문법",
+    "date": "2024-03-26 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Java 문법 (4) - 기본형과 참조형기본형 vs 참조형대원칙: 자바는 항상 변수의 값을 복사해서 대입한다.기본형  int, long, double, boolean 처럼 변수에 사용할 값을 직접 넣을 수 있는 데이터 타입  10, 20과 같이 실제 사용하는 값을 변수에 담을 수 있다  들어 있는 값을 그대로 계산에 사용할 수 있다참조형  Studen...",
+    "content": "Java 문법 (4) - 기본형과 참조형기본형 vs 참조형대원칙: 자바는 항상 변수의 값을 복사해서 대입한다.기본형  int, long, double, boolean 처럼 변수에 사용할 값을 직접 넣을 수 있는 데이터 타입  10, 20과 같이 실제 사용하는 값을 변수에 담을 수 있다  들어 있는 값을 그대로 계산에 사용할 수 있다참조형  Student student1, int[] students 처럼 데이터에 접근하기 위한 참조(메모리 주소)값을 저장하는 데이터 타입  실제 사용하는 값을 담는게 아닌, 실제 객체의 참조(주소)를 저장한다.  참조값을 그대로 사용할 수 없다기본형의 변수 대입자바에서 변수에 값을 대입하는 것은 변수에 들어 있는 값을 복사해서 대입하는 것입니다. 따라서 기본형은 변수에 10, 20 과 같은 실제 사용할 수 있는 값들이 담겨있어서 그 값을 복사해서 대입합니다.public class VarChange1 {      public static void main(String[] args) {          int a = 10;          int b = a;          System.out.println(\"a = \" + a);  // a = 10        System.out.println(\"b = \" + b);  // b = 10        a = 20;          System.out.println(\"a = \" + a);  // a = 20        System.out.println(\"b = \" + b);  // b = 10        b = 30;          System.out.println(\"a = \" + a);  // a = 20        System.out.println(\"b = \" + b);  // b = 30    }  }따라서 메모리 공간에 a에 10, b에 10 따로 저장했기에 a를 바꾸어도 b는 바뀌지 않고, b를 바꿔도 a가 바뀌지는 않습니다.참조형의 변수 대입참조형도 똑같이 변수에 들어있는 값을 복사해서 대입합니다. 참조형 변수에는 객체의 참조값(주소)이 들어있기 때문에 해당 참조값을 복사해서 대입합니다.    public static void main(String[] args) {          Data dataA = new Data();          dataA.value = 10;          Data dataB = dataA;            System.out.println(\"dataA 참조값 = \" + dataA);  // dataA 참조값 = ref.Data@30f39991                System.out.println(\"dataB 참조값 = \" + dataB);  // dataB 참조값 = ref.Data@30f39991          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 10          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 10            dataA.value = 20;          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 20          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 20            dataB.value = 30;          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 30          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 30      }  }그러므로 메모리에 Data 객체 하나가 존재하고, 이 객체를 찾아갈 수 있는 주소값을 가진 변수가 dataA, dataB 두개가 됩니다. 객체 자체는 하나이기 때문에 dataA.value를 변경해도 dataB.value가 변경됩니다.기본형과 참조형의 메서드 호출\b메서드 호출도 같은 원리가 적용됩니다. 메서드를 호출할 때 사용하는 매개변수에 값을 전달할 때에도 현재 변수에 들어있는 값을 복사해서 전달합니다.// 기본형 메서드 호출public class MethodChange1 {      public static void main(String[] args) {          int a = 10;          System.out.println(\"a = \" + a); // a = 10        changePrimitive(a);          System.out.println(\"a = \" + a);  // a = 10    }      public static void changePrimitive(int x){          x = 20;      }  }매개변수로 전달된 x는 a에 들어있는 값을 복사해서 전달한 것으로, 10이라는 기본형 값이 들어있기 때문에 메모리에 서로 다른 공간을 갖고있습니다. 따라서 메서드가 실행된 이후에도 a의 값은 변하지 않습니다.// 참조형 메서드 호출    public static void main(String[] args) {          Data dataA = new Data();          dataA.value = 10;          System.out.println(\"dataA = \" + dataA.value);          changePrimitive(dataA);          System.out.println(\"dataA = \" + dataA.value);      }      public static void changePrimitive(Data x){          x.value = 20;      }  }참조형은 dataA의 객체의 주소를 x에 전달하기 때문에, x.value를 변경했을 때, dataA.value 가 변경된 값을 가지고 있는 것을 확인할 수 있습니다."
+  },
+  
+  {
     "title": "Programmers Java Lv.0 (1) - 중앙값 구하기",
     "url": "/posts/Programmers-Java-Lv.0-(1)-%EC%A4%91%EC%95%99%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, Lv.0_Java",
