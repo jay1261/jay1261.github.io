@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-03-26T16:27:23+09:00</updated>
+  <updated>2024-03-28T14:26:26+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,78 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Java 문법 (5) - 객체 지향 프로그래밍</title>
+    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(5)-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" rel="alternate" type="text/html" title="Java 문법 (5) - 객체 지향 프로그래밍" />
+    <published>2024-03-27T00:00:00+09:00</published>
+  
+    <updated>2024-03-27T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(5)-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</id>
+    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(5)-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Java_Basic" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Java 문법 (5) - 객체 지향 프로그래밍
+
+
+
+
+
+
+
+절차 지향과 객체 지향
+
+
+절차지향
+
+  이름 그대로 절차를 지향하는 프로그래밍입니다. 실행 순서를 중요하게 생각하는 방식입니다.
+  프로그램의 흐름을 순차적으로 따르며 처리하는 방식입니다.
+  “어떻게”를 중심으로 프로그래밍 합니다.
+  데이터와 데이터에 대한 처리방식이 분리되어 있습니다.
+
+
+객체지향
+
+  객체를 중요하게 생각하는 방식입니다.
+  실제 세계의 사물이나 사건을 객체로 보고, 이러한 객체들 간의 상호작용을 중심으로 프로그래밍하는 방식입니다.
+  “무엇을” 중심으로 프로그래밍 합니다.
+  데이터와 데이터에 대한 행동(메서드)가 하나의 객체 안에 포함되어 있습니다.
+
+
+
+
+
+
+
+
+절차지향 프로그래밍 예시
+
+
+// 음악 플레이어 클...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -343,76 +415,6 @@
       [9, -1, 0]
       0
    ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Java 문법 (3) - 새로운 Switch문</title>
-    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(3)-%EC%83%88%EB%A1%9C%EC%9A%B4-Switch%EB%AC%B8/" rel="alternate" type="text/html" title="Java 문법 (3) - 새로운 Switch문" />
-    <published>2024-03-15T00:00:00+09:00</published>
-  
-    <updated>2024-03-15T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(3)-%EC%83%88%EB%A1%9C%EC%9A%B4-Switch%EB%AC%B8/</id>
-    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(3)-%EC%83%88%EB%A1%9C%EC%9A%B4-Switch%EB%AC%B8/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Java_Start" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Java 문법 (2) - 새로운 Switch문
-
-
-
-
-
-
-
-기존 Switch
-
-
-자바의 switch 문은 아래와 같이 작성할 수 있습니다. 하지만 break도 꼭 써줘야하고, if 문보다 조금은 더 보기 편하지만 많이 차이나지는 않습니다. 따라서 Java14부터는 새로운 switch문을 사용할 수 있습니다.
-
-switch (조건){  
-	case 1 :  
-		// 조건의 결과값이 1일 때 실행할 코드  
-		break;  
-	case 2:  
-		// 조건의 결과값이 2일 때 실행할 코드
-		break;  
-	case 3:  
-		// 조건의 결과값이 3일 때 실행할 코드
-		break;  
-	default:  
-		// 조건이 위의 어떤 값에도 해당하지 않을 때 실행할 코드
-}
-
-
-
-
-
-
-
-
-새로운...
     </summary>
   
 
