@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-03-28T14:26:26+09:00</updated>
+  <updated>2024-03-28T17:31:30+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,362 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (7) - 배열의 평균값</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(7)-%EB%B0%B0%EC%97%B4%EC%9D%98-%ED%8F%89%EA%B7%A0%EA%B0%92/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (7) - 배열의 평균값" />
+    <published>2024-03-28T00:00:00+09:00</published>
+  
+    <updated>2024-03-28T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(7)-%EB%B0%B0%EC%97%B4%EC%9D%98-%ED%8F%89%EA%B7%A0%EA%B0%92/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(7)-%EB%B0%B0%EC%97%B4%EC%9D%98-%ED%8F%89%EA%B7%A0%EA%B0%92/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      배열의 평균값
+
+
+
+
+
+
+
+문제 설명
+
+정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소의 평균값을 return하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  0 ≤ numbers의 원소 ≤ 1,000
+  1 ≤ numbers의 길이 ≤ 100
+  정답의 소수 부분이 .0 또는 .5인 경우만 입력으로 주어집니다.
+
+
+
+
+입출력 예
+
+
+  
+    
+      numbers
+      result
+    
+  
+  
+    
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      5.5
+    
+    
+      [89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+      94.0
+    
+  
+
+
+
+
+입출력 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (6) - 피자 나눠먹기 3</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(6)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-3/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (6) - 피자 나눠먹기 3" />
+    <published>2024-03-28T00:00:00+09:00</published>
+  
+    <updated>2024-03-28T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(6)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-3/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(6)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-3/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      피자 나눠먹기 3
+
+
+
+
+
+
+
+문제 설명
+
+머쓱이네 피자가게는 피자를 두 조각에서 열 조각까지 원하는 조각 수로 잘라줍니다. 피자 조각 수 slice와 피자를 먹는 사람의 수 n이 매개변수로 주어질 때, n명의 사람이 최소 한 조각 이상 피자를 먹으려면 최소 몇 판의 피자를 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.
+
+
+
+제한사항
+
+
+  2 ≤ slice ≤ 10
+  1 ≤ n ≤ 100
+
+
+
+
+입출력 예
+
+
+  
+    
+      slice
+      n
+      result
+    
+  
+  
+    
+      7
+      10
+      2
+    
+    
+      4
+      12
+      3
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (5) - 피자 나눠먹기 2</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(5)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-2/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (5) - 피자 나눠먹기 2" />
+    <published>2024-03-28T00:00:00+09:00</published>
+  
+    <updated>2024-03-28T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(5)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-2/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(5)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-2/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      피자 나눠먹기 2
+
+
+
+
+
+
+
+문제 설명
+
+머쓱이네 피자가게는 피자를 여섯 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 매개변수로 주어질 때, n명이 주문한 피자를 남기지 않고 모두 같은 수의 피자 조각을 먹어야 한다면 최소 몇 판을 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.
+
+
+
+제한사항
+
+1 ≤ n ≤ 100
+
+
+
+입출력 예
+
+
+  
+    
+      n
+      result
+    
+  
+  
+    
+      6
+      1
+    
+    
+      10
+      5
+    
+    
+      4
+      2
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+
+  6명이 모두 같은 양을 먹기 위해 한 판을 시켜야 피자가 6조각으로 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (4) - 피자 나눠먹기 1</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(4)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-1/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (4) - 피자 나눠먹기 1" />
+    <published>2024-03-28T00:00:00+09:00</published>
+  
+    <updated>2024-03-28T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(4)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-1/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(4)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-1/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      피자 나눠먹기 1
+
+
+
+
+
+
+
+문제 설명
+
+머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.
+
+
+
+제한사항
+
+
+  1 ≤ n ≤ 100
+
+
+
+
+입출력 예
+
+
+  
+    
+      n
+      result
+    
+  
+  
+    
+      7
+      1
+    
+    
+      1
+      1
+    
+    
+      15
+      3
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+
+  7명이 최소 한 조각씩 먹기 위해서 최소 1판이 필요합니다.
+
+
+입출력 예 #2
+
+
+  1명은 최소 한 조각을 먹기 ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -84,337 +440,8 @@
 절차지향 프로그래밍 예시
 
 
-// 음악 플레이어 클...
-    </summary>
-  
 
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (3) - 짝수는 싫어요</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(3)-%EC%A7%9D%EC%88%98%EB%8A%94-%EC%8B%AB%EC%96%B4%EC%9A%94/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (3) - 짝수는 싫어요" />
-    <published>2024-03-26T00:00:00+09:00</published>
-  
-    <updated>2024-03-26T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(3)-%EC%A7%9D%EC%88%98%EB%8A%94-%EC%8B%AB%EC%96%B4%EC%9A%94/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(3)-%EC%A7%9D%EC%88%98%EB%8A%94-%EC%8B%AB%EC%96%B4%EC%9A%94/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      짝수는 싫어요
-
-
-
-
-
-
-
-문제 설명
-
-정수 n이 매개변수로 주어질 때, n 이하의 홀수가 오름차순으로 담긴 배열을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  1 ≤ n ≤ 100
-
-
-
-
-입출력 예
-
-
-  
-    
-      n
-      result
-    
-  
-  
-    
-      10
-      [1, 3, 5, 7, 9]
-    
-    
-      15
-      [1, 3, 5, 7, 9, 11, 13, 15]
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 #1
-
-
-  10 이하의 홀수가 담긴 배열 [1, 3, 5, 7, 9]를 return합니다.
-
-
-입출력 #1
-
-
-  15 이하의 홀수가 담긴 배열 [1, 3, 5, 7, 9, 11, 13, 15]를...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (2) - 최빈값 구하기</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(2)-%EC%B5%9C%EB%B9%88%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (2) - 최빈값 구하기" />
-    <published>2024-03-26T00:00:00+09:00</published>
-  
-    <updated>2024-03-26T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(2)-%EC%B5%9C%EB%B9%88%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(2)-%EC%B5%9C%EB%B9%88%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      최빈값 구하기
-
-
-
-
-
-
-문제 설명
-
-최빈값은 주어진 값 중에서 가장 자주 나오는 값을 의미합니다. 정수 배열 array가 매개변수로 주어질 때, 최빈값을 return 하도록 solution 함수를 완성해보세요. 최빈값이 여러 개면 -1을 return 합니다.
-
-
-
-제한사항
-
-
-  0 &amp;lt; array의 길이 &amp;lt; 100
-  0 ≤ array의 원소 &amp;lt; 1000
-
-
-
-
-입출력 예
-
-
-  
-    
-      array
-      result
-    
-  
-  
-    
-      [1, 2, 3, 3, 3, 4]
-      3
-    
-    
-      [1, 1, 2, 2]
-      -1
-    
-    
-      [1]
-      1
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Java 문법 (4) - 기본형과 참조형</title>
-    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(4)-%EA%B8%B0%EB%B3%B8%ED%98%95%EA%B3%BC-%EC%B0%B8%EC%A1%B0%ED%98%95/" rel="alternate" type="text/html" title="Java 문법 (4) - 기본형과 참조형" />
-    <published>2024-03-26T00:00:00+09:00</published>
-  
-    <updated>2024-03-26T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(4)-%EA%B8%B0%EB%B3%B8%ED%98%95%EA%B3%BC-%EC%B0%B8%EC%A1%B0%ED%98%95/</id>
-    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(4)-%EA%B8%B0%EB%B3%B8%ED%98%95%EA%B3%BC-%EC%B0%B8%EC%A1%B0%ED%98%95/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Java_Basic" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Java 문법 (4) - 기본형과 참조형
-
-
-
-
-
-
-
-기본형 vs 참조형
-
-
-대원칙: 자바는 항상 변수의 값을 복사해서 대입한다.
-
-기본형
-
-
-  int, long, double, boolean 처럼 변수에 사용할 값을 직접 넣을 수 있는 데이터 타입
-  10, 20과 같이 실제 사용하는 값을 변수에 담을 수 있다
-  들어 있는 값을 그대로 계산에 사용할 수 있다
-
-
-참조형
-
-
-  Student student1, int[] students 처럼 데이터에 접근하기 위한 참조(메모리 주소)값을 저장하는 데이터 타입
-  실제 사용하는 값을 담는게 아닌, 실제 객체의 참조(주소)를 저장한다.
-  참조값을 그대로 사용할 수 없다
-
-
-
-
-
-
-
-
-기본형의 변수 대입
-
-
-자바에서 변수에 값을 대입하는 것은 변수에 들...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (1) - 중앙값 구하기</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(1)-%EC%A4%91%EC%95%99%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (1) - 중앙값 구하기" />
-    <published>2024-03-25T00:00:00+09:00</published>
-  
-    <updated>2024-03-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(1)-%EC%A4%91%EC%95%99%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(1)-%EC%A4%91%EC%95%99%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      중앙값 구하기
-
-
-
-
-
-
-
-문제 설명
-
-중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미합니다. 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 정수 배열 array가 매개변수로 주어질 때, 중앙값을 return 하도록 solution 함수를 완성해보세요.
-
-
-
-제한사항
-
-
-  array의 길이는 홀수입니다.
-  0 &amp;lt; array의 길이 &amp;lt; 100
-  -1,000 &amp;lt; array의 원소 &amp;lt; 1,000
-
-
-
-
-입출력 예
-
-
-  
-    
-      array
-      result
-    
-  
-  
-    
-      [1, 2, 7, 10, 11]
-      7
-    
-    
-      [9, -1, 0]
-      0
-   ...
+  예시와 같이 데이...
     </summary>
   
 

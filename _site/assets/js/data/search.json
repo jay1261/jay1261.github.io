@@ -1,6 +1,74 @@
 [
   
   {
+    "title": "Programmers Java Lv.0 (7) - 배열의 평균값",
+    "url": "/posts/Programmers-Java-Lv.0-(7)-%EB%B0%B0%EC%97%B4%EC%9D%98-%ED%8F%89%EA%B7%A0%EA%B0%92/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-28 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "배열의 평균값문제 설명정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소의 평균값을 return하도록 solution 함수를 완성해주세요.제한사항  0 ≤ numbers의 원소 ≤ 1,000  1 ≤ numbers의 길이 ≤ 100  정답의 소수 부분이 .0 또는 .5인 경우만 입력으로 주어집니다.입출력 예            nu...",
+    "content": "배열의 평균값문제 설명정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소의 평균값을 return하도록 solution 함수를 완성해주세요.제한사항  0 ≤ numbers의 원소 ≤ 1,000  1 ≤ numbers의 길이 ≤ 100  정답의 소수 부분이 .0 또는 .5인 경우만 입력으로 주어집니다.입출력 예            numbers      result                  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]      5.5              [89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]      94.0      입출력 예 설명입출력 예 #1  numbers의 원소들의 평균 값은 5.5입니다.입출력 예 #2  numbers의 원소들의 평균 값은 94.0입니다.Solution  배열의 모든 요소를 더해서 배열의 길이로 나누어서 평균을 구했습니다.class Solution {    public double solution(int[] numbers) {\t    int sum = 0;\t    \t\tfor(int number: numbers){\t\t\tsum += number;        }                return (double) sum / numbers.length;    }}  다른 풀이들을 보니 Java의 Stream을 사용해서 더 간결한 코드를 작성할 수도 있었습니다.import java.util.*;class Solution {    public double solution(int[] numbers) {        return Arrays.stream(numbers).average().orElse(0);\t}}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (6) - 피자 나눠먹기 3",
+    "url": "/posts/Programmers-Java-Lv.0-(6)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-3/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-28 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "피자 나눠먹기 3문제 설명머쓱이네 피자가게는 피자를 두 조각에서 열 조각까지 원하는 조각 수로 잘라줍니다. 피자 조각 수 slice와 피자를 먹는 사람의 수 n이 매개변수로 주어질 때, n명의 사람이 최소 한 조각 이상 피자를 먹으려면 최소 몇 판의 피자를 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.제한사항  2 ≤ sli...",
+    "content": "피자 나눠먹기 3문제 설명머쓱이네 피자가게는 피자를 두 조각에서 열 조각까지 원하는 조각 수로 잘라줍니다. 피자 조각 수 slice와 피자를 먹는 사람의 수 n이 매개변수로 주어질 때, n명의 사람이 최소 한 조각 이상 피자를 먹으려면 최소 몇 판의 피자를 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.제한사항  2 ≤ slice ≤ 10  1 ≤ n ≤ 100입출력 예            slice      n      result                  7      10      2              4      12      3      입출력 예 설명입출력 예 #1  10명이 7조각으로 자른 피자를 한 조각 이상씩 먹으려면 최소 2판을 시켜야 합니다.입출력 예 #2  12명이 4조각으로 자른 피자를 한 조각 이상씩 먹으려면 최소 3판을 시켜야 합니다.Solution  피자 나눠먹기 1 과 마찬가지로 인원수(n)를 조각(slice)으로 나눈 나머지가 0일 때에는 몫을 반환, 아닐 때에는 몫 + 1을 반환하는 방법으로 문제를 풀었습니다.class Solution {    public int solution(int slice, int n) {        int answer = n % slice == 0 ? n / slice : (n/slice) + 1;        return answer;    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (5) - 피자 나눠먹기 2",
+    "url": "/posts/Programmers-Java-Lv.0-(5)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-2/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-28 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "피자 나눠먹기 2문제 설명머쓱이네 피자가게는 피자를 여섯 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 매개변수로 주어질 때, n명이 주문한 피자를 남기지 않고 모두 같은 수의 피자 조각을 먹어야 한다면 최소 몇 판을 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.제한사항1 ≤ n ≤ 100입출력 예          ...",
+    "content": "피자 나눠먹기 2문제 설명머쓱이네 피자가게는 피자를 여섯 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 매개변수로 주어질 때, n명이 주문한 피자를 남기지 않고 모두 같은 수의 피자 조각을 먹어야 한다면 최소 몇 판을 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.제한사항1 ≤ n ≤ 100입출력 예            n      result                  6      1              10      5              4      2      입출력 예 설명입출력 예 #1  6명이 모두 같은 양을 먹기 위해 한 판을 시켜야 피자가 6조각으로 모두 한 조각씩 먹을 수 있습니다.입출력 예 #2  10명이 모두 같은 양을 먹기 위해 최소 5판을 시켜야 피자가 30조각으로 모두 세 조각씩 먹을 수 있습니다.입출력 예 #3  4명이 모두 같은 양을 먹기 위해 최소 2판을 시키면 피자가 12조각으로 모두 세 조각씩 먹을 수 있습니다.Solution  반복문을 통해 i를 1씩 증가시켜 나가고, i * 6(조각 수)를 n으로 나눈 나머지가 0이 되었을 때의 i를 return 함으로써 최소 공배수를 구했습니다.class Solution {    public int solution(int n) {         int i = 1;                while (true){            if ((6*i) % n == 0) {                return i;            }            i++;        }    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (4) - 피자 나눠먹기 1",
+    "url": "/posts/Programmers-Java-Lv.0-(4)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-1/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-28 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "피자 나눠먹기 1문제 설명머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.제한사항  1 ≤ n ≤ 100입출력 예            n      result              ...",
+    "content": "피자 나눠먹기 1문제 설명머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.제한사항  1 ≤ n ≤ 100입출력 예            n      result                  7      1              1      1              15      3      입출력 예 설명입출력 예 #1  7명이 최소 한 조각씩 먹기 위해서 최소 1판이 필요합니다.입출력 예 #2  1명은 최소 한 조각을 먹기 위해 1판이 필요합니다.입출력 예 #3  15명이 최소 한 조각씩 먹기 위해서 최소 3판이 필요합니다.Solution  인원수 n이 7조각으로 딱 나눠 떨어질 때에는 n/7, 아닐 때에는 n/7 +1 로 풀었습니다.class Solution {    public int solution(int n) {        int answer = n % 7 == 0 ? n/7 : (n/7) + 1;        return answer;    }}"
+  },
+  
+  {
     "title": "Java 문법 (5) - 객체 지향 프로그래밍",
     "url": "/posts/Java-%EB%AC%B8%EB%B2%95-(5)-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/",
     "categories": "Java, Java_Basic",
@@ -14,7 +82,7 @@
 
     
     "snippet": "Java 문법 (5) - 객체 지향 프로그래밍\b절차 지향과 객체 지향절차지향  이름 그대로 절차를 지향하는 프로그래밍입니다. 실행 순서를 중요하게 생각하는 방식입니다.  프로그램의 흐름을 순차적으로 따르며 처리하는 방식입니다.  “어떻게”를 중심으로 프로그래밍 합니다.  데이터와 데이터에 대한 처리방식이 분리되어 있습니다.객체지향  객체를 중요하게 생...",
-    "content": "Java 문법 (5) - 객체 지향 프로그래밍\b절차 지향과 객체 지향절차지향  이름 그대로 절차를 지향하는 프로그래밍입니다. 실행 순서를 중요하게 생각하는 방식입니다.  프로그램의 흐름을 순차적으로 따르며 처리하는 방식입니다.  “어떻게”를 중심으로 프로그래밍 합니다.  데이터와 데이터에 대한 처리방식이 분리되어 있습니다.객체지향  객체를 중요하게 생각하는 방식입니다.  실제 세계의 사물이나 사건을 객체로 보고, 이러한 객체들 간의 상호작용을 중심으로 프로그래밍하는 방식입니다.  “무엇을” 중심으로 프로그래밍 합니다.  데이터와 데이터에 대한 행동(메서드)가 하나의 객체 안에 포함되어 있습니다.절차지향 프로그래밍 예시// 음악 플레이어 클래스// 데이터public class MusicPlayer {      int volume;      boolean isOn;}public class MusicPlayerMain2 {      public static void main(String[] args) {          MusicPlayerData data = new MusicPlayerData();            on(data);          volumeUp(data);          volumeUp(data);          volumeDown(data);          showStatus(data);          off(data);        }    // 데이터 처리 메서드     static void on(MusicPlayerData data) {          data.isOn = true;          System.out.println(\"음악 플레이어를 시작합니다.\");      }        static void off(MusicPlayerData data) {          data.isOn = false;          System.out.println(\"음악 플레이어를 종료합니다.\");      }        static void volumeUp(MusicPlayerData data){          data.volume++;          System.out.println(\"음악 플레이어 볼륨: \" + data.volume);      }        static void volumeDown(MusicPlayerData data){          data.volume--;          System.out.println(\"음악 플레이어 볼륨: \" + data.volume);      }        static void showStatus(MusicPlayerData data){          if (data.isOn){              System.out.println(\"음악 플레이어 ON\" + \", 볼륨: \" + data.volume);          } else {              System.out.println(\"음악 플레이어 Off\");          }      }  }  예시와 같이 데이터와 기능이 분리되어 있는 것을 볼 수 있습니다. 예시의 메서드 대부분 MusicPlayer의 데이터를 사용합니다. 만약 이후에 관련 데이터가 변경되면 메서드들도 함께 변경해야하고, 데이터와 기능이 분리되어 있기 때문에 유지보수 관점에서도 관리해야할 부분이 2곳으로 늘어나게 됩니다.객체지향 프로그래밍 예시// MusicPlayer의 데이터과 기능public class MusicPlayer {      int volume;      boolean isOn;        void on(){          isOn = true;          System.out.println(\"음악 플레이어를 시작합니다.\");      }        void off(){          isOn = false;          System.out.println(\"음악 플레이어를 종료합니다.\");      }      void volumeUp(){          volume++;          System.out.println(\"음악 플레이어 볼륨: \" + volume);      }      void volumeDown(){          volume--;          System.out.println(\"음악 플레이어 볼륨: \" + volume);      }      void showStatus(){          if (isOn){              System.out.println(\"음악 플레이어 ON\" + \", 볼륨: \" + volume);          } else {              System.out.println(\"음악 플레이어 Off\");          }      }  }public class MusicPlayerMain3 {      public static void main(String[] args) {          MusicPlayer musicPlayer = new MusicPlayer();          musicPlayer.on();          musicPlayer.volumeUp();          musicPlayer.volumeUp();          musicPlayer.volumeDown();          musicPlayer.showStatus();          musicPlayer.off();      }  }  예시와 같이 MusicPlayer안에 데이터와 기능이 모두 같이 들어있습니다. 음악 플레이어를 구성하기 위한 속성과 기능이 하나의 캡슐에 쌓여있는 것 같고, 필요한 기능을 매서드를 통해서 외부에 제공합니다. 이를 캡슐화라고 합니다.객체지향 프로그래밍을 하게 되면 사람의 입장에서 더 읽기 쉬운 코드가 만들어지고, 유지보수에도 더 좋습니다."
+    "content": "Java 문법 (5) - 객체 지향 프로그래밍\b절차 지향과 객체 지향절차지향  이름 그대로 절차를 지향하는 프로그래밍입니다. 실행 순서를 중요하게 생각하는 방식입니다.  프로그램의 흐름을 순차적으로 따르며 처리하는 방식입니다.  “어떻게”를 중심으로 프로그래밍 합니다.  데이터와 데이터에 대한 처리방식이 분리되어 있습니다.객체지향  객체를 중요하게 생각하는 방식입니다.  실제 세계의 사물이나 사건을 객체로 보고, 이러한 객체들 간의 상호작용을 중심으로 프로그래밍하는 방식입니다.  “무엇을” 중심으로 프로그래밍 합니다.  데이터와 데이터에 대한 행동(메서드)가 하나의 객체 안에 포함되어 있습니다.절차지향 프로그래밍 예시  예시와 같이 데이터와 기능이 분리되어 있는 것을 볼 수 있습니다. 예시의 메서드 대부분 MusicPlayer의 데이터를 사용합니다. 만약 이후에 관련 데이터가 변경되면 메서드들도 함께 변경해야하고, 데이터와 기능이 분리되어 있기 때문에 유지보수 관점에서도 관리해야할 부분이 2곳으로 늘어나게 됩니다.// 음악 플레이어 클래스// 데이터public class MusicPlayer {      int volume;      boolean isOn;}public class MusicPlayerMain2 {      public static void main(String[] args) {          MusicPlayerData data = new MusicPlayerData();            on(data);          volumeUp(data);          volumeUp(data);          volumeDown(data);          showStatus(data);          off(data);        }    // 데이터 처리 메서드     static void on(MusicPlayerData data) {          data.isOn = true;          System.out.println(\"음악 플레이어를 시작합니다.\");      }        static void off(MusicPlayerData data) {          data.isOn = false;          System.out.println(\"음악 플레이어를 종료합니다.\");      }        static void volumeUp(MusicPlayerData data){          data.volume++;          System.out.println(\"음악 플레이어 볼륨: \" + data.volume);      }        static void volumeDown(MusicPlayerData data){          data.volume--;          System.out.println(\"음악 플레이어 볼륨: \" + data.volume);      }        static void showStatus(MusicPlayerData data){          if (data.isOn){              System.out.println(\"음악 플레이어 ON\" + \", 볼륨: \" + data.volume);          } else {              System.out.println(\"음악 플레이어 Off\");          }      }  }객체지향 프로그래밍 예시  예시와 같이 MusicPlayer안에 데이터와 기능이 모두 같이 들어있습니다. 음악 플레이어를 구성하기 위한 속성과 기능이 하나의 캡슐에 쌓여있는 것 같고, 필요한 기능을 매서드를 통해서 외부에 제공합니다. 이를 캡슐화라고 합니다.객체지향 프로그래밍을 하게 되면 사람의 입장에서 더 읽기 쉬운 코드가 만들어지고, 유지보수에도 더 좋습니다.// MusicPlayer의 데이터과 기능public class MusicPlayer {      int volume;      boolean isOn;        void on(){          isOn = true;          System.out.println(\"음악 플레이어를 시작합니다.\");      }        void off(){          isOn = false;          System.out.println(\"음악 플레이어를 종료합니다.\");      }      void volumeUp(){          volume++;          System.out.println(\"음악 플레이어 볼륨: \" + volume);      }      void volumeDown(){          volume--;          System.out.println(\"음악 플레이어 볼륨: \" + volume);      }      void showStatus(){          if (isOn){              System.out.println(\"음악 플레이어 ON\" + \", 볼륨: \" + volume);          } else {              System.out.println(\"음악 플레이어 Off\");          }      }  }public class MusicPlayerMain3 {      public static void main(String[] args) {          MusicPlayer musicPlayer = new MusicPlayer();          musicPlayer.on();          musicPlayer.volumeUp();          musicPlayer.volumeUp();          musicPlayer.volumeDown();          musicPlayer.showStatus();          musicPlayer.off();      }  }"
   },
   
   {
@@ -65,7 +133,7 @@
 
     
     "snippet": "Java 문법 (4) - 기본형과 참조형기본형 vs 참조형대원칙: 자바는 항상 변수의 값을 복사해서 대입한다.기본형  int, long, double, boolean 처럼 변수에 사용할 값을 직접 넣을 수 있는 데이터 타입  10, 20과 같이 실제 사용하는 값을 변수에 담을 수 있다  들어 있는 값을 그대로 계산에 사용할 수 있다참조형  Studen...",
-    "content": "Java 문법 (4) - 기본형과 참조형기본형 vs 참조형대원칙: 자바는 항상 변수의 값을 복사해서 대입한다.기본형  int, long, double, boolean 처럼 변수에 사용할 값을 직접 넣을 수 있는 데이터 타입  10, 20과 같이 실제 사용하는 값을 변수에 담을 수 있다  들어 있는 값을 그대로 계산에 사용할 수 있다참조형  Student student1, int[] students 처럼 데이터에 접근하기 위한 참조(메모리 주소)값을 저장하는 데이터 타입  실제 사용하는 값을 담는게 아닌, 실제 객체의 참조(주소)를 저장한다.  참조값을 그대로 사용할 수 없다기본형의 변수 대입자바에서 변수에 값을 대입하는 것은 변수에 들어 있는 값을 복사해서 대입하는 것입니다. 따라서 기본형은 변수에 10, 20 과 같은 실제 사용할 수 있는 값들이 담겨있어서 그 값을 복사해서 대입합니다.public class VarChange1 {      public static void main(String[] args) {          int a = 10;          int b = a;          System.out.println(\"a = \" + a);  // a = 10        System.out.println(\"b = \" + b);  // b = 10        a = 20;          System.out.println(\"a = \" + a);  // a = 20        System.out.println(\"b = \" + b);  // b = 10        b = 30;          System.out.println(\"a = \" + a);  // a = 20        System.out.println(\"b = \" + b);  // b = 30    }  }따라서 메모리 공간에 a에 10, b에 10 따로 저장했기에 a를 바꾸어도 b는 바뀌지 않고, b를 바꿔도 a가 바뀌지는 않습니다.참조형의 변수 대입참조형도 똑같이 변수에 들어있는 값을 복사해서 대입합니다. 참조형 변수에는 객체의 참조값(주소)이 들어있기 때문에 해당 참조값을 복사해서 대입합니다.    public static void main(String[] args) {          Data dataA = new Data();          dataA.value = 10;          Data dataB = dataA;            System.out.println(\"dataA 참조값 = \" + dataA);  // dataA 참조값 = ref.Data@30f39991                System.out.println(\"dataB 참조값 = \" + dataB);  // dataB 참조값 = ref.Data@30f39991          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 10          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 10            dataA.value = 20;          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 20          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 20            dataB.value = 30;          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 30          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 30      }  }그러므로 메모리에 Data 객체 하나가 존재하고, 이 객체를 찾아갈 수 있는 주소값을 가진 변수가 dataA, dataB 두개가 됩니다. 객체 자체는 하나이기 때문에 dataA.value를 변경해도 dataB.value가 변경됩니다.기본형과 참조형의 메서드 호출\b메서드 호출도 같은 원리가 적용됩니다. 메서드를 호출할 때 사용하는 매개변수에 값을 전달할 때에도 현재 변수에 들어있는 값을 복사해서 전달합니다.// 기본형 메서드 호출public class MethodChange1 {      public static void main(String[] args) {          int a = 10;          System.out.println(\"a = \" + a); // a = 10        changePrimitive(a);          System.out.println(\"a = \" + a);  // a = 10    }      public static void changePrimitive(int x){          x = 20;      }  }매개변수로 전달된 x는 a에 들어있는 값을 복사해서 전달한 것으로, 10이라는 기본형 값이 들어있기 때문에 메모리에 서로 다른 공간을 갖고있습니다. 따라서 메서드가 실행된 이후에도 a의 값은 변하지 않습니다.// 참조형 메서드 호출    public static void main(String[] args) {          Data dataA = new Data();          dataA.value = 10;          System.out.println(\"dataA = \" + dataA.value);          changePrimitive(dataA);          System.out.println(\"dataA = \" + dataA.value);      }      public static void changePrimitive(Data x){          x.value = 20;      }  }참조형은 dataA의 객체의 주소를 x에 전달하기 때문에, x.value를 변경했을 때, dataA.value 가 변경된 값을 가지고 있는 것을 확인할 수 있습니다."
+    "content": "Java 문법 (4) - 기본형과 참조형기본형 vs 참조형대원칙: 자바는 항상 변수의 값을 복사해서 대입한다.기본형  int, long, double, boolean 처럼 변수에 사용할 값을 직접 넣을 수 있는 데이터 타입  10, 20과 같이 실제 사용하는 값을 변수에 담을 수 있다  들어 있는 값을 그대로 계산에 사용할 수 있다참조형  Student student1, int[] students 처럼 데이터에 접근하기 위한 참조(메모리 주소)값을 저장하는 데이터 타입  실제 사용하는 값을 담는게 아닌, 실제 객체의 참조(주소)를 저장한다.  참조값을 그대로 사용할 수 없다기본형의 변수 대입자바에서 변수에 값을 대입하는 것은 변수에 들어 있는 값을 복사해서 대입하는 것입니다. 따라서 기본형은 변수에 10, 20 과 같은 실제 사용할 수 있는 값들이 담겨있어서 그 값을 복사해서 대입합니다.public class VarChange1 {      public static void main(String[] args) {          int a = 10;          int b = a;          System.out.println(\"a = \" + a);  // a = 10        System.out.println(\"b = \" + b);  // b = 10        a = 20;          System.out.println(\"a = \" + a);  // a = 20        System.out.println(\"b = \" + b);  // b = 10        b = 30;          System.out.println(\"a = \" + a);  // a = 20        System.out.println(\"b = \" + b);  // b = 30    }  }따라서 메모리 공간에 a에 10, b에 10 따로 저장했기에 a를 바꾸어도 b는 바뀌지 않고, b를 바꿔도 a가 바뀌지는 않습니다.참조형의 변수 대입참조형도 똑같이 변수에 들어있는 값을 복사해서 대입합니다. 참조형 변수에는 객체의 참조값(주소)이 들어있기 때문에 해당 참조값을 복사해서 대입합니다.    public static void main(String[] args) {          Data dataA = new Data();          dataA.value = 10;          Data dataB = dataA;            System.out.println(\"dataA 참조값 = \" + dataA);  // dataA 참조값 = ref.Data@30f39991                System.out.println(\"dataB 참조값 = \" + dataB);  // dataB 참조값 = ref.Data@30f39991          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 10          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 10            dataA.value = 20;          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 20          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 20            dataB.value = 30;          System.out.println(\"dataA.value = \" + dataA.value); // dataA.value = 30          System.out.println(\"dataB.value = \" + dataB.value); // dataB.value = 30      }  }그러므로 메모리에 Data 객체 하나가 존재하고, 이 객체를 찾아갈 수 있는 주소값을 가진 변수가 dataA, dataB 두개가 됩니다. 객체 자체는 하나이기 때문에 dataA.value를 변경해도 dataB.value가 변경됩니다.기본형과 참조형의 메서드 호출\b메서드 호출도 같은 원리가 적용됩니다. 메서드를 호출할 때 사용하는 매개변수에 값을 전달할 때에도 현재 변수에 들어있는 값을 복사해서 전달합니다. 매개변수로 전달된 x는 a에 들어있는 값을 복사해서 전달한 것으로, 10이라는 기본형 값이 들어있기 때문에 메모리에 서로 다른 공간을 갖고있습니다. 따라서 메서드가 실행된 이후에도 a의 값은 변하지 않습니다.// 기본형 메서드 호출public class MethodChange1 {      public static void main(String[] args) {          int a = 10;          System.out.println(\"a = \" + a); // a = 10        changePrimitive(a);          System.out.println(\"a = \" + a);  // a = 10    }      public static void changePrimitive(int x){          x = 20;      }  }참조형은 dataA의 객체의 주소를 x에 전달하기 때문에, x.value를 변경했을 때, dataA.value 가 변경된 값을 가지고 있는 것을 확인할 수 있습니다.// 참조형 메서드 호출    public static void main(String[] args) {          Data dataA = new Data();          dataA.value = 10;          System.out.println(\"dataA = \" + dataA.value);          changePrimitive(dataA);          System.out.println(\"dataA = \" + dataA.value);      }      public static void changePrimitive(Data x){          x.value = 20;      }  }"
   },
   
   {
