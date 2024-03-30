@@ -79,7 +79,7 @@ class Solution {
 ```
 
 
-> Java에 Stream 라이브러리를 사용하는게 중요한데, LongStream을 사용해서 문제를 푼 답안을 찾게되었습니다. 
+> Java에 `Stream` 라이브러리를 사용하는게 중요한데, `LongStream`을 사용해서 문제를 푼 답안을 찾게되었습니다. 
 
 ```java
 import java.util.stream.LongStream;
@@ -94,7 +94,7 @@ class Solution {
 ```
 <br/>
 
-> 해당 답안을 참고하여 IntStream을 이용해서 문제를 다시 풀어보았습니다.
+> 해당 답안을 참고하여 `IntStream`을 이용해서 문제를 다시 풀어보았습니다.
 
 ```java
 import java.util.stream.IntStream;
