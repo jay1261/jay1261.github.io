@@ -77,3 +77,34 @@ class Solution {
     }
 }
 ```
+
+
+> Java에 Stream 라이브러리를 사용하는게 중요한데, LongStream을 사용해서 문제를 푼 답안을 찾게되었습니다. 
+
+```java
+import java.util.stream.LongStream;
+
+class Solution {
+    public int[] solution(int[] num_list) {
+        return LongStream.range(1, num_list.length + 1)
+                .mapToInt(i -> num_list[(int) (num_list.length - i)])
+                .toArray();
+    }
+}
+```
+<br/>
+
+> 해당 답안을 참고하여 IntStream을 이용해서 문제를 다시 풀어보았습니다.
+
+```java
+import java.util.stream.IntStream;
+
+class Solution {
+    public int[] solution(int[] num_list) {
+        int length = num_list.length;
+        return IntStream.range(1, length + 1)
+            .map(i -> num_list[length - i])
+            .toArray();
+    }
+}
+```
