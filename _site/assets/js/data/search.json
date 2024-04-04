@@ -1,6 +1,295 @@
 [
   
   {
+    "title": "Java 문법 (8) - 자바 메모리 구조와 static",
+    "url": "/posts/Java-%EB%AC%B8%EB%B2%95-(8)-%EC%9E%90%EB%B0%94-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EC%99%80-static/",
+    "categories": "Java, Java_Basic",
+    "tags": "Java",
+    "date": "2024-04-03 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Java 문법 (8) - 자바 메모리 구조와 static자바 메모리 구조자바의 메모리 구조는 크게 메서드 영역, 스택 영역, 힙 영역 3개로 나눌 수 있습니다.메서드 영역메서드 영역은 프로그램을 실행하는데 필요한 공통 데이터를 관리하는 영역입니다. 프로그램의 모든 영역에서 공유합니다.  클래스 정보(클래스의 실행코드, 필드, 매서드, 생성자 등)를 보...",
+    "content": "Java 문법 (8) - 자바 메모리 구조와 static자바 메모리 구조자바의 메모리 구조는 크게 메서드 영역, 스택 영역, 힙 영역 3개로 나눌 수 있습니다.메서드 영역메서드 영역은 프로그램을 실행하는데 필요한 공통 데이터를 관리하는 영역입니다. 프로그램의 모든 영역에서 공유합니다.  클래스 정보(클래스의 실행코드, 필드, 매서드, 생성자 등)를 보관  static 변수들을 보관  런타임 상수 풀: 공통 리터럴 상수들을 보관 (ex “hello”)스택 영역스택 영역은 자바 실행시 쓰레드 별로 하나씩 스택이 생성됩니다. 각 스택 프레임은 지역변수, 중간 연산 결과, 메서드 호출 정보 등을 포함합니다.  매서드를 호출할 때마다 하나의 스택 프레임이 쌓이고, 메서드가 종료되면 해당 스택 프레임이 제거  자바는 스택 영역을 사용해서 메서드 호출과 지역변수, 매개변수를 관리  메서드를 계속 호출하면 스택 프레임이 계속 쌓임  스택 프레임이 종료되면 지역변수도 함게 제거, 스택 프레임이 모두 종료되면 프로그램도 종료힙 영역객체(인스턴스)와 배열이 생성되는 영역입니다. GC(가비지 컬렉션)이 이루어지는 주요 영역이고, 더 이상 참조되지 않는 객체는 GC에 의해서 제거됩니다.스택 영역 예시main에서 method1을 호출하고, method1에서 method2를 호출한 예시입니다. 각각 함수마다 start와 end를 시작과 끝에 넣어주면 스택이 어떻게 실행되는지 눈으로 확인할 수 있습니다.main 시작 -&gt; method1 시작 -&gt; method2 시작 -&gt; method2 종료 -&gt; method1 종료 -&gt; main 종료 순으로 실행됩니다.package memory;    public class JavaMemoryMain1 {      public static void main(String[] args) {          System.out.println(\"main start\");          method1(10);          System.out.println(\"main end\");      }      static void method1(int m1){          System.out.println(\"method1 start\");          int cal = m1 * 2;          method2(cal);          System.out.println(\"method1 end\");      }      static void method2(int m2){          System.out.println(\"method2 start\");          System.out.println(\"method2 end\");      }  }// 실행결과// main start// method1 start// method2 start// method2 end// method1 end// main end스택 영역과 힙 영역아래 예시코드는 스택과 힙 영역이 함께 사용되는 경우를 보기 위한 코드입니다.method1에서 Data의 객체 data1이 생성되고, 이 객체의 참조값을 method2의 매개변수로 전달합니다. 실행 순서를 보면 아래와 같습니다.  main()스택 프레임 생성, (main start 출력)  method1() 스택 프레임 생성, (method1 start 출력)  Data의 객체 힙 영역에 생성, data1 이라는 참조값을 담는 지역변수 스택 프레임에 보관  method2() 스택 프레임 생성, data1을 매개변수 data2로 받음, (method2 start 출력)  method2 종료, method2() 스택 프레임 및 data2 제거, (method2 end 출력)  method1 종료, method1() 스텍 프레임 및 data1 제거, (method1 end 출력)  Data의 객체를 참조하는 곳이 없음, GC가 제거  main 종료, main() 스택 프레임 제거, (main end 출력)  프로그램 종료// memory.javapackage memory;    public class Data {      private int value;        public Data(int value) {          this.value = value;      }        public int getValue(){          return value;      }  }// JavaMemoryMain2.javapackage memory;    public class JavaMemoryMain2 {      public static void main(String[] args) {          System.out.println(\"main start\");          method1();          System.out.println(\"main end\");      }      static void method1(){          System.out.println(\"method1 start\");          Data data1 = new Data(10);          method2(data1);          System.out.println(\"method1 end\");      }      static void method2(Data data2){          System.out.println(\"method2 start\");          System.out.println(\"data.value = \" + data2.getValue());          System.out.println(\"method2 end\");      }  }/* 실행결과\tmain start\tmethod1 start\tmethod2 start\tdata.value = 10\tmethod2 end\tmethod1 end\tmain end*/Static 변수static은 주로 멤버변수와 메서드에 사용됩니다.클래스의 멤버변수는 두가지 종류로 나뉩니다.  인스턴스 변수 : static이 붙지 않은 멤버변수 ex) private String name;          인스턴스 변수는 인스턴스를 생성해야 사용할 수 있고, 인스턴스에 소속되어 있어서 인스턴스 변수      인스턴스를 만들 때 마다 새로 만들어짐        클래스 변수 : static이 붙은 멤버 변수 ex) public static int count;          클래스 변수, 정적 변수, static 변수 등으로 불림      static 변수는 클래스 자체에 소속되어 있어서 클래스명으로 바로 접근이 가능하며, 메모리의 메서드 영역에 만들어잠      자바 프로그램을 시작할 때 딱 1개가 만들어지며 보통 여러곳에서 공유하는 목적으로 사용됩니다.      // Data3.javapackage static1;    public class Data3 {      public String name;      public static int count;        public Data3 (String name){          this.name = name;          count++;      }  }// DataCountMain3.javapackage static1;    public class DataCountMain3 {      public static void main(String[] args) {          // static으로 count를 공유하기 때문에 공용으로 사용 가능한 특별하게 관리되는 변수          // static 변수는 메서드 영역에서 관리함          Data3 data1 = new Data3(\"A\");          System.out.println(\"A Count: \" + Data3.count); // static 변수는 클래스명으로 접근 가능하다.          Data3 data2 = new Data3(\"B\");          System.out.println(\"B Count: \" + Data3.count);          Data3 data3 = new Data3(\"C\");          System.out.println(\"C Count: \" + Data3.count);            // 추가 인스턴스를 통한 접근도 가능          // 권장하지 않음. count가 인스턴스변수인지 static 변수인지 코드만 보고 알 수 없다.          Data3 data4 = new Data3(\"D\");          System.out.println(data4.count);            // 클래스를 통한 접근          System.out.println(Data3.count);      }  }Static 메서드매서드 앞에 static이 붙는 것을 정적 메서드 또는 클래스 메서드라고 합니다. 클래스 자체에 소속되어 있어서 객체 생성없이 클래스명으로 메서드를 바로 호출할 수 있습니다.static 메서드는 같은 static만 호출할 수 있습니다. 정적 변수나 정적 메서드만 호출이 가능합니다. 인스턴스 변수나 인스턴스 메서드는 사용할 수 없습니다. 반대로 인스턴스 변수나 메서드는 static 메서드를 호출할 수 있습니다.package static2;    public class DecoData {      private int instanceValue;      private static int staticValue;        // static은 static만 접근 가능      public static void staticCall(){          staticValue++; // 정적 변수 접근          staticMethod(); // 정적 메서드 접근 가능          // instanceValue++; // static method는 인스턴스 변수 접근 불가능          // instanceMethod(); // 인스턴스 메서드 접근 불가능      }        // instance는 static, instance 전부 접근 가능      public void instanceCall(){          instanceValue++; // 인스턴스 변수 접근 가능          instanceMethod(); // 인스턴스 메서드 접근 가능            staticValue++; // 스태틱 변수 접근 가능          staticMethod(); // 스태틱 메서드 접근 가능      }        private void instanceMethod(){          System.out.println(\"instanceValue= \" + instanceValue);      }      private static void staticMethod(){          System.out.println(\"static methpd= \" + staticValue);      }  }"
+  },
+  
+  {
+    "title": "Java 문법 (7) - 접근 제어자",
+    "url": "/posts/Java-%EB%AC%B8%EB%B2%95-(7)-%EC%A0%91%EA%B7%BC-%EC%A0%9C%EC%96%B4%EC%9E%90/",
+    "categories": "Java, Java_Basic",
+    "tags": "Java",
+    "date": "2024-04-02 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Java 문법 (7) - 접근 제어자접근 제어자자바는 public , private 같은 접근 제어자(access modifier)를 제공합니다. 접근 제어자를 사용하면 해당 클래스 외부에서 특정 필드나 메서드에 접근하는 것을 허용하거나 제한할 수 있습니다.접근 제어자 종류  private: 모든 외부 호출을 막음  default(package-pri...",
+    "content": "Java 문법 (7) - 접근 제어자접근 제어자자바는 public , private 같은 접근 제어자(access modifier)를 제공합니다. 접근 제어자를 사용하면 해당 클래스 외부에서 특정 필드나 메서드에 접근하는 것을 허용하거나 제한할 수 있습니다.접근 제어자 종류  private: 모든 외부 호출을 막음  default(package-private): 같은 패키지 안에서 호출만 허용  protected: 같은 패키지 안에서의 호출과, 상속관계의 호출은 허용  public: 모든 외부의 호출을 허용접근 제어자 예시 - 필드, 메서드// access.a 패키지의 AccessData 클래스package access.a;    public class AccessData {      public int publicField;      int defaultField;      private int privateField;        public void publicMethod(){          System.out.println(\"publicMethod 호출 \" + publicField);      }        void defaultMethod(){          System.out.println(\"defaultMethod 호출 \" + defaultField);      }        private void privateMethod(){          System.out.println(\"privateMethod 호출 \" + privateField);      }        public void innerMethod() {          System.out.println(\"내부 호출\");          publicField = 100;          defaultField = 200;          privateField = 300;          publicMethod();          defaultMethod();          privateMethod();      }  }access.a라는 패키지 안에 AccessData라는 클래스를 만들어서 각각 public, default, private 필드와 메서드를 선언했습니다.// access.a 패키지의 AccessinnerMain 클래스package access.a;    public class AccessinnerMain {      public static void main(String[] args) {          AccessData data = new AccessData();            // public 호출 가능          data.publicField = 1;          data.publicMethod();            // default 같은 패키지여서 호출 가능          data.defaultField = 2;          data.defaultMethod();            // private 호출 불가능          //data.privateField = 3;          //data.privateMethod();                  // 내부를 건드리는 함수          data.innerMethod();      }  }같은 패키지인 access.a 안에서 AccessinnerMain 클래스를 만들고, AccessData 객체를 생성해서 사용하는 테스트를 했습니다. public은 호출 가능하고, default도 같은 패키지에 있기 때문에 호출이 가능했으며, private는 접근 불가능합니다.// access.b 패키지의 AccessOuterMain 클래스package access.b;    import access.a.AccessData;    public class AccessOuterMain {      public static void main(String[] args) {          AccessData data = new AccessData();            // public 호출 가능          data.publicField = 1;          data.publicMethod();            // default 다른 패키지여서 호출 불가능          //data.defaultField = 2;          //data.defaultMethod();          // private 호출 불가능          //data.privateField = 3;          //data.privateMethod();          // 내부를 건드리는 함수          data.innerMethod();      }  }이번엔 다른 패키지인 access.b 패키지에서 AccessOuterMain 클래스를 만들어서 AccessData 객체를 생성했습니다. public은 호출이 가능하지만, 패키지가 다르기 때문에 default는 호출 불가능했고, private 또한 호출이 불가능합니다.접근 제어자 - 클래스 레벨클래스 레벨의 접근 제어자는 public, default만 사용할 수 있습니다. 또한 public 클래스는 반드시 파일명과 이름이 같아야하고, 하나의 자바 파일에 하나의 public 클래스만 존재할 수 있습니다.package access.a;    // public 클래스는 파일명과 이름이 같아야 한다.  // 클래스 레벨의 접근 제어자는 public, default만 있다.  public class PublicClass {      int test;      public static void main(String[] args) {          PublicClass publicClass = new PublicClass();          // 같은 파일 접근 가능          DefaultClass1 class1 = new DefaultClass1();          DefaultClass2 class2 = new DefaultClass2();            publicClass.test = 1;      }  }    class DefaultClass1{}  class DefaultClass2{}예시처럼 public 클래스는 파일에 하나만 존재합니다. public으로 선언한 PublicClass는 파일명과 이름이 같아야합니다. 나머지 DefaultClass1, DefaultClass2 는 현재 패키지에서만 사용 가능한 default 클래스입니다.캡슐화캡슐화는 객체지향 프로그래밍의 중요한 개념 중 하나입니다. 캡슐화는 데이터와 해당 데이터를 처리하는 매서드를 하나로 묶어서 외부에서의 접근을 제한하는 방법을 말합니다. 캡슐화를 통해서 데이터의 직접적인 변경을 방지하거나 제한할 수 있습니다. 쉽게 이야기해서 속성과 기능을 하나로 묶고, 외부에는 꼭 필요한 기능만 노출하고 나머지는 모두 내부로 숨기는 것입니다.객체에는 속성(데이터)과 기능(매서드)가 있습니다. 속성은 필수로 숨겨야합니다. 자동차의 속도를 사용자가 직접 변경하는게 아닌 것 처럼 속도(데이터)는 숨겨두고 엑셀을 밟는다는 기능을 통해 속도를 변경할 수 있게 해야합니다.객체의 기능중에도 외부에서는 사용하지 않고 내부에서만 사용되는 기능들이 있습니다. 이러한 기능들도 private로 숨기는 것이 좋습니다.// 캡슐화 예제package access;  // 캡슐화 예제  public class BankAccount {      private int balance;  // 속성 private로 숨기기       public BankAccount() {          balance = 0;      }  \t// 입금 기능 (public 외부에 노출)    public void deposit(int amount){          if (isAmountValid(amount)){              balance += amount;          }else {              System.out.println(\"유효하지 않은 금액입니다.\");          }      }  \t// 출금 기능(public 외부 노출)    public void withdraw(int amount){          if(isAmountValid(amount) &amp;&amp; balance - amount &gt;= 0){              balance -= amount;          } else {              System.out.println(\"유효하지 않은 금액이거나, 잔액이 부족합니다.\");          }        }  \t// 잔액 확인 기능(public 외부 노툴)    public void showBalance(){          System.out.println(\"현재 잔액: \" + balance);      }          // 들어온 금액이 올바른지 판단 (private 내부에서만 사용하는 코드 숨김)    private boolean isAmountValid(int amount){          return amount &gt; 0;      }  }캡슐화 예제 코드입니다. balance 속성은 private로 내부에 숨겼습니다. deposit, withdraw, showBalance는 입금, 출금, 잔액확인 등 사용자가 써야할 꼭 필요한 기능으로 public을 사용해 외부에서 접근할 수 있게 합니다. isAmountValid는 입력으로 들어온 금액이 유효한지 판단하는 기능으로, 내부에서만 사용되기 때문에 private로 숨겨줍니다."
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (21) - 외계행성의 나이",
+    "url": "/posts/Programmers-Java-Lv.0-(21)-%EC%99%B8%EA%B3%84%ED%96%89%EC%84%B1%EC%9D%98-%EB%82%98%EC%9D%B4/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-01 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "외계행성의 나이문제 설명우주여행을 하던 머쓱이는 엔진 고장으로 PROGRAMMERS-962 행성에 불시착하게 됐습니다. 입국심사에서 나이를 말해야 하는데, PROGRAMMERS-962 행성에서는 나이를 알파벳으로 말하고 있습니다. a는 0, b는 1, c는 2, …, j는 9입니다. 예를 들어 23살은 cd, 51살은 fb로 표현합니다. 나이 age가...",
+    "content": "외계행성의 나이문제 설명우주여행을 하던 머쓱이는 엔진 고장으로 PROGRAMMERS-962 행성에 불시착하게 됐습니다. 입국심사에서 나이를 말해야 하는데, PROGRAMMERS-962 행성에서는 나이를 알파벳으로 말하고 있습니다. a는 0, b는 1, c는 2, …, j는 9입니다. 예를 들어 23살은 cd, 51살은 fb로 표현합니다. 나이 age가 매개변수로 주어질 때 PROGRAMMER-962식 나이를 return하도록 solution 함수를 완성해주세요.제한사항  age는 자연수입니다.  age ≤ 1,000  PROGRAMMERS-962 행성은 알파벳 소문자만 사용합니다.입출력 예****            age      result                  23      “cd”              51      “fb”              100      “baa”      입출력 예 설명입출력 예 #1  age가 23이므로 “cd”를 return합니다.입출력 예 #2  age가 51이므로 “fb”를 return합니다.입출력 예 #3  age가 100이므로 “baa”를 return합니다.Solution  a~j(0~9)까지 str 배열에 담아두고, age의 각 자릿수의 숫자를 뽑아서 str의 index로 사용해서 문제를 풀었습니다.import java.util.*;class Solution {    public String solution(int age) {        String[] str = {\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\"};        String ageStr = Integer.toString(age);        String answer = \"\";        for(int i = 0; i&lt;ageStr.length(); i++){            answer = answer + str[Integer.valueOf(ageStr.charAt(i)+\"\")];        }                return answer;    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (20) - 배열 자르기",
+    "url": "/posts/Programmers-Java-Lv.0-(20)-%EB%B0%B0%EC%97%B4-%EC%9E%90%EB%A5%B4%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-01 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "배열 자르기문제 설명정수 배열 numbers와 정수 num1, num2가 매개변수로 주어질 때, numbers의 num1번 째 인덱스부터 num2번째 인덱스까지 자른 정수 배열을 return 하도록 solution 함수를 완성해보세요.제한사항  2 ≤ numbers의 길이 ≤ 30  0 ≤ numbers의 원소 ≤ 1,000  0 ≤num1 &lt; ...",
+    "content": "배열 자르기문제 설명정수 배열 numbers와 정수 num1, num2가 매개변수로 주어질 때, numbers의 num1번 째 인덱스부터 num2번째 인덱스까지 자른 정수 배열을 return 하도록 solution 함수를 완성해보세요.제한사항  2 ≤ numbers의 길이 ≤ 30  0 ≤ numbers의 원소 ≤ 1,000  0 ≤num1 &lt; num2 &lt; numbers의 길이입출력 예            numbers      num1      num2      result                  [1, 2, 3, 4, 5]      1      3      [2, 3, 4]              [1, 3, 5]      1      2      [3, 5]      입출력 예 설명입출력 예 #1  [1, 2, 3, 4, 5]의 1번째 인덱스 2부터 3번째 인덱스 4 까지 자른 [2, 3, 4]를 return 합니다.입출력 예 #2  [1, 3, 5]의 1번째 인덱스 3부터 2번째 인덱스 5까지 자른 [3, 5]를 return 합니다.Solution  num2 - num1 + 1로 배열의 크기를 정하고, 반복문을 num1…num2 까지 돌면서 새로 선언한 배열에 값을 하나씩 넣어주는 방식으로 문제를 풀었습니다.class Solution {    public int[] solution(int[] numbers, int num1, int num2) {        int[] answer = new int[num2-num1+1];                for (int i = num1; i&lt;=num2; i++){            answer[i-num1] = numbers[i];        }        return answer;    }}  Arrays.copyOfRange(기존 배열, 시작 인덱스, 끝 인덱스라는 함수를 이용하면 코드를 간략하게 구현할 수 있습니다.import java.util.*;class Solution {    public int[] solution(int[] numbers, int num1, int num2) {        return Arrays.copyOfRange(numbers, num1, num2 + 1);    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (19) - 짝수의 합",
+    "url": "/posts/Programmers-Java-Lv.0-(19)-%EC%A7%9D%EC%88%98%EC%9D%98-%ED%95%A9/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-01 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "짝수의 합문제 설명정수 n이 주어질 때, n이하의 짝수를 모두 더한 값을 return 하도록 solution 함수를 작성해주세요.제한사항0 &lt; n ≤ 1000입출력 예            n      result                  10      30              4      6      입출력 예 설명입출력 예 #1  n이...",
+    "content": "짝수의 합문제 설명정수 n이 주어질 때, n이하의 짝수를 모두 더한 값을 return 하도록 solution 함수를 작성해주세요.제한사항0 &lt; n ≤ 1000입출력 예            n      result                  10      30              4      6      입출력 예 설명입출력 예 #1  n이 10이므로 2 + 4 + 6 + 8 + 10 = 30을 return 합니다.입출력 예 #2  n이 4이므로 2 + 4 = 6을 return 합니다.Solution  반복문의 i 를 2씩 더해서 짝수를 모두 더했습니다.class Solution {    public int solution(int n) {        int answer = 0;        for(int i = 0; i &lt;= n; i+=2){            answer += i;        }        return answer;    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (18) - 양꼬치",
+    "url": "/posts/Programmers-Java-Lv.0-(18)-%EC%96%91%EA%BC%AC%EC%B9%98/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-01 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "양꼬치문제 설명머쓱이네 양꼬치 가게는 10인분을 먹으면 음료수 하나를 서비스로 줍니다. 양꼬치는 1인분에 12,000원, 음료수는 2,000원입니다. 정수 n과 k가 매개변수로 주어졌을 때, 양꼬치 n인분과 음료수 k개를 먹었다면 총얼마를 지불해야 하는지 return 하도록 solution 함수를 완성해보세요.제한사항  0 &lt; n &lt; 1,0...",
+    "content": "양꼬치문제 설명머쓱이네 양꼬치 가게는 10인분을 먹으면 음료수 하나를 서비스로 줍니다. 양꼬치는 1인분에 12,000원, 음료수는 2,000원입니다. 정수 n과 k가 매개변수로 주어졌을 때, 양꼬치 n인분과 음료수 k개를 먹었다면 총얼마를 지불해야 하는지 return 하도록 solution 함수를 완성해보세요.제한사항  0 &lt; n &lt; 1,000  n / 10 ≤ k &lt; 1,000  서비스로 받은 음료수는 모두 마십니다.입출력 예            n      k      result                  10      3      124,000              64      6      768,000      입출력 예 설명입출력 예 #1  10인분을 시켜 서비스로 음료수를 하나 받아 총 10 * 12000 + 3 * 2000 - 1 * 2000 = 124,000원입니다.입출력 예 #2  64인분을 시켜 서비스로 음료수를 6개 받아 총 64 * 12000 + 6 * 2000 - 6 * 2000 =768,000원입니다.Solution  10인분을 먹었지만 음료수를 안받는 경우를 생각해서 문제를 풀었었지만, n / 10 ≤ k &lt; 1,000 조건이 있어서 고려하지 않아도 괜찮습니다. n을 10으로 나눈 몫을 k에서 빼주면 서비스 음료를 제외하고 먹은 음료의 개수를 알 수 있습니다. 이를 통해 n인분 양꼬치 값 + 음료 값으로 문제를 풀었습니다.class Solution {    public int solution(int n, int k) {        int drinkCount = k - (n / 10);        return 12000 * n + (drinkCount &gt; 0 ? drinkCount * 2000 : 0);    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (17) - 각도기",
+    "url": "/posts/Programmers-Java-Lv.0-(17)-%EA%B0%81%EB%8F%84%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-01 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "각도기문제 설명각에서 0도 초과 90도 미만은 예각, 90도는 직각, 90도 초과 180도 미만은 둔각 180도는 평각으로 분류합니다. 각 angle이 매개변수로 주어질 때 예각일 때 1, 직각일 때 2, 둔각일 때 3, 평각일 때 4를 return하도록 solution 함수를 완성해주세요.  예각 : 0 &lt; angle &lt; 90  직각 : ...",
+    "content": "각도기문제 설명각에서 0도 초과 90도 미만은 예각, 90도는 직각, 90도 초과 180도 미만은 둔각 180도는 평각으로 분류합니다. 각 angle이 매개변수로 주어질 때 예각일 때 1, 직각일 때 2, 둔각일 때 3, 평각일 때 4를 return하도록 solution 함수를 완성해주세요.  예각 : 0 &lt; angle &lt; 90  직각 : angle = 90  둔각 : 90 &lt; angle &lt; 180  평각 : angle = 180제한사항  0 &lt; angle ≤ 180  angle은 정수입니다.입출력 예            angle      result                  70      1              91      3              180      4      입출력 예 설명입출력 예 #1  angle이 70이므로 예각입니다. 따라서 1을 return합니다.입출력 예 #2  angle이 91이므로 둔각입니다. 따라서 3을 return합니다.입출력 예 #2  angle이 180이므로 평각입니다. 따라서 4를 return합니다.Solution  if 문을 사용해서 문제를 풀었습니다.class Solution {    public int solution(int angle) {        if (angle &lt; 90) {            return 1;        }        else if (angle == 90) {            return 2;        }        else if (angle &lt; 180) {            return 3;        }        else {            return 4;        }    }}"
+  },
+  
+  {
+    "title": "Java 문법 (6) - 생성자",
+    "url": "/posts/Java-%EB%AC%B8%EB%B2%95-(6)-%EC%83%9D%EC%84%B1%EC%9E%90/",
+    "categories": "Java, Java_Basic",
+    "tags": "Java",
+    "date": "2024-04-01 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Java 문법 (6) - 생성자생성자의 선언과 호출  생성자의 이름은 클래스의 이름과 같아야합니다. (대소문자까지)  생성자는 반환타입이 없습니다.  생성자의 매개변수의 이름과 클래스 요소들의 이름이 같다면, this를 붙여주어야 합니다.public class Book {      String title;      String author;      ...",
+    "content": "Java 문법 (6) - 생성자생성자의 선언과 호출  생성자의 이름은 클래스의 이름과 같아야합니다. (대소문자까지)  생성자는 반환타입이 없습니다.  생성자의 매개변수의 이름과 클래스 요소들의 이름이 같다면, this를 붙여주어야 합니다.public class Book {      String title;      String author;      int page;        // 생성자 코드    Book(String title, String author, int page) {  \t    this.title = title;  \t    this.author = author;  \t    this.page = page;  \t}\t}public class BookMain {      public static void main(String[] args) {  \t\tBook book1 = new Book(\"JPA 프로그래밍\", \"kim\", 700);    }}생성자의 특징  생성자는 객체를 생성하는 시점에서 어떤 작업을 하고 싶을 때 유용합니다.  선언하고 초기화매서드를 또 호출하는 등의 중복 호출을 제거할 수 있는 효과가 있습니다.  매개변수가 있는 생성자는 반드시 호출해야 하기 때문에 제약을 주어서 오류를 방지할 수 있습니다."
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (16) - 특정 문자 제거하기",
+    "url": "/posts/Programmers-Java-Lv.0-(16)-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90-%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-30 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "특정 문자 제거하기문제 설명문자열 my_string과 문자 letter이 매개변수로 주어집니다. my_string에서 letter를 제거한 문자열을 return하도록 solution 함수를 완성해주세요.제한사항  1 ≤ my_string의 길이 ≤ 100  letter은 길이가 1인 영문자입니다.  my_string과 letter은 알파벳 대소문자로 ...",
+    "content": "특정 문자 제거하기문제 설명문자열 my_string과 문자 letter이 매개변수로 주어집니다. my_string에서 letter를 제거한 문자열을 return하도록 solution 함수를 완성해주세요.제한사항  1 ≤ my_string의 길이 ≤ 100  letter은 길이가 1인 영문자입니다.  my_string과 letter은 알파벳 대소문자로 이루어져 있습니다.  대문자와 소문자를 구분합니다.입출력 예            my_string      letter      result                  “abcdef”      “f”      “abcde”              “BCBdbe”      “B”      “Cdbe”      입출력 예 설명입출력 예 #1  “abcdef” 에서 “f”를 제거한 “abcde”를 return합니다.입출력 예 #2  “BCBdbe” 에서 “B”를 모두 제거한 “Cdbe”를 return합니다.Solution  반복문을 사용해서 my_string의 요소가 letter와 같으면 넘어가고, 아니면 answer에 더하는 방식으로 문제를 풀었습니다.class Solution {    public String solution(String my_string, String letter) {        String answer = \"\";        for(int i = 0; i &lt; my_string.length(); i++){            if (letter.equals(my_string.charAt(i)+\"\")){                continue;            }            answer += (my_string.charAt(i) + \"\");        }                return answer;    }}  String에 replace라는 함수를 이용하면 코드를 더 간결하게 만들 수 있습니다.class Solution {    public String solution(String my_string, String letter) {        return my_string.replace(letter, \"\");    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (15) - 문자 반복 출력하기",
+    "url": "/posts/Programmers-Java-Lv.0-(15)-%EB%AC%B8%EC%9E%90-%EB%B0%98%EB%B3%B5-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-30 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "문자 반복 출력하기문제 설명문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string에 들어있는 각 문자를 n만큼 반복한 문자열을 return 하도록 solution 함수를 완성해보세요.제한사항  2 ≤ my_string 길이 ≤ 5  2 ≤ n ≤ 10  “my_string”은 영어 대소문자로 이루어져 있습니다.입출력 예     ...",
+    "content": "문자 반복 출력하기문제 설명문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string에 들어있는 각 문자를 n만큼 반복한 문자열을 return 하도록 solution 함수를 완성해보세요.제한사항  2 ≤ my_string 길이 ≤ 5  2 ≤ n ≤ 10  “my_string”은 영어 대소문자로 이루어져 있습니다.입출력 예            my_string      n      result                  “hello”      3      “hhheeellllllooo”      입출력 예 설명입출력 예 #1  “hello”의 각 문자를 세 번씩 반복한 “hhheeellllllooo”를 return 합니다.Solution  StringBuffer, 이중 반복문을 이용해 문자를 append하는 방법으로 문제를 풀었습니다.class Solution {    public String solution(String my_string, int n) {        StringBuffer answer = new StringBuffer();                for (int i = 0; i &lt; my_string.length(); i++){            for (int j = 0; j&lt;n; j++){                answer.append(my_string.charAt(i));                }        }                return answer.toString();    }}  이전 문제에서 배운 StringBuilder, repeat를 사용해서 문제를 다시 풀어봤습니다. charAt()은 char 타입으로 반환되기 때문에 + \"\"를 해줌으로써 String으로 타입 캐스팅 할 수 있었습니다.class Solution {    public String solution(String my_string, int n) {        StringBuilder stringBuilder = new StringBuilder();        for (int i = 0; i &lt; my_string.length(); i++){            String temp = my_string.charAt(i) + \"\";            stringBuilder.append(temp.repeat(n));        }        return stringBuilder.toString();    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (14) - 짝수 홀수 개수",
+    "url": "/posts/Programmers-Java-Lv.0-(14)-%EC%A7%9D%EC%88%98-%ED%99%80%EC%88%98-%EA%B0%9C%EC%88%98/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-30 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "짝수 홀수 개수문제 설명정수가 담긴 리스트 num_list가 주어질 때, num_list의 원소 중 짝수와 홀수의 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요.제한사항  1 ≤ num_list의 길이 ≤ 100  0 ≤ num_list의 원소 ≤ 1,000입출력 예            num_list      result...",
+    "content": "짝수 홀수 개수문제 설명정수가 담긴 리스트 num_list가 주어질 때, num_list의 원소 중 짝수와 홀수의 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요.제한사항  1 ≤ num_list의 길이 ≤ 100  0 ≤ num_list의 원소 ≤ 1,000입출력 예            num_list      result                  [1, 2, 3, 4, 5]      [2, 3]              [1, 3, 5, 7]      [0, 4]      입출력 예 설명입출력 예 #1  [1, 2, 3, 4, 5]에는 짝수가 2, 4로 두 개, 홀수가 1, 3, 5로 세 개 있습니다.입출력 예 #2  [1, 3, 5, 7]에는 짝수가 없고 홀수가 네 개 있습니다.Solution  반복문으로 num_list의 요소들을 확인하면서 짝수라면 answer[0]의 값을 증가하고 홀수면 answer[1]의 값을 증가시켜서 문제를 풀었습니다.class Solution {    public int[] solution(int[] num_list) {        int[] answer = {0,0};        for(int num: num_list){            if (num % 2 == 0){                answer[0]++;            }            else {                answer[1]++;            }        }        return answer;    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (13) - 직각삼각형 출력하기",
+    "url": "/posts/Programmers-Java-Lv.0-(13)-%EC%A7%81%EA%B0%81%EC%82%BC%EA%B0%81%ED%98%95-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-30 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "직각삼각형 출력하기문제 설명““의 높이와 너비를 1이라고 했을 때, ““을 이용해 직각 이등변 삼각형을 그리려고합니다. 정수 n 이 주어지면 높이와 너비가 n 인 직각 이등변 삼각형을 출력하도록 코드를 작성해보세요.제한사항  1 ≤ n ≤ 10입출력 예입력 #13출력 #1******입출력 예 설명입출력 예 #1  n이 3이므로 첫째 줄에 * 1개, 둘...",
+    "content": "직각삼각형 출력하기문제 설명““의 높이와 너비를 1이라고 했을 때, ““을 이용해 직각 이등변 삼각형을 그리려고합니다. 정수 n 이 주어지면 높이와 너비가 n 인 직각 이등변 삼각형을 출력하도록 코드를 작성해보세요.제한사항  1 ≤ n ≤ 10입출력 예입력 #13출력 #1******입출력 예 설명입출력 예 #1  n이 3이므로 첫째 줄에 * 1개, 둘째 줄에 * 2개, 셋째 줄에 * 3개를 출력합니다.Solution  이중 반복문을 통해서 i는 1~n까지, j는 1~i까지 반복하도록 코드를 작성했습니다.import java.util.Scanner;public class Solution {    public static void main(String[] args) {        Scanner sc = new Scanner(System.in);        int n = sc.nextInt();                for (int i = 1 ; i &lt;= n; i++){            for (int j = 1; j&lt;=i; j++){                System.out.print(\"*\");            }            System.out.println();        }            }}  다른 사람의 풀이 방식을 보다가, String에 repeat()함수를 알게되어서 유용하게 사용할 수 있을 것 같습니다.import java.util.Scanner;public class Solution {    public static void main(String[] args) {        Scanner sc = new Scanner(System.in);        int n = sc.nextInt();                for (int i = 1 ; i &lt;= n; i++){\t\t\tSystem.out.println(\"*\".repeat(i)); //repeat()        }    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (12) - 문자열 뒤집기",
+    "url": "/posts/Programmers-Java-Lv.0-(12)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%92%A4%EC%A7%91%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-30 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "문자열 뒤집기문제 설명문자열 my_string이 매개변수로 주어집니다. my_string을 거꾸로 뒤집은 문자열을 return하도록 solution 함수를 완성해주세요.제한사항  1 ≤ my_string의 길이 ≤ 1,000입출력 예            my_string      return                  “jaron”      “no...",
+    "content": "문자열 뒤집기문제 설명문자열 my_string이 매개변수로 주어집니다. my_string을 거꾸로 뒤집은 문자열을 return하도록 solution 함수를 완성해주세요.제한사항  1 ≤ my_string의 길이 ≤ 1,000입출력 예            my_string      return                  “jaron”      “noraj”              “bread”      “daerb”      입출력 예 설명입출력 예 #1  my_string이 “jaron”이므로 거꾸로 뒤집은 “noraj”를 return합니다.입출력 예 #2  my_string이 “bread”이므로 거꾸로 뒤집은 “daerb”를 return합니다.Solution  캐릭터 배열을 my_string.length()의 크기로 만들어 주고, my_string의 길이만큼 반복문을 돌면서 캐릭터 배열에 반대로 넣어주고, String으로 변환해 반환하는 방법으로 문제를 풀었습니다.class Solution {    public String solution(String my_string) {        char[] arr = new char[my_string.length()];        for(int i = 0; i &lt; my_string.length(); i++){            arr[i] = my_string.charAt(my_string.length() - i - 1);                    }        return String.valueOf(arr);    }}  Java의 StringBuilder를 사용하면 해당 문제를 간결하게 풀 수 있습니다.class Solution {    public String solution(String my_string) {        StringBuilder stringBuilder = new StringBuilder(my_string);        return stringBuilder.reverse().toString();    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (9) - 아이스 아메리카노",
+    "url": "/posts/Programmers-Java-Lv.0-(9)-%EC%95%84%EC%9D%B4%EC%8A%A4-%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-29 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "아이스 아메리카노문제 설명머쓱이는 추운 날에도 아이스 아메리카노만 마십니다. 아이스 아메리카노는 한잔에 5,500원입니다. 머쓱이가 가지고 있는 돈 money가 매개변수로 주어질 때, 머쓱이가 최대로 마실 수 있는 아메리카노의 잔 수와 남는 돈을 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.제한사항  0 &lt; mon...",
+    "content": "아이스 아메리카노문제 설명머쓱이는 추운 날에도 아이스 아메리카노만 마십니다. 아이스 아메리카노는 한잔에 5,500원입니다. 머쓱이가 가지고 있는 돈 money가 매개변수로 주어질 때, 머쓱이가 최대로 마실 수 있는 아메리카노의 잔 수와 남는 돈을 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.제한사항  0 &lt; money ≤ 1,000,000입출력 예            money      result                  5,500      [1, 0]              15,000      [2, 4000]      입출력 예 설명입출력 예 #1  5,500원은 아이스 아메리카노 한 잔을 살 수 있고 잔돈은 0원입니다.입출력 예 #2  15,000원은 아이스 아메리카노 두 잔을 살 수 있고 잔돈은 4,000원입니다.Solution  잔 수는 돈(money)을 아메리카노의 가격(5500)으로 나눈 몫이고, 잔돈은 나머지가 됩니다.class Solution {    public int[] solution(int money) {        int[] answer = {money / 5500, money % 5500};        return answer;    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (8) - 옷가게 할인 받기",
+    "url": "/posts/Programmers-Java-Lv.0-(8)-%EC%98%B7%EA%B0%80%EA%B2%8C-%ED%95%A0%EC%9D%B8-%EB%B0%9B%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-29 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "옷가게 할인 받기문제 설명머쓱이네 옷가게는 10만 원 이상 사면 5%, 30만 원 이상 사면 10%, 50만 원 이상 사면 20%를 할인해줍니다.구매한 옷의 가격 price가 주어질 때, 지불해야 할 금액을 return 하도록 solution 함수를 완성해보세요.제한사항  10 ≤ price ≤ 1,000,000          price는 10원 단...",
+    "content": "옷가게 할인 받기문제 설명머쓱이네 옷가게는 10만 원 이상 사면 5%, 30만 원 이상 사면 10%, 50만 원 이상 사면 20%를 할인해줍니다.구매한 옷의 가격 price가 주어질 때, 지불해야 할 금액을 return 하도록 solution 함수를 완성해보세요.제한사항  10 ≤ price ≤ 1,000,000          price는 10원 단위로(1의 자리가 0) 주어집니다.        소수점 이하를 버린 정수를 return합니다.입출력 예            price      result                  150,000      142,500              580,000      464,000      입출력 예 설명입출력 예 #1  150,000원에서 5%를 할인한 142,500원을 return 합니다.입출력 예 #2  580,000원에서 20%를 할인한 464,000원을 return 합니다.Solution  단순하게 if문을 사용해서 50만원 부터 차례로 검사하는 코드로 문제를 풀었습니다.class Solution {    public int solution(int price) {        double answer = 0;        if (price &gt;= 500000) {            answer = price - (price * 0.2);        } else if (price &gt;= 300000) {            answer = price - (price * 0.1);        } else if (price &gt;= 100000) {            answer = price - (price * 0.05);        } else {            return price;        }                        return (int)answer;    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (11) - 배열 뒤집기",
+    "url": "/posts/Programmers-Java-Lv.0-(11)-%EB%B0%B0%EC%97%B4-%EB%92%A4%EC%A7%91%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-29 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "배열 뒤집기문제 설명정수가 들어 있는 배열 num_list가 매개변수로 주어집니다. num_list의 원소의 순서를 거꾸로 뒤집은 배열을 return하도록 solution 함수를 완성해주세요.제한사항  1 ≤ num_list의 길이 ≤ 1,000  0 ≤ num_list의 원소 ≤ 1,000입출력 예            num_list      res...",
+    "content": "배열 뒤집기문제 설명정수가 들어 있는 배열 num_list가 매개변수로 주어집니다. num_list의 원소의 순서를 거꾸로 뒤집은 배열을 return하도록 solution 함수를 완성해주세요.제한사항  1 ≤ num_list의 길이 ≤ 1,000  0 ≤ num_list의 원소 ≤ 1,000입출력 예            num_list      result                  [1, 2, 3, 4, 5]      [5, 4, 3, 2, 1]              [1, 1, 1, 1, 1, 2]      [2, 1, 1, 1, 1, 1]              [1, 0, 1, 1, 1, 3, 5]      [5, 3, 1, 1, 1, 0, 1]      입출력 예 설명입출력 예 #1  num_list가 [1, 2, 3, 4, 5]이므로 순서를 거꾸로 뒤집은 배열 [5, 4, 3, 2, 1]을 return합니다.입출력 예 #2  num_list가 [1, 1, 1, 1, 1, 2]이므로 순서를 거꾸로 뒤집은 배열 [2, 1, 1, 1, 1, 1]을 return합니다.입출력 예 #3  num_list가 [1, 0, 1, 1, 1, 3, 5]이므로 순서를 거꾸로 뒤집은 배열 [5, 3, 1, 1, 1, 0, 1]을 return합니다.Solution  주어진 배열의 길이를 구하고, 그 길이만큼 새로운 배열을 만들었습니다. 반복문을 돌면서 기존 배열은 뒤에서부터 값을 새로운 배열의 앞부터 넣어주었습니다.class Solution {    public int[] solution(int[] num_list) {        int length = num_list.length;        int[] answer = new int[length];        for(int i = 0; i &lt; length; i++){            answer[i] = num_list[length-i-1];        }                return answer;    }}  Java에 Stream 라이브러리를 사용하는게 중요한데, LongStream을 사용해서 문제를 푼 답안을 찾게되었습니다.import java.util.stream.LongStream;class Solution {    public int[] solution(int[] num_list) {        return LongStream.range(1, num_list.length + 1)                .mapToInt(i -&gt; num_list[(int) (num_list.length - i)])                .toArray();    }}  해당 답안을 참고하여 IntStream을 이용해서 문제를 다시 풀어보았습니다.import java.util.stream.IntStream;class Solution {    public int[] solution(int[] num_list) {        int length = num_list.length;        return IntStream.range(1, length + 1)            .map(i -&gt; num_list[length - i])            .toArray();    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (10) - 나이 출력",
+    "url": "/posts/Programmers-Java-Lv.0-(10)-%EB%82%98%EC%9D%B4-%EC%B6%9C%EB%A0%A5/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-03-29 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "나이 출력문제 설명머쓱이는 선생님이 몇 년도에 태어났는지 궁금해졌습니다. 2022년 기준 선생님의 나이 age가 주어질 때, 선생님의 출생 연도를 return 하는 solution 함수를 완성해주세요제한사항  0 &lt; age ≤ 120  나이는 태어난 연도에 1살이며 매년 1월 1일마다 1살씩 증가합니다.입출력 예            age    ...",
+    "content": "나이 출력문제 설명머쓱이는 선생님이 몇 년도에 태어났는지 궁금해졌습니다. 2022년 기준 선생님의 나이 age가 주어질 때, 선생님의 출생 연도를 return 하는 solution 함수를 완성해주세요제한사항  0 &lt; age ≤ 120  나이는 태어난 연도에 1살이며 매년 1월 1일마다 1살씩 증가합니다.입출력 예            age      result                  40      1983              23      2000      입출력 예 설명입출력 예 #1  2022년 기준 40살이므로 1983년생입니다.입출력 예 #2  2022년 기준 23살이므로 2000년생입니다.Solution  나이는 2022년 기준이라고 정해져 있기 때문에, 2022 - age + 1로 구할 수 있습니다.class Solution {    public int solution(int age) {        int answer = 2022 - age + 1;                return answer;    }}"
+  },
+  
+  {
     "title": "Programmers Java Lv.0 (7) - 배열의 평균값",
     "url": "/posts/Programmers-Java-Lv.0-(7)-%EB%B0%B0%EC%97%B4%EC%9D%98-%ED%8F%89%EA%B7%A0%EA%B0%92/",
     "categories": "Programmers, Lv.0_Java",

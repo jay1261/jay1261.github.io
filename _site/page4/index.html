@@ -584,14 +584,14 @@
 <div id="post-list" class="flex-grow-1 px-xl-1">
   
     <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-63/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(10)-Pivot-tabel,-Window-function/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic63 왼쪽 오른쪽</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (10) - Pivot tabel, Window function</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -601,10 +601,21 @@
 
 
 
-                문제: 왼쪽 오른쪽
-문제 설명
+                SQL Grammer (10) - Pivot tabel, Window function
 
-문자열 리스트 str_list에는 “u”, “d”, “l”, “r” 네 개의 문자열이 여러 개 저장되어 있습니다. str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이라면 해당 문자열을 기준으로 왼쪽에 있는 문자열들을 순서대로 담은 리스트를, 먼저 나오는 문자열이 “r”이라면 해당 문자열을 기준으로 오른...
+
+
+
+
+
+
+Pivot tabel
+
+
+2개 이상의 기준으로 데이터를 집계할 때, 보기 쉽게 배열하여 보여주는 것을 의미합니다. 집계 기준을 행의 기준으로 잡고, 구분 컬럼으로 데이터를 보여줄 수 있습니다.
+
+select restaurant_name,  
+       ...
               </p>
             </div>
 
@@ -622,11 +633,11 @@
 
 <time
   
-  data-ts="1707145200"
+  data-ts="1710255600"
   data-df="ll"
   
 >
-  Feb  6, 2024
+  Mar 13, 2024
 </time>
 
 
@@ -635,8 +646,8 @@
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     
-                      Programmers,
-                      Basic_Swift
+                      MySQL,
+                      SQL Grammer
                   </span>
                 
               </div>
@@ -651,14 +662,14 @@
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-62/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(9)-Null,-Coalesce/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic62 순서 바꾸기</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (9) - Null, Coalesce</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -668,19 +679,19 @@
 
 
 
-                문제: 순서 바꾸기
-
-문제 설명
-
-정수 리스트 num_list와 정수 n이 주어질 때, num_list를 n 번째 원소 이후의 원소들과 n 번째까지의 원소들로 나눠 n 번째 원소 이후의 원소들을 n 번째까지의 원소들 앞에 붙인 리스트를 return하도록 solution 함수를 완성해주세요.
+                SQL Grammer (9) - Null, Coalesce
 
 
 
-제한사항
 
 
-  2 ≤ num_list의 길이 ≤ 30
-...
+
+
+Null
+
+
+값이 없을 때 Null 을 이용한다. 숫자 계산같은 함수를 사용할 때 알아두면 좋은 점이 있는데, Null로 처리한 것과 다른 문자로 처리된 경우 계산값이 다르게 나올 수 있다는 것이다.
+MySQL에서는 사용할 수 없는 값이 연산으로 들어오면 자동으로 0으로 간주한다....
               </p>
             </div>
 
@@ -698,11 +709,11 @@
 
 <time
   
-  data-ts="1707145200"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Feb  6, 2024
+  Mar 12, 2024
 </time>
 
 
@@ -711,8 +722,8 @@
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     
-                      Programmers,
-                      Basic_Swift
+                      MySQL,
+                      SQL Grammer
                   </span>
                 
               </div>
@@ -727,14 +738,14 @@
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-61/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(8)-Join/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic61 n 번째 원소부터</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (8) - Join</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -744,173 +755,24 @@
 
 
 
-                문제: n 번째 원소부터
-
-문제 설명
-
-정수 리스트 num_list와 정수 n이 주어질 때, n 번째 원소부터 마지막 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  2 ≤ num_list의 길이 ≤ 30
-  1 ≤ num_list의 원소 ≤ 9
-  1 ≤ n ≤ num_list의 길이...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1707145200"
-  data-df="ll"
-  
->
-  Feb  6, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      Basic_Swift
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-60/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic60 배열 조각하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
+                SQL Grammer (8) - Join
 
 
 
 
 
-                문제: 배열 조각하기
-
-문제 설명
-
-정수 배열 arr와 query가 주어집니다.
-
-query를 순회하면서 다음 작업을 반복합니다.
 
 
-  짝수 인덱스에서는 arr에서 query[i]번 인덱스를 제외하고 배열의 query[i]번 인덱스 뒷부분을 잘라서 버립니다.
-  홀수 인덱스에서는 arr에서 query[i]번 인덱스는 제외하고 배열의 query[i]번...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+Join
 
 
+필요한 데이터가 서로 다른 테이블에 있을 때 사용할 수 있는 문법입니다. 공통 컬럼을 기준으로 두 테이블을 합쳐서 각각 테이블에서 필요한 데이터를 조회할 수 있습니다.
 
+Join의 종류
 
-<time
-  
-  data-ts="1707058800"
-  data-df="ll"
-  
->
-  Feb  5, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      Basic_Swift
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-59/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic59 2의 영역</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                문제: 2의 영역
-
-문제 설명
-
-정수 배열 arr가 주어집니다. 배열 안의 2가 모두 포함된 가장 작은 연속된 부분 배열을 return 하는 solution 함수를 완성해 주세요.
-
-단, arr에 2가 없는 경우 [-1]을 return 합니다.
-
-
-
-제한사항
-
-
-  1 ≤ arr의 길이 ≤ 100,000
+  Inner Join
     
-      1 ≤ arr의 원소 ≤ 1...
+      가장 많이 사용하는 조인으로, 두 테이블 모두에 있는 값...
               </p>
             </div>
 
@@ -928,11 +790,11 @@ query를 순회하면서 다음 작업을 반복합니다.
 
 <time
   
-  data-ts="1707058800"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Feb  5, 2024
+  Mar 12, 2024
 </time>
 
 
@@ -941,8 +803,8 @@ query를 순회하면서 다음 작업을 반복합니다.
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     
-                      Programmers,
-                      Basic_Swift
+                      MySQL,
+                      SQL Grammer
                   </span>
                 
               </div>
@@ -957,14 +819,14 @@ query를 순회하면서 다음 작업을 반복합니다.
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-58/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(7)-Subquery/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic58 배열 만들기 3</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (7) - Subquery</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -974,14 +836,22 @@ query를 순회하면서 다음 작업을 반복합니다.
 
 
 
-                문제: 배열 만들기 3
-문제 설명
+                SQL Grammer (7) - Subquery
 
-정수 배열 arr와 2개의 구간이 담긴 배열 intervals가 주어집니다.
 
-intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 닫힌 구간입니다. 닫힌 구간은 양 끝값과 그 사이의 값을 모두 포함하는 구간을 의미합니다.
 
-이때 배열 arr의 첫 번째 구간에 해당하는 배열과 두 ...
+
+
+
+
+Subquery
+
+
+여러번의 연산을 수행해야할 때, 조건문에 연산 결과를 사용하거나 조건에 Query결과를 사용하고 싶을 때 쓸 수 있는 문법입니다. 복잡한 쿼리문을 효율적으로 작성할 수 있습니다. 기본 구조는 아래와 같습니다.
+
+select column1, test
+from (
+	#subq...
               </p>
             </div>
 
@@ -999,11 +869,11 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
 
 <time
   
-  data-ts="1707058800"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Feb  5, 2024
+  Mar 12, 2024
 </time>
 
 
@@ -1012,8 +882,8 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     
-                      Programmers,
-                      Basic_Swift
+                      MySQL,
+                      SQL Grammer
                   </span>
                 
               </div>
@@ -1028,14 +898,14 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-57/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(6)-If,-Case,-Cast/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic57 첫 번째로 나오는 음수</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (6) - If, Case, Cast</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -1045,97 +915,20 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
 
 
 
-                문제: 첫 번째로 나오는 음수
-
-문제 설명
-
-정수 리스트 num_list가 주어질 때, 첫 번째로 나오는 음수의 인덱스를 return하도록 solution 함수를 완성해주세요. 음수가 없다면 -1을 return합니다.
-
-
-
-제한사항
-
-
-  5 ≤ num_list의 길이 ≤ 100
-  -10 ≤ num_list의 원소 ≤ 100
-
-
-
-
-입출력 예
-
-
- ...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1706972400"
-  data-df="ll"
-  
->
-  Feb  4, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      Basic_Swift
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-56/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic56 리스트 자르기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
+                SQL Grammer (6) - If, Case, Cast
 
 
 
 
 
-                문제: 리스트 자르기
-문제 설명
-
-정수 n과 정수 3개가 담긴 리스트 slicer 그리고 정수 여러 개가 담긴 리스트 num_list가 주어집니다. slicer에 담긴 정수를 차례대로 a, b, c라고 할 때, n에 따라 다음과 같이 num_list를 슬라이싱 하려고 합니다.
 
 
-  n = 1 : num_list의 0번 인덱스부터 b번 인덱스까지
+If
+
+
+조건에 따라 다른 방법을 적용해 값을 얻고 싶을 때 If문을 사용합니다. if(조건, 참일 때 실행, 거짓일 때 실행)의 형태로 사용합니다. 음식의 타입이 “Korean”이면 한식, 아니면 기타를 출력하는 예시입니다.
+
+select restaurant_name,  
   ...
               </p>
             </div>
@@ -1154,11 +947,11 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
 
 <time
   
-  data-ts="1706886000"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Feb  3, 2024
+  Mar 12, 2024
 </time>
 
 
@@ -1167,8 +960,8 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     
-                      Programmers,
-                      Basic_Swift
+                      MySQL,
+                      SQL Grammer
                   </span>
                 
               </div>
@@ -1183,14 +976,14 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-55/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(5)-Replace,-Substring,-Concat/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic55 가까운 1 찾기</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (5) - Replace, Substring, Concat</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -1200,20 +993,21 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
 
 
 
-                문제: 가까운 1 찾기
-
-문제 설명
-
-정수 배열 arr가 주어집니다. 이때 arr의 원소는 1 또는 0입니다. 정수 idx가 주어졌을 때, idx보다 크면서 배열의 값이 1인 가장 작은 인덱스를 찾아서 반환하는 solution 함수를 완성해 주세요.
-
-단, 만약 그러한 인덱스가 없다면 -1을 반환합니다.
+                SQL Grammer (5) - Replace, Substring, Concat
 
 
 
-제한사항
 
 
-  3 ≤ arr의 길이 ≤ ...
+
+
+Replace
+
+특정 문자를 변경하고자 할 때 사용합니다. Replace(바꿀컬럼, 현재 값, 바꿀 값) 의 형태로 사용할 수 있습니다.
+
+ex)
+SELECT restaurant_name AS &quot;원래 이름&quot;,  
+       REPLACE (restaurant...
               </p>
             </div>
 
@@ -1231,11 +1025,11 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
 
 <time
   
-  data-ts="1706799600"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Feb  2, 2024
+  Mar 12, 2024
 </time>
 
 
@@ -1244,8 +1038,8 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     
-                      Programmers,
-                      Basic_Swift
+                      MySQL,
+                      SQL Grammer
                   </span>
                 
               </div>
@@ -1260,14 +1054,14 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
     </article>
   
     <article class="card-wrapper card">
-      <a href="/posts/ProgrammersBasic-54/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/SQL-Grammer-(4)-Group-By,-Order-By/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Basic54 카운트 다운</h1>
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (4) - Group By, Order By</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>
@@ -1277,27 +1071,21 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
 
 
 
-                문제: 카운트 다운
-문제 설명
-
-정수 start_num와 end_num가 주어질 때, start_num에서 end_num까지 1씩 감소하는 수들을 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  0 ≤ end_num ≤ start_num ≤ 50
+                SQL Grammer (4) - Group By, Order By
 
 
 
 
-입출력 예
 
 
-  
-    
-      start...
+
+Group By
+
+데이터를 범주별로 연산된 결과를 얻고 싶을 때 주로 사용합니다. Count, AVG, Sum등의 함수들과 주로 같이 사용되며, 예를들어 나라별 음식 판매의 합산 금액을 구하고 싶을때 사용할 수 있습니다.
+
+ex)
+select cuisine_type,
+   ...
               </p>
             </div>
 
@@ -1315,11 +1103,11 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
 
 <time
   
-  data-ts="1706799600"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Feb  2, 2024
+  Mar 12, 2024
 </time>
 
 
@@ -1328,8 +1116,254 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     
-                      Programmers,
-                      Basic_Swift
+                      MySQL,
+                      SQL Grammer
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SQL-Grammer-(3)-SUM,-AVG,-COUNT,-MIN,-MAX/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                SQL Grammer (3) - SUM, AVG, COUNT, MIN, MAX
+
+
+
+
+
+
+
+SUM
+
+선택된 열과 범위의 합계를 반환해줍니다. 예시처럼 customer의 테이블안에 있는 모든 값들의 나이를 더한 값을 얻고 싶을 때 쓸 수 있습니다.
+ex)
+SELECT SUM(age) FROM customers
+
+
+
+
+
+
+
+
+AVG
+
+sum과 같은 방법으...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710082800"
+  data-df="ll"
+  
+>
+  Mar 11, 2024
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      MySQL,
+                      SQL Grammer
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SQL-Grammer-(2)-Where,-Between,-In,-Like/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (2) - Where, Between, In,</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                SQL Grammer (2) - Where, Between, In,
+
+
+
+
+
+
+
+Where
+
+
+데이터 중에 특정 조건으로 필터링을 해야할 때 사용하는 문법입니다. “나이가 20살 이상인 사람”과 같은 경우의 데이터를 구할 때 사용합니다.
+ex)
+SELECT * FROM customer WHERE age&amp;gt;=20
+
+
+Where를 사용할 때 기본적인 ...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710082800"
+  data-df="ll"
+  
+>
+  Mar 11, 2024
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      MySQL,
+                      SQL Grammer
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/SQL-Grammer-(1)-Select,-From/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">SQL Grammer (1) - Select, From</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                SQL Grammer (1) - Select, From
+
+
+
+
+
+
+
+SQL 이란?
+
+
+SQL은 Structured Query Language의 약자이며 직역하자면 구조화된 질의 언어 라는 의미입니다. 관계형 데이터베이스에서 데이터를 관리하고 처리하기 위해 사용되는 비절차적인 언어입니다.
+
+SQL 문장에는 다음 3가지 종류가 있습니다.
+
+  데이터 정의...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710082800"
+  data-df="ll"
+  
+>
+  Mar 11, 2024
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      MySQL,
+                      SQL Grammer
                   </span>
                 
               </div>
@@ -1508,12 +1542,38 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
       
 
       
+        <!-- hide number -->
+        
+      
+    
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- hide number -->
+        
+      
+    
+      
+      
+      
+      
+      
+
+      
+
+      
         <!-- show number -->
         <li class="page-item ">
           <a
             class="page-link"
-            href="/page9"
-          >9</a>
+            href="/page11"
+          >11</a>
         </li>
       
     
@@ -1521,7 +1581,7 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
     <!-- mobile pagination -->
     <li class="page-index align-middle">
       <span>4</span>
-      <span class="text-muted">/ 9</span>
+      <span class="text-muted">/ 11</span>
     </li>
 
     <!-- right arrow -->
@@ -1568,35 +1628,35 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Programmers-Java-Lv.0-(4)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-1/">Programmers Java Lv.0 (4) - 피자 나눠먹기 1</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(8)-%EC%9E%90%EB%B0%94-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EC%99%80-static/">Java 문법 (8) - 자바 메모리 구조와 static</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Programmers-Java-Lv.0-(5)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-2/">Programmers Java Lv.0 (5) - 피자 나눠먹기 2</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(7)-%EC%A0%91%EA%B7%BC-%EC%A0%9C%EC%96%B4%EC%9E%90/">Java 문법 (7) - 접근 제어자</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Programmers-Java-Lv.0-(6)-%ED%94%BC%EC%9E%90-%EB%82%98%EB%88%A0%EB%A8%B9%EA%B8%B0-3/">Programmers Java Lv.0 (6) - 피자 나눠먹기 3</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(6)-%EC%83%9D%EC%84%B1%EC%9E%90/">Java 문법 (6) - 생성자</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Programmers-Java-Lv.0-(7)-%EB%B0%B0%EC%97%B4%EC%9D%98-%ED%8F%89%EA%B7%A0%EA%B0%92/">Programmers Java Lv.0 (7) - 배열의 평균값</a>
+          <a href="/posts/Programmers-Java-Lv.0-(17)-%EA%B0%81%EB%8F%84%EA%B8%B0/">Programmers Java Lv.0 (17) - 각도기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(5)-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/">Java 문법 (5) - 객체 지향 프로그래밍</a>
+          <a href="/posts/Programmers-Java-Lv.0-(18)-%EC%96%91%EA%BC%AC%EC%B9%98/">Programmers Java Lv.0 (18) - 양꼬치</a>
         </li>
       
     </ul>
@@ -1689,15 +1749,15 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
     
     
     
+      
+        
+        
+
   
     
     
     
     
-      
-        
-        
-
   
     
     
@@ -1733,10 +1793,10 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
         <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
       
     </div>
   </section>
@@ -1866,15 +1926,15 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
     
     
     
+      
+        
+        
+
   
     
     
     
     
-      
-        
-        
-
   
     
     
@@ -1910,10 +1970,10 @@ intervals는 항상 [[a1, b1], [a2, b2]]의 꼴로 주어지며 각 구간은 �
         <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java%EB%AC%B8%EB%B2%95/">Java문법</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">MySQL</a>
       
     </div>
   </section>
