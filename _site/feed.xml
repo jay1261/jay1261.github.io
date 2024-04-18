@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-04-18T12:42:11+09:00</updated>
+  <updated>2024-04-18T16:18:52+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,351 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (35) - 팩토리얼</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (35) - 팩토리얼" />
+    <published>2024-04-18T00:00:00+09:00</published>
+  
+    <updated>2024-04-18T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      팩토리얼
+
+
+
+
+
+
+
+문제 설명
+
+i팩토리얼 (i!)은 1부터 i까지 정수의 곱을 의미합니다. 예를들어 5! = 5 * 4 * 3 * 2 * 1 = 120 입니다. 정수 n이 주어질 때 다음 조건을 만족하는 가장 큰 정수 i를 return 하도록 solution 함수를 완성해주세요.
+
+
+  i! ≤ n
+
+
+
+
+제한사항
+
+
+  0 &amp;lt; n ≤ 3,628,800
+
+
+
+
+입출력 예
+
+
+  
+    
+      n
+      result
+    
+  
+  
+    
+      3628800
+      10
+    
+    
+      7
+      3
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+
+  10! = 3,628,800입니다. n이 3628800이므로 최대 팩토리얼인 10을 retur...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (34) - 최댓값 만들기 1</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(34)-%EC%B5%9C%EB%8C%93%EA%B0%92-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (34) - 최댓값 만들기 1" />
+    <published>2024-04-18T00:00:00+09:00</published>
+  
+    <updated>2024-04-18T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(34)-%EC%B5%9C%EB%8C%93%EA%B0%92-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(34)-%EC%B5%9C%EB%8C%93%EA%B0%92-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      최댓값 만들기 1
+
+
+
+
+
+
+
+문제 설명
+
+정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  0 ≤ numbers의 원소 ≤ 10,000
+  2 ≤ numbers의 길이 ≤ 100
+
+
+
+
+입출력 예
+
+
+  
+    
+      numbers
+      result
+    
+  
+  
+    
+      [1, 2, 3, 4, 5]
+      20
+    
+    
+      [0, 31, 24, 10, 1, 9]
+      744
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+
+  두 수의 곱중 최댓값은 4 * 5 = 20 입니다.
+
+
+입출력 예 #1
+
+...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (33) - 합성수 찾기</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(33)-%ED%95%A9%EC%84%B1%EC%88%98-%EC%B0%BE%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (33) - 합성수 찾기" />
+    <published>2024-04-18T00:00:00+09:00</published>
+  
+    <updated>2024-04-18T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(33)-%ED%95%A9%EC%84%B1%EC%88%98-%EC%B0%BE%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(33)-%ED%95%A9%EC%84%B1%EC%88%98-%EC%B0%BE%EA%B8%B0/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      합성수 찾기
+
+
+
+
+
+
+
+문제 설명
+
+약수의 개수가 세 개 이상인 수를 합성수라고 합니다. 자연수 n이 매개변수로 주어질 때 n이하의 합성수의 개수를 return하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  1 ≤ n ≤ 100
+
+
+
+
+입출력 예
+
+
+  
+    
+      n
+      result
+    
+  
+  
+    
+      10
+      5
+    
+    
+      15
+      8
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+
+  10 이하 합성수는 4, 6, 8, 9, 10 로 5개입니다. 따라서 5를 return합니다.
+
+
+입출력 예 #1
+
+
+  15 이하 합성수는 4, 6, 8, 9, 10, 12, 14, 15 로 8개입니다. 따라서 8을 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Programmers Java Lv.0 (32) - 주사위의 개수</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(32)-%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98-%EA%B0%9C%EC%88%98/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (32) - 주사위의 개수" />
+    <published>2024-04-18T00:00:00+09:00</published>
+  
+    <updated>2024-04-18T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(32)-%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98-%EA%B0%9C%EC%88%98/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(32)-%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98-%EA%B0%9C%EC%88%98/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="Lv.0_Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      주사위의 개수
+
+
+
+
+
+
+
+문제 설명
+
+머쓱이는 직육면체 모양의 상자를 하나 가지고 있는데 이 상자에 정육면체 모양의 주사위를 최대한 많이 채우고 싶습니다. 상자의 가로, 세로, 높이가 저장되어있는 배열 box와 주사위 모서리의 길이 정수 n이 매개변수로 주어졌을 때, 상자에 들어갈 수 있는 주사위의 최대 개수를 return 하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  box의 길이는 3입니다.
+  box[0] = 상자의 가로 길이
+  box[1] = 상자의 세로 길이
+  box[2] = 상자의 높이 길이
+  1 ≤ box의 원소 ≤ 100
+  1 ≤ n ≤ 50
+  n ≤ box의 원소
+  주사위는 상자와 평행하게 넣습니다.
+
+
+
+
+입출력 예
+
+
+  
+    
+      box
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -90,255 +435,6 @@
     
       [4, 455, 6, 4, -1, 45, 6]
       “left...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (30) - 공 던지기</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(30)-%EA%B3%B5-%EB%8D%98%EC%A7%80%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (30) - 공 던지기" />
-    <published>2024-04-17T00:00:00+09:00</published>
-  
-    <updated>2024-04-17T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(30)-%EA%B3%B5-%EB%8D%98%EC%A7%80%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(30)-%EA%B3%B5-%EB%8D%98%EC%A7%80%EA%B8%B0/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      공 던지기
-
-
-
-
-
-
-
-문제 설명
-
-머쓱이는 친구들과 동그랗게 서서 공 던지기 게임을 하고 있습니다. 공은 1번부터 던지며 오른쪽으로 한 명을 건너뛰고 그다음 사람에게만 던질 수 있습니다. 친구들의 번호가 들어있는 정수 배열 numbers와 정수 K가 주어질 때, k번째로 공을 던지는 사람의 번호는 무엇인지 return 하도록 solution 함수를 완성해보세요.
-
-
-
-제한사항
-
-
-  2 &amp;lt; numbers의 길이 &amp;lt; 100
-  0 &amp;lt; k &amp;lt; 1,000
-  numbers의 첫 번째와 마지막 번호는 실제로 바로 옆에 있습니다.
-  numbers는 1부터 시작하며 번호는 순서대로 올라갑니다.
-
-
-
-
-입출력 예
-
-
-  
-    
-      numbers
-      k
-      resul...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (29) - 2차원으로 만들기</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(29)-2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (29) - 2차원으로 만들기" />
-    <published>2024-04-16T00:00:00+09:00</published>
-  
-    <updated>2024-04-16T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(29)-2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(29)-2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      2차원으로 만들기
-
-
-
-
-
-
-
-문제 설명
-
-정수 배열 num_list와 정수 n이 매개변수로 주어집니다. num_list를 다음 설명과 같이 2차원 배열로 바꿔 return하도록 solution 함수를 완성해주세요.
-
-num_list가 [1, 2, 3, 4, 5, 6, 7, 8] 로 길이가 8이고 n이 2이므로 num_list를 2 * 4 배열로 다음과 같이 변경합니다. 2차원으로 바꿀 때에는 num_list의 원소들을 앞에서부터 n개씩 나눠 2차원 배열로 변경합니다.
-
-
-  
-    
-      num_list
-      n
-      result
-    
-  
-  
-    
-      [1, 2, 3, 4, 5, 6, 7, 8]
-      2
-      [[1, 2], [3, 4], [5, 6], ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (28) - 점의 위치 구하기</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(28)-%EC%A0%90%EC%9D%98-%EC%9C%84%EC%B9%98-%EA%B5%AC%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (28) - 점의 위치 구하기" />
-    <published>2024-04-16T00:00:00+09:00</published>
-  
-    <updated>2024-04-16T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(28)-%EC%A0%90%EC%9D%98-%EC%9C%84%EC%B9%98-%EA%B5%AC%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(28)-%EC%A0%90%EC%9D%98-%EC%9C%84%EC%B9%98-%EA%B5%AC%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      점의 위치 구하기
-
-
-
-
-
-
-
-문제 설명
-
-사분면은 한 평면을 x축과 y축을 기준으로 나눈 네 부분입니다. 사분면은 아래와 같이 1부터 4까지 번호를매깁니다.
-
-
-
-  x 좌표와 y 좌표가 모두 양수이면 제1사분면에 속합니다.
-  x 좌표가 음수, y 좌표가 양수이면 제2사분면에 속합니다.
-  x 좌표와 y 좌표가 모두 음수이면 제3사분면에 속합니다.
-  x 좌표가 양수, y 좌표가 음수이면 제4사분면에 속합니다.
-
-
-x 좌표 (x, y)를 차례대로 담은 정수 배열 dot이 매개변수로 주어집니다. 좌표 dot이 사분면 중 어디에 속하는지 1, 2, 3, 4 중 하나를 return 하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  dot의 길이 = 2
-  dot[0]은 x좌표를, dot[...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Spring (1) - 스프링 웹 개발 기초</title>
-    <link href="http://localhost:4000/posts/Spring-(1)-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88/" rel="alternate" type="text/html" title="Spring (1) - 스프링 웹 개발 기초" />
-    <published>2024-04-15T00:00:00+09:00</published>
-  
-    <updated>2024-04-15T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Spring-(1)-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88/</id>
-    <content src="http://localhost:4000/posts/Spring-(1)-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Spring" />
-    
-    <category term="Spring_Start" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      스프링 웹 개발 기초
-
-
-
-
-
-
-
-정적 컨텐츠
-
-
-html 파일을 그대로 웹 브라우저에 내려주는 것을 말합니다. 기본적으로 스프링은 static 폴더 아래에 있는 html 파일을 정적 컨텐츠로 보여줍니다.
-
-웹 브라우저에서 hello-static.html 입력이 들어오면, 내장 톰캣 브라우저가 받고, 스프링에서는 먼저 컨트롤러가 있는지 확인합니다. (컨트롤러에 우선순위가 있습니다.) 컨트롤러에 없으면 resources/static 안에서 찾아서 반환해주게 됩니다.
-
-// resources/static/hello-static.html
-&amp;lt;!doctype html&amp;gt;  
-&amp;lt;html lang="en"&amp;gt;  
-&amp;lt;head&amp;gt;  
-    &amp;lt;meta charset="UTF-8"&amp;gt;...
     </summary>
   
 

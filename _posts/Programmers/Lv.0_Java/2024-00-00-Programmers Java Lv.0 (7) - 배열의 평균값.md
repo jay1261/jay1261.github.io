@@ -8,6 +8,7 @@ categories:
 tags:
   - Java
   - Java문법
+source: https://programmers.co.kr/
 ---
 ## **배열의 평균값**
 

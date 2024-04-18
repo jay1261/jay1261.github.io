@@ -8,6 +8,7 @@ categories:
 tags:
   - Java
   - Java문법
+source: https://programmers.co.kr/
 ---
 ## **직각삼각형 출력하기**
 

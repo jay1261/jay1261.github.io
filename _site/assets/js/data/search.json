@@ -1,6 +1,74 @@
 [
   
   {
+    "title": "Programmers Java Lv.0 (35) - 팩토리얼",
+    "url": "/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-18 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "팩토리얼문제 설명i팩토리얼 (i!)은 1부터 i까지 정수의 곱을 의미합니다. 예를들어 5! = 5 * 4 * 3 * 2 * 1 = 120 입니다. 정수 n이 주어질 때 다음 조건을 만족하는 가장 큰 정수 i를 return 하도록 solution 함수를 완성해주세요.  i! ≤ n제한사항  0 &lt; n ≤ 3,628,800입출력 예          ...",
+    "content": "팩토리얼문제 설명i팩토리얼 (i!)은 1부터 i까지 정수의 곱을 의미합니다. 예를들어 5! = 5 * 4 * 3 * 2 * 1 = 120 입니다. 정수 n이 주어질 때 다음 조건을 만족하는 가장 큰 정수 i를 return 하도록 solution 함수를 완성해주세요.  i! ≤ n제한사항  0 &lt; n ≤ 3,628,800입출력 예            n      result                  3628800      10              7      3      입출력 예 설명입출력 예 #1  10! = 3,628,800입니다. n이 3628800이므로 최대 팩토리얼인 10을 return 합니다.입출력 예 #2  3! = 6, 4! = 24입니다. n이 7이므로, 7 이하의 최대 팩토리얼인 3을 return 합니다.Solution  주어진 n을 1부터 숫자를 늘려가며 나누어주고, n이 1보다 작아지는 시점에 i - 1 을 return 해줬습니다.class Solution {    public int solution(int n) {        int i = 1;        while(true){            n = n / i;            if (n &lt; 1){                return i-1;            }            i++;        }    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (34) - 최댓값 만들기 1",
+    "url": "/posts/Programmers-Java-Lv.0-(34)-%EC%B5%9C%EB%8C%93%EA%B0%92-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-18 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "최댓값 만들기 1문제 설명정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.제한사항  0 ≤ numbers의 원소 ≤ 10,000  2 ≤ numbers의 길이 ≤ 100입출력 예            numbers      result ...",
+    "content": "최댓값 만들기 1문제 설명정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.제한사항  0 ≤ numbers의 원소 ≤ 10,000  2 ≤ numbers의 길이 ≤ 100입출력 예            numbers      result                  [1, 2, 3, 4, 5]      20              [0, 31, 24, 10, 1, 9]      744      입출력 예 설명입출력 예 #1  두 수의 곱중 최댓값은 4 * 5 = 20 입니다.입출력 예 #1  두 수의 곱중 최댓값은 31 * 24 = 744 입니다.Solution  주어진 배열을 정렬해서 가장 큰 수와 그 다음 큰 수를 곱하면 최대값입니다.import java.util.*;class Solution {    public int solution(int[] numbers) {        Arrays.sort(numbers);                            return numbers[numbers.length-1] * numbers[numbers.length-2];    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (33) - 합성수 찾기",
+    "url": "/posts/Programmers-Java-Lv.0-(33)-%ED%95%A9%EC%84%B1%EC%88%98-%EC%B0%BE%EA%B8%B0/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-18 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "합성수 찾기문제 설명약수의 개수가 세 개 이상인 수를 합성수라고 합니다. 자연수 n이 매개변수로 주어질 때 n이하의 합성수의 개수를 return하도록 solution 함수를 완성해주세요.제한사항  1 ≤ n ≤ 100입출력 예            n      result                  10      5              15   ...",
+    "content": "합성수 찾기문제 설명약수의 개수가 세 개 이상인 수를 합성수라고 합니다. 자연수 n이 매개변수로 주어질 때 n이하의 합성수의 개수를 return하도록 solution 함수를 완성해주세요.제한사항  1 ≤ n ≤ 100입출력 예            n      result                  10      5              15      8      입출력 예 설명입출력 예 #1  10 이하 합성수는 4, 6, 8, 9, 10 로 5개입니다. 따라서 5를 return합니다.입출력 예 #1  15 이하 합성수는 4, 6, 8, 9, 10, 12, 14, 15 로 8개입니다. 따라서 8을 return합니다.Solution  이중 for문을 사용해서, 2부터 n까지의 수들을 하나씩 보면서 합성수인지 아닌지 판별했습니다.class Solution {    public int solution(int n) {        int answer = 0;        for(int i = 2; i &lt;= n; i++){            int temp = 0;            for(int j = 1; j &lt;= i; j++){                if (i % j == 0){                    temp++;                }            }            if (temp &gt;= 3){                answer++;            }        }                return answer;    }}"
+  },
+  
+  {
+    "title": "Programmers Java Lv.0 (32) - 주사위의 개수",
+    "url": "/posts/Programmers-Java-Lv.0-(32)-%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98-%EA%B0%9C%EC%88%98/",
+    "categories": "Programmers, Lv.0_Java",
+    "tags": "Java, Java문법",
+    "date": "2024-04-18 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "주사위의 개수문제 설명머쓱이는 직육면체 모양의 상자를 하나 가지고 있는데 이 상자에 정육면체 모양의 주사위를 최대한 많이 채우고 싶습니다. 상자의 가로, 세로, 높이가 저장되어있는 배열 box와 주사위 모서리의 길이 정수 n이 매개변수로 주어졌을 때, 상자에 들어갈 수 있는 주사위의 최대 개수를 return 하도록 solution 함수를 완성해주세요....",
+    "content": "주사위의 개수문제 설명머쓱이는 직육면체 모양의 상자를 하나 가지고 있는데 이 상자에 정육면체 모양의 주사위를 최대한 많이 채우고 싶습니다. 상자의 가로, 세로, 높이가 저장되어있는 배열 box와 주사위 모서리의 길이 정수 n이 매개변수로 주어졌을 때, 상자에 들어갈 수 있는 주사위의 최대 개수를 return 하도록 solution 함수를 완성해주세요.제한사항  box의 길이는 3입니다.  box[0] = 상자의 가로 길이  box[1] = 상자의 세로 길이  box[2] = 상자의 높이 길이  1 ≤ box의 원소 ≤ 100  1 ≤ n ≤ 50  n ≤ box의 원소  주사위는 상자와 평행하게 넣습니다.입출력 예            box      n      result                  [1, 1, 1]      1      1              [10, 8, 6]      3      12      입출력 예 설명입출력 예 #1  상자의 크기가 가로 1, 세로 1, 높이 1이므로 모서리의 길이가 1인 주사위는 1개 들어갈 수 있습니다.입출력 예 #2  상자의 크기가 가로 10, 세로 8, 높이 6이므로 모서리의 길이가 3인 주사위는 12개 들어갈 수 있습니다.Solution  상자의 가로 세로 높이를 나눈 몫들을 곱하여 들어갈 수 있는 주사위의 개수를 구할 수 있습니다.class Solution {    public int solution(int[] box, int n) {        int x = box[0] / n;        int y = box[1] / n;        int z = box[2] / n;                 return x * y * z;    }}"
+  },
+  
+  {
     "title": "Programmers Java Lv.0 (31) - 배열 회전시키기",
     "url": "/posts/Programmers-Java-Lv.0-(31)-%EB%B0%B0%EC%97%B4-%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/",
     "categories": "Programmers, Lv.0_Java",
