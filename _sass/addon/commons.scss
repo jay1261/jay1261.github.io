@@ -817,10 +817,16 @@ $btn-mb: 0.5rem;
     }
   }
 
+  .my-flex {
+    display: flex;
+    justify-content: center;
+  }
+
   .sidebar-bottom {
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 1.5rem;
+    gap: 10px;
 
     $btn-size: 1.75rem;
 
@@ -847,9 +853,9 @@ $btn-mb: 0.5rem;
       @extend %sidebar-link-hover;
       @extend %clickable-transition;
 
-      &:not(:last-child) {
-        margin-right: $sb-btn-gap;
-      }
+      // &:not(:last-child) {
+      //   margin-right: $sb-btn-gap;
+      // }
     }
 
     i {
@@ -1524,12 +1530,12 @@ search {
     }
 
     .sidebar-bottom {
-      padding-left: 2.75rem;
+      // padding-left: 1.75rem;
       margin-bottom: 1.75rem;
 
-      a:not(:last-child) {
-        margin-right: $sb-btn-gap-lg;
-      }
+      // a:not(:last-child) {
+      //   margin-right: $sb-btn-gap-lg;
+      // }
 
       .icon-border {
         @include ml-mr(calc(($sb-btn-gap-lg - $btn-border-width) / 2));

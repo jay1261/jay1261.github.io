@@ -3,16 +3,19 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+# 트위터 아이콘 지우기 수정
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+# rss 아이콘 지우기 수정
+# - type: rss
+#   icon: "fas fa-rss"
+#   noblank: true
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
