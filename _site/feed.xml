@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-04-12T11:19:27+09:00</updated>
+  <updated>2024-04-18T10:46:46+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -20,23 +20,23 @@
 
   
   <entry>
-    <title>Java 문법 (14) - Object 클래스</title>
-    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(14)-Object-%ED%81%B4%EB%9E%98%EC%8A%A4/" rel="alternate" type="text/html" title="Java 문법 (14) - Object 클래스" />
-    <published>2024-04-11T00:00:00+09:00</published>
+    <title>Programmers Java Lv.0 (31) - 배열 회전시키기</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(31)-%EB%B0%B0%EC%97%B4-%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (31) - 배열 회전시키기" />
+    <published>2024-04-17T00:00:00+09:00</published>
   
-    <updated>2024-04-11T00:00:00+09:00</updated>
+    <updated>2024-04-17T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(14)-Object-%ED%81%B4%EB%9E%98%EC%8A%A4/</id>
-    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(14)-Object-%ED%81%B4%EB%9E%98%EC%8A%A4/" />
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(31)-%EB%B0%B0%EC%97%B4-%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(31)-%EB%B0%B0%EC%97%B4-%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/" />
     <author>
       <name>jay</name>
     </author>
 
   
     
-    <category term="Java" />
+    <category term="Programmers" />
     
-    <category term="Java_Mid1" />
+    <category term="Lv.0_Java" />
     
   
 
@@ -48,7 +48,7 @@
 
 
 
-      Java 문법 (14) - Object 클래스
+      배열 회전시키기
 
 
 
@@ -56,29 +56,40 @@
 
 
 
-java.lang 패키지
+문제 설명
+
+정수가 담긴 배열 numbers와 문자열 direction가 매개변수로 주어집니다. 배열 numbers의 원소를 direction방향으로 한 칸씩 회전시킨 배열을 return하도록 solution 함수를 완성해주세요.
 
 
-자바가 기본으로 제공하는 라이브러리 중에 가장 기본이 되는 것이 java.lang 패키지 입니다. 자바 언어를 이루는 가장 기본이 되는 클래스들을 보관하는 패키지입니다. java.lang 패키지는 모든 자바 애플리케이션에 자동으로 임포트 되기 때문에 생략해도 됩니다.
 
-java.lang 패캐지의 대표적인 클래스들
-
-  Object: 모든 자바 객체의 부모 클래스
-  String: 문자열
-  Integer, Long, Double: 래퍼 타입, 기본형 데이터 타입을 객체로 만든 것
-  Class: 클래스 메타 정보
-  System: 시스템과 관련된 기본 기능들을 제공
+제한사항
 
 
+  3 ≤ numbers의 길이 ≤ 20
+  direction은 “left” 와 “right” 둘 중 하나입니다.
 
 
 
 
+입출력 예
 
 
-Object 클래스
-
-Object 예...
+  
+    
+      numbers
+      direction
+      result
+    
+  
+  
+    
+      [1, 2, 3]
+      “right”
+      [3, 1, 2]
+    
+    
+      [4, 455, 6, 4, -1, 45, 6]
+      “left...
     </summary>
   
 
@@ -86,23 +97,23 @@ Object 예...
 
   
   <entry>
-    <title>Java 문법 (13) - 다형성과 설계</title>
-    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(13)-%EB%8B%A4%ED%98%95%EC%84%B1%EA%B3%BC-%EC%84%A4%EA%B3%84/" rel="alternate" type="text/html" title="Java 문법 (13) - 다형성과 설계" />
-    <published>2024-04-10T00:00:00+09:00</published>
+    <title>Programmers Java Lv.0 (30) - 공 던지기</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(30)-%EA%B3%B5-%EB%8D%98%EC%A7%80%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (30) - 공 던지기" />
+    <published>2024-04-17T00:00:00+09:00</published>
   
-    <updated>2024-04-10T00:00:00+09:00</updated>
+    <updated>2024-04-17T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(13)-%EB%8B%A4%ED%98%95%EC%84%B1%EA%B3%BC-%EC%84%A4%EA%B3%84/</id>
-    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(13)-%EB%8B%A4%ED%98%95%EC%84%B1%EA%B3%BC-%EC%84%A4%EA%B3%84/" />
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(30)-%EA%B3%B5-%EB%8D%98%EC%A7%80%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(30)-%EA%B3%B5-%EB%8D%98%EC%A7%80%EA%B8%B0/" />
     <author>
       <name>jay</name>
     </author>
 
   
     
-    <category term="Java" />
+    <category term="Programmers" />
     
-    <category term="Java_Basic" />
+    <category term="Lv.0_Java" />
     
   
 
@@ -114,7 +125,7 @@ Object 예...
 
 
 
-      Java 문법 (13) - 다형성과 설계
+      공 던지기
 
 
 
@@ -122,22 +133,31 @@ Object 예...
 
 
 
-좋은 객체지향 프로그래밍
+문제 설명
 
-
-객체지향에는 추상화, 캡슐화, 상속, 다형성의 특징이 있는데 이 중 다형성이 가장 중요하다고 볼 수 있습니다. 객체지향 프로그래밍은 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러개의 독립된 단위, 객체들의 모임으로 파악하고자 하는 것입니다. 각각의 객체들은 메시지를 주고받고 데이터를 처리할 수 있습니다.
-
-객체 지향 프로그래밍은 프로그램을 유연하고 변경이 용이하게 만들기 때문에 대규모 소프트웨어 개발에 많이 사용됩니다. 마치 레고 블럭을 조립하듯이, 컴퓨터 부품을 갈아 끼우듯이 컴포넌트를 쉽고 유연하게 변경하면서 개발할 수 있는 방법입니다.
+머쓱이는 친구들과 동그랗게 서서 공 던지기 게임을 하고 있습니다. 공은 1번부터 던지며 오른쪽으로 한 명을 건너뛰고 그다음 사람에게만 던질 수 있습니다. 친구들의 번호가 들어있는 정수 배열 numbers와 정수 K가 주어질 때, k번째로 공을 던지는 사람의 번호는 무엇인지 return 하도록 solution 함수를 완성해보세요.
 
 
 
+제한사항
+
+
+  2 &amp;lt; numbers의 길이 &amp;lt; 100
+  0 &amp;lt; k &amp;lt; 1,000
+  numbers의 첫 번째와 마지막 번호는 실제로 바로 옆에 있습니다.
+  numbers는 1부터 시작하며 번호는 순서대로 올라갑니다.
 
 
 
 
-다형성
+입출력 예
 
-역할과 구현으로 구분하면 세상이 단순해지고,...
+
+  
+    
+      numbers
+      k
+      resul...
     </summary>
   
 
@@ -145,23 +165,23 @@ Object 예...
 
   
   <entry>
-    <title>Java 문법 (12) - 다형성2</title>
-    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(12)-%EB%8B%A4%ED%98%95%EC%84%B12/" rel="alternate" type="text/html" title="Java 문법 (12) - 다형성2" />
-    <published>2024-04-09T00:00:00+09:00</published>
+    <title>Programmers Java Lv.0 (29) - 2차원으로 만들기</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(29)-2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (29) - 2차원으로 만들기" />
+    <published>2024-04-16T00:00:00+09:00</published>
   
-    <updated>2024-04-10T19:48:52+09:00</updated>
+    <updated>2024-04-16T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(12)-%EB%8B%A4%ED%98%95%EC%84%B12/</id>
-    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(12)-%EB%8B%A4%ED%98%95%EC%84%B12/" />
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(29)-2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(29)-2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" />
     <author>
       <name>jay</name>
     </author>
 
   
     
-    <category term="Java" />
+    <category term="Programmers" />
     
-    <category term="Java_Basic" />
+    <category term="Lv.0_Java" />
     
   
 
@@ -173,7 +193,7 @@ Object 예...
 
 
 
-      Java 문법 (12) - 다형성2
+      2차원으로 만들기
 
 
 
@@ -181,34 +201,25 @@ Object 예...
 
 
 
-다형성 활용
+문제 설명
+
+정수 배열 num_list와 정수 n이 매개변수로 주어집니다. num_list를 다음 설명과 같이 2차원 배열로 바꿔 return하도록 solution 함수를 완성해주세요.
+
+num_list가 [1, 2, 3, 4, 5, 6, 7, 8] 로 길이가 8이고 n이 2이므로 num_list를 2 * 4 배열로 다음과 같이 변경합니다. 2차원으로 바꿀 때에는 num_list의 원소들을 앞에서부터 n개씩 나눠 2차원 배열로 변경합니다.
 
 
-다형성을 사용하지 않은 코드
-
-다형성을 사용하지 않은 코드를 변경해서 다형성을 적용시켜보겠습니다. 단순한 동물 소리를 테스트하는 코드입니다.
-
-// Dog.java
-package poly.ex1;  
   
-public class Dog {  
-    public void sound(){  
-        System.out.println("멍멍");  
-    }  
-}
-
-
-// Cat.java
-package poly.ex1;  
+    
+      num_list
+      n
+      result
+    
   
-public class Cat {  
-    public void sound(){  
-        System.out.println("야옹");  
-    }  
-}
-
-
-// AnimalSountMain....
+  
+    
+      [1, 2, 3, 4, 5, 6, 7, 8]
+      2
+      [[1, 2], [3, 4], [5, 6], ...
     </summary>
   
 
@@ -216,23 +227,23 @@ public class Cat {
 
   
   <entry>
-    <title>Java 문법 (11) - 다형성1</title>
-    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(11)-%EB%8B%A4%ED%98%95%EC%84%B11/" rel="alternate" type="text/html" title="Java 문법 (11) - 다형성1" />
-    <published>2024-04-08T00:00:00+09:00</published>
+    <title>Programmers Java Lv.0 (28) - 점의 위치 구하기</title>
+    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(28)-%EC%A0%90%EC%9D%98-%EC%9C%84%EC%B9%98-%EA%B5%AC%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (28) - 점의 위치 구하기" />
+    <published>2024-04-16T00:00:00+09:00</published>
   
-    <updated>2024-04-08T00:00:00+09:00</updated>
+    <updated>2024-04-16T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(11)-%EB%8B%A4%ED%98%95%EC%84%B11/</id>
-    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(11)-%EB%8B%A4%ED%98%95%EC%84%B11/" />
+    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(28)-%EC%A0%90%EC%9D%98-%EC%9C%84%EC%B9%98-%EA%B5%AC%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(28)-%EC%A0%90%EC%9D%98-%EC%9C%84%EC%B9%98-%EA%B5%AC%ED%95%98%EA%B8%B0/" />
     <author>
       <name>jay</name>
     </author>
 
   
     
-    <category term="Java" />
+    <category term="Programmers" />
     
-    <category term="Java_Basic" />
+    <category term="Lv.0_Java" />
     
   
 
@@ -244,7 +255,7 @@ public class Cat {
 
 
 
-      Java 문법 (11) - 다형성1
+      점의 위치 구하기
 
 
 
@@ -252,29 +263,27 @@ public class Cat {
 
 
 
-다형성
+문제 설명
 
-
-다형성은 이름 그대로 “다양한 형태”, “여러 형태”를 뜻합니다.
-프로그래밍에서 다형성은 한 객체가 여러 타입의 객체로 취급될 수 있는 능력을 말합니다. 보통 하나의 객체는 하나의 타입으로 고정되어 있습니다. 그런데 다형성을 사용하면 하나의 객체가 다른 타입으로 사용될 수 있습니다.
-
-다형성을 이해하기 위해서는 다형적 참조, 메서드 오버라이딩 2가지 핵심 이론을 알아야합니다.
+사분면은 한 평면을 x축과 y축을 기준으로 나눈 네 부분입니다. 사분면은 아래와 같이 1부터 4까지 번호를매깁니다.
 
 
 
+  x 좌표와 y 좌표가 모두 양수이면 제1사분면에 속합니다.
+  x 좌표가 음수, y 좌표가 양수이면 제2사분면에 속합니다.
+  x 좌표와 y 좌표가 모두 음수이면 제3사분면에 속합니다.
+  x 좌표가 양수, y 좌표가 음수이면 제4사분면에 속합니다.
+
+
+x 좌표 (x, y)를 차례대로 담은 정수 배열 dot이 매개변수로 주어집니다. 좌표 dot이 사분면 중 어디에 속하는지 1, 2, 3, 4 중 하나를 return 하도록 solution 함수를 완성해주세요.
 
 
 
+제한사항
 
-다형적 참조
 
-
-// Parent.java
-package poly.Basic;  
-  
-public class Parent {  
-    public void parentMethod(){  
-        System.out.println("parent.pa...
+  dot의 길이 = 2
+  dot[0]은 x좌표를, dot[...
     </summary>
   
 
@@ -282,23 +291,23 @@ public class Parent {
 
   
   <entry>
-    <title>Java 문법 (10) - 상속</title>
-    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(10)-%EC%83%81%EC%86%8D/" rel="alternate" type="text/html" title="Java 문법 (10) - 상속" />
-    <published>2024-04-05T00:00:00+09:00</published>
+    <title>Spring (1) - 스프링 웹 개발 기초</title>
+    <link href="http://localhost:4000/posts/Spring-(1)-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88/" rel="alternate" type="text/html" title="Spring (1) - 스프링 웹 개발 기초" />
+    <published>2024-04-15T00:00:00+09:00</published>
   
-    <updated>2024-04-09T18:53:54+09:00</updated>
+    <updated>2024-04-15T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(10)-%EC%83%81%EC%86%8D/</id>
-    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(10)-%EC%83%81%EC%86%8D/" />
+    <id>http://localhost:4000/posts/Spring-(1)-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88/</id>
+    <content src="http://localhost:4000/posts/Spring-(1)-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88/" />
     <author>
       <name>jay</name>
     </author>
 
   
     
-    <category term="Java" />
+    <category term="Spring" />
     
-    <category term="Java_Basic" />
+    <category term="Spring_Start" />
     
   
 
@@ -310,7 +319,7 @@ public class Parent {
 
 
 
-      Java 문법 (10) - 상속
+      스프링 웹 개발 기초
 
 
 
@@ -318,19 +327,18 @@ public class Parent {
 
 
 
-상속 관계
+정적 컨텐츠
 
 
-상속은 객체 지향 프로그래밍의 핵심 요소 중 하나로, 기존 클래스의 필드와 메서드를 새로운 클래스에서 재사용하게 해줍니다. 이름 그대로 기존 클래스의 속성과 기능을 그대로 물려받는 것이고, exdends 키워드를 사용하며 대상은 하나만 선택 가능합니다.
+html 파일을 그대로 웹 브라우저에 내려주는 것을 말합니다. 기본적으로 스프링은 static 폴더 아래에 있는 html 파일을 정적 컨텐츠로 보여줍니다.
 
-전기차와 가솔린차는 자동차의 더 구체적인 개념이고, 반대로 자동차는 둘을 포함하는 추상적인 개념입니다. 또한, 자동차의 이동, 문을 열기, 시동걸기 등 공통 기능이 있기 때문에 이런 경우 상속관계를 사용하는 것이 효과적입니다.
+웹 브라우저에서 hello-static.html 입력이 들어오면, 내장 톰캣 브라우저가 받고, 스프링에서는 먼저 컨트롤러가 있는지 확인합니다. (컨트롤러에 우선순위가 있습니다.) 컨트롤러에 없으면 resources/static 안에서 찾아서 반환해주게 됩니다.
 
-// Car.java
-package extends1.ex2;  
-  
-public class Car {  
-    public void move(){  
-       ...
+// resources/static/hello-static.html
+&amp;lt;!doctype html&amp;gt;  
+&amp;lt;html lang="en"&amp;gt;  
+&amp;lt;head&amp;gt;  
+    &amp;lt;meta charset="UTF-8"&amp;gt;...
     </summary>
   
 

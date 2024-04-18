@@ -78,6 +78,13 @@ tail_includes:
         {% include read-time.html content=content prompt=true lang=lang %}
       </div>
       <!-- .d-flex -->
+      {% if page.source %}
+      <div class="source" style="display: flex; justify-content: start; gap: 5px;">
+        <span>Source</span>
+        <a style="text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 50%; font-weight: 600; color: #757575;" href="{{ page.source }}">{{ page.source }}</a>
+      </div>
+      {% endif %}
+      <!-- .post-meta-source 추가 -->
     </div>
     <!-- .post-meta -->
   </header>
