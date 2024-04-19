@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "Spring (3) - 테스트",
+    "url": "/posts/Spring-(3)-%ED%85%8C%EC%8A%A4%ED%8A%B8/",
+    "categories": "Spring, Spring_Start",
+    "tags": "Java, Spring",
+    "date": "2024-04-19 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "테스트JUnit회원가입 예제코드를 작성하고, 코드를 테스트하기 위해서 main 메서드를 만들어서 실행하거나, 컨트롤러를 통해서 실행할 수 있습니다. 하지만 이 방법들은 준비 시간이 오래걸리고, 반복 테스트, 여러 테스트를 한번에 실행하기 어렵습니다. 따라서 자바의 JUnit이라는 프레임워크로 테스트를 진행하면 이런 문제들을 해결할 수 있습니다.테스트 ...",
+    "content": "테스트JUnit회원가입 예제코드를 작성하고, 코드를 테스트하기 위해서 main 메서드를 만들어서 실행하거나, 컨트롤러를 통해서 실행할 수 있습니다. 하지만 이 방법들은 준비 시간이 오래걸리고, 반복 테스트, 여러 테스트를 한번에 실행하기 어렵습니다. 따라서 자바의 JUnit이라는 프레임워크로 테스트를 진행하면 이런 문제들을 해결할 수 있습니다.테스트 파일 만들기스프링 부트로 만든 프로젝트를 보면 src아래, main과 test로 디렉토리가 나뉘어져 있습니다. 여기서 test/java 아래에 프로젝트명으로 패키지가 만들어져 있으며, 이제 이곳에 테스트할 패키지 및 자바 파일을 만들어서 테스트를 진행하면 됩니다.테스트할 파일의 이름은 관례적으로 테스트할 클래스의 이름뒤에 Test를 붙여서 만듭니다. 멤버 리포지토리의 테스트를 만든다고 하면 MemberRepositoryTest로 파일을 만듭니다. 이후 MemberRepositoryTest 클래스 안에 테스트 메서드들을 작성하고, @Test 어노테이션을 작성해주어야 테스트를 진행할 수 있습니다.테스트 어노테이션  @Test: 메소드 위에 작성하고, 해당 메소드가 테스트 메소드임을 나타내고 단위 테스트를 할 수 있게 됩니다.  @BeforeAll: 테스트 class 안의 전체 테스트 메서드들이 실행되기 전 최초 한번 실행함  @BeforeAfter: 각 테스트가 실행되기 전에 한번씩 실행함  @AfterAll: 테스트 class 기준 전체 테스트 종료 후 한번 실행함  @AfterEach: 각 테스트가 종료되고 한번씩 실행함"
+  },
+  
+  {
+    "title": "Spring (2) - Controller Repository Service",
+    "url": "/posts/Spring-(2)-Controller-Repository-Service/",
+    "categories": "Spring, Spring_Start",
+    "tags": "Java, Spring",
+    "date": "2024-04-19 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Controller Repository Service강의에서 Member, MemberRepository, MemberService, MemberController로 나누어서 회원 관리 예제를 진행했습니다. Controller Service Repository 패턴은 스프링에 어노테이션으로 있을 정도로 정형화된 패턴이고, 3개의 주요 구성 요소를 통해...",
+    "content": "Controller Repository Service강의에서 Member, MemberRepository, MemberService, MemberController로 나누어서 회원 관리 예제를 진행했습니다. Controller Service Repository 패턴은 스프링에 어노테이션으로 있을 정도로 정형화된 패턴이고, 3개의 주요 구성 요소를 통해서 관심사를 분리하는 방식입니다.  Controller: 사용자의 요청을 받아 적절한 서비스를 호출하고 응답을 반환합니다.  Service: 비즈니스 로직을 담당하며, 컨트롤러와 리포지토리 사이의 중간 역할을 합니다  Repository: 데이터베이스와 상호작용을 담당하고, 서비스 계층에 데이터를 제공합니다.Controller클라이언트의 요청이 들어오면 Controller가 그 요청을 받습니다. 요청에 따라 어떤 처리를 할지 결정하게 되고, 서비스에 관련 메소드를 호출합니다. 이후 서비스에서 반환된 데이터를 적절한 형태로 클라이언트에 보냅니다.ex) 회원가입 요청이 들어오면 서비스에 회원가입 메소드를 호출하고 기다렸다가 처리가되면 응답을 보내주는 역할을 합니다.Service컨트롤러와 리포지토리 사이에서 비즈니스 로직을 수행합니다. 컨트롤러에서 받은 요청을 처리하기 위해 필요한 데이터를 리포지토리에 요청합니다. 데이터를 가공하고 변환하는 등의 작업을 수행합니다.ex) 회원가입 요청이 들어오면 중복id처리 등을 하고, 리포지토리에 데이터 저장 요청을 보냅니다.Repository리포지토리는 데이터베이스와의 상호작용을 담당합니다. 데이터 조회, 생성, 수정, 삭제 등의 CRUD 작업을 수행합니다.ex) 서비스에서 회원정보 저장 요청이 들어오면 데이터베이스에 저장합니다.의존관계Controller가 Service에 의존하고 Service가 Repository에 의존하는 형태로 주로 이루어집니다.장점  관심사를 분리하여 각각 고유한 책임, 역할을 갖게되어 코드의 가독성과 유지보수성의 향상  새로운 기능 추가시 관련된 계층만 수정하면 되므로 확장성이 높음  각 계층의 책임이 명확해서 단위 테스트 용이"
+  },
+  
+  {
     "title": "Programmers Java Lv.0 (35) - 팩토리얼",
     "url": "/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/",
     "categories": "Programmers, Lv.0_Java",

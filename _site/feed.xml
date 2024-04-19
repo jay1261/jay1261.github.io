@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-04-18T16:18:52+09:00</updated>
+  <updated>2024-04-19T18:49:35+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,112 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Spring (3) - 테스트</title>
+    <link href="http://localhost:4000/posts/Spring-(3)-%ED%85%8C%EC%8A%A4%ED%8A%B8/" rel="alternate" type="text/html" title="Spring (3) - 테스트" />
+    <published>2024-04-19T00:00:00+09:00</published>
+  
+    <updated>2024-04-19T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Spring-(3)-%ED%85%8C%EC%8A%A4%ED%8A%B8/</id>
+    <content src="http://localhost:4000/posts/Spring-(3)-%ED%85%8C%EC%8A%A4%ED%8A%B8/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Spring" />
+    
+    <category term="Spring_Start" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      테스트
+
+
+
+
+
+
+
+JUnit
+
+회원가입 예제코드를 작성하고, 코드를 테스트하기 위해서 main 메서드를 만들어서 실행하거나, 컨트롤러를 통해서 실행할 수 있습니다. 하지만 이 방법들은 준비 시간이 오래걸리고, 반복 테스트, 여러 테스트를 한번에 실행하기 어렵습니다. 따라서 자바의 JUnit이라는 프레임워크로 테스트를 진행하면 이런 문제들을 해결할 수 있습니다.
+
+
+테스트 파일 만들기
+
+스프링 부트로 만든 프로젝트를 보면 src아래, main과 test로 디렉토리가 나뉘어져 있습니다. 여기서 test/java 아래에 프로젝트명으로 패키지가 만들어져 있으며, 이제 이곳에 테스트할 패키지 및 자바 파일을 만들어서 테스트를 진행하면 됩니다.
+
+테스트할 파일의 이름은 관례적으로 테스트할 클래스의 이름뒤에 Te...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Spring (2) - Controller Repository Service</title>
+    <link href="http://localhost:4000/posts/Spring-(2)-Controller-Repository-Service/" rel="alternate" type="text/html" title="Spring (2) - Controller Repository Service" />
+    <published>2024-04-19T00:00:00+09:00</published>
+  
+    <updated>2024-04-19T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Spring-(2)-Controller-Repository-Service/</id>
+    <content src="http://localhost:4000/posts/Spring-(2)-Controller-Repository-Service/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Spring" />
+    
+    <category term="Spring_Start" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Controller Repository Service
+
+
+
+
+
+
+
+강의에서 Member, MemberRepository, MemberService, MemberController로 나누어서 회원 관리 예제를 진행했습니다. Controller Service Repository 패턴은 스프링에 어노테이션으로 있을 정도로 정형화된 패턴이고, 3개의 주요 구성 요소를 통해서 관심사를 분리하는 방식입니다.
+
+
+  Controller: 사용자의 요청을 받아 적절한 서비스를 호출하고 응답을 반환합니다.
+  Service: 비즈니스 로직을 담당하며, 컨트롤러와 리포지토리 사이의 중간 역할을 합니다
+  Repository: 데이터베이스와 상호작용을 담당하고, 서비스 계층에 데이터를 제공합니다.
+
+
+
+Controller...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -287,154 +393,6 @@ i팩토리얼 (i!)은 1부터 i까지 정수의 곱을 의미합니다. 예를�
 
 
   15 이하 합성수는 4, 6, 8, 9, 10, 12, 14, 15 로 8개입니다. 따라서 8을 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (32) - 주사위의 개수</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(32)-%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98-%EA%B0%9C%EC%88%98/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (32) - 주사위의 개수" />
-    <published>2024-04-18T00:00:00+09:00</published>
-  
-    <updated>2024-04-18T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(32)-%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98-%EA%B0%9C%EC%88%98/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(32)-%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98-%EA%B0%9C%EC%88%98/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      주사위의 개수
-
-
-
-
-
-
-
-문제 설명
-
-머쓱이는 직육면체 모양의 상자를 하나 가지고 있는데 이 상자에 정육면체 모양의 주사위를 최대한 많이 채우고 싶습니다. 상자의 가로, 세로, 높이가 저장되어있는 배열 box와 주사위 모서리의 길이 정수 n이 매개변수로 주어졌을 때, 상자에 들어갈 수 있는 주사위의 최대 개수를 return 하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  box의 길이는 3입니다.
-  box[0] = 상자의 가로 길이
-  box[1] = 상자의 세로 길이
-  box[2] = 상자의 높이 길이
-  1 ≤ box의 원소 ≤ 100
-  1 ≤ n ≤ 50
-  n ≤ box의 원소
-  주사위는 상자와 평행하게 넣습니다.
-
-
-
-
-입출력 예
-
-
-  
-    
-      box
-...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (31) - 배열 회전시키기</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(31)-%EB%B0%B0%EC%97%B4-%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (31) - 배열 회전시키기" />
-    <published>2024-04-17T00:00:00+09:00</published>
-  
-    <updated>2024-04-17T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(31)-%EB%B0%B0%EC%97%B4-%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(31)-%EB%B0%B0%EC%97%B4-%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      배열 회전시키기
-
-
-
-
-
-
-
-문제 설명
-
-정수가 담긴 배열 numbers와 문자열 direction가 매개변수로 주어집니다. 배열 numbers의 원소를 direction방향으로 한 칸씩 회전시킨 배열을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  3 ≤ numbers의 길이 ≤ 20
-  direction은 “left” 와 “right” 둘 중 하나입니다.
-
-
-
-
-입출력 예
-
-
-  
-    
-      numbers
-      direction
-      result
-    
-  
-  
-    
-      [1, 2, 3]
-      “right”
-      [3, 1, 2]
-    
-    
-      [4, 455, 6, 4, -1, 45, 6]
-      “left...
     </summary>
   
 
