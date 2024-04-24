@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Spring (2) - Controller Repository Service" />
+<meta property="og:title" content="Java 문법 (15) - 불변 객체" />
 <meta name="author" content="jay1261" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="Controller Repository Service" />
-<meta property="og:description" content="Controller Repository Service" />
-<link rel="canonical" href="http://localhost:4000/posts/Spring-(2)-Controller-Repository-Service/" />
-<meta property="og:url" content="http://localhost:4000/posts/Spring-(2)-Controller-Repository-Service/" />
+<meta name="description" content="불변 객체" />
+<meta property="og:description" content="불변 객체" />
+<link rel="canonical" href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(15)-%EB%B6%88%EB%B3%80-%EA%B0%9D%EC%B2%B4/" />
+<meta property="og:url" content="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(15)-%EB%B6%88%EB%B3%80-%EA%B0%9D%EC%B2%B4/" />
 <meta property="og:site_name" content="jay1261" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-04-19T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-04-24T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Spring (2) - Controller Repository Service" />
+<meta property="twitter:title" content="Java 문법 (15) - 불변 객체" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-04-19T00:00:00+09:00","datePublished":"2024-04-19T00:00:00+09:00","description":"Controller Repository Service","headline":"Spring (2) - Controller Repository Service","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Spring-(2)-Controller-Repository-Service/"},"url":"http://localhost:4000/posts/Spring-(2)-Controller-Repository-Service/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jay1261","url":"https://github.com/jay1261/"},"dateModified":"2024-04-24T00:00:00+09:00","datePublished":"2024-04-24T00:00:00+09:00","description":"불변 객체","headline":"Java 문법 (15) - 불변 객체","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(15)-%EB%B6%88%EB%B3%80-%EA%B0%9D%EC%B2%B4/"},"url":"http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(15)-%EB%B6%88%EB%B3%80-%EA%B0%9D%EC%B2%B4/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Spring (2) - Controller Repository Service | jay1261
+  <title>Java 문법 (15) - 불변 객체 | jay1261
   </title>
 
   <!--
@@ -432,7 +432,7 @@
         
           
             
-              <span>Spring (2) - Controller Repository Service</span>
+              <span>Java 문법 (15) - 불변 객체</span>
             
 
           
@@ -513,6 +513,69 @@
     
       
       
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
     
 
     
@@ -671,6 +734,21 @@
 
       
     
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
       
 
       
@@ -684,11 +762,6 @@
     
 
     
-  
-
-  
-  
-
   
 
   
@@ -706,7 +779,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Spring (2) - Controller Repository Service</h1>
+    <h1 data-toc-skip>Java 문법 (15) - 불변 객체</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -722,13 +795,13 @@
 
 <time
   
-  data-ts="1713452400"
+  data-ts="1713884400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 19, 2024
+  Apr 24, 2024
 </time>
 
       </span>
@@ -776,16 +849,16 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="658 words"
+  title="1081 words"
 >
-  <em>3 min</em> read</span>
+  <em>6 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
       
       <div class="source" style="display: flex; justify-content: start; gap: 5px;">
         <span>Source</span>
-        <a style="text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 50%; font-weight: 600; color: #757575;" href="https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9E%85%EB%AC%B8-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8#">https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9E%85%EB%AC%B8-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8#</a>
+        <a style="text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 50%; font-weight: 600; color: #757575;" href="https://www.inflearn.com/course/%EA%B9%80%EC%98%81%ED%95%9C%EC%9D%98-%EC%8B%A4%EC%A0%84-%EC%9E%90%EB%B0%94-%EC%A4%91%EA%B8%89-1">https://www.inflearn.com/course/%EA%B9%80%EC%98%81%ED%95%9C%EC%9D%98-%EC%8B%A4%EC%A0%84-%EC%9E%90%EB%B0%94-%EC%A4%91%EA%B8%89-1</a>
       </div>
       
       <!-- .post-meta-source 추가 -->
@@ -794,7 +867,7 @@
   </header>
 
   <div class="content">
-    <h2 id="controller-repository-service"><span class="me-2"><strong>Controller Repository Service</strong></span><a href="#controller-repository-service" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="불변-객체"><span class="me-2"><strong>불변 객체</strong></span><a href="#불변-객체" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p><br /></p>
 
@@ -802,48 +875,249 @@
 
 <p><br /></p>
 
-<p>강의에서 Member, MemberRepository, MemberService, MemberController로 나누어서 회원 관리 예제를 진행했습니다. <code class="language-plaintext highlighter-rouge">Controller Service Repository</code> 패턴은 스프링에 어노테이션으로 있을 정도로 정형화된 패턴이고, 3개의 주요 구성 요소를 통해서 관심사를 분리하는 방식입니다.</p>
+<h3 id="불변-객체란"><span class="me-2"><strong>불변 객체란?</strong></span><a href="#불변-객체란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>불변 객체는 객체의 상태(내부 멤버변수)가 변하지 않는 객체를 말한다. 코드적으로 쉽게 생각하면 모든 멤버변수가 final로 선언되어 있는 객체이다. 따라서 읽기전용 getter 메서드를 제공하고, 내부 상태를 변경할 수 있는 setter는 제공하지 않는다.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<h3 id="불변-객체를-사용하는-이유"><span class="me-2"><strong>불변 객체를 사용하는 이유</strong></span><a href="#불변-객체를-사용하는-이유" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>자바에서 객체는 참조를 통해 접근한다. 하나의 객체를 여러 변수가 공유해서 참조할 때, 변수 하나의 값만 변경하고 싶은데 모두 다 변경되어 버리는 일이 발생한다. 이를 원치 않을 때에는 불변 객체를 사용해서 실수를 막아야 한다. 
+<a href="https://ifh.cc/g/zOVNnR.jpg" class="popup img-link  shimmer"><img align="center" src="https://ifh.cc/g/zOVNnR.jpg" loading="lazy"></a></p>
+
+<p>예를들어 A와 B가 같이 서울에 살고, Address 객체를 공유 참조한다. 이때 B가 포항으로 이사를 가야한다면, B의 주소만 바꿔줘야 한다. 하지만 Address 객체의 값을 바꾸는 순간 A도 같은 객체를 잠조하기 때문에 A의 주소도 포항으로 바뀌게 된다.</p>
+
+<p>이를 해결하기 위해서는 당연히 Address 객체를 새로 만들어 포항이라는 값을 넣어주어야 하는데, 불변 객체를 사용하지 않고서도 가능한 방법이다. 하지만 코드가 복잡해지고, 여러 사람이 함께 작업하다 보면 이러한 실수는 충분히 발생할 수 있다.</p>
+
+<p>따라서 이런 경우 불변 객체를 사용하는 것이 효과적이다. 불변 객체는 멤버변수를 변경할 수 있는 setter 메서드를 제공하지 않는다. 대신에 <code class="language-plaintext highlighter-rouge">with멤버변수</code> 형태의 메서드를 제공하는데, 이는 해당 멤버변수의 변경을 적용시켜 새로운 객체를 반환해주는 메서드이다.</p>
+
+<p><a href="https://ifh.cc/g/l8jgNW.jpg" class="popup img-link  shimmer"><img align="center" src="https://ifh.cc/g/l8jgNW.jpg" loading="lazy"></a></p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+<h3 id="정리"><span class="me-2"><strong>정리</strong></span><a href="#정리" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<h4 id="불변-객체-특징"><span class="me-2"><strong>불변 객체 특징</strong></span><a href="#불변-객체-특징" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">Controller</code>: 사용자의 요청을 받아 적절한 서비스를 호출하고 응답을 반환합니다.</li>
-  <li><code class="language-plaintext highlighter-rouge">Service</code>: 비즈니스 로직을 담당하며, 컨트롤러와 리포지토리 사이의 중간 역할을 합니다</li>
-  <li><code class="language-plaintext highlighter-rouge">Repository</code>: 데이터베이스와 상호작용을 담당하고, 서비스 계층에 데이터를 제공합니다.</li>
+  <li>내부 상태 변경 불가: 생성 후 내부 상태 변경이 불가능</li>
+  <li>with 메서드 제공: setter 메서드가 없고, 변경을 적용시킨 새로운 객체를 반환해 주는 메서드를 제공</li>
+  <li>적절한 제약을 추가한 것으로, 참조로 인한 실수를 줄일 수 있음</li>
+  <li>내부 상태가 변경되지 않기 때문에 객체를 공유할 수 있음. 메모리 사용량 줄임</li>
+  <li>변경이 잦은 경우에는 객체를 계속 생성해야되기 때문에 메모리 낭비될 수 있음</li>
+  <li>String, Integer 등이 대표적인 불변 객체</li>
 </ul>
 
 <p><br /></p>
-<h3 id="controller"><span class="me-2"><strong>Controller</strong></span><a href="#controller" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>클라이언트의 요청이 들어오면 Controller가 그 요청을 받습니다. 요청에 따라 어떤 처리를 할지 결정하게 되고, 서비스에 관련 메소드를 호출합니다. 이후 서비스에서 반환된 데이터를 적절한 형태로 클라이언트에 보냅니다.</p>
-
-<p>ex) 회원가입 요청이 들어오면 서비스에 회원가입 메소드를 호출하고 기다렸다가 처리가되면 응답을 보내주는 역할을 합니다.</p>
+<hr />
 
 <p><br /></p>
-<h3 id="service"><span class="me-2"><strong>Service</strong></span><a href="#service" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="예제-코드"><span class="me-2"><strong>예제 코드</strong></span><a href="#예제-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>컨트롤러와 리포지토리 사이에서 비즈니스 로직을 수행합니다. 컨트롤러에서 받은 요청을 처리하기 위해 필요한 데이터를 리포지토리에 요청합니다. 데이터를 가공하고 변환하는 등의 작업을 수행합니다.</p>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="rouge-code"><pre><span class="kn">package</span> <span class="nn">lang.immutable</span><span class="o">;</span>  
+  
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Member</span> <span class="o">{</span>  
+    <span class="c1">// 일반 객체  </span>
+    <span class="kd">private</span> <span class="nc">Address</span> <span class="n">address</span><span class="o">;</span>  
+    <span class="c1">// 불변 객체  </span>
+    <span class="kd">private</span> <span class="nc">ImmutableAddress</span> <span class="n">address2</span><span class="o">;</span>  
+  
+    <span class="kd">public</span> <span class="nf">Member</span><span class="o">(</span><span class="nc">Address</span> <span class="n">address</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="k">this</span><span class="o">.</span><span class="na">address</span> <span class="o">=</span> <span class="n">address</span><span class="o">;</span>  
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="nc">Address</span> <span class="nf">getAddress</span><span class="o">()</span> <span class="o">{</span>  
+        <span class="k">return</span> <span class="n">address</span><span class="o">;</span>  
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAddress</span><span class="o">(</span><span class="nc">Address</span> <span class="n">address</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="k">this</span><span class="o">.</span><span class="na">address</span> <span class="o">=</span> <span class="n">address</span><span class="o">;</span>  
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="nc">ImmutableAddress</span> <span class="nf">getAddress2</span><span class="o">()</span> <span class="o">{</span>  
+        <span class="k">return</span> <span class="n">address2</span><span class="o">;</span>  
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAddress2</span><span class="o">(</span><span class="nc">ImmutableAddress</span> <span class="n">address2</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="k">this</span><span class="o">.</span><span class="na">address2</span> <span class="o">=</span> <span class="n">address2</span><span class="o">;</span>  
+    <span class="o">}</span>  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>ex) 회원가입 요청이 들어오면 중복id처리 등을 하고, 리포지토리에 데이터 저장 요청을 보냅니다.</p>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kn">package</span> <span class="nn">lang.immutable</span><span class="o">;</span>  
+  
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Address</span> <span class="o">{</span>  
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">value</span><span class="o">;</span>  
+  
+    <span class="kd">public</span> <span class="nf">Address</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="k">this</span><span class="o">.</span><span class="na">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">;</span>  
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getValue</span><span class="o">()</span> <span class="o">{</span>  
+        <span class="k">return</span> <span class="n">value</span><span class="o">;</span>  
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setValue</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="k">this</span><span class="o">.</span><span class="na">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">;</span>  
+    <span class="o">}</span>  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p><br /></p>
-<h3 id="repository"><span class="me-2"><strong>Repository</strong></span><a href="#repository" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kn">package</span> <span class="nn">lang.immutable</span><span class="o">;</span>  
+  
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImmutableAddress</span> <span class="o">{</span>  
+    <span class="kd">private</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">value</span><span class="o">;</span>  
+  
+    <span class="kd">public</span> <span class="nf">ImmutableAddress</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="k">this</span><span class="o">.</span><span class="na">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">;</span>  
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getValue</span><span class="o">()</span> <span class="o">{</span>  
+        <span class="k">return</span> <span class="n">value</span><span class="o">;</span>  
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="nc">ImmutableAddress</span> <span class="nf">withValue</span><span class="o">(</span><span class="nc">String</span> <span class="n">value</span><span class="o">){</span>  
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">ImmutableAddress</span><span class="o">(</span><span class="n">value</span><span class="o">);</span>  
+    <span class="o">}</span>  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>리포지토리는 데이터베이스와의 상호작용을 담당합니다. 데이터 조회, 생성, 수정, 삭제 등의 CRUD 작업을 수행합니다.</p>
-
-<p>ex) 서비스에서 회원정보 저장 요청이 들어오면 데이터베이스에 저장합니다.</p>
-
-<p><br /></p>
-<h3 id="의존관계"><span class="me-2"><strong>의존관계</strong></span><a href="#의존관계" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><a href="https://ifh.cc/g/cgxcC1.png" class="popup img-link  shimmer"><img align="center" src="https://ifh.cc/g/cgxcC1.png" loading="lazy"></a>
-Controller가 Service에 의존하고 Service가 Repository에 의존하는 형태로 주로 이루어집니다.</p>
-
-<p><br /></p>
-<h3 id="장점"><span class="me-2"><strong>장점</strong></span><a href="#장점" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<ul>
-  <li>관심사를 분리하여 각각 고유한 책임, 역할을 갖게되어 코드의 가독성과 유지보수성의 향상</li>
-  <li>새로운 기능 추가시 관련된 계층만 수정하면 되므로 확장성이 높음</li>
-  <li>각 계층의 책임이 명확해서 단위 테스트 용이</li>
-</ul>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="rouge-code"><pre><span class="kn">package</span> <span class="nn">lang.immutable</span><span class="o">;</span>  
+  
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImmutableMain</span> <span class="o">{</span>  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="nc">Address</span> <span class="n">address1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Address</span><span class="o">(</span><span class="s">"서울"</span><span class="o">);</span>  
+        <span class="nc">Member</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Member</span><span class="o">(</span><span class="n">address1</span><span class="o">);</span>  
+        <span class="nc">Member</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Member</span><span class="o">(</span><span class="n">address1</span><span class="o">);</span>  
+  
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"a의 주소: "</span> <span class="o">+</span> <span class="n">a</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">getValue</span><span class="o">());</span> <span class="c1">// 서울  </span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"b의 주소: "</span> <span class="o">+</span> <span class="n">b</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">getValue</span><span class="o">());</span> <span class="c1">// 서울  </span>
+        <span class="c1">// b가 포항으로 이사감  </span>
+        <span class="n">b</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">setValue</span><span class="o">(</span><span class="s">"포항"</span><span class="o">);</span>  
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"a의 주소: "</span> <span class="o">+</span> <span class="n">a</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">getValue</span><span class="o">());</span> <span class="c1">// 포항  </span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"b의 주소: "</span> <span class="o">+</span> <span class="n">b</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">getValue</span><span class="o">());</span> <span class="c1">// 포항  </span>
+  
+        <span class="c1">// 불변 객체 예시  </span>
+        <span class="nc">ImmutableAddress</span> <span class="n">immutableAddress</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ImmutableAddress</span><span class="o">(</span><span class="s">"서울"</span><span class="o">);</span>  
+        <span class="n">a</span><span class="o">.</span><span class="na">setAddress2</span><span class="o">(</span><span class="n">immutableAddress</span><span class="o">);</span>  
+        <span class="n">b</span><span class="o">.</span><span class="na">setAddress2</span><span class="o">(</span><span class="n">immutableAddress</span><span class="o">);</span>  
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"a의 주소: "</span> <span class="o">+</span> <span class="n">a</span><span class="o">.</span><span class="na">getAddress2</span><span class="o">().</span><span class="na">getValue</span><span class="o">());</span> <span class="c1">// 서울  </span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"b의 주소: "</span> <span class="o">+</span> <span class="n">b</span><span class="o">.</span><span class="na">getAddress2</span><span class="o">().</span><span class="na">getValue</span><span class="o">());</span> <span class="c1">// 서울  </span>
+        <span class="c1">//b의 이사  </span>
+        <span class="nc">ImmutableAddress</span> <span class="n">newAddress</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="na">getAddress2</span><span class="o">().</span><span class="na">withValue</span><span class="o">(</span><span class="s">"포항"</span><span class="o">);</span>  
+        <span class="n">b</span><span class="o">.</span><span class="na">setAddress2</span><span class="o">(</span><span class="n">newAddress</span><span class="o">);</span>  
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"a의 주소: "</span> <span class="o">+</span> <span class="n">a</span><span class="o">.</span><span class="na">getAddress2</span><span class="o">().</span><span class="na">getValue</span><span class="o">());</span> <span class="c1">// 서울  </span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"b의 주소: "</span> <span class="o">+</span> <span class="n">b</span><span class="o">.</span><span class="na">getAddress2</span><span class="o">().</span><span class="na">getValue</span><span class="o">());</span> <span class="c1">// 포항  </span>
+    <span class="o">}</span>  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
   </div>
 
@@ -853,8 +1127,8 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/spring/">Spring</a>,
-          <a href="/categories/spring-start/">Spring_Start</a>
+          <a href="/categories/java/">Java</a>,
+          <a href="/categories/java-mid1/">Java_Mid1</a>
       </div>
     
 
@@ -867,11 +1141,6 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
             href="/tags/java/"
             class="post-tag no-text-decoration"
           >Java</a>
-        
-          <a
-            href="/tags/spring/"
-            class="post-tag no-text-decoration"
-          >Spring</a>
         
       </div>
     
@@ -947,7 +1216,14 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Spring-(2)-Controller-Repository-Service/">Spring (2) - Controller Repository Service</a>
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(15)-%EB%B6%88%EB%B3%80-%EA%B0%9D%EC%B2%B4/">Java 문법 (15) - 불변 객체</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Spring-(2)-Controller-Service-Repository/">Spring (2) - Controller Service Repository</a>
         </li>
       
         
@@ -955,13 +1231,6 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
         
         <li class="text-truncate lh-lg">
           <a href="/posts/Spring-(3)-%ED%85%8C%EC%8A%A4%ED%8A%B8/">Spring (3) - 테스트</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Programmers-Java-Lv.0-(28)-%EC%A0%90%EC%9D%98-%EC%9C%84%EC%B9%98-%EA%B5%AC%ED%95%98%EA%B8%B0/">Programmers Java Lv.0 (28) - 점의 위치 구하기</a>
         </li>
       
         
@@ -1207,19 +1476,31 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1835,7 +2116,7 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/Spring-(1)-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88/" class="post-preview card h-100">
+          <a href="/posts/Java-%EB%AC%B8%EB%B2%95-(14)-Object-%ED%81%B4%EB%9E%98%EC%8A%A4/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1847,14 +2128,14 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
 
 <time
   
-  data-ts="1713106800"
+  data-ts="1712761200"
   data-df="ll"
   
 >
-  Apr 15, 2024
+  Apr 11, 2024
 </time>
 
-              <h4 class="pt-0 my-2">Spring (1) - 스프링 웹 개발 기초</h4>
+              <h4 class="pt-0 my-2">Java 문법 (14) - Object 클래스</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1863,7 +2144,7 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
 
 
 
-                  스프링 웹 개발 기초
+                  Java 문법 (14) - Object 클래스
 
 
 
@@ -1871,12 +2152,10 @@ Controller가 Service에 의존하고 Service가 Repository에 의존하는 형�
 
 
 
-정적 컨텐츠
+java.lang 패키지
 
 
-html 파일을 그대로 웹 브라우저에 내려주는 것을 말합니다. 기본적으로 스프링은 static 폴더 아래에 있는 html 파일을 정적 컨텐츠로 보여줍니다.
-
-웹 브라우저에서 hello-static.html 입력이 들어오면, 내장 톰캣 브라우저가 받고, 스프링에서는 먼저 컨트롤러가 있는지 확인합니다. (...
+자바가 기본으로 제공하는 라이브러리 중에 가장 기본이 되는 것이 java.lang 패키지 입니다. 자바 언어를 이루는 가장 기본이 되는 클래스들을 보관하는 패키지입니다. java.lang 패키지는 모든 자바 애플리케이션에 자동으로 임포트 되기 때문에 생략해도 됩니다...
                 </p>
               </div>
             </div>
@@ -1884,7 +2163,7 @@ html 파일을 그대로 웹 브라우저에 내려주는 것을 말합니다. �
         </article>
       
         <article class="col">
-          <a href="/posts/Spring-(3)-%ED%85%8C%EC%8A%A4%ED%8A%B8/" class="post-preview card h-100">
+          <a href="/posts/Programmers-Java-Lv.0-(1)-%EC%A4%91%EC%95%99%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1896,14 +2175,14 @@ html 파일을 그대로 웹 브라우저에 내려주는 것을 말합니다. �
 
 <time
   
-  data-ts="1713452400"
+  data-ts="1711292400"
   data-df="ll"
   
 >
-  Apr 19, 2024
+  Mar 25, 2024
 </time>
 
-              <h4 class="pt-0 my-2">Spring (3) - 테스트</h4>
+              <h4 class="pt-0 my-2">Programmers Java Lv.0 (1) - 중앙값 구하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1912,53 +2191,7 @@ html 파일을 그대로 웹 브라우저에 내려주는 것을 말합니다. �
 
 
 
-                  테스트
-
-
-
-
-
-
-
-JUnit
-
-회원가입 예제코드를 작성하고, 코드를 테스트하기 위해서 main 메서드를 만들어서 실행하거나, 컨트롤러를 통해서 실행할 수 있습니다. 하지만 이 방법들은 준비 시간이 오래걸리고, 반복 테스트, 여러 테스트를 한번에 실행하기 어렵습니다. 따라서 자바의 JUnit이라는 프레임워크로 테스트를 진행하면 이런 문제들을 해결할 수...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/Programmers-Java-Lv.0-(29)-2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1713193200"
-  data-df="ll"
-  
->
-  Apr 16, 2024
-</time>
-
-              <h4 class="pt-0 my-2">Programmers Java Lv.0 (29) - 2차원으로 만들기</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  2차원으로 만들기
+                  중앙값 구하기
 
 
 
@@ -1968,9 +2201,67 @@ JUnit
 
 문제 설명
 
-정수 배열 num_list와 정수 n이 매개변수로 주어집니다. num_list를 다음 설명과 같이 2차원 배열로 바꿔 return하도록 solution 함수를 완성해주세요.
+중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미합니다. 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 정수 배열 array가 매개변수로 주어질 때, 중앙값을 return 하도록 solution 함수를 완성해보세요.
 
-num_list가 [1, 2, 3, 4, 5, 6, 7, 8] 로 길이가 8이고 n이 2이므로 num_list를 2 * 4 배열로 다음...
+
+
+제한사항
+
+
+  array의 길이는 홀...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Programmers-Java-Lv.0-(2)-%EC%B5%9C%EB%B9%88%EA%B0%92-%EA%B5%AC%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1711378800"
+  data-df="ll"
+  
+>
+  Mar 26, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Programmers Java Lv.0 (2) - 최빈값 구하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  최빈값 구하기
+
+
+
+
+
+
+문제 설명
+
+최빈값은 주어진 값 중에서 가장 자주 나오는 값을 의미합니다. 정수 배열 array가 매개변수로 주어질 때, 최빈값을 return 하도록 solution 함수를 완성해보세요. 최빈값이 여러 개면 -1을 return 합니다.
+
+
+
+제한사항
+
+
+  0 &amp;lt; array의 길이 &amp;lt; 100
+  0 ≤ array의 ...
                 </p>
               </div>
             </div>
@@ -1992,22 +2283,18 @@ num_list가 [1, 2, 3, 4, 5, 6, 7, 8] 로 길이가 8이고 n이 2이므로 num
 
   
     <a
-      href="/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/"
+      href="/posts/Spring-(3)-%ED%85%8C%EC%8A%A4%ED%8A%B8/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Programmers Java Lv.0 (35) - 팩토리얼</p>
+      <p>Spring (3) - 테스트</p>
     </a>
   
 
   
-    <a
-      href="/posts/Spring-(3)-%ED%85%8C%EC%8A%A4%ED%8A%B8/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Spring (3) - 테스트</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
