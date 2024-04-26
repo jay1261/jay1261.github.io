@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-04-24T23:52:06+09:00</updated>
+  <updated>2024-04-26T09:51:05+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,55 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Java 문법 (16) - String</title>
+    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/" rel="alternate" type="text/html" title="Java 문법 (16) - String" />
+    <published>2024-04-25T00:00:00+09:00</published>
+  
+    <updated>2024-04-25T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/</id>
+    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Java_Mid1" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      String 클래스
+
+자바의 기본형 중에 문자를 다루는 타입은 char이다. char를 사용해서 문자를 여러개 나열하려면 char[]를 사용해야하는데, 이는 매우 불편하므로 자바는 문자열을 편하게 다룰 수 있는 String 클래스를 제공한다.
+
+String은 int, char와 다르게 대문자로 시작하는 것을 보아, 기본형이 아니라 참조형인 것을 알 수 있다. 즉, 스택 영역이 아닌 힙 영역에서 문자열 데이터가 관리된다는 것이다.
+
+
+
+
+
+
+String은 불변 객체
+
+자바에서 String은 불변객체이다. 즉, 생성 이후 객체의 값을 변경할 수 없다는 의미이다. 아래 예제코드를 보면, 변수 str이 참조하는 객체를 “Hello”라고 생성하고, 이후에 “ Java”라는 문자열을 더해서 객체 값을 변경시킨 것...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -268,98 +317,6 @@ i팩토리얼 (i!)은 1부터 i까지 정수의 곱을 의미합니다. 예를�
 
 
   10! = 3,628,800입니다. n이 3628800이므로 최대 팩토리얼인 10을 retur...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (34) - 최댓값 만들기 1</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(34)-%EC%B5%9C%EB%8C%93%EA%B0%92-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (34) - 최댓값 만들기 1" />
-    <published>2024-04-18T00:00:00+09:00</published>
-  
-    <updated>2024-04-18T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(34)-%EC%B5%9C%EB%8C%93%EA%B0%92-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(34)-%EC%B5%9C%EB%8C%93%EA%B0%92-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      최댓값 만들기 1
-
-
-
-
-
-
-
-문제 설명
-
-정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  0 ≤ numbers의 원소 ≤ 10,000
-  2 ≤ numbers의 길이 ≤ 100
-
-
-
-
-입출력 예
-
-
-  
-    
-      numbers
-      result
-    
-  
-  
-    
-      [1, 2, 3, 4, 5]
-      20
-    
-    
-      [0, 31, 24, 10, 1, 9]
-      744
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #1
-
-
-  두 수의 곱중 최댓값은 4 * 5 = 20 입니다.
-
-
-입출력 예 #1
-
-...
     </summary>
   
 
