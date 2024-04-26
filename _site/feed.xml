@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-04-26T14:57:51+09:00</updated>
+  <updated>2024-04-26T16:51:01+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,65 @@
 
   
   <entry>
+    <title>Java 문법 (17) - StringBuilder</title>
+    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(17)-StringBuilder/" rel="alternate" type="text/html" title="Java 문법 (17) - StringBuilder" />
+    <published>2024-04-26T00:00:00+09:00</published>
+  
+    <updated>2024-04-26T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(17)-StringBuilder/</id>
+    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(17)-StringBuilder/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Java_Mid1" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      String의 단점
+
+지난 포스트 String에서 String은 불변이라고 배웠다. 불변인 String의 단점은 문자를 더하거나 변경할 때 마다 계속해서 새로운 객체를 생성해야한다는 점이다. 반복문 안에서 문자를 계속해서 더하거나 변경하는 상황이라면, 많은 String 객체가 생겼다가 GC에 의해 사라짐을 반복하게되고, 이는 cpu, 메모리 낭비로 직결된다.
+
+아래 예제코드와 그림은 String 문자열을 서로 더할 때 일어나는 과정이다. “Hello Java World”를 만드는 과정에 객체가 계속 만들어지고, 쓰임도 없이 버려진다.
+
+String str = "Hello";
+str = str + " Java";
+str = str + " World";
+
+
+
+
+
+
+
+StringBuilder
+
+이 문제는 S...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Java 문법 (16) - String</title>
     <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/" rel="alternate" type="text/html" title="Java 문법 (16) - String" />
     <published>2024-04-25T00:00:00+09:00</published>
   
-    <updated>2024-04-25T00:00:00+09:00</updated>
+    <updated>2024-04-26T14:58:26+09:00</updated>
   
     <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/</id>
     <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/" />
@@ -227,96 +281,6 @@ JUnit
 
 
 Controller...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Programmers Java Lv.0 (35) - 팩토리얼</title>
-    <link href="http://localhost:4000/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/" rel="alternate" type="text/html" title="Programmers Java Lv.0 (35) - 팩토리얼" />
-    <published>2024-04-18T00:00:00+09:00</published>
-  
-    <updated>2024-04-18T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/</id>
-    <content src="http://localhost:4000/posts/Programmers-Java-Lv.0-(35)-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="Lv.0_Java" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      팩토리얼
-
-
-
-
-
-
-
-문제 설명
-
-i팩토리얼 (i!)은 1부터 i까지 정수의 곱을 의미합니다. 예를들어 5! = 5 * 4 * 3 * 2 * 1 = 120 입니다. 정수 n이 주어질 때 다음 조건을 만족하는 가장 큰 정수 i를 return 하도록 solution 함수를 완성해주세요.
-
-
-  i! ≤ n
-
-
-
-
-제한사항
-
-
-  0 &amp;lt; n ≤ 3,628,800
-
-
-
-
-입출력 예
-
-
-  
-    
-      n
-      result
-    
-  
-  
-    
-      3628800
-      10
-    
-    
-      7
-      3
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #1
-
-
-  10! = 3,628,800입니다. n이 3628800이므로 최대 팩토리얼인 10을 retur...
     </summary>
   
 
