@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>jay1261</title>
   <subtitle>개발 일지</subtitle>
-  <updated>2024-04-26T16:51:01+09:00</updated>
+  <updated>2024-04-30T12:47:58+09:00</updated>
   <author>
     <name>Dongjae Lee</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,65 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Java 문법 (18) - Wrapper Class</title>
+    <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(18)-Wrapper-Class/" rel="alternate" type="text/html" title="Java 문법 (18) - Wrapper Class" />
+    <published>2024-04-29T00:00:00+09:00</published>
+  
+    <updated>2024-04-29T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(18)-Wrapper-Class/</id>
+    <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(18)-Wrapper-Class/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Java_Mid1" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      객체가 아닌 기본형
+
+int, char, double 등의 기본형 타입은 객체가 아니다. 따라서 다음과 같은 객체지향의 장점을 적용시킬 수 없다.
+
+객체 메서드 사용 불가능
+객체는 유용한 메서드를 제공할 수 있는데, 기본형은 객체가 아니라서 메서드를 제공할 수 없다.
+String str = "hello java";
+str.split(" "); // 공백을 기준으로 나눠주는 메서드
+
+int num = 0;
+num.~~ // 기본형은 메서드 사용 불가능
+
+
+null 값을 담을 수 없음
+
+값이 없음을 나타내는 null을 사용해야할 때가 있는데, 기본형은 불가능하다.
+
+String str = null; // 객체는 가능
+int num = null; // 기본형은 컴파일 오류 발생
+
+
+컬렉션 사용 불가능
+
+메서...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -78,7 +137,7 @@ StringBuilder
     <link href="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/" rel="alternate" type="text/html" title="Java 문법 (16) - String" />
     <published>2024-04-25T00:00:00+09:00</published>
   
-    <updated>2024-04-26T14:58:26+09:00</updated>
+    <updated>2024-04-26T16:51:27+09:00</updated>
   
     <id>http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/</id>
     <content src="http://localhost:4000/posts/Java-%EB%AC%B8%EB%B2%95-(16)-String/" />
@@ -228,59 +287,6 @@ JUnit
 스프링 부트로 만든 프로젝트를 보면 src아래, main과 test로 디렉토리가 나뉘어져 있습니다. 여기서 test/java 아래에 프로젝트명으로 패키지가 만들어져 있으며, 이제 이곳에 테스트할 패키지 및 자바 파일을 만들어서 테스트를 진행하면 됩니다.
 
 테스트할 파일의 이름은 관례적으로 테스트할 클래스의 이름뒤에 Te...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Spring (2) - Controller Service Repository</title>
-    <link href="http://localhost:4000/posts/Spring-(2)-Controller-Service-Repository/" rel="alternate" type="text/html" title="Spring (2) - Controller Service Repository" />
-    <published>2024-04-19T00:00:00+09:00</published>
-  
-    <updated>2024-04-19T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Spring-(2)-Controller-Service-Repository/</id>
-    <content src="http://localhost:4000/posts/Spring-(2)-Controller-Service-Repository/" />
-    <author>
-      <name>jay</name>
-    </author>
-
-  
-    
-    <category term="Spring" />
-    
-    <category term="Spring_Start" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Controller Service Repository
-
-
-
-
-
-
-
-강의에서 Member, MemberRepository, MemberService, MemberController로 나누어서 회원 관리 예제를 진행했습니다. Controller Service Repository 패턴은 스프링에 어노테이션으로 있을 정도로 정형화된 패턴이고, 3개의 주요 구성 요소를 통해서 관심사를 분리하는 방식입니다.
-
-
-  Controller: 사용자의 요청을 받아 적절한 서비스를 호출하고 응답을 반환합니다.
-  Service: 비즈니스 로직을 담당하며, 컨트롤러와 리포지토리 사이의 중간 역할을 합니다
-  Repository: 데이터베이스와 상호작용을 담당하고, 서비스 계층에 데이터를 제공합니다.
-
-
-
-Controller...
     </summary>
   
 
