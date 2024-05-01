@@ -7,7 +7,8 @@ categories:
   - Lv.0_Java
 tags:
   - Java
-  - Java문법
+  - Algorithm
+  - Programmers
 source: https://programmers.co.kr/
 ---
 ## **모스 부호**

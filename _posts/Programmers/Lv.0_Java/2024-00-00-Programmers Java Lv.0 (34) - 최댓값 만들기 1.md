@@ -7,7 +7,8 @@ categories:
   - Lv.0_Java
 tags:
   - Java
-  - Java문법
+  - Algorithm
+  - Programmers
 source: https://programmers.co.kr/
 ---
 ## **최댓값 만들기 1**

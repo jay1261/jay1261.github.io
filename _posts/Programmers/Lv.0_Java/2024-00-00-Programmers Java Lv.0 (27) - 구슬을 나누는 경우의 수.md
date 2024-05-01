@@ -7,7 +7,8 @@ categories:
   - Lv.0_Java
 tags:
   - Java
-  - Java문법
+  - Algorithm
+  - Programmers
 source: https://programmers.co.kr/
 ---
 ## **구슬을 나누는 경우의 수**
