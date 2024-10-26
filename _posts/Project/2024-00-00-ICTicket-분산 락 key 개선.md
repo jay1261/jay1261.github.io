@@ -9,6 +9,7 @@ tags:
   - ICTicket
   - Redis
   - 분산락
+  - 트러블슈팅
 source:
 ---
 ## 문제 상황
