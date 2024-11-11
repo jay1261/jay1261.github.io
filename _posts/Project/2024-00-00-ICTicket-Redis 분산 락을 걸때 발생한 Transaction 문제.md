@@ -11,7 +11,8 @@ tags:
   - 분산락
   - 트러블슈팅
   - Transaction
-source:
+source: 
+pin: true
 ---
 ## 문제 상황
 
