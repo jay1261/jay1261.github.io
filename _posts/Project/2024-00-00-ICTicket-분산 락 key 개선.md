@@ -10,7 +10,8 @@ tags:
   - Redis
   - 분산락
   - 트러블슈팅
-source:
+source: 
+pin: true
 ---
 ## 문제 상황
 
